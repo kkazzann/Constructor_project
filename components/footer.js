@@ -65,14 +65,14 @@ export function Footer(
                                     <td class="newsletterFooterCategoryLEFT">
                                         <a
                                             href="${thirdCategory.href}">
-                                            <img loading="lazy" src="${thirdCategory}" alt=""
+                                            <img loading="lazy" src="${thirdCategory.src}" alt=""
                                                 style="display:block; max-width: 100%;"  border="0" />
                                         </a>
                                     </td>
                                     <td class="newsletterFooterCategoryRIGHT">
                                         <a
                                             href="${foutrthCategory.href}">
-                                            <img loading="lazy" src="${foutrthCategory}" alt=""
+                                            <img loading="lazy" src="${foutrthCategory.src}" alt=""
                                                 style="display:block; max-width: 100%;"  border="0" />
                                         </a>
                                     </td>
@@ -248,14 +248,14 @@ export function Footer(
                                     <td class="newsletterFooterCategoryLEFT">
                                         <a
                                             href="${thirdCategory.href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                            <img loading="lazy" src="${thirdCategory}" alt=""
+                                            <img loading="lazy" src="${thirdCategory.src}" alt=""
                                                 style="display:block; max-width: 100%;"  border="0" />
                                         </a>
                                     </td>
                                     <td class="newsletterFooterCategoryRIGHT">
                                         <a
                                             href="${foutrthCategory.href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                            <img loading="lazy" src="${foutrthCategory}" alt=""
+                                            <img loading="lazy" src="${foutrthCategory.src}" alt=""
                                                 style="display:block; max-width: 100%;"  border="0" />
                                         </a>
                                     </td>
@@ -264,14 +264,14 @@ export function Footer(
                                     <td class="newsletterFooterCategoryLEFT">
                                         <a
                                             href="${fifthCategory.href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                            <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
+                                            <img loading="lazy" src="${fifthCategory.src}" alt=""
                                                 style="display:block; max-width: 100%;"  border="0" />
                                         </a>
                                     </td>
                                     <td class="newsletterFooterCategoryRIGHT">
                                         <a
                                             href="${sixthCategory.href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                            <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
+                                            <img loading="lazy" src="${sixthCategory.src}" alt=""
                                                 style="display:block; max-width: 100%;"  border="0" />
                                         </a>
                                     </td>
