@@ -15,7 +15,7 @@ import { TemplateHandlers } from "./handlers/handlers.js";
 
 const root = document.querySelector("#app");
 const state = {
-  country: "DE",
+  country: "CHDE",
   loading: false,
   template: "newsletter",
   ids: {},
