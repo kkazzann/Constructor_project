@@ -1,0 +1,21 @@
+export default {
+    UK: "from",
+    PL: "od",
+    DE: "ab",
+    AT: "ab",
+    CHDE: "ab",
+    NL: "vanaf",
+    FR: "à partir de",
+    CHFR: "à partir de",
+    ES: "desde",
+    PT: "desde",
+    IT: 'da',
+    DK: "fra",
+    NO: "fra",
+    FI: "alk.",
+    SE: "från",
+    CZ: "od",
+    SK: "od",
+    HU: '-tól',
+  };
+  
