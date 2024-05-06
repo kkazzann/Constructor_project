@@ -220,7 +220,7 @@ export function Footer(
                 <tr>
                     <td class="newsletterTopBottomContainer">
                         <span class="newsletterFooterTitle">
-                            Tausende weitere Möbel
+                            ${title}
                         </span>
                     </td>
                 </tr>
