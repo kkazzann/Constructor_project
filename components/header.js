@@ -23,7 +23,7 @@ export function Header(
         <span class="title-advantages-item">✔️ ${advantages.daysReturn}</span>
     </p>
     <p class="newsletterRecommendationHeader">
-        ${webVersion.troubleViewing} <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">${webVersion.troubleViewingHrefText}</a> dir die Online-Version an.
+        ${webVersion.troubleViewing} <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">${webVersion.troubleViewingHrefText}</a>
         ${whiteList.addBeliani} <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="${whiteList.whitelistHref}">${whiteList.whiteList}</a>
     </p>
     <table align="center" cellspacing="0" cellpadding="0" border="0"
