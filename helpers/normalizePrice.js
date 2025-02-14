@@ -1,263 +1,476 @@
 const formatPrice = {
-    DE: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+  DE: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
 
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, ".").join("")
-        }
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, ".").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
 
-        return price;
-    },
-    CHDE: (price) => {
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, "'").join("")
-        }
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, "'").join("")
-        }
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        return price;
-    },
-    AT: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+    return price;
+  },
+  CHDE: (price, options) => {
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, "'").join("");
+    }
 
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, ".").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, "'").join("");
+    }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, ".").join("")
-        }
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        return price;
-    },
-    FR: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+    return price;
+  },
+  AT: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
 
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, " ").join("")
-        }
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, " ").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
 
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
-        return price;
-    },
-    // NOT ACTIVE COUNTRY, FOR CHFR I RENDER CHDE PRICES
-    CHFR: (price) => {
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, "'").join("")
-        }
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, "'").join("")
-        }
+    return price;
+  },
+  FR: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
 
-        return price;
-    },
-    IT: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
 
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, ".").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, ".").join("")
-        }
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
-        return price;
-    },
-    UK: (price) => {
-        
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, ",").join("")
-        }
-        
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, ",").join("")
-        }
-        
-        return price
-    },
-    ES: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, ".").join("")
-        }
+    return price;
+  },
+  BE: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, ".").join("")
-        }
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
 
-        return price;
-    },
-    PT: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
-        
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, ".").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, ".").join("")
-        }
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        return price;
-    },
-    PL: (price) => {
+    return price;
+  },
+  IT: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
 
-        price = price.replace(".00", "")
-        price = price.replace(".99", "")
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
 
-        if (price.length === 5) {
-            price = price.split("").toSpliced(2, 0, " ").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
 
-        if (price.length === 4) {
-            price = price.split("").toSpliced(1, 0, " ").join("")
-        }
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
-        return price 
-    },
-    HU: (price) => {
-        price = price.replace(".00", "")
-        price = price.replace(".99", "")
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, " ").toSpliced(5, 0, " ").join("")
-        }
+    return price;
+  },
+  UK: (price, options) => {
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, ",").join("");
+    }
 
-        if (price.length === 6) {
-            price = price.split("").toSpliced(3, 0, " ").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, ",").join("");
+    }
 
-        if (price.length === 5) {
-            price = price.split("").toSpliced(2, 0, " ").join("")
-        }
+    return price;
+  },
+  ES: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
 
-        if (price.length === 4) {
-            price = price.split("").toSpliced(1, 0, " ").join("")
-        }
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
 
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
 
-        return price;
-    },
-    NL: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, ".").join("")
-        }
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, ".").join("")
-        }
+    return price;
+  },
+  PT: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
 
-        return price;
-    },
-    SE: (price) => {
-        price = price.replace(".00", "")
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
 
-        if (price.length === 5) {
-            price = price.split("").toSpliced(2, 0, " ").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
 
-        if (price.length === 4) {
-            price = price.split("").toSpliced(1, 0, " ").join("")
-        }
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        return price;
-    },
-    DK: (price) => {
-        price = price.replace(".00", "")
+    return price;
+  },
+  PL: (price, options) => {
+    price = price.replace(".00", "");
+    price = price.replace(".99", "");
 
-        if (price.length === 5) {
-            price = price.split("").toSpliced(2, 0, ".").join("")
-        }
+    if (price.length === 5) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
 
-        if (price.length === 4) {
-            price = price.split("").toSpliced(1, 0, ".").join("")
-        }
+    if (price.length === 4) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
 
-        return price;
-    },
-    CZ: (price) => {
-        price = price.replace(".00", "")
+    return price;
+  },
+  HU: (price, options) => {
+    price = price.replace(".00", "");
+    price = price.replace(".99", "");
 
-        if (price.length === 5) {
-            price = price.split("").toSpliced(2, 0, " ").join("")
-        }
+    if (price.length === 7) {
+      price = price
+        .split("")
+        .toSpliced(1, 0, " ")
+        .toSpliced(5, 0, " ")
+        .join("");
+    }
 
-        if (price.length === 4) {
-            price = price.split("").toSpliced(1, 0, " ").join("")
-        }
+    if (price.length === 6) {
+      price = price.split("").toSpliced(3, 0, " ").join("");
+    }
 
+    if (price.length === 5) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
 
-        return price;
-    },
-    FI: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+    if (price.length === 4) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
 
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, " ").join("")
-        }
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, " ").join("")
-        }
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        return price;
-    },
-    NO: (price) => {
-        price = price.replace(".00", "")
+    return price;
+  },
+  NL: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
 
-        if (price.length === 5) {
-            price = price.split("").toSpliced(2, 0, ".").join("")
-        }
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
 
-        if (price.length === 4) {
-            price = price.split("").toSpliced(1, 0, ".").join("")
-        }
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
 
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
 
-        return price 
-    },
-    SK: (price) => {
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
 
-        if (price.length === 8) {
-            price = price.split("").toSpliced(2, 0, " ").join("")
-        }
+    return price;
+  },
+  SE: (price, options) => {
+    price = price.replace(".00", "");
 
-        if (price.length === 7) {
-            price = price.split("").toSpliced(1, 0, " ").join("")
-        }
+    if (price.length === 5) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
 
-        return price;
-    },
-}
+    if (price.length === 4) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
 
-export function normalize(price, country) {
-    return formatPrice[country](price)
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+  DK: (price, options) => {
+    price = price.replace(".00", "");
+
+    if (price.length === 5) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
+
+    if (price.length === 4) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+  CZ: (price, options) => {
+    price = price.replace(".00", "");
+
+    if (price.length === 6) {
+      price = price.split("").toSpliced(3, 0, " ").join("");
+    }
+
+    if (price.length === 5) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
+
+    if (price.length === 4) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+  FI: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
+
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
+
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+  NO: (price, options) => {
+    price = price.replace(".00", "");
+
+    if (price.length === 5) {
+      price = price.split("").toSpliced(2, 0, ".").join("");
+    }
+
+    if (price.length === 4) {
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+  SK: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
+
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
+
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+  SK: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
+
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
+
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+  RO: (price, options) => {
+    if (price.length === 7) {
+      price = price.replace(".00", "");
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
+
+    if (price.length === 6) {
+      price = price.replace(".99", ",99");
+      price = price;
+    }
+
+    if (price.length === 5) {
+      price = price.replace(".99", ",99");
+      price = price;
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+};
+
+export function normalize(price, country, options) {
+  return formatPrice[country](price, options);
 }

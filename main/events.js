@@ -1,45 +1,29 @@
-import { copyNewsletterWithHeaderAndStyles } from "../helpers/copyNewsletter.js";
-import { getCss } from "../helpers/getCss.js";
-import { incrementId } from "../helpers/index.js";
-import { setState } from "./initApp.js";
-
-function copyHandlerTemplate(e, copyTemplate, html, state) {
-  if (state.template === "newsletter") {
-    Promise.resolve()
-      .then(() => getCss(state.template))
-      .then((css) => {
-        navigator.clipboard.writeText(
-          copyNewsletterWithHeaderAndStyles(html, css)
-        );
-        copyTemplate.textContent = "Copied to clipboard";
-        let id = setTimeout(() => {
-          copyTemplate.textContent = "Copy template";
-          clearInterval(id);
-        }, 2000);
-      });
-  }
-
-  if (state.template === "landing") {
-    Promise.resolve()
-      .then(() => getCss(state.template))
-      .then((css) => {
-        navigator.clipboard.writeText(
-          `
-            <style>
-                ${css}
-            </style>` + html
-        );
-        copyTemplate.textContent = "Copied to clipboard";
-        let id = setTimeout(() => {
-          copyTemplate.textContent = "Copy template";
-          clearInterval(id);
-        }, 2000);
-      });
-  }
-}
+import { incrementId } from "../helpers/incrementId.js";
+import { getState, setState } from "./initApp.js";
 
 function openCampaignHandler(id) {
-  window.open("https://www.prologistics.info/news_email.php?id=" + id, "blank");
+  const config = getState("config");
+  if (!id) {
+    Toastify({
+      text: `Select campaign.`,
+      escapeMarkup: false,
+      duration: 3000,
+    }).showToast();
+    return;
+  }
+  window.open(config.campaign_url + id, "_blank");
+}
+
+function openIssueHandler(id) {
+  const config = getState("config");
+
+  window.open(config.issue_url + id, "_blank");
+}
+
+function figmaCardHandler(url) {
+  const config = getState("config");
+
+  window.open(url, "_blank");
 }
 
 function selectCampaignHandler(ev, campaigns) {
@@ -53,19 +37,29 @@ function selectCampaignHandler(ev, campaigns) {
       escapeMarkup: false,
       duration: 3000,
     }).showToast();
+    return;
   }
   const { startId, name, templates } = selectedCampaign;
   setState("ids", incrementId(startId));
-  return templates;
+  return { selectedCampaign, templates };
 }
 
 function handleSlugChange(ev) {
-  setState("country", ev.target.value);
+  const slugAndName = ev.target.value.split("-");
+  setState("country", slugAndName[0]);
+  setState("name", slugAndName[1]);
+}
+
+function handleShopChange(ev, shops) {
+  const shop = shops.find((item) => item.shopId === ev.target.value);
+  setState("shop", shop);
 }
 
 export {
   handleSlugChange,
   selectCampaignHandler,
-  copyHandlerTemplate,
   openCampaignHandler,
+  handleShopChange,
+  openIssueHandler,
+  figmaCardHandler
 };

@@ -1,41 +1,50 @@
-import categories from "../../data/categories/data.js";
 import { handleProduct } from "./index.js";
-import { getProduct } from "../../api/product.js";
 import { getQueryLink } from "../../helpers/getQueryLink.js";
-import origins from "../../data/templates/origins.js";
-import { setState } from "../initApp.js";
+import { getState } from "../initApp.js";
+import _templates from "../data/templates.js";
+import _categoriesLinks from "../data/categoriesLinks.js";
+import _categoriesTitles from "../data/categoriesTitles.js";
+import _header from "../data/header.js";
+import _footer from "../data/footer.js";
 
 export class TemplateHandlers {
-
-  constructor({ country, products, translations }) {
-    this.country = country;
+  isCalled = false;
+  constructor({
+    products,
+    categoriesLinks,
+    categoriesTitles,
+    footer,
+    header,
+    templates,
+  }) {
     this.products = products;
-    this.translations = translations;
+    this.categoriesLinks = categoriesLinks;
+    this.categoriesTitles = categoriesTitles;
+    this.footer = footer;
+    this.header = header;
+    this.templates = templates;
   }
-  getProductByName = (productName, src) => {
-    const country_products = this.products.filter(
-      (product) => product.country === this.country.toLowerCase()
-    );
-    const product = country_products.find(
-      (product) => product.name === productName
-    );
 
-    if (!product) {
-      return {
-        name: `Product ${productName} not found`,
-        lowPrice: "00.00",
-        highPrice: "00.00",
-        src: src,
-      };
+  getProductById = (productId, src, options) => {
+    if (!this.isCalled && !this.products) {
+      this.isCalled = true;
+      Toastify({
+        text: "Set products for campaign.",
+        escapeMarkup: false,
+        duration: 3000,
+      }).showToast();
     }
-    return handleProduct(src ? { ...product, src } : product);
-  }
-
-  getProductById = (productId, src) => {
-    const country_products = this.products.filter(
-      (product) => product.country === this.country.toLowerCase()
+    const country = getState("country");
+    const shop = getState("shop");
+    const languageHREF = shop.languages.find(
+      (item) => item.language.slug === country
     );
-    const product = country_products.find(
+
+    let country_products = this.products?.filter(
+      (product) => product.country === shop.slug.toLowerCase()
+    );
+
+    const product = country_products?.find(
       (product) => Number(product.main_id) === Number(productId)
     );
 
@@ -47,42 +56,50 @@ export class TemplateHandlers {
         src: src,
       };
     }
-    return handleProduct(src ? { ...product, src } : product);
-  }
 
-  getCategory = (category) => {
-    let new_link = new URL(origins[this.country]);
+    const href =
+      shop.origin +
+      product.href.hrefs[languageHREF.language.title].value +
+      ".html";
+    return handleProduct(
+      src ? { ...product, href, src } : { ...product, href },
+      options
+    );
+  };
+
+  getCategoryTitle = (column) => {
+    const country = getState("country");
+
+    const CSV_CATEGORIES = this.categoriesTitles
+      ? this.#toCSV(this.categoriesTitles)
+      : _categoriesTitles;
+    let country_categories = CSV_CATEGORIES.find(
+      (category) => category.slug === country.toLowerCase()
+    );
+
+    if (country_categories) {
+      return country_categories[column];
+    }
+    return undefined;
+  };
+
+  getCategoryLink = (category, options) => {
+    const shop = getState("shop");
+    const country = getState("country");
+
+    let new_link = new URL(shop.origin);
+
     const category_url = new URL(category);
     for (const [key, value] of category_url.searchParams.entries()) {
       new_link.searchParams.append(key, value);
     }
 
-    let country_categories;
-    if (!this.translations.categories) {
-      country_categories = categories.find(
-        (category) => category.slug === this.country.toLowerCase()
-      );
-    } else {
-      const [slugs, ...categoriesDB] = this.translations.categories;
-      const parsed_categories = [];
-      for (let index = 0; index < slugs.length; index++) {
-        const slug = slugs[index];
-        let parsed_category = {};
-        for (const categoryArray of categoriesDB) {
-          const key = categoryArray[0];
-          parsed_category = {
-            slug: slug,
-            [key]: categoryArray[index],
-            ...parsed_category,
-          };
-        }
-        parsed_categories.push(parsed_category);
-      }
-
-      country_categories = parsed_categories.find(
-        (category) => category.slug === this.country.toLowerCase()
-      );
-    }
+    const CSV_CATEGORIES = this.categoriesLinks
+      ? this.#toCSV(this.categoriesLinks)
+      : _categoriesLinks;
+    let country_categories = CSV_CATEGORIES.find(
+      (category) => category.slug === country.toLowerCase()
+    );
 
     const pathnames = category_url.pathname
       .split("/")
@@ -101,12 +118,56 @@ export class TemplateHandlers {
       }
     }
     new_link.pathname += parsed_country_categories.join("/");
-    return getQueryLink(new_link);
-  }
+    if (options && options.origin === false) {
+      const cutUrl = new URL(getQueryLink(new_link)).pathname;
+      return cutUrl;
+    }
 
-  getField = (data, field) => {
+    return getQueryLink(new_link);
+  };
+
+  getFooter = (column) => {
+    const country = getState("country");
+    const CSV_FOOTER = this.footer ? this.#toCSV(this.footer) : _footer;
+    let country_footer = CSV_FOOTER.find(
+      (category) => category.slug === country.toLowerCase()
+    );
+    if (country_footer) {
+      return country_footer[column];
+    }
+    return undefined;
+  };
+
+  getPhrase = (column) => {
+    const country = getState("country");
+    const CSV_FOOTER = this.templates
+      ? this.#toCSV(this.templates)
+      : _templates;
+    let country_phrase = CSV_FOOTER.find(
+      (category) => category.slug === country.toLowerCase()
+    );
+    if (country_phrase) {
+      return country_phrase[column];
+    }
+    return undefined;
+  };
+
+  getHeader = (column) => {
+    const country = getState("country");
+
+    const CSV_FOOTER = this.header ? this.#toCSV(this.header) : _header;
+    let country_header = CSV_FOOTER.find(
+      (category) => category.slug === country.toLowerCase()
+    );
+    if (country_header) {
+      return country_header[column];
+    }
+    return undefined;
+  };
+
+  #toCSV = (data) => {
     const [slugs, ...categoriesDB] = data;
-    const parsed_categories = [];
+    const csv = [];
     for (let index = 0; index < slugs.length; index++) {
       const slug = slugs[index];
       let parsed_category = {};
@@ -118,43 +179,9 @@ export class TemplateHandlers {
           ...parsed_category,
         };
       }
-      parsed_categories.push(parsed_category);
+      csv.push(parsed_category);
     }
 
-    const filterToSelectedCountry = parsed_categories.find(
-      (item) => item.slug.toLowerCase() === this.country.toLowerCase()
-    );
-    if (filterToSelectedCountry) {
-      return filterToSelectedCountry[field];
-    }
-    return "Not found";
-  }
-
-  getProductFromServer = async (productId) => {
-    const country_products = products.filter(
-      (product) => product.country === this.country.toLowerCase()
-    );
-    const product = country_products.find(
-      (product) => Number(product.main_id) === Number(productId)
-    );
-
-    setState("loading", true);
-    const serverProducts = await getProduct([
-      {
-        main_id: productId,
-        src: product?.src ?? "",
-      },
-    ]);
-
-    const serverProductCountry = serverProducts.filter(
-      (product) => product.country === this.country.toLowerCase()
-    );
-
-    const serverProduct = serverProductCountry.find(
-      (product) => Number(product.main_id) === Number(productId)
-    );
-
-    setState("false", true);
-    return handleProduct(serverProduct);
-  }
+    return csv;
+  };
 }

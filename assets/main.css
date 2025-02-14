@@ -3,10 +3,16 @@
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1440px;
   margin: 0 auto;
   height: 90vh;
-  overflow-y: scroll;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
 }
 
 .panelPosition {
@@ -19,6 +25,8 @@
 .panel {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 0.4rem;
   align-items: center;
 }
 
@@ -55,6 +63,7 @@ button {
   font-size: 1rem;
   border-radius: 5px;
   font-weight: 600;
+  white-space: nowrap;
 
   border: none;
   cursor: pointer;

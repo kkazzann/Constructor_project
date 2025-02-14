@@ -1,15 +1,18 @@
+import { getState } from "../main/initApp.js";
 import { priceFormats } from "./priceFormats.js";
 
-export function parsePrice(product) {
+export function parsePrice(product, options) {
+  const shop = getState("shop");
+
   return {
     ...product,
-    lowPrice: priceFormats[product.country.toUpperCase()](product.lowPrice),
+    lowPrice: priceFormats[shop.slug](product.lowPrice, options),
     highPrice:
       product.highPrice !== null
-        ? priceFormats[product.country.toUpperCase()](
-            product.country === "PL"
+        ? priceFormats[shop.slug](
+            product.country === "pl"
               ? Math.ceil(product.highPrice).toString()
-              : product.highPrice
+              : product.highPrice, options
           )
         : "",
   };

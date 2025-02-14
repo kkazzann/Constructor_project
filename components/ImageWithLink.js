@@ -1,26 +1,19 @@
-import { swapImage } from "../helpers/swapImage.js";
-import { getState } from "../main/initApp.js";
+import { isAllowToRender, optimize } from "../helpers/optimizeImage.js";
 
-export const ImageWithLink = (link, src, alt = "") => {
-  const isNeedToOptimizeImg = getState("optimizeImg");
-  let newSrc = src;
-  if (isNeedToOptimizeImg) {
-    newSrc =
-      getState("template") === "newsletter"
-        ? src
-        : swapImage({ format: ".webp", src: src });
-  }
-  return `
-  <table cellspacing="0" cellpadding="0" style="max-width: 650px; width: 100%;">
+export const ImageWithLink = isAllowToRender(
+  optimize(({ href, src, alt = "", attrs }) => {
+    return `
+  <table border="0" cellspacing="0" cellpadding="0" width="100%" >
         <tbody>
             <tr>
                 <td>
-                    <a href="${link}">
-                        <img alt="${alt}" src="${newSrc}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
+                    <a href="${href}">
+                        <img alt="${alt}" src="${src}" style="vertical-align: middle; max-width: 100%;" ${attrs || ""} loading="lazy">
                     </a>
                 </td>
             </tr>
         </tbody>
     </table>
   `;
-};
+  })
+);

@@ -1,21 +1,16 @@
-export const Image = (src, alt = "") => {
-  const isNeedToOptimizeImg = getState("optimizeImg");
-  let newSrc = src;
-  if (isNeedToOptimizeImg) {
-    newSrc =
-      getState("template") === "newsletter"
-        ? src
-        : swapImage({ format: ".webp", src: src });
-  }
+import { isAllowToRender, optimize } from "../helpers/optimizeImage.js";
+
+export const Image = isAllowToRender(optimize(({src, alt = "", style}) => {
+
   return `
-  <table cellspacing="0" cellpadding="0" style="width: 100%; ">
+  <table align="center" cellspacing="0" cellpadding="0" style="${style || ""}">
     <tbody>
         <tr>
             <td>
-                <img alt="${alt}" src="${newSrc}" loading="lazy" style="display: block; width: 100%">
+                <img alt="${alt}" src="${src}" loading="lazy" style="display: block; max-width: 100%">
             </td>
         </tr>
     </tbody>
   </table>
   `;
-};
+}))

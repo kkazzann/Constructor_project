@@ -1,6 +1,6 @@
 import { addParamsProduct } from "../../helpers/getQueryLink.js";
 import { parsePrice } from "../../helpers/parsePrice.js";
 
-export function handleProduct(product) {
-  return addParamsProduct(parsePrice(product));
+export function handleProduct(product, options) {
+  return addParamsProduct(parsePrice(product, options));
 }

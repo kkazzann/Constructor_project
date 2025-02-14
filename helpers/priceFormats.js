@@ -8,14 +8,15 @@ const currencies = {
   swedishKrona: ":-",
   danishKrona: "kr.",
   czechKrona: "Kč",
-  norwegianKrone: ",-/stk",
-  polandZloty: ",-"
+  norwegianKrone: ",-",
+  polandZloty: ",-",
+  romanianLeu: "lei"
 };
 const relativePriceFormat = {
   DE: {
     currency: currencies.euro,
   },
-  CHDE: {
+  CH: {
     currency: currencies.swissFranc,
   },
   AT: {
@@ -24,8 +25,8 @@ const relativePriceFormat = {
   FR: {
     currency: currencies.euro,
   },
-  CHFR: {
-    currency: currencies.swissFranc,
+  BE: {
+    currency: currencies.euro,
   },
   IT: {
     currency: currencies.euro,
@@ -66,13 +67,16 @@ const relativePriceFormat = {
   SK: {
     currency: currencies.euro,
   },
+  RO: {
+    currency: currencies.romanianLeu,
+  },
 };
 const priceFormats = {
   DE: (price) => {
     return normalize(price, "DE") + " " + relativePriceFormat.DE.currency;
   },
   CHDE: (price) => {
-    return normalize(price, "CHDE") + " " + relativePriceFormat.CHDE.currency;
+    return normalize(price, "CHDE") + " " + relativePriceFormat.CH.currency;
   },
   AT: (price) => {
     return normalize(price, "AT") + " " + relativePriceFormat.AT.currency;
@@ -80,9 +84,8 @@ const priceFormats = {
   FR: (price) => {
     return normalize(price, "FR") + " " + relativePriceFormat.FR.currency;
   },
-  // NOT ACTIVE COUNTRY, FOR CHFR I RENDER CHDE PRICES
-  CHFR: (price) => {
-    return normalize(price, "CHFR") + " " + relativePriceFormat.CHFR.currency;
+  BE: (price) => {
+    return normalize(price, "BE") + " " + relativePriceFormat.BE.currency;
   },
   IT: (price) => {
     return normalize(price, "IT") + " " + relativePriceFormat.IT.currency;
@@ -122,6 +125,9 @@ const priceFormats = {
   },
   SK: (price) => {
     return normalize(price, "SK") + " " + relativePriceFormat.SK.currency;
+  },
+  RO: (price) => {
+    return normalize(price, "RO") + " " + relativePriceFormat.RO.currency;
   },
 };
 

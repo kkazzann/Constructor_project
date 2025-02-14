@@ -1,51 +1,85 @@
+import { Space } from "./Space.js";
 
+export const Timer = ({
+  title,
+  subtitle,
+  href,
+  imageSrc,
+  cta,
+  type
+}) => {
 
+    if (type === "gif_on_the_left_side") {
+        return `
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td align="center">
+                        <a href=${href}>
+                            <img src="https://upload.pictureserver.net/static/2024/test_gif.gif" style="display: block; max-width: 100%;">
+                        </a>
+                    </td>
+                    <td align="right" style="padding-top: 20px; padding-bottom: 20px;">
+                        <span class="newsletterSubtitleTimer" style="color: #ffffff">
+                            ${title}
+                        </span>
 
+                        ${Space({className: "newsletterBottom60px"})}
+            
+                        <a href=${href}>
+                            <img src="${imageSrc}" style="display: block; max-width: 100%;">
+                        </a>
 
-export const Timer = ({ title, subtitle, imageHref, imageSrc, ctaHref, ctaText, style, className }) => {
+                        ${Space({className: "newsletterBottom60px"})}
 
-  style = {
-    bgColor: "#ffffff",
-    align: "center",
-    textColor: "#ffffff",
-    ...style,
-  }
-
-  className = className ? className : "newsletterGifContainer"
+                        <a href="${href}" style="color:#fff; text-decoration: underline;">
+                            <span class="newsletterCta">${cta}</span>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        `;
+    }
 
   return `
-      <tr>
-          <td align="${style.align}" class="${className}" style="background-color: ${style.bgColor};">
-              <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                <tr>
-                  <td align="center">
-                      <span class="newsletterSummerSale" style="color: ${style.textColor}; font-weight: 600;">${title}</span>
-                      <br/>
-                      <span class="newsletterSummerSale" style="color: ${style.textColor};">${subtitle}</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" class="newsletterCounter" style="padding-top: 20px; padding-left: 140px; padding-right: 140px;">
-                    <a href=${imageHref}>
-                        <img width="100%" src="${imageSrc}" style="display: block;">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+            <tr>
+                <td align="center">
+                    <span class="newsletterSubtitleTimer" style="color: #ffffff">
+                        ${title}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <span class="newsletterSubtitleTimer" style="color: #ffffff">
+                        ${subtitle}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="color: #ffffff">
+                    ${Space({className: "newsletterBottom20px"})}
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding-left: 60px; padding-right: 60px;">
+                    <a href=${href}>
+                        <img src="${imageSrc}" style="display: block; max-width: 100%;">
                     </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" >
-                      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                          <tr>
-                              <td align="center" style="padding-top: 20px">
-                                  <a href=${ctaHref} style="color: ${style.textColor}; text-decoration: underline;" class="newsletterCta">
-                                      <span>${ctaText}</span>
-                                  </a>
-                              </td>
-                          </tr>
-                      </table>
-                  </td>
-              </tr>
-              </table>
-          </td>
-      </tr>
-  `
-}
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="color: #ffffff">
+                    ${Space({className: "newsletterBottom20px"})}
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a href="${href}" style="color:#fff; text-decoration: underline;">
+                        <span class="newsletterCta">${cta}</span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+  `;
+};

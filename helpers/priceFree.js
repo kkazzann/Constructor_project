@@ -9,6 +9,9 @@ const free = {
   NL: "GRATIS",
   FR: "GRATUIT",
   CHFR: "GRATUIT",
+  CHIT: "GRATIS",
+  BEFR: "GRATUIT",
+  BENL: "GRATIS",
   ES: "GRATIS",
   PT: "GRÁTIS",
   IT: "GRATIS",
@@ -19,6 +22,7 @@ const free = {
   CZ: "ZDARMA",
   SK: "GRÁTIS",
   HU: "AJÁNDÉK",
+  RO: "CADOU",
 }
 
 export function priceFree(product) {

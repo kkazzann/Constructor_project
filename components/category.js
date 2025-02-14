@@ -1,37 +1,242 @@
-import { ImageWithLink, Product, Title } from "./index.js";
+import { isAllowToRender } from "../helpers/optimizeImage.js";
+import { ImageWithLink, Line, Product, Space, Title } from "./index.js";
 
-export function Category({
-  name,
-  href,
-  src,
-  products,
-  ctaComponent,
-  cta = "CTA",
-  type = "monday",
-}) {
-  if (!type) {
-    return "Please specify type for category. Monday, Wednesday";
-  }
+export const Category = isAllowToRender(
+  ({
+    name,
+    href,
+    src,
+    products,
+    ctaComponent,
+    color,
+    line,
+    len,
+    idx,
+    cta = "CTA",
+    type = "monday",
+    align,
+    size,
+  }) => {
+    if (!type) {
+      return "Please specify type category.";
+    }
 
-  if (type === "monday") {
-    return `
-  <table cellspacing="0" cellpadding="0" width="100%">
+    if (type === "image&cta") {
+      if (idx === len) {
+        return `
+<table class="newsletterContainer" border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <a href="${href}">
+              <img alt="${name}" src="${src}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td align="center">
+            ${
+              ctaComponent
+                ? ctaComponent(href, cta)
+                : `
+                <a href="${href}" style="color:${
+                    color || "#000"
+                  }; text-decoration: underline;">
+                  <span class="newsletterCta">${cta}</span>
+                </a>
+              `
+            }
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom80px"></td>
+        </tr>
+      </tbody>
+    </table>
+        `;
+      }
+      return `
+
+    `;
+    }
+
+    if (type === "standard") {
+      if (idx === len) {
+        return `
+<table class="newsletterContainer" border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+            ${Title({ title: name, align: "left", color: color })}
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="${href}">
+              <img alt="${name}" src="${src}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td align="center">
+            ${
+              ctaComponent
+                ? ctaComponent(href, cta)
+                : `
+                <a href="${href}" style="color:${
+                    color || "#000"
+                  }; text-decoration: underline;">
+                  <span class="newsletterCta">${cta}</span>
+                </a>
+              `
+            }
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom80px"></td>
+        </tr>
+        <tr>
+          <td>
+              ${Line(line)}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+        `;
+      }
+      return `
+   
+    `;
+    }
+
+    if (type === "no_products") {
+      if (idx === len) {
+        return `
+<table class="newsletterContainer" border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+        <tr>
+          <td align="${align}">
+            ${Title({ title: name, align, color: color })}
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="${href}">
+              <img alt="${name}" src="${src}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td align="center">
+            ${
+              ctaComponent
+                ? ctaComponent(href, cta)
+                : `
+                <a href="${href}" style="color:${
+                    color || "#000"
+                  }; text-decoration: underline;">
+                  <span class="newsletterCta">${cta}</span>
+                </a>
+              `
+            }
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom80px"></td>
+        </tr>
+      </tbody>
+    </table>
+        `;
+      }
+      return `
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+            ${Title({ title: name, align: "left", color: color })}
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="${href}">
+              <img alt="${name}" src="${src}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td align="center">
+            ${
+              ctaComponent
+                ? ctaComponent(href, cta)
+                : `
+                <a href="${href}" style="color:${
+                    color || "#000"
+                  }; text-decoration: underline;">
+                  <span class="newsletterCta">${cta}</span>
+                </a>
+              `
+            }
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+              ${Line(line)}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    `;
+    }
+
+    if (type === "monday") {
+      return `
+  <table border="0" cellspacing="0" cellpadding="0" width="100%">
     <thead>
       <tr>
         <td style="padding-top: 0px; padding-bottom: 0px;" class="newsletterContainer">
-          ${Title(name, "left")}
+          ${Title({ title: name, align: "left", color: color })}
         </td>
       </tr>
       <tr>
-        <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom35px"></td>
+        <td class="newsletterBottom35px"></td>
       </tr>
       <tr>
-        <td style="padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;">
-          ${ImageWithLink(href, src, name)}
+        <td>
+          ${ImageWithLink({ href: href, src: src, alt: name })}
         </td>
       </tr>
       <tr>
-        <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom35px"></td>
+        <td class="newsletterBottom35px"></td>
       </tr>
     </thead>
     <tbody>
@@ -39,62 +244,79 @@ export function Category({
         <td style="padding-top: 0px; padding-bottom: 0px;" class="newsletterContainer">
           <table cellspacing="0" cellpadding="0" style="width: 100%; ">
             <tr>
-              <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom20px">
+              <td class="newsletterBottom20px">
                 <!-- 1-2 Products table -->
                 <table cellspacing="0" cellpadding="0" style="width: 100%; ">
                   <tr>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
                     <td style="padding-top: 0px; padding-left: 0px; vertical-align: top; width: 50%" class="newsletterRight10px">
-                      ${Product(products[0])}
+                      ${Product(
+                        products[0],
+                        "left",
+                        `color: ${color || "#000000"}`
+                      )}
                     </td>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
                     <td style="padding-top: 0px; padding-right: 0px; vertical-align: top; width: 50%" class="newsletterLeft10px">
-                      ${Product(products[1])}
+                      ${Product(
+                        products[1],
+                        "left",
+                        `color: ${color || "#000000"}`
+                      )}
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
-              <td style="padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;">
+              <td>
                 <!-- 3-4 Products table -->
                 <table cellspacing="0" cellpadding="0" style="width: 100%; ">
                   <tr>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
                     <td style="padding-top: 0px; padding-left: 0px; vertical-align: top; width: 50%" class="newsletterRight10px">
-                      ${Product(products[2])}
+                      ${Product(
+                        products[2],
+                        "left",
+                        `color: ${color || "#000000"}`
+                      )}
                     </td>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
                     <td style="padding-top: 0px; padding-right: 0px; vertical-align: top; width: 50%" class="newsletterLeft10px">
-                      ${Product(products[3])}
+                      ${Product(
+                        products[3],
+                        "left",
+                        `color: ${color || "#000000"}`
+                      )}
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
-              <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom35px">
+              <td class="newsletterBottom35px">
               </td>
             </tr>
           </table>
         </td>
       </tr>
       <tr>
-        <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom80px">
+        <td class="newsletterBottom80px">
           <table cellspacing="0" cellpadding="0" style="width: 100%; ">
             <tbody>
               <tr>
                 <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px; text-align: center;">
-                  ${ctaComponent
-        ?
-        ctaComponent(href, cta)
-        :
-        `
-                      <a href="${href}" style="color:#000; text-decoration: underline;">
+                  ${
+                    ctaComponent
+                      ? ctaComponent(href, cta)
+                      : `
+                      <a href="${href}" style="color:${
+                          color || "#000"
+                        }; text-decoration: underline;">
                         <span class="newsletterCta">${cta}</span>
                       </a>
                     `
-      }
+                  }
                 </td>
               </tr>
             </tbody>
@@ -103,6 +325,117 @@ export function Category({
       </tr>
     </tbody>
   </table>
+  `;
+    }
+
+    if (type === "OnlyImage") {
+      if (idx === len) {
+        return `
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+          <thead>
+            <tr>
+              <td>
+                ${ImageWithLink({ href: href, src: src, alt: name })}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  ${Space({className: "newsletterBottom20px"})}
+              </td>
+            </tr>
+          </thead>
+        </table>
         `;
+      }
+      return `
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <thead>
+          <tr>
+            <td>
+              ${ImageWithLink({ href: href, src: src, alt: name })}
+            </td>
+          </tr>
+            <tr>
+              <td>
+                ${Space({className: "newsletterBottom80px"})}
+              </td>
+            </tr>
+        </thead>
+      </table>
+      `;
+    }
+
+    if (type === "image") {
+      if (idx === len) {
+        return `
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+          <thead>
+            <tr>
+              <td>
+                ${ImageWithLink({ href: href, src: src, alt: name })}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  ${Space({className: "newsletterBottom20px"})}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  ${Line(line)}
+              </td>
+            </tr>
+          </thead>
+        </table>
+        `;
+      }
+      return `
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <thead>
+          <tr>
+            <td>
+              ${ImageWithLink({ href: href, src: src, alt: name })}
+            </td>
+          </tr>
+            <tr>
+              <td>
+                ${Space({className: "newsletterBottom20px"})}
+              </td>
+            </tr>
+        </thead>
+      </table>
+      `;
+    }
+    if (type === "one_freebie") {
+      if (idx === len) {
+        return `
+<table class="newsletterContainer" border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <a href="${href}">
+              <img alt="${name}" src="${src}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td align="${align}">
+            ${Title({ title: name, align, color: color, className: "newsletterProductTitle", type: "product", size})}
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom80px"></td>
+        </tr>
+      </tbody>
+    </table>
+        `;
+      }
+      return `
+    
+    `;
+    }
   }
-}
+);
