@@ -1052,6 +1052,20 @@ export default {
             font-weight: 600;
           }
 
+          #newsletter .newsletterTitleH1 {
+            font-size: 45px;
+            line-height: 53px;
+            font-weight: 400;
+            margin:0;
+          }
+            
+          #newsletter .newsletterTitleH2 {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: 400;
+            margin:0;
+          }
+
           #newsletter .newsletterIntroTitle {
             font-size: 35px;
             line-height: 1.20;
@@ -1193,6 +1207,16 @@ export default {
 
             #newsletter .newsletterIntroTitle {
               font-size: 28px;
+            }
+
+            #newsletter .newsletterTitleH1 {
+              font-size: 30px;
+              line-height: 35px;
+            }
+              
+            #newsletter .newsletterTitleH2 {
+              font-size: 22px;
+              line-height: 27px;
             }
           
             #newsletter .newsletterProductTitleFreebie {

@@ -13,6 +13,7 @@ import { Paragraph } from "./Paragraph.js";
 import { Space } from "./Space.js";
 import { ProductWithSize } from "./productwithsize.js";
 import { OfferPartCodes } from "./OfferPartCodes.js";
+import { TopImageTitle } from "./TopImageTitle.js"
 
 export {
   ProductWithSize,
@@ -30,4 +31,5 @@ export {
   Product,
   Timer,
   OfferPartCodes,
+  TopImageTitle,
 };
