@@ -6,17 +6,21 @@ export const TopImageTitle = isAllowToRender(
     if (!type) {
       return "Please specify type of TiT.";
     }
-    if (type === "standard") {
+
+    const titleClassH1 = title1.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
+    const titleClassH2 = title2.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
+
+    if (type === "up_to") {
       if (idx === len) {
         return `
-          <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+          <table border="0" cellspacing="0" cellpadding="0" width="100%">
               <tbody>
                   <tr>
                       <td>
                           <a class="newsletterHrefTit" style="color:${color};" href="${href}">
                               ${Space()}
-                              <h4 class="newsletterTitleH1">${title1}</h4>
-                              <h5 class="newsletterTitleH2">${title2}</h5>
+                              <h4 class="${titleClassH1}">${title1}</h4>
+                              <h5 class="${titleClassH2}">${title2}</h5>
                               ${Space()}
                           </a>
                       </td>
@@ -26,17 +30,17 @@ export const TopImageTitle = isAllowToRender(
         `;
       }
     }
-    if (type === "inverse") {
+    if (type === "standard") {
       if (idx === len) {
         return `
-          <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+          <table border="0" cellspacing="0" cellpadding="0" width="100%">
               <tbody>
                   <tr>
                       <td>
                           <a class="newsletterHrefTit" style="color:${color};" href="${href}">
                               ${Space()}
-                              <h5 class="newsletterTitleH2">${title1}</h5>
-                              <h4 class="newsletterTitleH1">${title2}</h4>
+                              <h5 class="newsletterTitleH1">${title1}</h5>
+                              <h4 class="newsletterTitleH2">${title2}</h4>
                               ${Space()}
                           </a>
                       </td>
@@ -49,7 +53,7 @@ export const TopImageTitle = isAllowToRender(
     if (type === "singleLine") {
       if (idx === len) {
         return `
-          <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+          <table border="0" cellspacing="0" cellpadding="0" width="100%">
               <tbody>
                   <tr>
                       <td>
