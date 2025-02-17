@@ -11,6 +11,7 @@ import { CategoriesRows } from "./CategoriesRows.js";
 import { CategoriesRowsLinePriceTitle } from "./CategoriesRowsLinePriceTitle.js";
 import { CategoriesRowsLine } from "./CategoriesRowsLine.js";
 import { mondayOfferFreebiesInsideBanner } from "./mondayOfferFreebiesInsideBanner.js";
+import { RegularNslt } from "./RegularNslt.js"
 
 export const templates = {
   newsletter_FGG,
@@ -26,4 +27,5 @@ export const templates = {
   mondayOfferFreebiesInsideBanner,
   CategoriesRowsLinePriceTitle,
   CategoriesRowsLine,
+  RegularNslt,
 };
