@@ -2,7 +2,7 @@ import { isAllowToRender, optimize } from "../helpers/optimizeImage.js";
 import { Space } from "../components/Space.js";
 
 export const TopImageTitle = isAllowToRender(
-  optimize(({ href, title1, title2, color, type = "standard", idx, len }) => {
+  optimize(({ href, title1, title2, color, type }) => {
     if (!type) {
       return "Please specify type of TiT.";
     }
@@ -11,7 +11,6 @@ export const TopImageTitle = isAllowToRender(
     const titleClassH2 = title2.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
 
     if (type === "up_to") {
-      if (idx === len) {
         return `
           <table border="0" cellspacing="0" cellpadding="0" width="100%">
               <tbody>
@@ -27,11 +26,9 @@ export const TopImageTitle = isAllowToRender(
                   </tr>
               </tbody>
           </table>
-        `;
-      }
+        `
     }
     if (type === "standard") {
-      if (idx === len) {
         return `
           <table border="0" cellspacing="0" cellpadding="0" width="100%">
               <tbody>
@@ -48,10 +45,8 @@ export const TopImageTitle = isAllowToRender(
               </tbody>
           </table>
         `;
-      }
     }
     if (type === "singleLine") {
-      if (idx === len) {
         return `
           <table border="0" cellspacing="0" cellpadding="0" width="100%">
               <tbody>
@@ -67,7 +62,6 @@ export const TopImageTitle = isAllowToRender(
               </tbody>
           </table>
         `;
-      }
     }
   })
 );
