@@ -89,6 +89,11 @@ export default {
             font-family: "Open Sans", sans-serif;
             line-height: 1.20;
           }
+
+          #newsletter .newsletterHrefTit {
+            text-decoration:none;
+            text-align:center;
+          }
           
           .newsletterTitle {
             font-size: 30px;
