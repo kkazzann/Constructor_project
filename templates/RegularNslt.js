@@ -39,6 +39,7 @@ export async function RegularNslt({
   timer,
   data,
   item,
+  add_utm
 }) {
   const codes = getCodes(queries);
   console.log(categories.href);

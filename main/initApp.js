@@ -196,7 +196,7 @@ export function initApp({ campaigns, shops, config }) {
         getFooter: handlers.getFooter,
         getHeader: handlers.getHeader,
         getPhrase: handlers.getPhrase,
-        add_utm: (link) => link + '?utm_source=newsletter&utm_medium=email&utm_campaign=' + ids[country],
+        add_utm: (link) => templateToRender.type == 'newsletter' ? link + '?utm_source=newsletter&utm_medium=email&utm_campaign=' + ids[country] : link,
         getCampaignData: (key) => {
           if (key in slugData) {
             return slugData[key];
