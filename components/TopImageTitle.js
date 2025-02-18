@@ -7,8 +7,10 @@ export const TopImageTitle = isAllowToRender(
       return "Please specify type of TiT.";
     }
 
-    const titleClassH1 = title1.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
-    const titleClassH2 = title2.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
+    // const titleClassH1 = title1.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
+    // const titleClassH2 = title2.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
+    const titleClassH1 = title1.includes('1') ? 'newsletterTitleH1' : 'newsletterTitleH2';
+    const titleClassH2 = title2.includes('1') ? 'newsletterTitleH1' : 'newsletterTitleH2';
 
     if (type === "up_to") {
         return `

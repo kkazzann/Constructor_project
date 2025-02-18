@@ -230,9 +230,9 @@ export async function CategoriesRowsOfferPart({
             `${TopImageTitle({
                 href: links[0],
                 title1: queries.tit[0],
-                title2: queries.tit[0],
+                title2: queries.tit[1],
                 color: "#000000",
-                type: "singleLine",
+                type: "up_to",
               })}`
             }
           </td>
@@ -251,7 +251,7 @@ export async function CategoriesRowsOfferPart({
 
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #000;" id='newsletter'>
               <tr>
-                <td align="center" style="background-color: #FFEBE6;" class="newsletterContainer">
+                <td align="center" style="background-color: #FFCCB7;" class="newsletterContainer">
                   ${Intro({
                     paragraph: queries.intro[0], 
                     color: "#000", 
@@ -261,7 +261,7 @@ export async function CategoriesRowsOfferPart({
                   </td>
               </tr>
               <tr>
-                <td style="background-color: #FFEBE6;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
                 <td style="background-color: #FD9000;" class="newsletterBottom20px"></td>
@@ -296,14 +296,14 @@ export async function CategoriesRowsOfferPart({
                 </td>
               </tr>
               <tr>
-                <td style="background-color: #FFEBE6;" class="newsletterBottom60px"></td>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom60px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFEBE6;">
+                    <td style="background-color:  #FFCCB7;">
                         ${Category({
                           href: add_utm(cat1[country]), 
                           name: queries.category_paragraph[0],
-                          name1: queries.category_paragraph[1],
+                          
                           src: categories[0].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
@@ -317,14 +317,14 @@ export async function CategoriesRowsOfferPart({
                     </td>
               </tr>
              <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FF2F00;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                    <td style="background-color: #FF2F00;">
                         ${Category({
                           href: add_utm(cat2[country]), 
-                          name: queries.category_paragraph[2],
-                          name1: queries.category_paragraph[3],
+                          name: queries.category_paragraph[1],
+                          
                           src: categories[1].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
@@ -338,14 +338,14 @@ export async function CategoriesRowsOfferPart({
                     </td>
               </tr>
               <tr>
-                <td style="background-color: #FFEBE6;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFEBE6;">
+                    <td style="background-color:  #FFCCB7;">
                         ${Category({
                           href: getCategoryLink(categories[3].href),
-                          name: queries.category_paragraph[4],
-                          name1: queries.category_paragraph[5],
+                          name: queries.category_paragraph[2],
+                          
                           src: categories[2].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
@@ -357,14 +357,14 @@ export async function CategoriesRowsOfferPart({
                     </td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FF2F00;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                    <td style="background-color:  #FF2F00;">
                         ${Category({
                           href: add_utm(cat4[country]), 
-                          name: queries.category_paragraph[6],
-                          name1: queries.category_paragraph[7],
+                          name: queries.category_paragraph[3],
+                          
                           src: categories[3].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",

@@ -6,7 +6,8 @@ export const Timer = ({
   href,
   imageSrc,
   cta,
-  type
+  type,
+  style
 }) => {
 
     if (type === "gif_on_the_left_side") {
@@ -19,7 +20,7 @@ export const Timer = ({
                         </a>
                     </td>
                     <td align="right" style="padding-top: 20px; padding-bottom: 20px;">
-                        <span class="newsletterSubtitleTimer" style="color: #ffffff">
+                        <span class="newsletterSubtitleTimer" style="color: ${style.textColor}">
                             ${title}
                         </span>
 
@@ -44,14 +45,14 @@ export const Timer = ({
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
             <tr>
                 <td align="center">
-                    <span class="newsletterSubtitleTimer" style="color: #ffffff">
+                    <span class="newsletterSubtitleTimer" style="color: ${style.textColor}">
                         ${title}
                     </span>
                 </td>
             </tr>
             <tr>
                 <td align="center">
-                    <span class="newsletterSubtitleTimer" style="color: #ffffff">
+                    <span class="newsletterSubtitleTimer" style="color: ${style.textColor}">
                         ${subtitle}
                     </span>
                 </td>
@@ -75,7 +76,7 @@ export const Timer = ({
             </tr>
             <tr>
                 <td align="center">
-                    <a href="${href}" style="color:#fff; text-decoration: underline;">
+                    <a href="${href}" style="color:${style.textColor}; text-decoration: underline;">
                         <span class="newsletterCta">${cta}</span>
                     </a>
                 </td>
