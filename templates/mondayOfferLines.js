@@ -113,9 +113,9 @@ export async function mondayOfferLines({
                         `${TopImageTitle({
                             href: links[0],
                             title1: queries.tit[0],
-                            title2: queries.tit[1],
+                            //title2: queries.tit[1],
                             color: "#000000",
-                            type: "up_to",
+                            type: "singleLine",
                           })}`
                         }
                       </td>
@@ -186,15 +186,15 @@ export async function mondayOfferLines({
                           `;
                       
                           // Dodaj element `<tr>` tylko jeśli NIE jest to ostatni element
-                          // if (isLast) {
-                          //   html += `
-                          //     <tr>
-                          //       <td>
-                          //           ${Space({className: "newsletterBottom20px"})}
-                          //       </td>
-                          //     </tr>
-                          //   `;
-                          // }
+                          if (isLast) {
+                            html += `
+                              <tr>
+                                <td>
+                                    ${Space({className: "newsletterBottom60px"})}
+                                </td>
+                              </tr>
+                            `;
+                          }
                       
                           return html;
                         })

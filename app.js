@@ -472,6 +472,12 @@ try {
             },
             {
               tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+              tableName: "03.03.25 - March Peak Start!",
+              tableRange: "16",
+              name: "tit",
+            },
+            {
+              tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
               tableName: "14.04.25 - March Peak reminder!",
               tableRange: "21",
               name: "cta",
@@ -1096,6 +1102,12 @@ try {
             {
               tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
               tableName: "03.03.25 - March Peak Start!",
+              tableRange: "16",
+              name: "tit",
+            },
+            {
+              tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+              tableName: "03.03.25 - March Peak Start!",
               tableRange: "63",
               name: "cta",
             },
@@ -1149,6 +1161,667 @@ try {
           ],
         },
       ],
+      }),
+      new entities.Campaign({
+        date: "2025.03.10",
+        issueCardId: "338780",
+        name: "Free cover",
+        startId: "00001",
+        figmaUrl: "",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: false,
+        optimizeImg: false,
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            template: templates.mondayOfferFreeebies,
+            background: "#FD9000",
+            wrapper: types.WRAPPER,
+            css: types.CSS.NS,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FD9000",
+            },
+            intro: {
+              background: "#FFCCB7",
+              color: "#000000",
+            },
+            categories: [
+              {
+                name: "Beds",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250224Category1.png",
+                href: "https://www.beliani.ch/children-room/kids-beds/",
+                products: [
+                  {
+                    id: "570248",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category11.png",
+                  },
+                  {
+                    id: "560617",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category12.png",
+                  },
+                  {
+                    id: "553500",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category13.png",
+                  },
+                  {
+                    id: "494188",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category14.png",
+                  },
+                ],
+              },
+              {
+                name: "Storage",
+                background: "#FD9000",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250224Category2.png",
+                href: "https://www.beliani.ch/children-room/kids-storage/",
+                products: [
+                  {
+                    id: "575287",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category21.png",
+                  },
+                  {
+                    id: "571428",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category22.png",
+                  },
+                  {
+                    id: "525454",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category23.png",
+                  },
+                  {
+                    id: "574696",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category24.png",
+                  },
+                ],
+              },
+              {
+                name: "Chairs and tables",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250224Category3.png",
+                href: "https://www.beliani.ch/children-room/kids-chairs/",
+                products: [
+                  {
+                    id: "571941",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category31.png",
+                  },
+                  {
+                    id: "574110",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category32.png",
+                  },
+                  {
+                    id: "580048",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category33.png",
+                  },
+                  {
+                    id: "522357",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category34.png",
+                  },
+                ],
+              },
+              {
+                name: "Decor",
+                background: "#FD9000",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250224Category4.png",
+                href: "https://www.beliani.ch/children-room/kids-decor/",
+                products: [
+                  {
+                    id: "563320",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category41.png",
+                  },
+                  {
+                    id: "346059",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category42.png",
+                  },
+                  {
+                    id: "438813",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category43.png",
+                  },
+                  {
+                    id: "367235",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category44.png",
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-24",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250224_01.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-24",
+                },
+              },
+              {
+                value:
+                  "https://upload.pictureserver.net/static/2025/20250224_gif.gif",
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-13",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250213b.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-12",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250212b.png",
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "20:24",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "29:30",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "35",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "26",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "24",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "31:34",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "38:40",
+                name: "condition",
+              },
+              {
+                tableId: "1nY4WvP88r6uL5f89oc8Xp7wZwuerBnQii_ZIIm7BMBk",
+                tableName: "Templates",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "templates",
+                tableColumns: false,
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FD9000",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "358561",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie1.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                    {
+                      id: "356263",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie2.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                    {
+                      id: "337836",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie3.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "337874",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie4.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                    {
+                      id: "315163",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie5.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                    {
+                      id: "406189",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie6.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.mondayOfferFreeebies,
+            background: "#FD9000",
+            css: types.CSS.LP,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FD9000",
+            },
+            intro: {
+              background: "#FFCCB7",
+              color: "#000000",
+            },
+            categories: [
+              {
+                name: "Beds",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250224Category1.png",
+                href: "https://www.beliani.ch/children-room/kids-beds/",
+                products: [
+                  {
+                    id: "570248",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category11.png",
+                  },
+                  {
+                    id: "560617",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category12.png",
+                  },
+                  {
+                    id: "553500",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category13.png",
+                  },
+                  {
+                    id: "494188",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category14.png",
+                  },
+                ],
+              },
+              {
+                name: "Storage",
+                background: "#FD9000",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250224Category2.png",
+                href: "https://www.beliani.ch/children-room/kids-storage/",
+                products: [
+                  {
+                    id: "575287",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category21.png",
+                  },
+                  {
+                    id: "571428",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category22.png",
+                  },
+                  {
+                    id: "525454",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category23.png",
+                  },
+                  {
+                    id: "574696",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category24.png",
+                  },
+                ],
+              },
+              {
+                name: "Chairs and tables",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250224Category3.png",
+                href: "https://www.beliani.ch/children-room/kids-chairs/",
+                products: [
+                  {
+                    id: "571941",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category31.png",
+                  },
+                  {
+                    id: "574110",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category32.png",
+                  },
+                  {
+                    id: "580048",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category33.png",
+                  },
+                  {
+                    id: "522357",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category34.png",
+                  },
+                ],
+              },
+              {
+                name: "Decor",
+                background: "#FD9000",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250224Category4.png",
+                href: "https://www.beliani.ch/children-room/kids-decor/",
+                products: [
+                  {
+                    id: "563320",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category41.png",
+                  },
+                  {
+                    id: "346059",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category42.png",
+                  },
+                  {
+                    id: "438813",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category43.png",
+                  },
+                  {
+                    id: "367235",
+                    src: "https://upload.pictureserver.net/static/2025/20250224Category44.png",
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-24",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250224_01.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-24",
+                },
+              },
+              {
+                value:
+                  "https://upload.pictureserver.net/static/2025/20250224_gif.gif",
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-13",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250213b.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-12",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250212b.png",
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "17:18",
+                name: "tit",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "20:24",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "29:30",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "35",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "26",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "24",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "31:34",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 24.02.25 - Free table lamp!",
+                tableRange: "38:41",
+                name: "condition",
+              },
+              {
+                tableId: "1nY4WvP88r6uL5f89oc8Xp7wZwuerBnQii_ZIIm7BMBk",
+                tableName: "Templates",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "templates",
+                tableColumns: false,
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FD9000",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "358561",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie1.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                    {
+                      id: "356263",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie2.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                    {
+                      id: "337836",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie3.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "337874",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie4.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                    {
+                      id: "315163",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie5.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                    {
+                      id: "406189",
+                      src: "https://upload.pictureserver.net/static/2025/202500224Freebie6.png",
+                      style: "padding-right: 10px; padding-left: 10px;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        ],
       }),
       new entities.Campaign({
         startId: "30008",
@@ -2408,7 +3081,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         templates: [
           {
             name: "Newsletter",
@@ -3050,7 +3723,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         templates: [
           {

@@ -2,15 +2,14 @@ import { isAllowToRender, optimize } from "../helpers/optimizeImage.js";
 import { Space } from "../components/Space.js";
 
 export const TopImageTitle = isAllowToRender(
-  optimize(({ href, title1, title2, color, type, idx, len }) => {
+  optimize(({ href, title1, title2, color, type }) => {
     if (!type) {
       return "Please specify type of TiT.";
     }
 
-    const titleClassH1 = title1.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
-    const titleClassH2 = title2.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
-
     if (type === "up_to") {
+        const titleClassH1 = title1.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
+        const titleClassH2 = title2.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
         return `
           <table border="0" cellspacing="0" cellpadding="0" width="100%">
               <tbody>
