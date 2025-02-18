@@ -14,6 +14,10 @@ import {
   Product,
   ProductWithSize,
   Title,
+  Timer,
+  TopImageTitle,
+
+
 } from "../components/index.js";
 
 export async function CategoriesRowsOfferPart({
@@ -32,7 +36,125 @@ export async function CategoriesRowsOfferPart({
   categories,
   background,
   name,
+  name1,
+  add_utm,
+
+ 
+
 }) {
+  const gif_src = {
+    CHDE:  ['https://gen.sendtric.com/countdown/ia52kwo0ab'],
+    CHFR:   ['https://gen.sendtric.com/countdown/kh6vdpkdcv'],
+    FR:     ['https://gen.sendtric.com/countdown/kh6vdpkdcv'],
+    UK:     ['https://gen.sendtric.com/countdown/54ixbfjghn'],
+    DE:     ['https://gen.sendtric.com/countdown/ia52kwo0ab'],
+    AT:     ['https://gen.sendtric.com/countdown/ia52kwo0ab'],
+    ES:     ['https://gen.sendtric.com/countdown/5x36adbeza'],
+    PL:     ['https://gen.sendtric.com/countdown/vjpcx2k1vg'],
+    NL:     ['https://gen.sendtric.com/countdown/bxouadl5qm'],
+    PT:     ['https://gen.sendtric.com/countdown/s7oae3yla0'],
+    IT:     ['https://gen.sendtric.com/countdown/6zkxrqr3p3'],
+    SE:     ['https://gen.sendtric.com/countdown/cqfy2gl7kg'],
+    HU:     ['https://gen.sendtric.com/countdown/h8kqsqj3t2'],
+    DK:     ['https://gen.sendtric.com/countdown/cw2s1iqu37'],
+    CZ:     ['https://gen.sendtric.com/countdown/k71t0fedbe'],
+    FI:     ['https://gen.sendtric.com/countdown/yopohlyqq4'],
+    NO:     ['https://gen.sendtric.com/countdown/tqee2n7cnu'],
+    SK:     ['https://gen.sendtric.com/countdown/8x36h6b1eb'],
+    BENL:   ['https://gen.sendtric.com/countdown/bxouadl5qm'],
+    BEFR:   ['https://gen.sendtric.com/countdown/kh6vdpkdcv'],
+    RO:     ['https://gen.sendtric.com/countdown/qmfn6uxaat'],
+  };
+
+
+
+
+  const cat1 = {
+    CHDE:  ['https://www.beliani.ch/wohnzimmer-moebel/sofas/alle+produkte/?Merkmale=Stauraum&sort=default'],
+    CHFR:   ['https://www.beliani.ch/canapes/tous+les+produits/?Caracteristiques=Rangement'],
+    FR:     ['https://www.beliani.fr/canapes/tous+les+produits/?Caracteristiques=Rangement'],
+    UK:     ['https://www.beliani.co.uk/sofas/all+products/?Features=With_Storage&sort=default'],
+    DE:     ['https://www.beliani.de/wohnzimmer-moebel/sofas/alle+produkte/?Merkmale=Stauraum&sort=default'],
+    AT:     ['https://www.beliani.at/wohnzimmer-moebel/sofas/alle+produkte/?Merkmale=Stauraum&sort=default'],
+    ES:     ['https://www.beliani.es/sofas/todos+los+productos/?Caracteristicas=Almacenamiento&sort=default'],
+    PL:     ['https://www.beliani.pl/sofy/wszystkie+produkty/?Cechy=Ze_skrzynia&sort=default'],
+    NL:     ['https://www.beliani.nl/woonkamer/banken/alle+producten/?Eigenschappen=Opbergruimte&sort=default'],
+    PT:     ['https://www.beliani.pt/sofas/todos+os+produtos/looks/?Caracteristicas=Arrumacao&sort=default'],
+    IT:     ['0/lnieo06qkj'],
+    SE:     ['https://www.beliani.se/vardagsrumsmobler/soffor/alla+produkter/looks/?Egenskaper=Forvaring&sort=default'],
+    HU:     ['https://www.beliani.hu/kanapek/minden+term%C3%A9k/?Fobb_jellemzok=Tarolasi_funkcio&sort=default'],
+    DK:     ['https://www.beliani.dk/sofaer/alle+produkter/looks/?Funktioner=Opbevaring&sort=default '],
+    CZ:     ['https://www.beliani.cz/pohovky/vsechny+produkty/?Vlastnosti=Ulozny_prostor&sort=default'],
+    FI:     ['https://www.beliani.fi/sohvat/kaikki+tuotteet/?Ominaisuudet=Sailytystila'],
+    NO:     ['https://www.beliani.no/sofaer/alle+produkter/?Egenskaper=Med_oppbevaring&sort=defaul'],
+    SK:     ['https://www.beliani.sk/pohovky/zobrazit+vsetky+produkty/?Vlastnosti=Ulozny_priestor&sort=default'],
+    BENL:   ['https://www.beliani.be/woonkamer/banken/alle+producten/?Eigenschappen=Opbergruimte&sort=default'],
+    BEFR:   ['https://www.beliani.be/canapes/tous+les+produits/?Caracteristiques=Rangement'],
+    RO:     ['https://www.beliani.ro/camera-de-zi/canapele/toate+produsele/?Caracteristici=Cu_depozitare&sort=default'],
+
+  };
+
+
+
+
+  const cat2 = {
+    CHDE:  ['https://www.beliani.ch/schlafzimmer-moebel/betten/alle+produkte/?Merkmale=Stauraum&sort=default'],
+    CHFR:   ['https://www.beliani.ch/lits/tous+les+produits/?Caracteristiques=Rangement'],
+    FR:     ['https://www.beliani.fr/lits/tous+les+produits/?Caracteristiques=Rangement'],
+    UK:     ['https://www.beliani.co.uk/bedroom-furniture/beds/all+products/?Features=With_Storage'],
+    DE:     ['https://www.beliani.de/schlafzimmer-moebel/betten/alle+produkte/?Merkmale=Stauraum&sort=default'],
+    AT:     ['https://www.beliani.at/schlafzimmer-moebel/betten/alle+produkte/?Merkmale=Stauraum&sort=default'],
+    ES:     ['https://www.beliani.es/camas/todos+los+productos/?Caracteristicas=Almacenamiento&sort=default'],
+    PL:     ['https://www.beliani.pl/meble-do-sypialni/lozka/wszystkie+produkty/?Cechy=Z_pojemnikiem&sort=default'],
+    NL:     ['https://www.beliani.nl/slaapkamer/bedden/alle+producten/?Eigenschappen=Opbergruimte&sort=default'],
+    PT:     ['https://www.beliani.pt/camas/todos+os+produtos/?Caracteristicas=Arrumacao&sort=default'],
+    IT:     ['0/lnieo06qkj'],
+    SE:     ['https://www.beliani.se/sangar/sangar-med-forvaring/looks/'],
+    HU:     ['https://www.beliani.hu/agyak/minden+term%C3%A9k/?Fobb_jellemzok=Tarolasi_funkcio&sort=default'],
+    DK:     ['https://www.beliani.dk/senge/alle+produkter/?Funktioner=Opbevaring&sort=default '],
+    CZ:     ['https://www.beliani.cz/nabytek-do-loznice/postele/vsechny+produkty/?Vlastnosti=Ulozny_prostor&sort=default'],
+    FI:     ['https://www.beliani.fi/sangyt/kaikki+tuotteet/?Ominaisuudet=Sailytystila'],
+    NO:     ['https://www.beliani.no/senger/alle+produkter/?Egenskaper=Med_oppbevaring&sort=default'],
+    SK:     ['https://www.beliani.sk/postele/zobrazit+vsetky+produkty/?Vlastnosti=Ulozny_priestor&sort=default'],
+    BENL:   ['https://www.beliani.be/slaapkamer/bedden/alle+producten/?Eigenschappen=Opbergruimte&sort=default'],
+    BEFR:   ['https://www.beliani.be/lits/tous+les+produits/?Caracteristiques=Rangement'],
+    RO:     ['https://www.beliani.ro/dormitor/paturi/toate+produsele/?Caracteristici=Cu_depozitare&sort=default'],
+  };
+
+
+  const cat4 = {
+    CHDE:  ['https://www.beliani.ch/bueromoebel/buerotische/alle+produkte/?Merkmale=Schubladen,Mit_Fachern&sort=default'],
+    CHFR:   ['https://www.beliani.ch/bureaux/tous+les+produits/looks/?Caracteristiques=Tiroirs,Avec_etageres'],
+    FR:     ['https://www.beliani.fr/bureaux/tous+les+produits/looks/?Caracteristiques=Tiroirs,Avec_etageres'],
+    UK:     ['https://www.beliani.co.uk/office-furniture/desks-eng/all+products/?Features=With_Drawers,With_Shelves&sort=default'],
+    DE:     ['https://www.beliani.de/bueromoebel/buerotische/alle+produkte/?Merkmale=Schubladen,Mit_Fachern&sort=default'],
+    AT:     ['https://www.beliani.at/bueromoebel/buerotische/alle+produkte/?Merkmale=Schubladen,Mit_Fachern&sort=default'],
+    ES:     ['https://www.beliani.es/escritorios/todos+los+productos/?Caracteristicas=Con_cajones,Con_estantes&sort=default'],
+    PL:     ['https://www.beliani.pl/meble-biurowe/biurka/wszystkie+produkty/?Cechy=Z_szufladami,Z_polkami&sort=default'],
+    NL:     ['https://www.beliani.nl/werkkamer/bureaus/alle+producten/looks/?Eigenschappen=Met_lades,Met_planken&sort=default'],
+    PT:     ['https://www.beliani.pt/secretarias-pt/todos+os+produtos/looks/?Caracteristicas=Gavetas,Com_prateleiras&sort=default'],
+    IT:     ['0/lnieo06qkj'],
+    SE:     ['https://www.beliani.se/kontorsmobler/kontorsbord/alla+produkter/looks/?Egenskaper=Lador,Med_hyllor&sort=default'],
+    HU:     ['https://www.beliani.hu/iroasztalok-hu/iroasztalok/?Fobb_jellemzok=Fiokos_asztal,Asztal_polcokkal&sort=default'],
+    DK:     ['https://www.beliani.dk/alle-skriveborde/alle+produkter/?Funktioner=Med_skuffer,Med_hylder&sort=default '],
+    CZ:     ['https://www.beliani.cz/nabytek-do-kancelare/kancelarske-stoly/vsechny+produkty/looks/?Vlastnosti=Zasuvky,S_policemi&sort=default'],
+    FI:     ['https://www.beliani.fi/toimistokalusteet/tyopoydat/kaikki+tuotteet/?Ominaisuudet=Laatikot,Hyllyt'],
+    NO:     ['https://www.beliani.no/skrivebord/alle+produkter/?Egenskaper=Med_skuffer,Med_hyller&sort=default'],
+    SK:     ['https://www.beliani.sk/nabytok-do-kancelarie/pisacie-stoly-sk/zobrazit+vsetky+produkty/?Vlastnosti=So_zasuvkami,S_policami&sort=default'],
+    BENL:   ['https://www.beliani.be/werkkamer/bureaus/alle+producten/looks/?Eigenschappen=Met_lades,Met_planken&sort=default'],
+    BEFR:   ['https://www.beliani.be/bureaux/tous+les+produits/looks/?Caracteristiques=Tiroirs,Avec_etageres'],
+    RO:     ['https://www.beliani.ro/birou/birouri/toate+produsele/?Caracteristici=Cu_sertare,Cu_rafturi&sort=default'],
+  };
+
+
+
+
+
+  const a = categories[3].products.map((item) =>
+    getProductById(item.id, item.src)
+    )
+    console.log(getPhrase('See more'))
+    console.log(queries.category_paragraph[1])
   return `
   ${Header(
     {
@@ -71,7 +193,7 @@ export async function CategoriesRowsOfferPart({
           ? ["#fd9000"].includes(background)
             ? getHeader("Header delivery_cosy src")
             : getHeader("Header delivery src")
-          : ["#750000"].includes(background)
+          : ["#FFCCB7"].includes(background)
           ? getHeader("Header asembly src")
           : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
@@ -80,163 +202,231 @@ export async function CategoriesRowsOfferPart({
     },
     { type }
   )}
-  <table cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: ${background}; color: #000; max-width: 650px; width: 100%;" id="newsletter">
-        <tbody>
+
+   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #FFEBE6; color: #000;" id='newsletter'>
+
+ <tbody>
+
+   ${type === "newsletter" ? 
+    `<tr>
+          <td align="center">
+            ${ImageWithLink({
+              href: links[0],
+              src: links[1],
+            })}
+      
+          </td>
+      </tr>`
+    : 
+      `<tr>
+          <td align="center">
+            ${!queries.tit ?
+            `
+              ${ImageWithLink({
+                href: links[0],
+                src: links[1],
+              })}` 
+            :
+            `${TopImageTitle({
+                href: links[0],
+                title1: queries.tit[0],
+                title2: queries.tit[0],
+                color: "#000000",
+                type: "singleLine",
+              })}`
+            }
+          </td>
+      </tr>`
+  }
+  <tr>
+      <td align="center">
+        ${ImageWithLink({
+          href: links[2],
+          src: links[3],
+        })}
+      </td>
+  </tr>
+
+</table>
+
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #000;" id='newsletter'>
               <tr>
-                  <td align="center">
-                    ${ImageWithLink({
-                      href: links[0],
-                      src: links[1],
-                    })}
+                <td align="center" style="background-color: #FFEBE6;" class="newsletterContainer">
+                  ${Intro({
+                    paragraph: queries.intro[0], 
+                    color: "#000", 
+                    align:'left',
+                    title:'no_title'
+                  })}
                   </td>
               </tr>
-
               <tr>
-                <td align="center">
-                  ${Space({
-                    className: "newsletterBottom60px",
-                    is_active:
-                      name === "Newsletter 2024.11.18" ||
-                      name === "Landing 2024.11.18",
-                  })}
-                  ${Space({
-                    className: "newsletterBottom35px",
-                    is_active:
-                      name === "Newsletter 2024.11.25" ||
-                      name === "Landing 2024.11.25",
-                  })}
-                </td>
+                <td style="background-color: #FFEBE6;" class="newsletterBottom35px"></td>
               </tr>
-
               <tr>
-                <td align="center" class="newsletterContainer">
-                  ${Title({
+                <td style="background-color: #FD9000;" class="newsletterBottom20px"></td>
+              </tr>
+              <tr>
+                <td style="background-color: #FD9000">
+                ${Timer({
+                  
+                  title: queries.timer[0],
+                  subtitle: queries.timer[1],
+                  
+                  href: links[4],
+                  imageSrc: gif_src[country],
+                  style: {
+                    bgColor: "#FD9000",
+                    textColor: "#000",
                     align: "center",
-                    title: queries.introTitle,
-                    color: "#ffffff",
-                    className: "newsletterTitleOfferPart",
-                  })}
+                  },
+                  cta: getPhrase("Shop now"),
+                })}
                 </td>
               </tr>
+              <tr>
+                <td style="background-color: #FD9000;" class="newsletterBottom20px"></td>
+              </tr>
+              <tr>
+                <td style="background-color: #FD9000">
+                      ${ImageWithLink({
+                        href: links[4],
+                        src: 'https://upload.pictureserver.net/static/2025/250227_03free.png',
+                      })}
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: #FFEBE6;" class="newsletterBottom60px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #FFEBE6;">
+                        ${Category({
+                          href: add_utm(cat1[country]), 
+                          name: queries.category_paragraph[0],
+                          name1: queries.category_paragraph[1],
+                          src: categories[0].src,
+                          cta: getPhrase("Shop now"),
+                          type: "monday",
+                          color: categories[0].color,
+                          products: categories[0].products.map((item) =>
+                            getProductById(item.id, item.src)
+                          ),
+                        
 
-              <tr>
-                <td align="center">
-                  ${Space({ className: "newsletterBottom20px" })}
-                </td>
+                        })}
+                    </td>
               </tr>
+             <tr>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #FFCCB7;">
+                        ${Category({
+                          href: add_utm(cat2[country]), 
+                          name: queries.category_paragraph[2],
+                          name1: queries.category_paragraph[3],
+                          src: categories[1].src,
+                          cta: getPhrase("Shop now"),
+                          type: "monday",
+                          color: categories[1].color,
+                          products: categories[1].products.map((item) =>
+                            getProductById(item.id, item.src)
+                          ),
+                        
 
-              <tr>
-                <td align="center" style="background-color: ${background}; color: #ffffff">
-                  ${OfferPart({
-                    type,
-                    offerDate: queries.offerDate,
-                    code: getPhrase("Get codes"),
-                    href: links[0],
-                    color: "#ffffff",
-                    offers: [
-                      {
-                        title: {
-                          value: queries.intro[0],
-                          className: "newsletterTitleOfferPart",
-                        },
-                        paragraph: queries.intro[1],
-                        code: queries.codes[0],
-                      },
-                      {
-                        title: {
-                          value: queries.intro[2],
-                          className: "newsletterTitleOfferPart",
-                        },
-                        paragraph: queries.intro[3],
-                        code: queries.codes[1],
-                      },
-                      {
-                        title: {
-                          value: queries.intro[4],
-                          className: "newsletterTitleOfferPart",
-                        },
-                        paragraph: queries.intro[5],
-                        code: queries.codes[2],
-                      },
-                      {
-                        title: {
-                          value: queries.intro[6],
-                          className: "newsletterTitleOfferPart",
-                        },
-                        paragraph: queries.intro[7],
-                        code: queries.codes[3],
-                      },
-                    ],
-                  })}
-                </td>
+                        })}
+                    </td>
               </tr>
               <tr>
-                <td>
-                  ${Space()}
-                </td>
+                <td style="background-color: #FFEBE6;" class="newsletterBottom35px"></td>
               </tr>
-          </tbody>
-      </table>
-    <table cellspacing="0" cellpadding="0" border="0" align="center" id="newsletter" style="max-width: 650px;" width="100%">
-        <tbody>
-          ${Iterate({
-            items: categories,
-            itemFn: (item, index) => {
-              return `
               <tr>
-                <td class="newsletterContainer" style="background-color: ${background}; color: #000;">
-                  ${Category({
-                    len: categories.length - 1,
-                    idx: idx,
-                    type: item?.type,
-                    name: getCategoryTitle(item.name),
-                    href: getCategoryLink(item.href),
-                    src: item.src,
-                    color: item.color,
-                    cta: getPhrase("Shop now"),
-                    line: "https://upload.pictureserver.net/static/2024/white_line.jpg",
-                  })}
-                </td>
+                    <td style="background-color:  #FFEBE6;">
+                        ${Category({
+                          href: getCategoryLink(categories[3].href),
+                          name: queries.category_paragraph[4],
+                          name1: queries.category_paragraph[5],
+                          src: categories[2].src,
+                          cta: getPhrase("Shop now"),
+                          type: "monday",
+                          color: categories[2].color,
+                          products: categories[2].products.map((item) =>
+                            getProductById(item.id, item.src)
+                          ),
+                        })}
+                    </td>
               </tr>
-            `;
-            },
-          })}
-        </tbody>
-      </table>
+              <tr>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #FFCCB7;">
+                        ${Category({
+                          href: add_utm(cat4[country]), 
+                          name: queries.category_paragraph[6],
+                          name1: queries.category_paragraph[7],
+                          src: categories[3].src,
+                          cta: getPhrase("Shop now"),
+                          type: "monday",
+                          color: categories[3].color,
+                          products: categories[3].products.map((item) =>
+                            getProductById(item.id, item.src)
+                            
+                          ),
+                        
 
+                        })}
+                    </td>
+              </tr>
+              <tr>
+                  <td class="newsletterContainer">
+                  ${Line()}
+                  </td>
+              </tr>
+             
+    <tbody>
+  </table>
         <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
           <tbody>
-            <tr>
-              <td class="newsletterBottom35px" >
+              <tr>
+              <td align="left">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td class="newsletterBottom35px" >
+                          </td>
+                        </tr>
+                          <tr>
+                              <td align="left" class="newsletterBottom35px">
+                                  <span class="newsletterFooterTitle">${getPhrase(
+                                    "Shop limited-time deals"
+                                  )}</span>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="left" class="newsletterBottom20px">
+                                  <a href=${links[5]}>
+                                      <img loading="lazy" src=${ 
+                                        links[6]
+                                      } style="display: block;" width="100%">
+                                  </a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="left" class="newsletterBottom35px">
+                                  <a href=${links[7]}>
+                                      <img loading="lazy" src=${
+                                        links[8]
+                                      } style="display: block;" width="100%">
+                                  </a>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
               </td>
-            </tr>
-              <tr>
-                <td align="left" class="newsletterBottom35px">
-                    <span class="newsletterFooterTitle">${getPhrase(
-                      "Shop limited-time deals"
-                    )}</span>
-                </td>
-              </tr>
-              <tr>
-                <td align="left" class="newsletterBottom20px">
-                    <a href=${links[2]}>
-                        <img loading="lazy" src=${
-                          links[3]
-                        } style="display: block;" width="100%">
-                    </a>
-                </td>
-              </tr>
-              <tr>
-                <td align="left" class="newsletterBottom35px">
-                    <a href=${links[4]}>
-                        <img loading="lazy" src=${
-                          links[5]
-                        } style="display: block;" width="100%">
-                    </a>
-                </td>
-              </tr>
+          </tr>
           </tbody>
-        </table>
+      </table>
 
       ${Footer(
         {

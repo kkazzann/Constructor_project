@@ -8,6 +8,560 @@ try {
   initApp({
     campaigns: [
       new entities.Campaign({
+        startId: "31184",
+        name: "Beds ",
+        date: "2025.02.27",
+        issueCardId: "310827",
+        alarm: {
+          isActive: false,
+          description: "Add soon ending campaigns.",
+        },
+        isArchive: false,
+        optimizeImg: false,
+        figmaUrl:
+          "https://www.figma.com/design/uIdkNdNa9xdPfexVSIkRgm/2024.11.11---Black-Week-start-newlsetter-(Copy)?t=yz2KFYtKNK6uYMID-0",
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            template: templates.CategoriesRowsOfferPart,
+            css: types.CSS.NS,
+            background: "#000000",
+            categories: [
+              {
+                name: "beds",
+                background: "#FFEBE6",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/250227_cat1.gif",
+                href: "https://www.beliani.ch/meet-beliani/new-york-classic/",
+                products: [
+                  
+                  {
+                    id: "108925",
+                    src: "https://upload.pictureserver.net/static/2025/250227_04.png",
+                  },
+                  {
+                    id: "446237",
+                    src: "https://upload.pictureserver.net/static/2025/250227_05.png",
+                  },
+                  {
+                    id: "116187",
+                    src: "https://upload.pictureserver.net/static/2025/250227_06.png",
+                  },
+                  {
+                    id: "573976",
+                    src: "https://upload.pictureserver.net/static/2025/250227_07.png",
+                  },
+  
+                ],
+              },
+              {
+                name: "wooden-beds",
+                background: "#750000",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/250227_cat2.gif",
+                href: "https://www.beliani.ch/meet-beliani/industrial-glam/",
+                products: [
+                  {
+                    id: "583852",
+                    src: "https://upload.pictureserver.net/static/2025/250227_08.png",
+                  },
+                  {
+                    id: "343994",
+                    src: "https://upload.pictureserver.net/static/2025/250227_09.png",
+                  },
+                  {
+                    id: "338887",
+                    src: "https://upload.pictureserver.net/static/2025/250227_10.png",
+                  },
+                  {
+                    id: "407450",
+                    src: "https://upload.pictureserver.net/static/2025/250227_11.png",
+                  },
+  
+                ],
+              },
+              {
+                name: "fabric-beds",
+                background: "#FFEBE6",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/250227_cat3.png",
+                href: "https://www.beliani.ch/storage/",
+                products: [
+                  {
+                    id: "494458",
+                    src: "https://upload.pictureserver.net/static/2025/250227_12.png",
+                  },
+                  {
+                    id: "574300",
+                    src: "https://upload.pictureserver.net/static/2025/250227_13.png",
+                  },
+                  {
+                    id: "354563",
+                    src: "https://upload.pictureserver.net/static/2025/250227_14.png",
+                  },
+                  {
+                    id: "570095",
+                    src: "https://upload.pictureserver.net/static/2025/250227_15.png",
+                  },
+  
+                ],
+              },
+              {
+                name: "metal-beds",
+                background: "#750000",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/250227_cat4.png",
+                href: "https://www.beliani.ch/storage/",
+                products: [
+                  {
+                    id: "244734",
+                    src: "https://upload.pictureserver.net/static/2025/250227_16.png",
+                  },
+                  {
+                    id: "196664",
+                    src: "https://upload.pictureserver.net/static/2025/250227_17.png",
+                  },
+                  {
+                    id: "238193",
+                    src: "https://upload.pictureserver.net/static/2025/250227_18.png",
+                  },
+                  {
+                    id: "234488",
+                    src: "https://upload.pictureserver.net/static/2025/250227_19.png",
+                  },
+  
+                ],
+              },
+             
+             
+            ],
+            wrapper: types.WRAPPER,
+            links: [{
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-02-27",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2025/250227_01.png",
+            
+            },},
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-27",
+                },
+              },
+              {
+                
+                  
+                  value:
+                    "https://upload.pictureserver.net/static/2025/250227_02.gif",
+               
+              },
+             
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-02-24",
+              },
+            },
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-02-20",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2025/20250220b.png",
+              },
+            },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-19",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250219b.png",
+                },
+              },
+              
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-17",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/250227_03free.png",
+                },
+              },
+  
+   
+            ],
+            tableQueries: [
+
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.02.25-Mix&Match!",
+                tableRange: "17:18",
+                name: "tit",
+              },
+
+              
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "16",
+                name: "intro",
+                fallback: [
+                  "Extra 5% off everything",
+                ],
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "17:18",
+                name: "timer",
+                fallback: [
+                  "Extra 5% off everything",
+                ],
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "19:26",
+                name: "category_paragraph",
+                fallback: [
+                  "Extra 5% off everything",
+                  
+                ],
+              },
+    
+              
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "36:37",
+                name: "condition",
+                fallback: [
+                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                  'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
+                ],
+              },
+            ],
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.CategoriesRowsOfferPart,
+            background: "#000000",
+            css: types.CSS.LP,
+            categories: [
+              {
+                name: "beds",
+                background: "#FFEBE6",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/250227_cat1.gif",
+                href: "https://www.beliani.ch/meet-beliani/new-york-classic/",
+                products: [
+                  
+                  {
+                    id: "108925",
+                    src: "https://upload.pictureserver.net/static/2025/250227_04.png",
+                  },
+                  {
+                    id: "446237",
+                    src: "https://upload.pictureserver.net/static/2025/250227_05.png",
+                  },
+                  {
+                    id: "116187",
+                    src: "https://upload.pictureserver.net/static/2025/250227_06.png",
+                  },
+                  {
+                    id: "573976",
+                    src: "https://upload.pictureserver.net/static/2025/250227_07.png",
+                  },
+  
+                ],
+              },
+              {
+                name: "wooden-beds",
+                background: "#750000",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/250227_cat2.gif",
+                href: "https://www.beliani.ch/meet-beliani/industrial-glam/",
+                products: [
+                  {
+                    id: "583852",
+                    src: "https://upload.pictureserver.net/static/2025/250227_08.png",
+                  },
+                  {
+                    id: "343994",
+                    src: "https://upload.pictureserver.net/static/2025/250227_09.png",
+                  },
+                  {
+                    id: "338887",
+                    src: "https://upload.pictureserver.net/static/2025/250227_10.png",
+                  },
+                  {
+                    id: "407450",
+                    src: "https://upload.pictureserver.net/static/2025/250227_11.png",
+                  },
+  
+                ],
+              },
+              {
+                name: "fabric-beds",
+                background: "#FFEBE6",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/250227_cat3.png",
+                href: "https://www.beliani.ch/storage/",
+                products: [
+                  {
+                    id: "494458",
+                    src: "https://upload.pictureserver.net/static/2025/250227_12.png",
+                  },
+                  {
+                    id: "574300",
+                    src: "https://upload.pictureserver.net/static/2025/250227_13.png",
+                  },
+                  {
+                    id: "354563",
+                    src: "https://upload.pictureserver.net/static/2025/250227_14.png",
+                  },
+                  {
+                    id: "570095",
+                    src: "https://upload.pictureserver.net/static/2025/250227_15.png",
+                  },
+  
+                ],
+              },
+              {
+                name: "metal-beds",
+                background: "#750000",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/250227_cat4.png",
+                href: "https://www.beliani.ch/storage/",
+                products: [
+                  {
+                    id: "244734",
+                    src: "https://upload.pictureserver.net/static/2025/250227_16.png",
+                  },
+                  {
+                    id: "196664",
+                    src: "https://upload.pictureserver.net/static/2025/250227_17.png",
+                  },
+                  {
+                    id: "238193",
+                    src: "https://upload.pictureserver.net/static/2025/250227_18.png",
+                  },
+                  {
+                    id: "234488",
+                    src: "https://upload.pictureserver.net/static/2025/250227_19.png",
+                  },
+  
+                ],
+              },
+             
+             
+            ],
+            links: [{
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-02-27",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2025/250227_01.png",
+            
+            },},
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-27",
+                },
+              },
+              {
+                
+                  
+                  value:
+                    "https://upload.pictureserver.net/static/2025/250227_02.gif",
+               
+              },
+             
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-02-24",
+              },
+            },
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-02-20",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2025/20250220b.png",
+              },
+            },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-19",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250219b.png",
+                },
+              },
+              
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-02-17",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/250227_03free.png",
+                },
+              },
+  
+   
+            ],
+            tableQueries: [
+
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "11",
+                name: "tit",
+              },
+
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "16",
+                name: "intro",
+                fallback: [
+                  "Extra 5% off everything",
+                ],
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "17:18",
+                name: "timer",
+                fallback: [
+                  "Extra 5% off everything",
+                ],
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "19:26",
+                name: "category_paragraph",
+                fallback: [
+                  "Extra 5% off everything",
+                  
+                ],
+              },
+    
+              
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "27.02.25-Storageinsmall!",
+                tableRange: "36:37",
+                name: "condition",
+                fallback: [
+                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                  'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
+                ],
+              },
+            ],
+          },
+        ],
+      }),
+      new entities.Campaign({
         startId: "26929",
         name: "Black Week",
         date: "2024.11.11",
