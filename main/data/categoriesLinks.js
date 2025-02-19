@@ -348,7 +348,8 @@ export default [
     "kids-storage": "kinder-aufbewahrung",
     "new-york-classic": "der-klassische-new-york-stil",
     "industrial-glam": "glamouroeser-industriestil",
-    "loft-style": "loft-stil"
+    "loft-style": "loft-stil",
+    "outdoor-kitchen": "outdoorkuechen"
   },
   {
     "slug": "befr",
@@ -699,7 +700,8 @@ export default [
     "kids-storage": "rangements-enfants",
     "new-york-classic": "le-style-nyc-par-magda",
     "industrial-glam": "le-style-glam-par-patrycja",
-    "loft-style": "le-style-loft-par-michal"
+    "loft-style": "le-style-loft-par-michal",
+    "outdoor-kitchen": "cuisine-exterieure"
   },
   {
     "slug": "benl",
@@ -1050,7 +1052,8 @@ export default [
     "kids-storage": "kinderopbergruimte",
     "new-york-classic": "new-york-klassieker",
     "industrial-glam": "industriele-glamour",
-    "loft-style": "loft-stijl"
+    "loft-style": "loft-stijl",
+    "outdoor-kitchen": "buitenkeuken"
   },
   {
     "slug": "chde",
@@ -1401,7 +1404,8 @@ export default [
     "kids-storage": "kinder-aufbewahrung",
     "new-york-classic": "der-klassische-new-york-stil",
     "industrial-glam": "glamouroeser-industriestil",
-    "loft-style": "loft-stil"
+    "loft-style": "loft-stil",
+    "outdoor-kitchen": "outdoorkuechen"
   },
   {
     "slug": "chfr",
@@ -1752,7 +1756,8 @@ export default [
     "kids-storage": "rangements-enfants",
     "new-york-classic": "le-style-nyc-par-magda",
     "industrial-glam": "le-style-glam-par-patrycja",
-    "loft-style": "le-style-loft-par-michal"
+    "loft-style": "le-style-loft-par-michal",
+    "outdoor-kitchen": "cuisine-exterieure"
   },
   {
     "slug": "chit",
@@ -2103,7 +2108,8 @@ export default [
     "kids-storage": "mobili-portaoggetti-per-bambini",
     "new-york-classic": "new-york-classic-it",
     "industrial-glam": "industrial-glam-it",
-    "loft-style": "lo-stile-loft-di-michal"
+    "loft-style": "lo-stile-loft-di-michal",
+    "outdoor-kitchen": "cucina-per-esterni"
   },
   {
     "slug": "cz",
@@ -2454,7 +2460,8 @@ export default [
     "kids-storage": "detsky-ulozny-prostor",
     "new-york-classic": "newyorska-klasika",
     "industrial-glam": "industrialni-glamour",
-    "loft-style": "loft-podle-michala"
+    "loft-style": "loft-podle-michala",
+    "outdoor-kitchen": "venkovni-kuchyne"
   },
   {
     "slug": "de",
@@ -2805,7 +2812,8 @@ export default [
     "kids-storage": "kinder-aufbewahrung",
     "new-york-classic": "der-klassische-new-york-stil",
     "industrial-glam": "glamouroeser-industriestil",
-    "loft-style": "loft-stil"
+    "loft-style": "loft-stil",
+    "outdoor-kitchen": "outdoorkuechen"
   },
   {
     "slug": "dk",
@@ -3156,7 +3164,8 @@ export default [
     "kids-storage": "opbevaring-boernevaerelse",
     "new-york-classic": "new-york-klassikere",
     "industrial-glam": "industriel-glam",
-    "loft-style": "loft-stil"
+    "loft-style": "loft-stil",
+    "outdoor-kitchen": "udendoers-koekken"
   },
   {
     "slug": "es",
@@ -3507,7 +3516,8 @@ export default [
     "kids-storage": "almacenaje-infantil",
     "new-york-classic": "nueva-york-clasico-es",
     "industrial-glam": "industrial-glamuroso-es",
-    "loft-style": "loft-es"
+    "loft-style": "loft-es",
+    "outdoor-kitchen": "cocina-exterior"
   },
   {
     "slug": "fi",
@@ -3858,7 +3868,8 @@ export default [
     "kids-storage": "lasten-sailytys",
     "new-york-classic": "new-yorkin-klassikko",
     "industrial-glam": "teollinen-glam",
-    "loft-style": "loft-tyyli"
+    "loft-style": "loft-tyyli",
+    "outdoor-kitchen": "ulkokeittio"
   },
   {
     "slug": "fr",
@@ -4209,7 +4220,8 @@ export default [
     "kids-storage": "rangements-enfants",
     "new-york-classic": "le-style-nyc-par-magda",
     "industrial-glam": "le-style-glam-par-patrycja",
-    "loft-style": "le-style-loft-par-michal"
+    "loft-style": "le-style-loft-par-michal",
+    "outdoor-kitchen": "cuisine-exterieure"
   },
   {
     "slug": "hu",
@@ -4560,7 +4572,8 @@ export default [
     "kids-storage": "gyerekszobai-tarolok",
     "new-york-classic": "new-york-klasszikus",
     "industrial-glam": "ipari-glam",
-    "loft-style": "loft-stilus"
+    "loft-style": "loft-stilus",
+    "outdoor-kitchen": "kulteri-konyha"
   },
   {
     "slug": "it",
@@ -4911,7 +4924,8 @@ export default [
     "kids-storage": "mobili-portaoggetti-per-bambini",
     "new-york-classic": "new-york-classic-it",
     "industrial-glam": "industrial-glam-it",
-    "loft-style": "lo-stile-loft-di-michal"
+    "loft-style": "lo-stile-loft-di-michal",
+    "outdoor-kitchen": "cucina-per-esterni"
   },
   {
     "slug": "nl",
@@ -5262,7 +5276,8 @@ export default [
     "kids-storage": "kinderopbergruimte",
     "new-york-classic": "new-york-klassieker",
     "industrial-glam": "industriele-glamour",
-    "loft-style": "loft-stijl"
+    "loft-style": "loft-stijl",
+    "outdoor-kitchen": "buitenkeuken"
   },
   {
     "slug": "no",
@@ -5613,7 +5628,8 @@ export default [
     "kids-storage": "barn-oppbevaring",
     "new-york-classic": "new-york-klassiker",
     "industrial-glam": "industriell-glam",
-    "loft-style": "loftstil"
+    "loft-style": "loftstil",
+    "outdoor-kitchen": "utekjokken"
   },
   {
     "slug": "pl",
@@ -5964,7 +5980,8 @@ export default [
     "kids-storage": "przechowywanie-dzieci",
     "new-york-classic": "nowojorska-klasyka",
     "industrial-glam": "industrialny-glam",
-    "loft-style": "styl-loftowy"
+    "loft-style": "styl-loftowy",
+    "outdoor-kitchen": "kuchnia-ogrodowa"
   },
   {
     "slug": "pt",
@@ -6315,7 +6332,8 @@ export default [
     "kids-storage": "arrumacao-infantil",
     "new-york-classic": "new-york-classic-pt",
     "industrial-glam": "industrial-glam-pt",
-    "loft-style": "estilo-loft"
+    "loft-style": "estilo-loft",
+    "outdoor-kitchen": "cozinha-exterior"
   },
   {
     "slug": "ro",
@@ -6666,7 +6684,8 @@ export default [
     "kids-storage": "spatiu-de-depozitare-pentru-copii",
     "new-york-classic": "stil-new-york",
     "industrial-glam": "stilul-glam",
-    "loft-style": "meet-beliani-stil-loft"
+    "loft-style": "meet-beliani-stil-loft",
+    "outdoor-kitchen": "bucatarie-in-aer-liber"
   },
   {
     "slug": "se",
@@ -7017,7 +7036,8 @@ export default [
     "kids-storage": "forvaring-for-barn",
     "new-york-classic": "new-york-classic",
     "industrial-glam": "industriell-glam",
-    "loft-style": "loftstil"
+    "loft-style": "loftstil",
+    "outdoor-kitchen": "utekok"
   },
   {
     "slug": "sk",
@@ -7368,7 +7388,8 @@ export default [
     "kids-storage": "detsky-ulozny-priestor",
     "new-york-classic": "newyorska-klasika-sk",
     "industrial-glam": "industrialny-glamour",
-    "loft-style": "loft-styl-sk"
+    "loft-style": "loft-styl-sk",
+    "outdoor-kitchen": "vonkajsia-kuchyna"
   },
   {
     "slug": "uk",
@@ -7719,6 +7740,7 @@ export default [
     "kids-storage": "kids-storage",
     "new-york-classic": "new-york-classic",
     "industrial-glam": "industrial-glam",
-    "loft-style": "loft-style"
+    "loft-style": "loft-style",
+    "outdoor-kitchen": "outdoor-kitchen"
   }
 ]
