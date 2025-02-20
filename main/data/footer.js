@@ -49,12 +49,12 @@ export default [
     "Conditions title": "*Termos e Condições:",
     "Unsubscribe title": "Cancelar a subscrição",
     "Company Details": "Detalhes da Empresa",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Suíça",
+    "Address": "Beliani (DE) GmbH 6340 Baar Suíça",
     "Mobile number": "Telefone: +351 22 145 07 45;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.pt",
     "Email": "mail@beliani.pt",
-    "Commercial register": "Registo Comercial: Reg. comercial do cantão ZUG, CHE-115.695.894",
+    "Commercial register": "Registo Comercial: CHE-115.695.894",
     "VAT": "USt-IDNr: DE 276156472"
   },
   {
@@ -107,12 +107,12 @@ export default [
     "Conditions title": "*Condiciones:",
     "Unsubscribe title": "Cancelar suscripción",
     "Company Details": "Datos de empresa",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Suiza",
-    "Mobile number": "teléfono: 932 714 061;",
+    "Address": "Beliani (DE) GmbH 6340 Baar Suiza",
+    "Mobile number": "Teléfono: 932 714 061;",
     "Email address": "e-mail:",
     "Mail to": "mailto:mail@beliani.es",
     "Email": "mail@beliani.es",
-    "Commercial register": "Registro comercial: Registro comercial de cantón ZUG, CHE-115.695.894",
+    "Commercial register": "Registro comercial: CHE-115.695.894",
     "VAT": "USt-IDNr: DE 276156472"
   },
   {
@@ -165,12 +165,12 @@ export default [
     "Conditions title": "*Voorwaarden:",
     "Unsubscribe title": "Afmelden",
     "Company Details": "Bedrijfsinformatie",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Switzerland",
+    "Address": "Beliani (EU) GmbH 6340 Baar Switzerland",
     "Mobile number": "Telefoonnummer: (038) 7440 103;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.nl",
     "Email": "mail@beliani.nl",
-    "Commercial register": "Handelsregister: handelsregister van kanton ZUG, CHE-433.124.131",
+    "Commercial register": "Handelsregister: CHE-433.124.131",
     "VAT": "USt-IDNr: DE369393001"
   },
   {
@@ -223,12 +223,12 @@ export default [
     "Conditions title": "*Bedingungen:",
     "Unsubscribe title": "Newsletter abbestellen",
     "Company Details": "Impressum",
-    "Address": "Beliani GmbH, 6340 Baar, Schweiz",
+    "Address": "Beliani (Switzerland) GmbH, 6340 Baar, Schweiz",
     "Mobile number": "Telefonnummer: 043 508 22 33;",
     "Email address": "E-Mail:",
     "Mail to": "mailto:mail@beliani.ch",
     "Email": "mail@beliani.ch",
-    "Commercial register": "Handelsregister: Handelsregister des Kantons Zug, CHE-462.179.861",
+    "Commercial register": "Handelsregister: CHE-462.179.861",
     "VAT": "USt-IDNr: CHE-462.179.861"
   },
   {
@@ -281,12 +281,12 @@ export default [
     "Conditions title": "*Bedingungen:",
     "Unsubscribe title": "Newsletter abbestellen",
     "Company Details": "Impressum",
-    "Address": "Beliani GmbH, 6340 Baar, Schweiz",
+    "Address": "Beliani (Deutschland) GmbH, 6340 Baar, Schweiz",
     "Mobile number": "Telefonnummer: +43 1 375 00 57;",
     "Email address": "E-Mail:",
     "Mail to": "mailto:mail@beliani.at",
     "Email": "mail@beliani.at",
-    "Commercial register": "Handelsregister: Handelsregister des Kantons Zug, CHE-485.669.231",
+    "Commercial register": "Handelsregister: CHE-485.669.231",
     "VAT": "USt-IDNr: DE 276156472"
   },
   {
@@ -339,12 +339,12 @@ export default [
     "Conditions title": "*Bedingungen:",
     "Unsubscribe title": "Newsletter abbestellen",
     "Company Details": "Impressum",
-    "Address": "Beliani GmbH, 6340 Baar, Schweiz",
+    "Address": "Beliani (Deutschland) GmbH, 6340 Baar, Schweiz",
     "Mobile number": "Telefonnummer: 0221 6778 9927;",
     "Email address": "E-Mail:",
     "Mail to": "mailto:mail@beliani.de",
     "Email": "mail@beliani.de",
-    "Commercial register": "Handelsregister: Handelsregister des Kantons Zug, CHE-485.669.231",
+    "Commercial register": "Handelsregister: CHE-485.669.231",
     "VAT": "USt-IDNr: DE276156472"
   },
   {
@@ -397,12 +397,12 @@ export default [
     "Conditions title": "*Conditions:",
     "Unsubscribe title": "Désabonnement",
     "Company Details": "Mentions légales",
-    "Address": "Beliani GmbH, 6340 Baar, Suisse",
+    "Address": "Beliani (Switzerland) GmbH, 6340 Baar, Suisse",
     "Mobile number": "Téléphone: 043 508 22 33;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.ch",
     "Email": "mail@beliani.ch",
-    "Commercial register": "Registre du commerce : Registre du commerce du canton de Zoug, CHE-462.179.861",
+    "Commercial register": "Registre du commerce : CHE-462.179.861",
     "VAT": "USt-IDNr: CHE-462.179.861"
   },
   {
@@ -455,12 +455,12 @@ export default [
     "Conditions title": "*Conditions:",
     "Unsubscribe title": "Désabonnement",
     "Company Details": "Mentions légales",
-    "Address": "Beliani GmbH, 6340 Baar, Suisse",
+    "Address": "Beliani (DE) GmbH, 6340 Baar, Suisse",
     "Mobile number": "Téléphone: 01 87 39 86 15;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.fr",
     "Email": "mail@beliani.fr",
-    "Commercial register": "Registre du commerce : Registre du commerce du canton de Zoug, CHE-115.695.894",
+    "Commercial register": "Registre du commerce : CHE-115.695.894",
     "VAT": "USt-IDNr: FR 31883868630"
   },
   {
@@ -513,12 +513,12 @@ export default [
     "Conditions title": "*Feltételek:",
     "Unsubscribe title": "Leiratkozás",
     "Company Details": "Impresszum",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Schweiz",
+    "Address": "Beliani (DE) GmbH 6340 Baar Schweiz",
     "Mobile number": "Telefonszám: +36 1 211 4034;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.hu",
     "Email": "mail@beliani.hu",
-    "Commercial register": "Cégjegyzékszám: Zug kanton cégbírósága, CHE-115.695.894",
+    "Commercial register": "Cégjegyzékszám: CHE-115.695.894",
     "VAT": "Közösségi adószám: DE 276156472"
   },
   {
@@ -571,12 +571,12 @@ export default [
     "Conditions title": "*Podmínky:",
     "Unsubscribe title": "Odhlásit se",
     "Company Details": "Detaily společnosti",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Švýcarsko",
+    "Address": "Beliani (DE) GmbH 6340 Baar Švýcarsko",
     "Mobile number": "Telefonní číslo: 228 881 514;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.cz",
     "Email": "mail@beliani.cz",
-    "Commercial register": "Obchodní registr: Obchodní registr Kantónu Zug, CHE-115.695.894",
+    "Commercial register": "Obchodní registr: CHE-115.695.894",
     "VAT": "USt-IDNr: DE276156472"
   },
   {
@@ -629,12 +629,12 @@ export default [
     "Conditions title": "*Podmienky:",
     "Unsubscribe title": "Zrušiť odber",
     "Company Details": "Detaily spoločnosti",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Švajčiarsko",
+    "Address": "Beliani (DE) GmbH 6340 Baar Švajčiarsko",
     "Mobile number": "Telefónne číslo: +421 2/327 846 12;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.sk",
     "Email": "mail@beliani.sk",
-    "Commercial register": "Obchodný register: Obchodný register kantónu Zug, CHE-115.695.894",
+    "Commercial register": "Obchodný register: CHE-115.695.894",
     "VAT": "USt-IDNr: DE276156472"
   },
   {
@@ -687,12 +687,12 @@ export default [
     "Conditions title": "*Termini e Condizioni:",
     "Unsubscribe title": "Annulla l’iscrizione",
     "Company Details": "Dettagli societari",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Svizzera",
+    "Address": "Beliani (DE) GmbH 6340 Baar Svizzera",
     "Mobile number": "Numero di telefono: 06 5654 8602;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.it",
     "Email": "mail@beliani.it",
-    "Commercial register": "Registro commerciale (USt-IDNr): registro commerciale del Canton ZUG, CHE-115.695.894",
+    "Commercial register": "Registro commerciale: CHE-115.695.894",
     "VAT": "Partita IVA: DE 276156472"
   },
   {
@@ -745,12 +745,12 @@ export default [
     "Conditions title": "*Termini e Condizioni:",
     "Unsubscribe title": "Annulla l’iscrizione",
     "Company Details": "Dettagli societari",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Svizzera",
+    "Address": "Beliani ((Switzerland)) GmbH CH 6340 Baar Svizzera",
     "Mobile number": "Numero di telefono: 06 5654 8602;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.ch",
     "Email": "mail@beliani.ch",
-    "Commercial register": "Registro commerciale (USt-IDNr): registro commerciale del Canton ZUG, CHE-462.179.861",
+    "Commercial register": "Registro commerciale: CHE-462.179.861",
     "VAT": "Partita IVA: CHE-462.179.861"
   },
   {
@@ -803,12 +803,12 @@ export default [
     "Conditions title": "*Villkor:",
     "Unsubscribe title": "Avanmäl dig",
     "Company Details": "Företagsuppgifter",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Schweiz",
-    "Mobile number": "Phone: 08-123 509 30;",
+    "Address": "Beliani (DE) GmbH 6340 Baar Schweiz",
+    "Mobile number": "Telefon: 08-446 891 58;",
     "Email address": "E-post:",
     "Mail to": "mailto:mail@beliani.se",
     "Email": "mail@beliani.se",
-    "Commercial register": "Handelsregister: Handelsregistret i kantonen Zug, CHE-115.695.894",
+    "Commercial register": "Handelsregister: CHE-115.695.894",
     "VAT": "USt-IDNr: DE 276156472"
   },
   {
@@ -866,7 +866,7 @@ export default [
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.co.uk",
     "Email": "mail@beliani.co.uk",
-    "Commercial register": "Commercial Register: Commercial Register of the Canton of Zug, CHE-115.421.807",
+    "Commercial register": "Commercial Register: CHE-115.421.807",
     "VAT": "VAT ID: GB 975042511"
   },
   {
@@ -919,12 +919,12 @@ export default [
     "Conditions title": "*Vilkår:",
     "Unsubscribe title": "Avslutt abonnement",
     "Company Details": "Selskapets Detaljer",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Switzerland",
+    "Address": "Beliani Group AG GmbH 6340 Baar Sveits",
     "Mobile number": "Telefonnummer: 21 98 88 87;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.no",
     "Email": "mail@beliani.no",
-    "Commercial register": "Handelsregister: Handelsregisteret i kantonen Zug, 16282354",
+    "Commercial register": "Handelsregister: 16282354",
     "VAT": "USt-IDNr: 927 713 055"
   },
   {
@@ -977,12 +977,12 @@ export default [
     "Conditions title": "*Vilkår og betingelser:",
     "Unsubscribe title": "Afmeld nyhedsbrev",
     "Company Details": "Selskabs informationer",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Schweiz",
+    "Address": "Beliani (DE) GmbH 6340 Baar Schweiz",
     "Mobile number": "Telefonnummer: 89 88 10 86;",
     "Email address": "email:",
     "Mail to": "mailto:mail@beliani.dk",
     "Email": "mail@beliani.dk",
-    "Commercial register": "Handelsregister: Handelsregisteret i Kanton Zug, CHE-115.695.894",
+    "Commercial register": "Handelsregister: CHE-115.695.894",
     "VAT": "USt-IDNr: DE 276156472"
   },
   {
@@ -1035,12 +1035,12 @@ export default [
     "Conditions title": "*Ehdot:",
     "Unsubscribe title": "Lopeta tilaus",
     "Company Details": "Yhtiön tiedot",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Sveitsi",
+    "Address": "Beliani (DE) GmbH 6340 Baar Sveitsi",
     "Mobile number": "Puhelinnumero: 09 4245 0464;",
     "Email address": "sähköposti:",
     "Mail to": "mailto:mail@beliani.fi",
     "Email": "mail@beliani.fi",
-    "Commercial register": "Rekisteröity: Zugin kantonin kaupparekisteri, CHE-115.695.894",
+    "Commercial register": "Rekisteröity: CHE-115.695.894",
     "VAT": "USt-IDNr: DE276156472"
   },
   {
@@ -1093,12 +1093,12 @@ export default [
     "Conditions title": "*Warunki:",
     "Unsubscribe title": "Wypisz się z newslettera",
     "Company Details": "Dane Firmy",
-    "Address": "Beliani (DE) GmbH CH 6340 Baar Szwajcaria",
+    "Address": "Beliani (PL) GmbH 6340 Baar Szwajcaria",
     "Mobile number": "Telefon: +48 91 350 83 60;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.pl",
     "Email": "mail@beliani.pl",
-    "Commercial register": "Rejestr handlowy: Rejestr handlowy kantonu Zug, CHE-136.573.305",
+    "Commercial register": "Rejestr handlowy: CHE-136.573.305",
     "VAT": "NIP: PL5263092611"
   },
   {
@@ -1151,12 +1151,12 @@ export default [
     "Conditions title": "*Voorwaarden:",
     "Unsubscribe title": "Afmelden",
     "Company Details": "Bedrijfsinformatie",
-    "Address": "Beliani (BE) GmbH CH 6340 Baar Switzerland",
+    "Address": "Beliani (EU) GmbH CH 6340 Baar Switzerland",
     "Mobile number": "Telefoonnummer: 28 08 56 14;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.be",
     "Email": "mail@beliani.be",
-    "Commercial register": "Handelsregister: handelsregister van kanton ZUG, CHE-433.124.131",
+    "Commercial register": "Handelsregister: CHE-433.124.131",
     "VAT": "USt-IDNr: DE369393001"
   },
   {
@@ -1209,12 +1209,12 @@ export default [
     "Conditions title": "*Conditions:",
     "Unsubscribe title": "Désabonnement",
     "Company Details": "Mentions légales",
-    "Address": "Beliani (BE) GmbH CH 6340 Baar Switzerland",
+    "Address": "Beliani (EU) GmbH CH 6340 Baar Switzerland",
     "Mobile number": "Téléphone: 28 08 56 14;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.be",
     "Email": "mail@beliani.be",
-    "Commercial register": "Commercial Register: Commercial Register of the Canton of Zug, CHE-433.124.131",
+    "Commercial register": "Commercial Register: CHE-433.124.131",
     "VAT": "USt-IDNr: DE369393001"
   },
   {
