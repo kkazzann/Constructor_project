@@ -7,11 +7,8 @@ export function FreebieProduct(
   containerAlign = "center"
 ) {
   return `
-  <table cellspacing="0" cellpadding="0" align=${containerAlign}>
-    <tbody>
-      <tr>
-        <td style="${style ?? ""}">
-          <table cellspacing="0" cellpadding="0" align=${containerAlign}>
+        <table style="${style ?? ""}" cellspacing="0" cellpadding="0" align=${containerAlign}>
+          <tbody>
             <tr>
               <td align="${align}">
                 ${ImageWithLink({
@@ -25,10 +22,10 @@ export function FreebieProduct(
               <td>
                 <table cellspacing="0" cellpadding="0" align="${align}" >
                   <tbody>
-                  <tr>
-                    <td class="newsletterBottom20px">
-                    </td>
-                  </tr>
+                    <tr>
+                      <td class="newsletterBottom20px">
+                      </td>
+                    </tr>
                     <tr>
                       <td align="${align}">
                         <span class="newsletterProductTitleFreebie">${
@@ -39,10 +36,10 @@ export function FreebieProduct(
                     ${
                       "size" in product
                         ? `<tr>
-                        <td align="${align}">
-                          <span class="newsletterProductTitleFreebie">${product.size}</span>
-                        </td>
-                      </tr>`
+                            <td align="${align}">
+                              <span class="newsletterProductTitleFreebie">${product.size}</span>
+                            </td>
+                          </tr>`
                         : ""
                     }
                     <tr>
@@ -59,10 +56,8 @@ export function FreebieProduct(
                 </table>
               </td>
             </tr>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+          </tbody>
+        </table>
+
     `;
 }

@@ -171,7 +171,7 @@ export async function mondayOfferLines({
                       
                           let html = `
                             <tr>
-                              <td class="newsletterContainer" style="background-color: ${background}; color: ${color};">
+                              <td style="background-color: ${background}; color: ${color};">
                                 ${Category({
                                   href: getCategoryLink(item.href),
                                   //name: queries.category[index],
