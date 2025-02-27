@@ -1401,7 +1401,7 @@ try {
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
                 tableName: "Voucher - 10.03.25 - Free rain cover!",
-                tableRange: "38:41",
+                tableRange: "38:40",
                 name: "condition",
               },
               {
@@ -1456,19 +1456,19 @@ try {
                       id: "258744",
                       src: "https://upload.pictureserver.net/static/2025/202500310Freebie1.png",
                       style: "padding-right: 10px; padding-left: 10px;",
-                      size: "145x110x80 cm",
+                      size: "145 x 110 x 80 cm",
                     },
                     {
                       id: "258740",
                       src: "https://upload.pictureserver.net/static/2025/202500310Freebie2.png",
                       style: "padding-right: 10px; padding-left: 10px;",
-                      size: "160x160x90 cm",
+                      size: "160 x 160 x 90 cm",
                     },
                     {
                       id: "258743",
                       src: "https://upload.pictureserver.net/static/2025/202500310Freebie3.png",
                       style: "padding-right: 10px; padding-left: 10px;",
-                      size: "110x100x70 cm",
+                      size: "110 x 100 x 70 cm",
                     },
                   ],
                 },
@@ -1482,13 +1482,13 @@ try {
                       id: "258741",
                       src: "https://upload.pictureserver.net/static/2025/202500310Freebie4.png",
                       style: "padding-right: 10px; padding-left: 10px;",
-                      size: "150x120x70 cm",
+                      size: "150 x 120 x 70 cm",
                     },
                     {
                       id: "258739",
                       src: "https://upload.pictureserver.net/static/2025/202500310Freebie5.png",
                       style: "padding-right: 10px; padding-left: 10px;",
-                      size: "120x90x65 cm",
+                      size: "120 x 90 x 65 cm",
                     },
                   ],
                 },
@@ -2419,7 +2419,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         templates: [
           {

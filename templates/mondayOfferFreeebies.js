@@ -196,11 +196,7 @@ export async function mondayOfferFreeebies({
               </tr>
 
               <tr>
-                <td style="background-color: ${
-                    freebies.options.background || background
-                    }; color: ${
-                      freebies.options?.color || "#000"
-                };">
+                <td style="background-color: ${ freebies.options.background || background }; color: ${ freebies.options?.color || "#000" };">
                 ${FreebiesGenerator({
                   background,
                   freebies: freebies.items,

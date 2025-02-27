@@ -28,9 +28,7 @@ export function FreebieProduct(
                     </tr>
                     <tr>
                       <td align="${align}">
-                        <span class="newsletterProductTitleFreebie">${
-                          product.name
-                        }</span>
+                        <span class="newsletterProductTitleFreebie">${ product.name }</span>
                       </td>
                     </tr>
                     ${
@@ -44,12 +42,8 @@ export function FreebieProduct(
                     }
                     <tr>
                       <td align="${align}">
-                        <span class="newsletterProductLowPrice" >${
-                          product.lowPrice
-                        } </span>
-                        <span class="newsletterProductHightPrice" >${
-                          product.highPrice
-                        }</span>
+                        <span class="newsletterProductLowPrice" >${ product.lowPrice } </span>
+                        <span class="newsletterProductHightPrice" >${ product.highPrice }</span>
                       </td>
                     </tr>
                   </tbody>

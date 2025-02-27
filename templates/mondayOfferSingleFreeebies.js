@@ -169,15 +169,10 @@ export async function mondayOfferSingleFreeebies({
               </tr>
 
               <tr>
-                <td style="background-color: ${
-                    freebies.options.background || background
-                    }; color: ${
-                      freebies.options?.color || "#000"
-                };">
+                <td style="background-color: ${ freebies.options.background || background }; color: ${ freebies.options?.color || "#000" };">
                 ${Category({
                   href: getCategoryLink(categories[4].href),
                   name: categories[4].name,
-                  size: "140 x 180 cm",
                   src: categories[4].src,
                   type: categories[4].type,
                   color: categories[4].color,
