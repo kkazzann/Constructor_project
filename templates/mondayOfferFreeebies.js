@@ -204,29 +204,39 @@ export async function mondayOfferFreeebies({
                 })}
                   </td>
               </tr>
+              <tr>
+                <td class="newsleaterFreebieLineWith2Product" style="background-color: ${ freebies.options.background || background }; color: ${ freebies.options?.color || "#000" };">
+                ${FreebiesGenerator({
+                  background,
+                  freebies: freebies.items1,
+                  getProductById,
+                })}
+                  </td>
+              </tr>
+              <tr>
+                  <td style="background-color: ${ freebies.options.background || background }; color: ${ freebies.options?.color || "#000" };">
+                      ${Space({ className: "newsletterBottom60px" })}
+                  </td>
+              </tr>
+              <tr>
+                  <td style="background-color: ${ intro.background || background };">
+                    ${Space()}
+                  </td>
+              </tr>
 
-
-                <tr>
-                    <td style="background-color: ${
-                      intro.background || background
-                    };">
-                      ${Space()}
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="newsletterContainer" style="background-color: ${
-                      intro.background || background
-                    };">
-                        ${Intro({
-                          data: queries.intro,
-                          color: intro?.color,
-                          title: {
-                            className: "newsletterIntroTitle",
-                          },
-                        })}
-                    </td>
-                </tr>
+              <tr>
+                  <td class="newsletterContainer" style="background-color: ${
+                    intro.background || background
+                  };">
+                      ${Intro({
+                        data: queries.intro,
+                        color: intro?.color,
+                        title: {
+                          className: "newsletterIntroTitle",
+                        },
+                      })}
+                  </td>
+              </tr>
 
                 <tr>
                     <td style="background-color: ${

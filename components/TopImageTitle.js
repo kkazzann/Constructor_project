@@ -45,6 +45,24 @@ export const TopImageTitle = isAllowToRender(
           </table>
         `;
     }
+    if (type === "twoSameLines") {
+        return `
+          <table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tbody>
+                  <tr>
+                      <td>
+                          <a class="newsletterHrefTit" style="color:${color};" href="${href}">
+                              ${Space()}
+                              <h4 class="newsletterTitleH1">${title1}</h4>
+                              <h4 class="newsletterTitleH1">${title2}</h4>
+                              ${Space()}
+                          </a>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+        `;
+    }
     if (type === "singleLine") {
         return `
           <table border="0" cellspacing="0" cellpadding="0" width="100%">
