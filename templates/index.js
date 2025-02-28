@@ -12,6 +12,7 @@ import { CategoriesRowsLinePriceTitle } from "./CategoriesRowsLinePriceTitle.js"
 import { CategoriesRowsLine } from "./CategoriesRowsLine.js";
 import { mondayOfferFreebiesInsideBanner } from "./mondayOfferFreebiesInsideBanner.js";
 import { mondayOfferLines } from "./mondayOfferLines.js";
+import { mondayOfferFreeebiesCategoryFilters } from "./mondayOfferFreeebiesCategoryFilters.js"
 
 export const templates = {
   newsletter_FGG,
@@ -28,4 +29,5 @@ export const templates = {
   CategoriesRowsLinePriceTitle,
   CategoriesRowsLine,
   mondayOfferLines,
+  mondayOfferFreeebiesCategoryFilters,
 };

@@ -20,7 +20,7 @@ import { OfferPartCode } from "../components/OfferPartCode.js";
 import { priceFree } from "../helpers/priceFree.js";
 import { getCodes } from "../utils/getCodes.js";
 
-export async function mondayOfferFreeebies({
+export async function mondayOfferFreeebiesCategoryFilters({
   links,
   getProductById,
   getCategoryLink,
@@ -205,15 +205,6 @@ export async function mondayOfferFreeebies({
                   </td>
               </tr>
               <tr>
-                <td style="background-color: ${ freebies.options.background || background }; color: ${ freebies.options?.color || "#000" };">
-                ${FreebiesGenerator({
-                  background,
-                  freebies: freebies.items1,
-                  getProductById,
-                })}
-                  </td>
-              </tr>
-              <tr>
                   <td style="background-color: ${ freebies.options.background || background }; color: ${ freebies.options?.color || "#000" };">
                       ${Space({ className: "newsletterBottom60px" })}
                   </td>
@@ -251,10 +242,7 @@ export async function mondayOfferFreeebies({
                       categories[0]?.background || background
                     }; color: ${categories[0]?.color || "#000000"}">
                       ${Category({
-                        href:
-                          typeof categories[0].href === "object"
-                            ? categories[0].href[country]
-                            : getCategoryLink(categories[0].href),
+                        href: queries.filters[0],
                         name: queries?.categories
                           ? queries.categories[0]
                           : getCategoryTitle(categories[0].name),
@@ -282,10 +270,7 @@ export async function mondayOfferFreeebies({
                       categories[1]?.background || background
                     }; color: ${categories[1]?.color || "#000000"}">
                         ${Category({
-                          href:
-                            typeof categories[1].href === "object"
-                              ? categories[1].href[country]
-                              : getCategoryLink(categories[1].href),
+                          href: queries.filters[1],
                           name: queries?.categories
                             ? queries.categories[1]
                             : getCategoryTitle(categories[1].name),
@@ -313,10 +298,7 @@ export async function mondayOfferFreeebies({
                       categories[2]?.background || background
                     }; color: ${categories[2]?.color || "#000000"}">
                         ${Category({
-                          href:
-                            typeof categories[2].href === "object"
-                              ? categories[2].href[country]
-                              : getCategoryLink(categories[2].href),
+                          href: queries.filters[2],
                           name: queries?.categories
                             ? queries.categories[2]
                             : getCategoryTitle(categories[2].name),
@@ -344,10 +326,7 @@ export async function mondayOfferFreeebies({
                       categories[3]?.background || background
                     }; color: ${categories[3]?.color || "#000000"}">
                         ${Category({
-                          href:
-                            typeof categories[3].href === "object"
-                              ? categories[3].href[country]
-                              : getCategoryLink(categories[3].href),
+                          href: queries.filters[3],
                           name: queries?.categories
                             ? queries.categories[3]
                             : getCategoryTitle(categories[3].name),

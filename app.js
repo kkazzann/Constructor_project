@@ -1163,6 +1163,659 @@ try {
       ],
       }),
       new entities.Campaign({
+        date: "2025.03.17",
+        issueCardId: "344481",
+        name: "Free gift",
+        startId: "00001",
+        figmaUrl: "",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: false,
+        optimizeImg: false,
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            template: templates.mondayOfferFreeebiesCategoryFilters,
+            background: "#FFCCB7",
+            wrapper: types.WRAPPER,
+            css: types.CSS.NS,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FFCCB7",
+            },
+            intro: {
+              background: "#F6E7E6",
+              color: "#000000",
+            },
+            categories: [
+              {
+                name: "Lounge sets",
+                background: "#F6E7E6",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250317Category1.png",
+                href: "https://www.beliani.ch/outdoor-furniture/lounge-sets/?sort=newest",
+                products: [
+                  {
+                    id: "524218",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category11.png",
+                  },
+                  {
+                    id: "523214",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category12.png",
+                  },
+                  {
+                    id: "519685",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category13.png",
+                  },
+                  {
+                    id: "573785",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category14.png",
+                  },
+                ],
+              },
+              {
+                name: "Dining sets",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250317Category2.png",
+                href: "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/?sort=newest",
+                products: [
+                  {
+                    id: "555717",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category21.png",
+                  },
+                  {
+                    id: "523724",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category22.png",
+                  },
+                  {
+                    id: "511075",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category23.png",
+                  },
+                  {
+                    id: "585356",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category24.png",
+                  },
+                ],
+              },
+              {
+                name: "Fire pits",
+                background: "#F6E7E6",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250317Category3.png",
+                href: "https://www.beliani.ch/garden-accessories/fire-pits/?sort=newest",
+                products: [
+                  {
+                    id: "584193",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category31.png",
+                  },
+                  {
+                    id: "584867",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category32.png",
+                  },
+                  {
+                    id: "584370",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category33.png",
+                  },
+                  {
+                    id: "584274",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category34.png",
+                  },
+                ],
+              },
+              {
+                name: "Outdoor kitchen",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250317Category4.png",
+                href: "https://www.beliani.ch/outdoor-furniture/outdoor-kitchen/?sort=newest",
+                products: [
+                  {
+                    id: "524274",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category41.png",
+                  },
+                  {
+                    id: "524199",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category42.png",
+                  },
+                  {
+                    id: "526467",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category43.png",
+                  },
+                  {
+                    id: "405331",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category44.png",
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-10",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250317_01.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-10",
+                },
+              },
+              {
+                value:
+                  "https://upload.pictureserver.net/static/2025/20250317_gif.gif",
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-07",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250307b.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-06",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/202503068b.png",
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "20:24",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "29:30",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "35:38",
+                name: "filters",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "39",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "26",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "24",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "31:34",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "46:48",
+                name: "condition",
+              },
+              {
+                tableId: "1nY4WvP88r6uL5f89oc8Xp7wZwuerBnQii_ZIIm7BMBk",
+                tableName: "Templates",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "templates",
+                tableColumns: false,
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FFCCB7",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "258744",
+                      src: "https://upload.pictureserver.net/static/2025/20250317Freebie1.png",
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                    {
+                      id: "258740",
+                      src: "https://upload.pictureserver.net/static/2025/20250317Freebie2.png",
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "258741",
+                      src: "https://upload.pictureserver.net/static/2025/20250317Freebie3.png",
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                    {
+                      id: "258739",
+                      src: "https://upload.pictureserver.net/static/2025/20250317Freebie4.png",
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.mondayOfferFreeebiesCategoryFilters,
+            background: "#FFCCB7",
+            css: types.CSS.LP,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FFCCB7",
+            },
+            intro: {
+              background: "#F6E7E6",
+              color: "#000000",
+            },
+            categories: [
+              {
+                name: "Lounge sets",
+                background: "#F6E7E6",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250317Category1.png",
+                href: "https://www.beliani.ch/outdoor-furniture/lounge-sets/?sort=newest",
+                products: [
+                  {
+                    id: "524218",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category11.png",
+                  },
+                  {
+                    id: "523214",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category12.png",
+                  },
+                  {
+                    id: "519685",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category13.png",
+                  },
+                  {
+                    id: "573785",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category14.png",
+                  },
+                ],
+              },
+              {
+                name: "Dining sets",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250317Category2.png",
+                href: "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/?sort=newest",
+                products: [
+                  {
+                    id: "555717",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category21.png",
+                  },
+                  {
+                    id: "523724",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category22.png",
+                  },
+                  {
+                    id: "511075",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category23.png",
+                  },
+                  {
+                    id: "585356",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category24.png",
+                  },
+                ],
+              },
+              {
+                name: "Fire pits",
+                background: "#F6E7E6",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250317Category3.png",
+                href: "https://www.beliani.ch/garden-accessories/fire-pits/?sort=newest",
+                products: [
+                  {
+                    id: "584193",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category31.png",
+                  },
+                  {
+                    id: "584867",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category32.png",
+                  },
+                  {
+                    id: "584370",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category33.png",
+                  },
+                  {
+                    id: "584274",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category34.png",
+                  },
+                ],
+              },
+              {
+                name: "Outdoor kitchen",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/20250317Category4.png",
+                href: "https://www.beliani.ch/outdoor-furniture/outdoor-kitchen/?sort=newest",
+                products: [
+                  {
+                    id: "524274",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category41.png",
+                  },
+                  {
+                    id: "524199",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category42.png",
+                  },
+                  {
+                    id: "526467",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category43.png",
+                  },
+                  {
+                    id: "405331",
+                    src: "https://upload.pictureserver.net/static/2025/20250317Category44.png",
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-10",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250317_01.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-10",
+                },
+              },
+              {
+                value:
+                  "https://upload.pictureserver.net/static/2025/20250317_gif.gif",
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-07",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250307b.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-06",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/202503068b.png",
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "20:24",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "17:18",
+                name: "tit",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "29:30",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "35:38",
+                name: "filters",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "39",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "26",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "24",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "31:34",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 17.03.25 - Free gift!",
+                tableRange: "46:49",
+                name: "condition",
+              },
+              {
+                tableId: "1nY4WvP88r6uL5f89oc8Xp7wZwuerBnQii_ZIIm7BMBk",
+                tableName: "Templates",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "templates",
+                tableColumns: false,
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FFCCB7",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "258744",
+                      src: "https://upload.pictureserver.net/static/2025/20250317Freebie1.png",
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                    {
+                      id: "258740",
+                      src: "https://upload.pictureserver.net/static/2025/20250317Freebie2.png",
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "258741",
+                      src: "https://upload.pictureserver.net/static/2025/20250317Freebie3.png",
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                    {
+                      id: "258739",
+                      src: "https://upload.pictureserver.net/static/2025/20250317Freebie4.png",
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        ],
+      }),
+      new entities.Campaign({
         date: "2025.03.10",
         issueCardId: "338780",
         name: "Free cover",
@@ -1199,7 +1852,7 @@ try {
                 href: "https://www.beliani.ch/outdoor-furniture/lounge-sets/?sort=newest",
                 products: [
                   {
-                    id: "524218",
+                    id: "574032",
                     src: "https://upload.pictureserver.net/static/2025/20250310Category11.png",
                   },
                   {
@@ -1274,7 +1927,7 @@ try {
                 href: "https://www.beliani.ch/outdoor-furniture/outdoor-kitchen/?sort=newest",
                 products: [
                   {
-                    id: "524274",
+                    id: "522129",
                     src: "https://upload.pictureserver.net/static/2025/20250310Category41.png",
                   },
                   {
@@ -1521,7 +2174,7 @@ try {
                 href: "https://www.beliani.ch/outdoor-furniture/lounge-sets/?sort=newest",
                 products: [
                   {
-                    id: "524218",
+                    id: "574032",
                     src: "https://upload.pictureserver.net/static/2025/20250310Category11.png",
                   },
                   {
@@ -1596,7 +2249,7 @@ try {
                 href: "https://www.beliani.ch/outdoor-furniture/outdoor-kitchen/?sort=newest",
                 products: [
                   {
-                    id: "524274",
+                    id: "522129",
                     src: "https://upload.pictureserver.net/static/2025/20250310Category41.png",
                   },
                   {
