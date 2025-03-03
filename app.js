@@ -1166,8 +1166,8 @@ try {
         date: "2025.03.17",
         issueCardId: "344481",
         name: "Free gift",
-        startId: "00001",
-        figmaUrl: "",
+        startId: "31472",
+        figmaUrl: "https://www.figma.com/design/d2XPbTDDNIt82s3guRFQJp/2025.03.17---Newsletter---Free-gift-(Copy)?t=BlBdPm1wSLDVexuy-0",
         alarm: {
           isActive: false,
         },
@@ -1192,101 +1192,101 @@ try {
             },
             categories: [
               {
-                name: "Lounge sets",
+                name: "Sofas",
                 background: "#F6E7E6",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250317Category1.png",
                 href: "https://www.beliani.ch/outdoor-furniture/lounge-sets/?sort=newest",
                 products: [
                   {
-                    id: "524218",
+                    id: "566687",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category11.png",
                   },
                   {
-                    id: "523214",
+                    id: "569789",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category12.png",
                   },
                   {
-                    id: "519685",
+                    id: "440319",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category13.png",
                   },
                   {
-                    id: "573785",
+                    id: "341074",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category14.png",
                   },
                 ],
               },
               {
-                name: "Dining sets",
+                name: "Armchairs",
                 background: "#FFCCB7",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250317Category2.png",
                 href: "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/?sort=newest",
                 products: [
                   {
-                    id: "555717",
+                    id: "564289",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category21.png",
                   },
                   {
-                    id: "523724",
+                    id: "392016",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category22.png",
                   },
                   {
-                    id: "511075",
+                    id: "567546",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category23.png",
                   },
                   {
-                    id: "585356",
+                    id: "402616",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category24.png",
                   },
                 ],
               },
               {
-                name: "Fire pits",
+                name: "Beds",
                 background: "#F6E7E6",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250317Category3.png",
                 href: "https://www.beliani.ch/garden-accessories/fire-pits/?sort=newest",
                 products: [
                   {
-                    id: "584193",
+                    id: "514638",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category31.png",
                   },
                   {
-                    id: "584867",
+                    id: "469323",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category32.png",
                   },
                   {
-                    id: "584370",
+                    id: "148274",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category33.png",
                   },
                   {
-                    id: "584274",
+                    id: "341548",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category34.png",
                   },
                 ],
               },
               {
-                name: "Outdoor kitchen",
+                name: "Accessories",
                 background: "#FFCCB7",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250317Category4.png",
                 href: "https://www.beliani.ch/outdoor-furniture/outdoor-kitchen/?sort=newest",
                 products: [
                   {
-                    id: "524274",
+                    id: "346247",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category41.png",
                   },
                   {
-                    id: "524199",
+                    id: "261953",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category42.png",
                   },
                   {
-                    id: "526467",
+                    id: "199476",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category43.png",
                   },
                   {
-                    id: "405331",
+                    id: "409469",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category44.png",
                   },
                 ],
@@ -1299,7 +1299,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-03-10",
+                  value: "content/lp25-03-17",
                 },
               },
               {
@@ -1317,7 +1317,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-03-10",
+                  value: "content/lp25-03-17",
                 },
               },
               {
@@ -1357,7 +1357,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2025/202503068b.png",
+                    "https://upload.pictureserver.net/static/2025/20250306b.png",
                 },
               },
             ],
@@ -1459,12 +1459,12 @@ try {
                   },
                   products: [
                     {
-                      id: "258744",
+                      id: "290338",
                       src: "https://upload.pictureserver.net/static/2025/20250317Freebie1.png",
                       style: "padding-right: 6px; padding-left: 6px;",
                     },
                     {
-                      id: "258740",
+                      id: "291248",
                       src: "https://upload.pictureserver.net/static/2025/20250317Freebie2.png",
                       style: "padding-right: 6px; padding-left: 6px;",
                     },
@@ -1477,12 +1477,12 @@ try {
                   },
                   products: [
                     {
-                      id: "258741",
+                      id: "247880",
                       src: "https://upload.pictureserver.net/static/2025/20250317Freebie3.png",
                       style: "padding-right: 6px; padding-left: 6px;",
                     },
                     {
-                      id: "258739",
+                      id: "189198",
                       src: "https://upload.pictureserver.net/static/2025/20250317Freebie4.png",
                       style: "padding-right: 6px; padding-left: 6px;",
                     },
@@ -1508,101 +1508,101 @@ try {
             },
             categories: [
               {
-                name: "Lounge sets",
+                name: "Sofas",
                 background: "#F6E7E6",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250317Category1.png",
                 href: "https://www.beliani.ch/outdoor-furniture/lounge-sets/?sort=newest",
                 products: [
                   {
-                    id: "524218",
+                    id: "566687",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category11.png",
                   },
                   {
-                    id: "523214",
+                    id: "569789",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category12.png",
                   },
                   {
-                    id: "519685",
+                    id: "440319",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category13.png",
                   },
                   {
-                    id: "573785",
+                    id: "341074",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category14.png",
                   },
                 ],
               },
               {
-                name: "Dining sets",
+                name: "Armchairs",
                 background: "#FFCCB7",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250317Category2.png",
                 href: "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/?sort=newest",
                 products: [
                   {
-                    id: "555717",
+                    id: "564289",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category21.png",
                   },
                   {
-                    id: "523724",
+                    id: "392016",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category22.png",
                   },
                   {
-                    id: "511075",
+                    id: "567546",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category23.png",
                   },
                   {
-                    id: "585356",
+                    id: "402616",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category24.png",
                   },
                 ],
               },
               {
-                name: "Fire pits",
+                name: "Beds",
                 background: "#F6E7E6",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250317Category3.png",
                 href: "https://www.beliani.ch/garden-accessories/fire-pits/?sort=newest",
                 products: [
                   {
-                    id: "584193",
+                    id: "514638",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category31.png",
                   },
                   {
-                    id: "584867",
+                    id: "469323",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category32.png",
                   },
                   {
-                    id: "584370",
+                    id: "148274",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category33.png",
                   },
                   {
-                    id: "584274",
+                    id: "341548",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category34.png",
                   },
                 ],
               },
               {
-                name: "Outdoor kitchen",
+                name: "Accessories",
                 background: "#FFCCB7",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250317Category4.png",
                 href: "https://www.beliani.ch/outdoor-furniture/outdoor-kitchen/?sort=newest",
                 products: [
                   {
-                    id: "524274",
+                    id: "346247",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category41.png",
                   },
                   {
-                    id: "524199",
+                    id: "261953",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category42.png",
                   },
                   {
-                    id: "526467",
+                    id: "199476",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category43.png",
                   },
                   {
-                    id: "405331",
+                    id: "409469",
                     src: "https://upload.pictureserver.net/static/2025/20250317Category44.png",
                   },
                 ],
@@ -1729,7 +1729,7 @@ try {
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
                 tableName: "Voucher - 17.03.25 - Free gift!",
-                tableRange: "46:49",
+                tableRange: "46:50",
                 name: "condition",
               },
               {
@@ -1781,12 +1781,12 @@ try {
                   },
                   products: [
                     {
-                      id: "258744",
+                      id: "290338",
                       src: "https://upload.pictureserver.net/static/2025/20250317Freebie1.png",
                       style: "padding-right: 6px; padding-left: 6px;",
                     },
                     {
-                      id: "258740",
+                      id: "291248",
                       src: "https://upload.pictureserver.net/static/2025/20250317Freebie2.png",
                       style: "padding-right: 6px; padding-left: 6px;",
                     },
@@ -1799,12 +1799,12 @@ try {
                   },
                   products: [
                     {
-                      id: "258741",
+                      id: "247880",
                       src: "https://upload.pictureserver.net/static/2025/20250317Freebie3.png",
                       style: "padding-right: 6px; padding-left: 6px;",
                     },
                     {
-                      id: "258739",
+                      id: "189198",
                       src: "https://upload.pictureserver.net/static/2025/20250317Freebie4.png",
                       style: "padding-right: 6px; padding-left: 6px;",
                     },
@@ -1874,7 +1874,7 @@ try {
                 background: "#FFCCB7",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250310Category2.png",
-                href: "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/?sort=newest",
+                href: "https://www.beliani.ch/outdoor-furniture/garden-chairs/?sort=newest",
                 products: [
                   {
                     id: "555717",
@@ -1898,24 +1898,24 @@ try {
                 name: "Fire pits",
                 background: "#FD9000",
                 color: "#000000",
-                src: "https://upload.pictureserver.net/static/2025/20250310Category3.png",
+                src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category3.png" : "https://upload.pictureserver.net/static/2025/20250310Category3.png",
                 href: "https://www.beliani.ch/garden-accessories/fire-pits/?sort=newest",
                 products: [
                   {
-                    id: "584193",
-                    src: "https://upload.pictureserver.net/static/2025/20250310Category31.png",
+                    id: origin = ["PT","RO"] ? "85075" : "584193",
+                    src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category31.png" : "https://upload.pictureserver.net/static/2025/20250310Category31.png",
                   },
                   {
-                    id: "584867",
-                    src: "https://upload.pictureserver.net/static/2025/20250310Category32.png",
+                    id: origin = ["PT","RO"] ? "86988" : "584867",
+                    src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category32.png" : "https://upload.pictureserver.net/static/2025/20250310Category32.png",
                   },
                   {
-                    id: "584370",
-                    src: "https://upload.pictureserver.net/static/2025/20250310Category33.png",
+                    id: origin = ["PT","RO"] ? "197884" : "584370",
+                    src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category33.png" : "https://upload.pictureserver.net/static/2025/20250310Category33.png",
                   },
                   {
-                    id: "584274",
-                    src: "https://upload.pictureserver.net/static/2025/20250310Category34.png",
+                    id: origin = ["PT","RO"] ? "197909" : "584274",
+                    src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category34.png" : "https://upload.pictureserver.net/static/2025/20250310Category34.png",
                   },
                 ],
               },
@@ -2220,24 +2220,24 @@ try {
                 name: "Fire pits",
                 background: "#FD9000",
                 color: "#000000",
-                src: "https://upload.pictureserver.net/static/2025/20250310Category3.png",
+                src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category3.png" : "https://upload.pictureserver.net/static/2025/20250310Category3.png",
                 href: "https://www.beliani.ch/garden-accessories/fire-pits/?sort=newest",
                 products: [
                   {
-                    id: "584193",
-                    src: "https://upload.pictureserver.net/static/2025/20250310Category31.png",
+                    id: origin = ["PT","RO"] ? "85075" : "584193",
+                    src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category31.png" : "https://upload.pictureserver.net/static/2025/20250310Category31.png",
                   },
                   {
-                    id: "584867",
-                    src: "https://upload.pictureserver.net/static/2025/20250310Category32.png",
+                    id: origin = ["PT","RO"] ? "86988" : "584867",
+                    src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category32.png" : "https://upload.pictureserver.net/static/2025/20250310Category32.png",
                   },
                   {
-                    id: "584370",
-                    src: "https://upload.pictureserver.net/static/2025/20250310Category33.png",
+                    id: origin = ["PT","RO"] ? "197884" : "584370",
+                    src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category33.png" : "https://upload.pictureserver.net/static/2025/20250310Category33.png",
                   },
                   {
-                    id: "584274",
-                    src: "https://upload.pictureserver.net/static/2025/20250310Category34.png",
+                    id: origin = ["PT","RO"] ? "197909" : "584274",
+                    src: origin = ["PT","RO"] ? "https://upload.pictureserver.net/static/2025/other20250310Category34.png" : "https://upload.pictureserver.net/static/2025/20250310Category34.png",
                   },
                 ],
               },
@@ -2490,7 +2490,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         templates: [
           {
             name: "Newsletter",
