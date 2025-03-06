@@ -40,6 +40,7 @@ export async function mondayOfferFreeebiesCategoryFilters({
   offerPart,
   intro,
   date,
+  add_utm,
 }) {
   const codes = getCodes(queries);
   console.log();
@@ -242,7 +243,7 @@ export async function mondayOfferFreeebiesCategoryFilters({
                       categories[0]?.background || background
                     }; color: ${categories[0]?.color || "#000000"}">
                       ${Category({
-                        href: queries.filters[0],
+                        href: add_utm(queries.filters[0]),
                         name: queries?.categories
                           ? queries.categories[0]
                           : getCategoryTitle(categories[0].name),
@@ -270,7 +271,7 @@ export async function mondayOfferFreeebiesCategoryFilters({
                       categories[1]?.background || background
                     }; color: ${categories[1]?.color || "#000000"}">
                         ${Category({
-                          href: queries.filters[1],
+                          href: add_utm(queries.filters[1]),
                           name: queries?.categories
                             ? queries.categories[1]
                             : getCategoryTitle(categories[1].name),
@@ -298,7 +299,7 @@ export async function mondayOfferFreeebiesCategoryFilters({
                       categories[2]?.background || background
                     }; color: ${categories[2]?.color || "#000000"}">
                         ${Category({
-                          href: queries.filters[2],
+                          href: add_utm(queries.filters[2]),
                           name: queries?.categories
                             ? queries.categories[2]
                             : getCategoryTitle(categories[2].name),
@@ -326,7 +327,7 @@ export async function mondayOfferFreeebiesCategoryFilters({
                       categories[3]?.background || background
                     }; color: ${categories[3]?.color || "#000000"}">
                         ${Category({
-                          href: queries.filters[3],
+                          href: add_utm(queries.filters[3]),
                           name: queries?.categories
                             ? queries.categories[3]
                             : getCategoryTitle(categories[3].name),

@@ -1615,7 +1615,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-03-10",
+                  value: "content/lp25-03-17",
                 },
               },
               {
@@ -1633,7 +1633,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-03-10",
+                  value: "content/lp25-03-17",
                 },
               },
               {
@@ -1673,7 +1673,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2025/202503068b.png",
+                    "https://upload.pictureserver.net/static/2025/20250306b.png",
                 },
               },
             ],
@@ -2196,7 +2196,7 @@ try {
                 background: "#FFCCB7",
                 color: "#000000",
                 src: "https://upload.pictureserver.net/static/2025/20250310Category2.png",
-                href: "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/?sort=newest",
+                href: "https://www.beliani.ch/outdoor-furniture/garden-chairs/?sort=newest",
                 products: [
                   {
                     id: "555717",
