@@ -12,6 +12,8 @@ import { CategoriesRowsLinePriceTitle } from "./CategoriesRowsLinePriceTitle.js"
 import { CategoriesRowsLine } from "./CategoriesRowsLine.js";
 import { mondayOfferFreebiesInsideBanner } from "./mondayOfferFreebiesInsideBanner.js";
 import { RegularNslt } from "./RegularNslt.js"
+import { friday_standard_4_categories } from "./friday_standard_4_categories.js"
+import { friday_no_products_only_img } from "./friday_no_products_only_img.js"
 
 export const templates = {
   newsletter_FGG,
@@ -28,4 +30,7 @@ export const templates = {
   CategoriesRowsLinePriceTitle,
   CategoriesRowsLine,
   RegularNslt,
+  friday_standard_4_categories,
+  friday_no_products_only_img,
+
 };

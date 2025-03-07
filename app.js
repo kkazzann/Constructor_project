@@ -8,10 +8,10 @@ try {
   initApp({
     campaigns: [
       new entities.Campaign({
-        startId: "31248",
-        name: "Beds ",
+        startId: "31633",
+        name: "Standard - 4 kategorie",
         date: "2025.02.27",
-        issueCardId: "310827",
+        issueCardId: "31633",
         alarm: {
           isActive: false,
           description: "Add soon ending campaigns.",
@@ -24,111 +24,111 @@ try {
           {
             name: "Newsletter",
             type: types.NEWSLETTER,
-            template: templates.CategoriesRowsOfferPart,
+            template: templates.friday_standard_4_categories,
             css: types.CSS.NS,
             background: "#000000",
             categories: [
               {
                 name: "beds",
-                background: "#FFEBE6",
+                background: "#FFAC99",
                 color: "#000",
-                src: "https://upload.pictureserver.net/static/2025/20250228_01.png",
-                href: "https://www.beliani.ch/chairs/dining-chairs/",
+                src: "https://upload.pictureserver.net/static/2025/_20250314_cat_01.png",
+                href: "https://www.beliani.ch/bedroom-furniture/beds/",
                 products: [
                   
                   {
-                    id: "583606",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_02.png",
+                    id: "591077",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_02.png",
                   },
                   {
-                    id: "579934",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_03.png",
+                    id: "583511",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_03.png",
                   },
                   {
-                    id: "577003",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_04.png",
+                    id: "575972",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_04.png",
                   },
                   {
-                    id: "569254",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_05.png",
+                    id: "455494",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_05.png",
                   },
   
                 ],
               },
               {
                 name: "wooden-beds",
-                background: "#750000",
-                color: "#fff",
-                src: "https://upload.pictureserver.net/static/2025/20250228_06.png",
-                href: "https://www.beliani.ch/chairs/metal-chairs/",
+                background: "#FED399",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/_20250314_cat_06.png",
+                href: "https://www.beliani.ch/bedroom-furniture/mattresses/",
                 products: [
                   {
-                    id: "398468",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_07.png",
+                    id: "573595",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_07.png",
                   },
                   {
-                    id: "461079",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_08.png",
+                    id: "570937",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_08.png",
                   },
                   {
-                    id: "189280",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_09.png",
+                    id: "495115",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_09.png",
                   },
                   {
-                    id: "460640",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_10.png",
+                    id: "153387",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_10.png",
                   },
   
                 ],
               },
               {
                 name: "fabric-beds",
-                background: "#FFEBE6",
+                background: "#FFAC99",
                 color: "#000",
-                src: "https://upload.pictureserver.net/static/2025/20250228_11.png",
-                href: "https://www.beliani.ch/chairs/bar-chairs/",
+                src: "https://upload.pictureserver.net/static/2025/_20250314_cat_11.png",
+                href: "https://www.beliani.ch/textiles/bed-cushions/",
                 products: [
                   {
-                    id: "578627",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_12.png",
+                    id: "3990",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_12.png",
                   },
                   {
-                    id: "518074",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_13.png",
+                    id: "233280",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_13.png",
                   },
                   {
-                    id: "580105",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_14.png",
+                    id: "420325",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_14.png",
                   },
                   {
-                    id: "499010",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_15.png",
+                    id: "189344",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_15.png",
                   },
   
                 ],
               },
               {
                 name: "metal-beds",
-                background: "#750000",
-                color: "#fff",
-                src: "https://upload.pictureserver.net/static/2025/20250228_16.png",
-                href: "https://www.beliani.ch/chairs/office/",
+                background: "#FED399",
+                color: "#000",
+                src: "https://upload.pictureserver.net/static/2025/_20250314_cat_16.png",
+                href: "https://www.beliani.ch/textiles/duvet-covers/",
                 products: [
                   {
-                    id: "375542",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_17.png",
+                    id: "299855",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_17.png",
                   },
                   {
-                    id: "375389",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_18.png",
+                    id: "247865",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_18.png",
                   },
                   {
-                    id: "382678",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_19.png",
+                    id: "299655",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_19.png",
                   },
                   {
-                    id: "506479",
-                    src: "https://upload.pictureserver.net/static/2025/20250228_20.png",
+                    id: "299407",
+                    src: "https://upload.pictureserver.net/static/2025/_20250314_cat_20.png",
                   },
   
                 ],
@@ -143,7 +143,7 @@ try {
                 type: "relation",
                 relyOn: "origin",
                 placeholderPosition: "0",
-                value: "content/lp25-02-28",
+                value: "content/lp25-03-14",
               },
             },
             {
@@ -152,7 +152,7 @@ try {
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2025/_title_20250228.png",
+                  "https://upload.pictureserver.net/static/2025/_title_20250314.png",
             
             },},
               {
@@ -161,14 +161,14 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-02-28",
+                  value: "content/lp25-03-14",
                 },
               },
               {
                 
                   
                   value:
-                    "https://upload.pictureserver.net/static/2025/250228_top.gif",
+                    "https://upload.pictureserver.net/static/2025/20250314_top.png",
                
               },
              
@@ -178,7 +178,7 @@ try {
                 type: "relation",
                 relyOn: "origin",
                 placeholderPosition: "0",
-                value: "content/lp25-02-24",
+                value: "content/lp25-03-10",
               },
             },
             {
@@ -187,7 +187,7 @@ try {
                 type: "relation",
                 relyOn: "origin",
                 placeholderPosition: "0",
-                value: "content/lp25-02-21",
+                value: "content/lp25-03-07",
               },
             },
             {
@@ -196,7 +196,7 @@ try {
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2025/20250221b.png",
+                  "https://upload.pictureserver.net/static/2025/20250307b.png",
               },
             },
               {
@@ -205,7 +205,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-02-20",
+                  value: "content/lp25-03-06",
                 },
               },
               {
@@ -214,7 +214,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2025/202502209b.png",
+                    "https://upload.pictureserver.net/static/2025/20250306b.png",
                 },
               },
               
@@ -233,7 +233,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2025/250227_03free.png",
+                    "https://upload.pictureserver.net/static/2025/uk250313.png",
                 },
               },
   
@@ -243,16 +243,16 @@ try {
 
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "28.02.25 - Chairs!",
-                tableRange: "11:12",
+                tableName: "14.03.25 - World Sleep Day!",
+                tableRange: "13:14",
                 name: "tit",
               },
 
               
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "28.02.25 - Chairs!",
-                tableRange: "14",
+                tableName: "14.03.25 - World Sleep Day!",
+                tableRange: "16",
                 name: "intro",
                 fallback: [
                   "Extra 5% off everything",
@@ -260,8 +260,8 @@ try {
               },
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "27.02.25-Storageinsmall!",
-                tableRange: "17:18",
+                tableName: "13.03.25 - Easter Prep!",
+                tableRange: "16:17",
                 name: "timer",
                 fallback: [
                   "Extra 5% off everything",
@@ -269,8 +269,8 @@ try {
               },
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "28.02.25 - Chairs!",
-                tableRange: "17:20",
+                tableName: "14.03.25 - World Sleep Day!",
+                tableRange: "19:22",
                 name: "category_paragraph",
                 fallback: [
                   "Extra 5% off everything",
@@ -281,8 +281,8 @@ try {
               
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "28.02.25 - Chairs!",
-                tableRange: "34:35",
+                tableName: "14.03.25 - World Sleep Day!",
+                tableRange: "37:38",
                 name: "condition",
                 fallback: [
                   "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
