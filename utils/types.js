@@ -201,6 +201,41 @@ export default {
             padding-top: 35px !important;
             padding-bottom: 35px !important;
           }
+
+          .newsletterProductContainer {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+          }
+
+          .newsletterProductContainerLEFT70px {
+            width: 50% !important;
+            vertical-align: top;
+            padding-right: 10px;
+            padding-bottom: 70px;
+          }
+          
+          .newsletterProductContainerRIGHT70px {
+            width: 50% !important;
+            vertical-align: top;
+            padding-left: 10px;
+            padding-bottom: 70px;
+          }
+
+          .newsletterProductTitleLast {
+            font-size: 27px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.25;
+            color: #000000;
+            text-decoration: underline;
+          }
+
+          .newsletterProductTitleContainer {
+            padding-top: 35px;
+          }
+
+          .backgroundOne {
+            background-color: #ffffff !important;
+          }
           
 
           
@@ -211,6 +246,34 @@ export default {
           
             .newsletterFooterCategoryRIGHTBottom {
               padding-left: 5px !important;
+            }
+
+            .newsletterProductContainer {
+              padding-left: 10px !important;
+              padding-right: 10px !important;
+            }
+
+            .newsletterProductContainerLEFT70px {
+              width: 50% !important;
+              vertical-align: top;
+              padding-right: 5px !important;
+              padding-bottom: 50px !important;
+            }
+      
+            .newsletterProductContainerRIGHT70px {
+              width: 50% !important;
+              vertical-align: top;
+              padding-left: 5px !important;
+              padding-bottom: 50px !important;
+            }
+
+            .newsletterProductTitleLast {
+              font-size: 16px !important;
+              text-decoration: underline;
+            }
+
+            .newsletterProductTitleContainer {
+              padding-top: 15px;
             }
           
             .newsletterFooterCategoryLEFT {
@@ -250,10 +313,6 @@ export default {
           
             .newsletterProductHightPrice {
               display: block;
-            }
-          
-            .newsletterProductTitleContainer {
-              padding-top: 10px;
             }
           
             .newsletterTitle {
@@ -360,6 +419,14 @@ export default {
     
     /* NEWSLETTER START */
     
+    .backgroundOne {
+      background-color: #ffffff !important;
+    }
+
+    .backgroundTwo {
+      background-color: #ffffff !important;
+    }
+
     .newsletterFreebieContainer {
       padding-left: 10px;
     }
@@ -370,6 +437,10 @@ export default {
     
     .newsletterBottom10px {
       padding-bottom: 10px;
+    }
+
+    .WhiteSpace {
+      background-color: #ffffff !important;
     }
 
     .newsletterContainer {
@@ -387,6 +458,13 @@ export default {
       font-size: 20px;
       line-height: 1.20;
       font-family: "Open Sans", sans-serif;
+    }
+
+    .newsletterCtaTwo {
+      font-size: 20px;
+      line-height: 1.20;
+      font-family: "Open Sans", sans-serif;
+      color: #ffffff !important;
     }
     
     .newsletterBottom20px {
@@ -406,6 +484,17 @@ export default {
       font-family: "Open Sans", sans-serif;
       line-height: 1.20;
     }
+
+    .newsletterParagraphTwo {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.20;
+      color: #ffffff !important;
+    }
+
+    .newsletterProductTitleContainer {
+      padding-top: 35px;
+    }
     
     .newsletterTitleOfferPart {
       font-size: 30px;
@@ -418,6 +507,52 @@ export default {
       font-family: "Open Sans", sans-serif;
       line-height: 1.20;
       font-weight: 600;
+    }
+
+    .newsletterTitleTwo {
+      font-size: 30px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.20;
+      font-weight: 600;
+      color: #ffffff !important;
+    }
+
+    .newsletterBottomCollor25px {
+      padding-bottom: 25px;
+      background-color: #F6E7E6 !important;
+    }
+
+    .newsletterBottomCollor35px {
+      padding-bottom: 35px;
+      background-color: #F6E7E6 !important;
+    }
+
+    .newsletterBottomCollor80px {
+      padding-bottom: 80px;
+      background-color: #F6E7E6 !important;
+    }
+
+    .newsletterBottomCollorTwo25px {
+      padding-bottom: 25px;
+      background-color: #750000 !important;
+    }
+
+    .newsletterBottomCollorTwo35px {
+      padding-bottom: 35px;
+      background-color: #750000 !important;
+    }
+
+    .newsletterBottomCollorTwo80px {
+      padding-bottom: 80px;
+      background-color: #750000 !important;
+    }
+
+    .newsletterProductTitleLast {
+      font-size: 27px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+      color: #000000;
+      text-decoration: underline;
     }
     
     .newsletterProductTitle {
@@ -438,6 +573,25 @@ export default {
       font-family: "Open Sans", sans-serif;
       line-height: 1.20;
       text-decoration: line-through;
+    }
+
+    .newsletterProductContainer {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .newsletterProductContainerLEFT70px {
+      width: 50% !important;
+      vertical-align: top;
+      padding-right: 10px;
+      padding-bottom: 70px;
+    }
+    
+    .newsletterProductContainerRIGHT70px {
+      width: 50% !important;
+      vertical-align: top;
+      padding-left: 10px;
+      padding-bottom: 70px;
     }
     
     .newsletterRight10px {
@@ -551,6 +705,25 @@ export default {
       .newsletterFooterTitle {
         font-size: 18px;
       }
+
+      .newsletterProductContainer {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterProductContainerLEFT70px {
+        width: 50% !important;
+        vertical-align: top;
+        padding-right: 5px !important;
+        padding-bottom: 50px !important;
+      }
+
+      .newsletterProductContainerRIGHT70px {
+        width: 50% !important;
+        vertical-align: top;
+        padding-left: 5px !important;
+        padding-bottom: 50px !important;
+      }
     
       .newsletterProductTitleFreebie {
         font-size: 18px;
@@ -569,11 +742,21 @@ export default {
       }
     
       .newsletterProductTitleContainer {
-        padding-top: 10px;
+        padding-top: 15px;
       }
     
       .newsletterTitle {
         font-size: 25px;
+      }
+
+      .newsletterTitleTwo {
+        font-size: 25px;
+        color: #ffffff !important;
+      }
+
+      .newsletterProductTitleLast {
+        font-size: 16px !important;
+        text-decoration: underline;
       }
     
       .newsletterTitleOfferPart {
@@ -597,9 +780,44 @@ export default {
       .newsletterBottom60px {
         padding-bottom: 40px;
       }
+
+      .newsletterBottomCollor25px {
+        padding-bottom: 15px;
+        background-color: #F6E7E6 !important;
+      }
+
+      .newsletterBottomCollor35px {
+        padding-bottom: 20px;
+        background-color: #F6E7E6 !important;
+      }
+
+      .newsletterBottomCollor80px {
+        padding-bottom: 50px;
+        background-color: #F6E7E6 !important;
+      }
+
+      .newsletterBottomCollorTwo25px {
+        padding-bottom: 15px;
+        background-color: #750000 !important;
+      }
+
+      .newsletterBottomCollorTwo35px {
+        padding-bottom: 20px;
+        background-color: #750000 !important;
+      }
+
+      .newsletterBottomCollorTwo80px {
+        padding-bottom: 50px;
+        background-color: #750000 !important;
+      }
     
       .newsletterParagraph {
         font-size: 16px;
+      }
+
+      .newsletterParagraphTwo {
+        font-size: 16px;
+        color: #ffffff !important;
       }
     
       .newsletterLeft10px {
@@ -983,6 +1201,26 @@ export default {
             table-collapse: unset;
           }
           
+          #newsletter .newsletterTitleH1 {
+            font-size: 45px;
+            line-height: 53px;
+            font-weight: 400;
+            margin:0;
+            }
+            
+            #newsletter .newsletterTitleH2 {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: 400;
+            margin:0;
+            }
+
+            	
+            #newsletter .newsletterHrefTit {
+              text-decoration:none;
+              text-align:center;
+              }
+
           #newsletter .title-advantages-item {
             margin-left: 4px;
           }
@@ -1158,10 +1396,82 @@ export default {
             color: #000000;
             font-size: 20px;
           }
+
+          .newsletterProductContainer {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+          }
+
+          .newsletterProductContainerLEFT70px {
+            width: 50% !important;
+            vertical-align: top;
+            padding-right: 10px;
+            padding-bottom: 70px;
+          }
+          
+          .newsletterProductContainerRIGHT70px {
+            width: 50% !important;
+            vertical-align: top;
+            padding-left: 10px;
+            padding-bottom: 70px;
+          }
+
+          .newsletterProductTitleLast {
+            font-size: 27px;
+            line-height: 1.25;
+            color: #000000;
+            text-decoration: underline;
+          }
+
+          .newsletterProductTitleContainer {
+            padding-top: 35px;
+          }
+
+          .backgroundOne {
+            background-color: #ffffff !important;
+          }
           
           @media screen and (max-width: 768px) {
             #newsletter .newsletterFooterCategoryLEFTBottom {
               padding-right: 5px !important;
+            }
+
+            #newsletter .newsletterTitleH1 {
+              font-size: 30px;
+              line-height: 35px;
+            }
+              
+            #newsletter .newsletterTitleH2 {
+              font-size: 22px;
+              line-height: 27px;
+            }
+
+            .newsletterProductContainer {
+              padding-left: 10px !important;
+              padding-right: 10px !important;
+            }
+            
+            .newsletterProductContainerLEFT70px {
+              width: 50% !important;
+              vertical-align: top;
+              padding-right: 5px !important;
+              padding-bottom: 50px !important;
+            }
+        
+            .newsletterProductContainerRIGHT70px {
+              width: 50% !important;
+              vertical-align: top;
+              padding-left: 5px !important;
+              padding-bottom: 50px !important;
+            }
+  
+            .newsletterProductTitleLast {
+              font-size: 16px !important;
+              text-decoration: underline;
+            }
+  
+            .newsletterProductTitleContainer {
+              padding-top: 15px;
             }
           
             #newsletter .newsletterFooterCategoryRIGHTBottom {
@@ -1324,6 +1634,29 @@ export default {
       padding-left: 20px;
       padding-right: 20px;
     }
+
+    #newsletter .WhiteSpace {
+      background-color: #ffffff !important;
+    }
+
+    #newsletter .newsletterProductContainer {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    #newsletter .newsletterProductContainerLEFT70px {
+      width: 50% !important;
+      vertical-align: top;
+      padding-right: 10px;
+      padding-bottom: 70px;
+    }
+    
+    #newsletter .newsletterProductContainerRIGHT70px {
+      width: 50% !important;
+      vertical-align: top;
+      padding-left: 10px;
+      padding-bottom: 70px;
+    }
     
     #newsletter.newsletterContainer {
       padding-left: 20px;
@@ -1333,13 +1666,30 @@ export default {
     #newsletter .newsletterCta {
       font-size: 20px;
       line-height: 1.20;
-      font-weight: 600;
+    }
+
+    #newsletter .newsletterCtaTwo {
+      font-size: 20px;
+      line-height: 1.20;
+      color: #ffffff !important;
     }
 
     #newsletter .newsletterCode {
       font-size: 30px;
       font-weight: 600;
       line-height: 1.20;
+    }
+
+    #newsletter .backgroundOne {
+      background-color: #ffffff !important;
+    }
+
+    #newsletter .backgroundTwo {
+      background-color: #FFCCB7 !important;
+    }
+
+    .newsletterProductTitleContainer {
+      padding-top: 35px;
     }
     
     #newsletter .newsletterBottom20px {
@@ -1357,15 +1707,66 @@ export default {
     #newsletter .newsletterBottom60px {
       padding-bottom: 60px;
     }
+
+    #newsletter .newsletterBottomCollor25px {
+      padding-bottom: 25px;
+      background-color: #F6E7E6 !important;
+    }
+
+    #newsletter .newsletterBottomCollor35px {
+      padding-bottom: 35px;
+      background-color: #F6E7E6 !important;
+    }
+
+    #newsletter .newsletterBottomCollor80px {
+      padding-bottom: 80px;
+      background-color: #F6E7E6 !important;
+    }
+
+    #newsletter .newsletterBottomCollorTwo25px {
+      padding-bottom: 25px;
+      background-color: #750000 !important;
+    }
+
+    #newsletter .newsletterBottomCollorTwo35px {
+      padding-bottom: 35px;
+      background-color: #750000 !important;
+    }
+
+    #newsletter .newsletterBottomCollorTwo80px {
+      padding-bottom: 80px;
+      background-color: #750000 !important;
+    }
+
+    .newsletterProductTitleLast {
+      font-size: 27px;
+      line-height: 1.25;
+      color: #000000;
+      text-decoration: underline;
+    }
     
     #newsletter .newsletterParagraph {
       font-size: 18px;
       line-height: 1.20;
     }
+
+    #newsletter .newsletterParagraphTwo {
+      font-size: 18px;
+      line-height: 1.20;
+      color: #ffffff !important;
+    }
     
     #newsletter .newsletterTitle {
       font-size: 30px;
       line-height: 1.20;
+      font-weight: 600;
+    }
+
+   #newsletter .newsletterTitleTwo {
+      font-size: 30px;
+      line-height: 1.20;
+      font-weight: 600;
+      color: #ffffff !important;
     }
 
     #newsletter .newsletterTitleOfferPart {
@@ -1500,6 +1901,25 @@ export default {
       #newsletter .newsletterFooterTitle {
         font-size: 18px;
       }
+
+      #newsletter .newsletterProductContainer {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      #newsletter .newsletterProductContainerLEFT70px {
+        width: 50% !important;
+        vertical-align: top;
+        padding-right: 5px !important;
+        padding-bottom: 50px !important;
+      }
+
+      #newsletter .newsletterProductContainerRIGHT70px {
+        width: 50% !important;
+        vertical-align: top;
+        padding-left: 5px !important;
+        padding-bottom: 50px !important;
+      }
     
       #newsletter .newsletterProductTitleFreebie {
         font-size: 18px;
@@ -1512,6 +1932,11 @@ export default {
       #newsletter .newsletterProductLowPrice {
         font-size: 16px;
       }
+
+      .newsletterProductTitleLast {
+        font-size: 16px !important;
+        text-decoration: underline;
+      }
     
       #newsletter .newsletterProductHightPrice {
         display: block;
@@ -1523,6 +1948,11 @@ export default {
     
       #newsletter .newsletterTitle {
         font-size: 25px;
+      }
+
+      #newsletter .newsletterTitleTwo {
+        font-size: 25px;
+        color: #ffffff !important;
       }
 
       #newsletter .newsletterTitleOfferPart {
@@ -1543,6 +1973,36 @@ export default {
         padding-left: 10px;
         padding-right: 0px !important;
       }
+
+      #newsletter .newsletterBottomCollor25px {
+        padding-bottom: 15px;
+        background-color: #F6E7E6 !important;
+      }
+
+      #newsletter .newsletterBottomCollor35px {
+        padding-bottom: 20px;
+        background-color: #F6E7E6 !important;
+      }
+
+      #newsletter .newsletterBottomCollor80px {
+        padding-bottom: 50px;
+        background-color: #F6E7E6 !important;
+      }
+
+      #newsletter .newsletterBottomCollorTwo25px {
+        padding-bottom: 15px;
+        background-color: #750000 !important;
+      }
+
+      #newsletter .newsletterBottomCollorTwo35px {
+        padding-bottom: 20px;
+        background-color: #750000 !important;
+      }
+
+      #newsletter .newsletterBottomCollorTwo80px {
+        padding-bottom: 50px;
+        background-color: #750000 !important;
+      }
     
       #newsletter .newsletterBottom35px {
         padding-bottom: 20px;
@@ -1554,6 +2014,11 @@ export default {
     
       #newsletter .newsletterParagraph {
         font-size: 16px;
+      }
+
+      #newsletter .newsletterParagraphTwo {
+        font-size: 16px;
+        color: #ffffff !important;
       }
     
       #newsletter .newsletterLeft10px {

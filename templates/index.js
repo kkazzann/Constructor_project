@@ -11,6 +11,23 @@ import { CategoriesRows } from "./CategoriesRows.js";
 import { CategoriesRowsLinePriceTitle } from "./CategoriesRowsLinePriceTitle.js";
 import { CategoriesRowsLine } from "./CategoriesRowsLine.js";
 import { mondayOfferFreebiesInsideBanner } from "./mondayOfferFreebiesInsideBanner.js";
+import { Newyear } from "./Newyear.js";
+import { NewyearLP } from "./NewyearLP.js";
+import { Moonlight } from "./Moonlight.js";
+import { MoonlightLP } from "./MoonlightLP.js";
+import { Gatherings } from "./Gatherings.js";
+import { GatheringsLP } from "./GatheringsLP.js";
+import { Modular } from "./Modular.js";
+import { ModularLP } from "./ModularLP.js";
+import { Armchairs } from "./Armchairs.js";
+import { ArmchairsLP } from "./ArmchairsLP.js";
+import { Home } from "./Home.js";
+import { HomeLP } from "./HomeLP.js";
+import { Hallway } from "./Hallway.js";
+import { HallwayLP } from "./HallwayLP.js";
+import { Rugs } from "./Rugs.js";
+import { Living } from "./Living.js";
+import { Office } from "./Office.js";
 
 export const templates = {
   newsletter_FGG,
@@ -26,4 +43,21 @@ export const templates = {
   mondayOfferFreebiesInsideBanner,
   CategoriesRowsLinePriceTitle,
   CategoriesRowsLine,
+  Newyear,
+  NewyearLP,
+  Moonlight,
+  MoonlightLP,
+  Gatherings,
+  GatheringsLP,
+  Modular,
+  ModularLP,
+  Armchairs,
+  ArmchairsLP,
+  Home,
+  HomeLP,
+  Hallway,
+  HallwayLP,
+  Rugs,
+  Living,
+  Office,
 };

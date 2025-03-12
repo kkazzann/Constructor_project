@@ -8,10 +8,10 @@ try {
   initApp({
     campaigns: [
       new entities.Campaign({
-        startId: "26929",
-        name: "Black Week",
-        date: "2024.11.11",
-        issueCardId: "310827",
+        startId: "31697",
+        name: "Power of Textiles",
+        date: "2025.03.26",
+        issueCardId: "346013",
         alarm: {
           isActive: true,
           description: "Add soon ending campaigns.",
@@ -19,170 +19,130 @@ try {
         isArchive: false,
         optimizeImg: false,
         figmaUrl:
-          "https://www.figma.com/design/uIdkNdNa9xdPfexVSIkRgm/2024.11.11---Black-Week-start-newlsetter-(Copy)?t=yz2KFYtKNK6uYMID-0",
+          "https://www.figma.com/design/GQ7LtFa0equQiQ58YbNNOD/2025.01.15-Gatherings?node-id=0-1&p=f&t=r2zHrS05ewvLukb0-0",
         templates: [
           {
             name: "Newsletter",
             type: types.NEWSLETTER,
-            template: templates.CategoriesRowsOfferPart,
-            css: types.CSS.NS_BLACK_WEEK,
-            background: "#000000",
+            template: templates.Office,
+            css: types.CSS.NS,
+            background: "#FEBC66",
             categories: [
               {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category1.png",
-                },
-                href: "https://www.beliani.ch/sofas/",
-                name: "Sofas",
+                name: "Coat stands",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                background: "#FEBC66",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/250326category_01.png",
+                href: "https://www.beliani.ch/textiles/scatter-cushions/",
+                products: [
+                  {
+                    id: "380558",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_01.png",
+                  },
+                  {
+                    id: "469183",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_02.png",
+                  },
+                  {
+                    id: "495438",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_03.png",
+                  },
+                  {
+                    id: "458071",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_04.png",
+                  },
+                ],
               },
               {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category2.png",
-                },
-                href: "https://www.beliani.ch/beds/",
-                name: "Beds",
+                name: "Sideboard",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                background: "#FF4E26",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/250326category_02.png",
+                href: "https://www.beliani.ch/textiles/blankets-and-throws/",
+                products: [
+                  {
+                    id: "569502",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_05.png",
+                  },
+                  {
+                    id: "501589",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_06.png",
+                  },
+                  {
+                    id: "395527",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_07.png",
+                  },
+                  {
+                    id: "373816",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_08.png",
+                  },
+                ],
               },
               {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category3.png",
-                },
-                href: "https://www.beliani.ch/armchairs/",
-                name: "Armchairs",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category4.png",
-                },
-                href: "https://www.beliani.ch/chairs/",
-                name: "Chairs",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category5.png",
-                },
-                href: "https://www.beliani.ch/tables/",
-                name: "Tables",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category6.png",
-                },
-                href: "https://www.beliani.ch/storage/",
-                name: "Storage",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category7.png",
-                },
-                href: "https://www.beliani.ch/textiles/",
-                name: "Textiles",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category8.png",
-                },
-                href: "https://www.beliani.ch/lighting/",
-                name: "Lighting",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category9.png",
-                },
-                href: "https://www.beliani.ch/bathtubs-hot-tubs/",
-                name: "Bathtubs",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category10.png",
-                },
-                href: "https://www.beliani.ch/office-furniture/desks-eng/",
-                name: "Desks",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category11.png",
-                },
-                href: "https://www.beliani.ch/rugs/",
                 name: "Rugs",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                background: "#FEBC66",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/250326category_03.png",
+                href: "https://www.beliani.ch/textiles/bed-sheets/",
+                products: [
+                  {
+                    id: "301135",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_09a.png",
+                  },
+                  {
+                    id: "361733",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_10a.png",
+                  },
+                  {
+                    id: "362376",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_11a.png",
+                  },
+                  {
+                    id: "301116",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_12a.png",
+                  },
+                ],
               },
               {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category12.png",
-                },
-                href: "https://www.beliani.ch/home-accessories/accessories-decor/",
-                name: "Accessories",
+                name: "Mirrors",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                background: "#FF4E26",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/250326category_04.png",
+                href: "https://www.beliani.ch/textiles/towels/",
+                products: [
+                  {
+                    id: "554561",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_13a.png",
+                  },
+                  {
+                    id: "243590",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_14a.png",
+                  },
+                  {
+                    id: "356074",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_15a.png",
+                  },
+                  {
+                    id: "243651",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_16a.png",
+                  },
+                ],
+              },
+              {
+                href: "https://www.beliani.ch/rugs/all+products/",
+              },
+              {
+                href: "https://www.beliani.ch/sofas/",
+              },
+              {
+                href: "https://www.beliani.ch/beds/",
+              },
+              {
+                href: "https://www.beliani.ch/bathtubs-hot-tubs/",
               },
             ],
             wrapper: types.WRAPPER,
@@ -193,7 +153,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp24-11-11",
+                  value: "content/lp25-03-26",
                 },
               },
               {
@@ -202,7 +162,16 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241111_01.png",
+                    "https://upload.pictureserver.net/static/2025/250326title_01.png",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/250122video.png",
                 },
               },
               {
@@ -211,7 +180,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp24-11-01",
+                  value: "content/lp25-03-03",
                 },
               },
               {
@@ -220,7 +189,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241101b.png",
+                    "https://upload.pictureserver.net/static/2025/250319inside.png",
                 },
               },
               {
@@ -229,7 +198,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp24-10-31",
+                  value: "content/lp25-03-20",
                 },
               },
               {
@@ -238,226 +207,211 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241031b.png",
+                    "https://upload.pictureserver.net/static/2025/20250320b.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-19",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250319b.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-18",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "search/lemvig/",
                 },
               },
             ],
             tableQueries: [
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "31:38",
-                name: "intro",
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "15:22",
+                name: "categories",
                 fallback: [
-                  "Extra 5% off everything",
-                  "when you spend min. 250 €",
-                  "Extra 10% off everything",
-                  "when you spend min. 500 €",
-                  "Extra 15% off everything",
-                  "when you spend min. 1000 €",
-                  "Extra 20% off everything",
-                  "when you spend min. 2500 €",
-                ],
+                  "This is time limited offer. Valid only until 27th of October.",
+                ]
               },
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "30",
-                name: "introTitle",
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "23:27",
+                name: "additional",
                 fallback: [
-                  'Up to <span style="color: #FF2F00;">20% OFF</span> even on top </br> of already reduced prices sitewide',
-                ],
+                  "This is time limited offer. Valid only until 27th of October.",
+                ]
               },
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "41:44",
-                name: "codes",
-                fallback: ["Code: 1", "Code: 2", "Code: 3", "Code: 4"],
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "28",
+                name: "shopnow",
+                fallback: [
+                  "This is time limited offer. Valid only until 27th of October.",
+                ]
               },
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "39",
-                name: "offerDate",
-                fallback: ["The offer is valid until 1st od December."],
-              },
-              {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "50:51",
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "37:38",
                 name: "condition",
                 fallback: [
-                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
-                  'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
-                ],
+                  'All items are subject to availability. All prices are correct as of dd.mm.yyyy and are subject to change without notification.',
+                  'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.'
+                ]
               },
             ],
           },
           {
             name: "Landing",
             type: types.LANDINGPAGE,
-            template: templates.CategoriesRowsOfferPart,
-            background: "#000000",
+            template: templates.Office,
+            background: "#FEBC66",
+            topImageColor: "#000000",
             categories: [
               {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category1.png",
-                },
-                href: "https://www.beliani.ch/sofas/",
-                name: "Sofas",
+                name: "Coat stands",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                background: "#FEBC66",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/250326category_01.png",
+                href: "https://www.beliani.ch/textiles/scatter-cushions/",
+                products: [
+                  {
+                    id: "380558",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_01.png",
+                  },
+                  {
+                    id: "469183",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_02.png",
+                  },
+                  {
+                    id: "495438",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_03.png",
+                  },
+                  {
+                    id: "458071",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_04.png",
+                  },
+                ],
               },
               {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category2.png",
-                },
-                href: "https://www.beliani.ch/beds/",
-                name: "Beds",
+                name: "Sideboard",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                background: "#FF4E26",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/250326category_02.png",
+                href: "https://www.beliani.ch/textiles/blankets-and-throws/",
+                products: [
+                  {
+                    id: "569502",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_05.png",
+                  },
+                  {
+                    id: "501589",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_06.png",
+                  },
+                  {
+                    id: "395527",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_07.png",
+                  },
+                  {
+                    id: "373816",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_08.png",
+                  },
+                ],
               },
               {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category3.png",
-                },
-                href: "https://www.beliani.ch/armchairs/",
-                name: "Armchairs",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category4.png",
-                },
-                href: "https://www.beliani.ch/chairs/",
-                name: "Chairs",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category5.png",
-                },
-                href: "https://www.beliani.ch/tables/",
-                name: "Tables",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category6.png",
-                },
-                href: "https://www.beliani.ch/storage/",
-                name: "Storage",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category7.png",
-                },
-                href: "https://www.beliani.ch/textiles/",
-                name: "Textiles",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category8.png",
-                },
-                href: "https://www.beliani.ch/lighting/",
-                name: "Lighting",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category9.png",
-                },
-                href: "https://www.beliani.ch/bathtubs-hot-tubs/",
-                name: "Bathtubs",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category10.png",
-                },
-                href: "https://www.beliani.ch/office-furniture/desks-eng/",
-                name: "Desks",
-              },
-              {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category11.png",
-                },
-                href: "https://www.beliani.ch/rugs/",
                 name: "Rugs",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                background: "#FEBC66",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/250326category_03.png",
+                href: "https://www.beliani.ch/textiles/bed-sheets/",
+                products: [
+                  {
+                    id: "301135",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_09a.png",
+                  },
+                  {
+                    id: "361733",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_10a.png",
+                  },
+                  {
+                    id: "362376",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_11a.png",
+                  },
+                  {
+                    id: "301116",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_12a.png",
+                  },
+                ],
               },
               {
-                type: "no_products",
-                color: "#ffffff",
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "45",
-                  value:
-                    "https://upload.pictureserver.net/static/2024/20241111Category12.png",
-                },
-                href: "https://www.beliani.ch/home-accessories/accessories-decor/",
-                name: "Accessories",
+                name: "Mirrors",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                background: "#FF4E26",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2025/250326category_04.png",
+                href: "https://www.beliani.ch/textiles/towels/",
+                products: [
+                  {
+                    id: "554561",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_13a.png",
+                  },
+                  {
+                    id: "243590",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_14a.png",
+                  },
+                  {
+                    id: "356074",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_15a.png",
+                  },
+                  {
+                    id: "243651",
+                    src: "https://upload.pictureserver.net/static/2025/250326product_16a.png",
+                  },
+                ],
+              },
+              {
+                href: "https://www.beliani.ch/rugs/all+products/",
+              },
+              {
+                href: "https://www.beliani.ch/sofas/",
+              },
+              {
+                href: "https://www.beliani.ch/beds/",
+              },
+              {
+                href: "https://www.beliani.ch/bathtubs-hot-tubs/",
               },
             ],
-            css: types.CSS.LP_BLACK_WEEK,
+            css: types.CSS.LP,
             links: [
               {
                 query: true,
@@ -465,7 +419,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp24-11-11",
+                  value: "content/lp25-03-26",
                 },
               },
               {
@@ -474,7 +428,16 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241111_01.png",
+                    "https://upload.pictureserver.net/static/2025/250326title_01.png",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/250122video.png",
                 },
               },
               {
@@ -483,7 +446,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp24-11-01",
+                  value: "content/lp25-03-03",
                 },
               },
               {
@@ -492,7 +455,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241101b.png",
+                    "https://upload.pictureserver.net/static/2025/250319inside.png",
                 },
               },
               {
@@ -501,7 +464,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp24-10-31",
+                  value: "content/lp25-03-20",
                 },
               },
               {
@@ -510,59 +473,92 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241031b.png",
+                    "https://upload.pictureserver.net/static/2025/20250320b.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-19",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "45",
+                  value:
+                    "https://upload.pictureserver.net/static/2025/20250319b.png",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-18",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "search/lemvig/",
                 },
               },
             ],
             tableQueries: [
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "31:38",
-                name: "intro",
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "11:12",
+                name: "tit",
                 fallback: [
-                  "Extra 5% off everything",
-                  "when you spend min. 250 €",
-                  "Extra 10% off everything",
-                  "when you spend min. 500 €",
-                  "Extra 15% off everything",
-                  "when you spend min. 1000 €",
-                  "Extra 20% off everything",
-                  "when you spend min. 2500 €",
-                ],
+                  "This is time limited offer. Valid only until 27th of October.",
+                ]
               },
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "30",
-                name: "introTitle",
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "15:22",
+                name: "categories",
                 fallback: [
-                  'Up to <span style="color: #FF2F00;">20% OFF</span> even on top </br> of already reduced prices sitewide',
-                ],
+                  "This is time limited offer. Valid only until 27th of October.",
+                ]
               },
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "41:44",
-                name: "codes",
-                fallback: ["Code: 1", "Code: 2", "Code: 3", "Code: 4"],
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "23:27",
+                name: "additional",
+                fallback: [
+                  "This is time limited offer. Valid only until 27th of October.",
+                ]
               },
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "39",
-                name: "offerDate",
-                fallback: ["The offer is valid until 1st od December."],
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "28",
+                name: "shopnow",
+                fallback: [
+                  "This is time limited offer. Valid only until 27th of October.",
+                ]
               },
               {
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 11.11.24 - Black week start!",
-                tableRange: "50:51",
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "26.03.25 - Power of textiles!",
+                tableRange: "37:38",
                 name: "condition",
                 fallback: [
-                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
-                  'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
-                ],
+                  'All items are subject to availability. All prices are correct as of dd.mm.yyyy and are subject to change without notification.',
+                  'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.'
+                ]
               },
             ],
           },
@@ -571,19 +567,19 @@ try {
       new entities.Campaign({
         startId: "27569",
         name: "Black Week",
-        date: "2024.11.18",
+        date: "2025.11.18",
         issueCardId: "311561",
         alarm: {
           isActive: true,
           description: "Add soonending banners",
         },
-        isArchive: true,
+        isArchive: false,
         optimizeImg: false,
         figmaUrl:
-          "https://www.figma.com/design/0MWrq2qlqSr1a6ZCgnuS3t/2024.11.18---Black-Week-Room-categories-newlsetter-(Copy)?node-id=0-1&node-type=canvas&t=HtyA6P5g5YCy4DBc-0",
+          "https://www.figma.com/design/0MWrq2qlqSr1a6ZCgnuS3t/2025.11.18---Black-Week-Room-categories-newlsetter-(Copy)?node-id=0-1&node-type=canvas&t=HtyA6P5g5YCy4DBc-0",
         templates: [
           {
-            name: "Newsletter 2024.11.18",
+            name: "Newsletter 2025.11.18",
             type: types.NEWSLETTER,
             template: templates.CategoriesRowsOfferPart,
             css: types.CSS.NS_BLACK_WEEK,
@@ -598,7 +594,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category1.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category1.png",
                 },
                 href: "https://www.beliani.ch/living-room-furniture/",
                 name: "Living room",
@@ -611,7 +607,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category2.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category2.png",
                 },
                 href: "https://www.beliani.ch/dining-room-furniture/",
                 name: "Dining room",
@@ -624,7 +620,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category3.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category3.png",
                 },
                 href: "https://www.beliani.ch/bedroom-furniture/",
                 name: "Bedroom",
@@ -637,7 +633,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category4.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category4.png",
                 },
                 href: "https://www.beliani.ch/hallway/",
                 name: "Hallway",
@@ -650,7 +646,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category5.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category5.png",
                 },
                 href: "https://www.beliani.ch/office-furniture/",
                 name: "Office",
@@ -663,7 +659,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category6.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category6.png",
                 },
                 href: "https://www.beliani.ch/bathroom-furniture/",
                 name: "Bathroom",
@@ -676,7 +672,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category7.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category7.png",
                 },
                 href: "https://www.beliani.ch/children-room/",
                 name: "Kids",
@@ -694,7 +690,7 @@ try {
               },
               {
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241118gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251118gif.gif",
               },
               {
                 query: true,
@@ -711,7 +707,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241108b.png",
+                    "https://upload.pictureserver.net/static/2025/20251108b.png",
                 },
               },
               {
@@ -729,7 +725,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241107b.png",
+                    "https://upload.pictureserver.net/static/2025/20251107b.png",
                 },
               },
             ],
@@ -779,14 +775,14 @@ try {
                 tableRange: "50:51",
                 name: "condition",
                 fallback: [
-                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2025 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
                   'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
                 ],
               },
             ],
           },
           {
-            name: "Landing 2024.11.18",
+            name: "Landing 2025.11.18",
             type: types.LANDINGPAGE,
             template: templates.CategoriesRowsOfferPart,
             background: "#000000",
@@ -800,7 +796,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category1.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category1.png",
                 },
                 href: "https://www.beliani.ch/living-room-furniture/",
                 name: "Living room",
@@ -813,7 +809,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category2.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category2.png",
                 },
                 href: "https://www.beliani.ch/dining-room-furniture/",
                 name: "Dining room",
@@ -826,7 +822,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category3.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category3.png",
                 },
                 href: "https://www.beliani.ch/bedroom-furniture/",
                 name: "Bedroom",
@@ -839,7 +835,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category4.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category4.png",
                 },
                 href: "https://www.beliani.ch/hallway/",
                 name: "Hallway",
@@ -852,7 +848,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category5.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category5.png",
                 },
                 href: "https://www.beliani.ch/office-furniture/",
                 name: "Office",
@@ -865,7 +861,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category6.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category6.png",
                 },
                 href: "https://www.beliani.ch/bathroom-furniture/",
                 name: "Bathroom",
@@ -878,7 +874,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241118Category7.png",
+                    "https://upload.pictureserver.net/static/2025/20251118Category7.png",
                 },
                 href: "https://www.beliani.ch/children-room/",
                 name: "Kids",
@@ -896,7 +892,7 @@ try {
               },
               {
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241118gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251118gif.gif",
               },
               {
                 query: true,
@@ -913,7 +909,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241108b.png",
+                    "https://upload.pictureserver.net/static/2025/20251108b.png",
                 },
               },
               {
@@ -931,7 +927,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241107b.png",
+                    "https://upload.pictureserver.net/static/2025/20251107b.png",
                 },
               },
             ],
@@ -981,7 +977,7 @@ try {
                 tableRange: "50:51",
                 name: "condition",
                 fallback: [
-                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2025 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
                   'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
                 ],
               },
@@ -992,7 +988,7 @@ try {
       new entities.Campaign({
         startId: "27921",
         name: "Black Week",
-        date: "2024.11.25",
+        date: "2025.11.25",
         issueCardId: "316527",
         alarm: {
           isActive: false,
@@ -1000,10 +996,10 @@ try {
         isArchive: true,
         optimizeImg: false,
         figmaUrl:
-          "https://www.figma.com/design/DTtXx65xEPTjidWUXxBwbJ/2024.11.25---Black-Week-Categories-newlsetter-(Copy)?node-id=0-1&node-type=canvas&t=368PdKSOdo78qo0I-0",
+          "https://www.figma.com/design/DTtXx65xEPTjidWUXxBwbJ/2025.11.25---Black-Week-Categories-newlsetter-(Copy)?node-id=0-1&node-type=canvas&t=368PdKSOdo78qo0I-0",
         templates: [
           {
-            name: "Newsletter 2024.11.25",
+            name: "Newsletter 2025.11.25",
             type: types.NEWSLETTER,
             template: templates.CategoriesRowsOfferPart,
             css: types.CSS.NS_BLACK_WEEK,
@@ -1018,7 +1014,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category1.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category1.png",
                 },
                 href: "https://www.beliani.ch/sofas/",
                 name: "Sofas",
@@ -1031,7 +1027,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category2.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category2.png",
                 },
                 href: "https://www.beliani.ch/beds/",
                 name: "Beds",
@@ -1044,7 +1040,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category3.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category3.png",
                 },
                 href: "https://www.beliani.ch/armchairs/",
                 name: "Armchairs",
@@ -1057,7 +1053,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category4.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category4.png",
                 },
                 href: "https://www.beliani.ch/chairs/",
                 name: "Chairs",
@@ -1070,7 +1066,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category5.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category5.png",
                 },
                 href: "https://www.beliani.ch/tables/",
                 name: "Tables",
@@ -1083,7 +1079,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category6.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category6.png",
                 },
                 href: "https://www.beliani.ch/storage/",
                 name: "Storage",
@@ -1096,7 +1092,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category7.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category7.png",
                 },
                 href: "https://www.beliani.ch/textiles/",
                 name: "Textiles",
@@ -1109,7 +1105,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category8.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category8.png",
                 },
                 href: "https://www.beliani.ch/lighting/",
                 name: "Lighting",
@@ -1122,7 +1118,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category9.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category9.png",
                 },
                 href: "https://www.beliani.ch/bathtubs-hot-tubs/",
                 name: "Baths",
@@ -1135,7 +1131,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category10.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category10.png",
                 },
                 href: "https://www.beliani.ch/desks-eng/",
                 name: "Desks",
@@ -1148,7 +1144,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category11.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category11.png",
                 },
                 href: "https://www.beliani.ch/rugs/",
                 name: "Rugs",
@@ -1161,7 +1157,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category12.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category12.png",
                 },
                 href: "https://www.beliani.ch/home-accessories/",
                 name: "Accessories",
@@ -1179,7 +1175,7 @@ try {
               },
               {
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241125gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251125gif.gif",
               },
               {
                 query: true,
@@ -1196,7 +1192,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241115b.png",
+                    "https://upload.pictureserver.net/static/2025/20251115b.png",
                 },
               },
               {
@@ -1214,7 +1210,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241114b.png",
+                    "https://upload.pictureserver.net/static/2025/20251114b.png",
                 },
               },
             ],
@@ -1264,14 +1260,14 @@ try {
                 tableRange: "38:39",
                 name: "condition",
                 fallback: [
-                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2025 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
                   'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
                 ],
               },
             ],
           },
           {
-            name: "Landing 2024.11.25",
+            name: "Landing 2025.11.25",
             type: types.LANDINGPAGE,
             template: templates.CategoriesRowsOfferPart,
             background: "#000000",
@@ -1285,7 +1281,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category1.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category1.png",
                 },
                 href: "https://www.beliani.ch/sofas/",
                 name: "Sofas",
@@ -1298,7 +1294,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category2.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category2.png",
                 },
                 href: "https://www.beliani.ch/beds/",
                 name: "Beds",
@@ -1311,7 +1307,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category3.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category3.png",
                 },
                 href: "https://www.beliani.ch/armchairs/",
                 name: "Armchairs",
@@ -1324,7 +1320,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category4.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category4.png",
                 },
                 href: "https://www.beliani.ch/chairs/",
                 name: "Chairs",
@@ -1337,7 +1333,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category5.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category5.png",
                 },
                 href: "https://www.beliani.ch/tables/",
                 name: "Tables",
@@ -1350,7 +1346,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category6.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category6.png",
                 },
                 href: "https://www.beliani.ch/storage/",
                 name: "Storage",
@@ -1363,7 +1359,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category7.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category7.png",
                 },
                 href: "https://www.beliani.ch/textiles/",
                 name: "Textiles",
@@ -1376,7 +1372,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category8.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category8.png",
                 },
                 href: "https://www.beliani.ch/lighting/",
                 name: "Lighting",
@@ -1389,7 +1385,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category9.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category9.png",
                 },
                 href: "https://www.beliani.ch/bathtubs-hot-tubs/",
                 name: "Baths",
@@ -1402,7 +1398,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category10.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category10.png",
                 },
                 href: "https://www.beliani.ch/desks-eng/",
                 name: "Desks",
@@ -1415,7 +1411,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category11.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category11.png",
                 },
                 href: "https://www.beliani.ch/rugs/",
                 name: "Rugs",
@@ -1428,7 +1424,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241125Category12.png",
+                    "https://upload.pictureserver.net/static/2025/20251125Category12.png",
                 },
                 href: "https://www.beliani.ch/home-accessories/",
                 name: "Accessories",
@@ -1446,7 +1442,7 @@ try {
               },
               {
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241125gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251125gif.gif",
               },
               {
                 query: true,
@@ -1463,7 +1459,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241115b.png",
+                    "https://upload.pictureserver.net/static/2025/20251115b.png",
                 },
               },
               {
@@ -1481,7 +1477,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241114b.png",
+                    "https://upload.pictureserver.net/static/2025/20251114b.png",
                 },
               },
             ],
@@ -1531,7 +1527,7 @@ try {
                 tableRange: "38:39",
                 name: "condition",
                 fallback: [
-                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2025 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
                   'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
                 ],
               },
@@ -1542,7 +1538,7 @@ try {
       new entities.Campaign({
         startId: "28593",
         name: "Advent calendar",
-        date: "2024.12.04",
+        date: "2025.12.04",
         issueCardId: "321293",
         alarm: {
           isActive: false,
@@ -1550,7 +1546,7 @@ try {
         isArchive: false,
         optimizeImg: false,
         figmaUrl:
-          "https://www.figma.com/design/jGgGXGku9MNqYtIXcWPGJZ/2024.12.04-Advent-calendar-(Copy)?node-id=0-1&node-type=canvas&t=ABEh9USn5IcKQntI-0",
+          "https://www.figma.com/design/jGgGXGku9MNqYtIXcWPGJZ/2025.12.04-Advent-calendar-(Copy)?node-id=0-1&node-type=canvas&t=ABEh9USn5IcKQntI-0",
         templates: [
           {
             name: "Newsletter",
@@ -1575,7 +1571,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241204_01.png",
+                    "https://upload.pictureserver.net/static/2025/20251204_01.png",
                 },
               },
               {
@@ -1589,7 +1585,7 @@ try {
               },
               {
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241204gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251204gif.gif",
               },
               {
                 query: true,
@@ -1606,7 +1602,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241107b.png",
+                    "https://upload.pictureserver.net/static/2025/20251107b.png",
                 },
               },
               {
@@ -1624,7 +1620,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241101b.png",
+                    "https://upload.pictureserver.net/static/2025/20251101b.png",
                 },
               },
             ],
@@ -1653,7 +1649,7 @@ try {
                 tableRange: "16:17",
                 name: "condition",
                 fallback: [
-                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2025 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
                   'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
                 ],
               },
@@ -1664,7 +1660,7 @@ try {
       new entities.Campaign({
         startId: "28753",
         name: "Newsletter Free wall decor",
-        date: "2024.12.09",
+        date: "2025.12.09",
         issueCardId: "322376",
         alarm: {
           isActive: false,
@@ -1688,24 +1684,24 @@ try {
                 name: "Storage beds",
                 background: "#750000",
                 color: "#ffffff",
-                src: "https://upload.pictureserver.net/static/2024/20241209Category1.png",
+                src: "https://upload.pictureserver.net/static/2025/20251209Category1.png",
                 href: "https://www.beliani.ch/beds/storage-beds/",
                 products: [
                   new entities.ProductInstance({
                     id: "564062",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category11.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category11.png",
                   }),
                   new entities.ProductInstance({
                     id: "192890",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category12.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category12.png",
                   }),
                   new entities.ProductInstance({
                     id: "142341",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category13.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category13.png",
                   }),
                   new entities.ProductInstance({
                     id: "392644",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category14.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category14.png",
                   }),
                 ],
               }),
@@ -1714,24 +1710,24 @@ try {
                 background: "#FFCCB7",
                 color: "#000000",
                 type: "monday",
-                src: "https://upload.pictureserver.net/static/2024/20241209Category2.png",
+                src: "https://upload.pictureserver.net/static/2025/20251209Category2.png",
                 href: "https://www.beliani.ch/beds/fabric-beds/",
                 products: [
                   new entities.ProductInstance({
                     id: "565963",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category21.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category21.png",
                   }),
                   new entities.ProductInstance({
                     id: "449153",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category22.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category22.png",
                   }),
                   new entities.ProductInstance({
                     id: "329401",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category23.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category23.png",
                   }),
                   new entities.ProductInstance({
                     id: "186252",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category24.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category24.png",
                   }),
                 ],
               }),
@@ -1740,24 +1736,24 @@ try {
                 background: "#750000",
                 color: "#ffffff",
                 type: "monday",
-                src: "https://upload.pictureserver.net/static/2024/20241209Category3.png",
+                src: "https://upload.pictureserver.net/static/2025/20251209Category3.png",
                 href: "https://www.beliani.ch/beds/metal-beds/",
                 products: [
                   new entities.ProductInstance({
                     id: "136637",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category31.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category31.png",
                   }),
                   new entities.ProductInstance({
                     id: "244594",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category32.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category32.png",
                   }),
                   new entities.ProductInstance({
                     id: "306232",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category33.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category33.png",
                   }),
                   new entities.ProductInstance({
                     id: "51335",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category34.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category34.png",
                   }),
                 ],
               }),
@@ -1766,24 +1762,24 @@ try {
                 background: "#FFCCB7",
                 color: "#000000",
                 type: "monday",
-                src: "https://upload.pictureserver.net/static/2024/20241209Category4.png",
+                src: "https://upload.pictureserver.net/static/2025/20251209Category4.png",
                 href: "https://www.beliani.ch/beds/leather-beds/",
                 products: [
                   new entities.ProductInstance({
                     id: "93604",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category41.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category41.png",
                   }),
                   new entities.ProductInstance({
                     id: "746",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category42.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category42.png",
                   }),
                   new entities.ProductInstance({
                     id: "194963",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category43.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category43.png",
                   }),
                   new entities.ProductInstance({
                     id: "394734",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category44.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category44.png",
                   }),
                 ],
               }),
@@ -1792,22 +1788,22 @@ try {
               new entities.OriginHref({ value: "content/lp24-12-09" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241209_01.png",
+                  "https://upload.pictureserver.net/static/2025/20251209_01.png",
               }),
               new entities.OriginHref({ value: "content/lp24-12-09" }),
               new entities.Image({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241209gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251209gif.gif",
               }),
               new entities.OriginHref({ value: "content/lp24-12-05" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241205b.png",
+                  "https://upload.pictureserver.net/static/2025/20251205b.png",
               }),
               new entities.OriginHref({ value: "content/lp24-12-04" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241204b.png",
+                  "https://upload.pictureserver.net/static/2025/20251204b.png",
               }),
             ]),
             tableQueries: [
@@ -1850,12 +1846,12 @@ try {
                   products: [
                     {
                       id: "113426",
-                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie1.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251209Freebie1.png",
                       style: "padding-right: 10px; padding-left: 60px;",
                     },
                     {
                       id: "113443",
-                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie2.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251209Freebie2.png",
                       style: "padding-right: 60px; padding-left: 10px;",
                     },
                   ],
@@ -1866,12 +1862,12 @@ try {
                   products: [
                     {
                       id: "358921",
-                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie3.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251209Freebie3.png",
                       style: "padding-right: 10px; padding-left: 60px;",
                     },
                     {
                       id: "174021",
-                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie4.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251209Freebie4.png",
                       style: "padding-right: 60px; padding-left: 10px;",
                     },
                   ],
@@ -1893,24 +1889,24 @@ try {
                 name: "Storage beds",
                 background: "#750000",
                 color: "#ffffff",
-                src: "https://upload.pictureserver.net/static/2024/20241209Category1.png",
+                src: "https://upload.pictureserver.net/static/2025/20251209Category1.png",
                 href: "https://www.beliani.ch/beds/storage-beds/",
                 products: [
                   new entities.ProductInstance({
                     id: "564062",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category11.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category11.png",
                   }),
                   new entities.ProductInstance({
                     id: "192890",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category12.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category12.png",
                   }),
                   new entities.ProductInstance({
                     id: "142341",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category13.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category13.png",
                   }),
                   new entities.ProductInstance({
                     id: "392644",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category14.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category14.png",
                   }),
                 ],
               }),
@@ -1919,24 +1915,24 @@ try {
                 background: "#FFCCB7",
                 color: "#000000",
                 type: "monday",
-                src: "https://upload.pictureserver.net/static/2024/20241209Category2.png",
+                src: "https://upload.pictureserver.net/static/2025/20251209Category2.png",
                 href: "https://www.beliani.ch/beds/fabric-beds/",
                 products: [
                   new entities.ProductInstance({
                     id: "565963",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category21.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category21.png",
                   }),
                   new entities.ProductInstance({
                     id: "449153",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category22.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category22.png",
                   }),
                   new entities.ProductInstance({
                     id: "329401",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category23.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category23.png",
                   }),
                   new entities.ProductInstance({
                     id: "186252",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category24.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category24.png",
                   }),
                 ],
               }),
@@ -1945,24 +1941,24 @@ try {
                 background: "#750000",
                 color: "#ffffff",
                 type: "monday",
-                src: "https://upload.pictureserver.net/static/2024/20241209Category3.png",
+                src: "https://upload.pictureserver.net/static/2025/20251209Category3.png",
                 href: "https://www.beliani.ch/beds/metal-beds/",
                 products: [
                   new entities.ProductInstance({
                     id: "136637",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category31.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category31.png",
                   }),
                   new entities.ProductInstance({
                     id: "244594",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category32.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category32.png",
                   }),
                   new entities.ProductInstance({
                     id: "306232",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category33.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category33.png",
                   }),
                   new entities.ProductInstance({
                     id: "51335",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category34.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category34.png",
                   }),
                 ],
               }),
@@ -1971,24 +1967,24 @@ try {
                 background: "#FFCCB7",
                 color: "#000000",
                 type: "monday",
-                src: "https://upload.pictureserver.net/static/2024/20241209Category4.png",
+                src: "https://upload.pictureserver.net/static/2025/20251209Category4.png",
                 href: "https://www.beliani.ch/beds/leather-beds/",
                 products: [
                   new entities.ProductInstance({
                     id: "93604",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category41.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category41.png",
                   }),
                   new entities.ProductInstance({
                     id: "746",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category42.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category42.png",
                   }),
                   new entities.ProductInstance({
                     id: "194963",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category43.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category43.png",
                   }),
                   new entities.ProductInstance({
                     id: "394734",
-                    src: "https://upload.pictureserver.net/static/2024/20241209Category44.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251209Category44.png",
                   }),
                 ],
               }),
@@ -1997,22 +1993,22 @@ try {
               new entities.OriginHref({ value: "content/lp24-12-09" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241209_01.png",
+                  "https://upload.pictureserver.net/static/2025/20251209_01.png",
               }),
               new entities.OriginHref({ value: "content/lp24-12-09" }),
               new entities.Image({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241209gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251209gif.gif",
               }),
               new entities.OriginHref({ value: "content/lp24-12-05" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241205b.png",
+                  "https://upload.pictureserver.net/static/2025/20251205b.png",
               }),
               new entities.OriginHref({ value: "content/lp24-12-04" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241204b.png",
+                  "https://upload.pictureserver.net/static/2025/20251204b.png",
               }),
             ]),
             tableQueries: [
@@ -2055,12 +2051,12 @@ try {
                   products: [
                     {
                       id: "113426",
-                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie1.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251209Freebie1.png",
                       style: "padding-right: 10px; padding-left: 60px;",
                     },
                     {
                       id: "113443",
-                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie2.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251209Freebie2.png",
                       style: "padding-right: 60px; padding-left: 10px;",
                     },
                   ],
@@ -2071,12 +2067,12 @@ try {
                   products: [
                     {
                       id: "358921",
-                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie3.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251209Freebie3.png",
                       style: "padding-right: 10px; padding-left: 60px;",
                     },
                     {
                       id: "174021",
-                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie4.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251209Freebie4.png",
                       style: "padding-right: 60px; padding-left: 10px;",
                     },
                   ],
@@ -2111,7 +2107,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20250120Category1.png",
+                    "https://upload.pictureserver.net/static/2025/20250120Category1.png",
                 },
                 href: "https://www.beliani.ch/living-room-furniture/",
                 name: "Living room",
@@ -2123,7 +2119,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20250120Category2.png",
+                    "https://upload.pictureserver.net/static/2025/20250120Category2.png",
                 },
                 href: "https://www.beliani.ch/dining-room-furniture/",
                 name: "Dining room",
@@ -2135,7 +2131,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20250120Category3.png",
+                    "https://upload.pictureserver.net/static/2025/20250120Category3.png",
                 },
                 href: "https://www.beliani.ch/bedroom-furniture/",
                 name: "Bedroom",
@@ -2147,7 +2143,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20250120Category4.png",
+                    "https://upload.pictureserver.net/static/2025/20250120Category4.png",
                 },
                 href: "https://www.beliani.ch/hallway/",
                 name: "Hallway",
@@ -2159,7 +2155,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20250120Category5.png",
+                    "https://upload.pictureserver.net/static/2025/20250120Category5.png",
                 },
                 href: "https://www.beliani.ch/office-furniture/",
                 name: "Office",
@@ -2171,7 +2167,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20250120Category6.png",
+                    "https://upload.pictureserver.net/static/2025/20250120Category6.png",
                 },
                 href: "https://www.beliani.ch/bathroom-furniture/",
                 name: "Bathroom",
@@ -2183,7 +2179,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20250120Category7.png",
+                    "https://upload.pictureserver.net/static/2025/20250120Category7.png",
                 },
                 href: "https://www.beliani.ch/children-room/",
                 name: "Kids",
@@ -2194,22 +2190,22 @@ try {
               new entities.OriginHref({ value: "content/lp25-01-20" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20250120_01.png",
+                  "https://upload.pictureserver.net/static/2025/20250120_01.png",
               }),
               new entities.OriginHref({ value: "content/lp25-01-20" }),
               new entities.Image({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20250120gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20250120gif.gif",
               }),
               new entities.OriginHref({ value: "content/lp25-01-13" }),
               new entities.Image({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20250113b.png",
+                  "https://upload.pictureserver.net/static/2025/20250113b.png",
               }),
               new entities.OriginHref({ value: "content/lp25-01-10" }),
               new entities.Image({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20250110b.png",
+                  "https://upload.pictureserver.net/static/2025/20250110b.png",
               }),
             ],
             tableQueries: [
@@ -2247,7 +2243,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category1.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category1.png",
                 },
                 href: "https://www.beliani.ch/sofas/",
                 name: "Sofas",
@@ -2259,7 +2255,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category2.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category2.png",
                 },
                 href: "https://www.beliani.ch/beds/",
                 name: "Beds",
@@ -2271,7 +2267,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category3.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category3.png",
                 },
                 href: "https://www.beliani.ch/armchairs/",
                 name: "Armchairs",
@@ -2283,7 +2279,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category4.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category4.png",
                 },
                 href: "https://www.beliani.ch/chairs/",
                 name: "Chairs",
@@ -2295,7 +2291,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category5.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category5.png",
                 },
                 href: "https://www.beliani.ch/tables/",
                 name: "Tables",
@@ -2307,7 +2303,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category6.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category6.png",
                 },
                 href: "https://www.beliani.ch/storage/",
                 name: "Storage",
@@ -2319,7 +2315,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category7.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category7.png",
                 },
                 href: "https://www.beliani.ch/textiles/",
                 name: "Textiles",
@@ -2331,7 +2327,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category8.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category8.png",
                 },
                 href: "https://www.beliani.ch/lighting/",
                 name: "Lighting",
@@ -2343,7 +2339,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category9.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category9.png",
                 },
                 href: "https://www.beliani.ch/bathtubs-hot-tubs/",
                 name: "Bathtubs",
@@ -2355,7 +2351,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category10.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category10.png",
                 },
                 href: "https://www.beliani.ch/office-furniture/desks-eng/",
                 name: "Desks",
@@ -2367,7 +2363,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category11.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category11.png",
                 },
                 href: "https://www.beliani.ch/rugs/",
                 name: "Rugs",
@@ -2379,7 +2375,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021Category12.png",
+                    "https://upload.pictureserver.net/static/2025/20251021Category12.png",
                 },
                 href: "https://www.beliani.ch/home-accessories/",
                 name: "Accessories",
@@ -2402,7 +2398,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021_01.jpg",
+                    "https://upload.pictureserver.net/static/2025/20251021_01.jpg",
                 },
               },
               {
@@ -2420,7 +2416,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241021gif.gif",
+                    "https://upload.pictureserver.net/static/2025/20251021gif.gif",
                 },
               },
               {
@@ -2438,7 +2434,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241011b.png",
+                    "https://upload.pictureserver.net/static/2025/20251011b.png",
                 },
               },
               {
@@ -2456,7 +2452,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "45",
                   value:
-                    "https://upload.pictureserver.net/static/2024/20241010b.png",
+                    "https://upload.pictureserver.net/static/2025/20251010b.png",
                 },
               },
             ],
@@ -2487,7 +2483,7 @@ try {
       new entities.Campaign({
         startId: "29056",
         name: "Newsletter free candles",
-        date: "2024.12.16",
+        date: "2025.12.16",
         issueCardId: "323983",
         alarm: {
           isActive: false,
@@ -2495,14 +2491,14 @@ try {
         isArchive: false,
         optimizeImg: false,
         figmaUrl:
-          "https://www.figma.com/design/uMrv7ddclqeiUAFHElY7Jf/2024.12.16-free-candles-(Copy)?m=auto&fuid=1185112605564950178",
+          "https://www.figma.com/design/uMrv7ddclqeiUAFHElY7Jf/2025.12.16-free-candles-(Copy)?m=auto&fuid=1185112605564950178",
         templates: [
           new entities.MondayFreebieNewsletter({
             insideBanner: {
               href: "content/lp24-12-04",
-              src: "https://upload.pictureserver.net/static/2024/uk202401216InsideBanner.png",
+              src: "https://upload.pictureserver.net/static/2025/uk202501216InsideBanner.png",
               src_config: {
-                "name": "202401216InsideBanner.png",
+                "name": "202501216InsideBanner.png",
               }
             },
             background: "#FFCCB7",
@@ -2518,24 +2514,24 @@ try {
                 name: "New York",
                 background: "#750000",
                 color: "#ffffff",
-                src: "https://upload.pictureserver.net/static/2024/20241216Category1.png",
+                src: "https://upload.pictureserver.net/static/2025/20251216Category1.png",
                 href: "https://www.beliani.ch/christmas-by-style/new-york-style-christmas/",
                 products: [
                   new entities.ProductInstance({
                     id: "525527",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category11.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category11.png",
                   }),
                   new entities.ProductInstance({
                     id: "429466",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category12.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category12.png",
                   }),
                   new entities.ProductInstance({
                     id: "416655",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category13.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category13.png",
                   }),
                   new entities.ProductInstance({
                     id: "296313",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category14.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category14.png",
                   }),
                 ],
               }),
@@ -2543,24 +2539,24 @@ try {
                 name: "Traditional",
                 background: "#FFCCB7",
                 color: "#000000",
-                src: "https://upload.pictureserver.net/static/2024/20241216Category2.png",
+                src: "https://upload.pictureserver.net/static/2025/20251216Category2.png",
                 href: "https://www.beliani.ch/christmas-by-style/traditional-christmas/",
                 products: [
                   new entities.ProductInstance({
                     id: "340565",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category21.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category21.png",
                   }),
                   new entities.ProductInstance({
                     id: "295319",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category22.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category22.png",
                   }),
                   new entities.ProductInstance({
                     id: "499948",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category23.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category23.png",
                   }),
                   new entities.ProductInstance({
                     id: "335169",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category24.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category24.png",
                   }),
                 ],
               }),
@@ -2568,24 +2564,24 @@ try {
                 name: "Rustic",
                 background: "#750000",
                 color: "#ffffff",
-                src: "https://upload.pictureserver.net/static/2024/20241216Category3.png",
+                src: "https://upload.pictureserver.net/static/2025/20251216Category3.png",
                 href: "https://www.beliani.ch/christmas-by-style/rustic-christmas/",
                 products: [
                   new entities.ProductInstance({
                     id: "202633",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category31.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category31.png",
                   }),
                   new entities.ProductInstance({
                     id: "340925",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category32.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category32.png",
                   }),
                   new entities.ProductInstance({
                     id: "336323",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category33.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category33.png",
                   }),
                   new entities.ProductInstance({
                     id: "376699",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category34.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category34.png",
                   }),
                 ],
               }),
@@ -2593,24 +2589,24 @@ try {
                 name: "Scandinavian",
                 background: "#FFCCB7",
                 color: "#000000",
-                src: "https://upload.pictureserver.net/static/2024/20241216Category4.png",
+                src: "https://upload.pictureserver.net/static/2025/20251216Category4.png",
                 href: "https://www.beliani.ch/christmas-by-style/scandinavian-christmas/",
                 products: [
                   new entities.ProductInstance({
                     id: "340487",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category41.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category41.png",
                   }),
                   new entities.ProductInstance({
                     id: "298107",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category42.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category42.png",
                   }),
                   new entities.ProductInstance({
                     id: "429928",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category43.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category43.png",
                   }),
                   new entities.ProductInstance({
                     id: "229230",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category44.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category44.png",
                   }),
                 ],
               }),
@@ -2619,22 +2615,22 @@ try {
               new entities.OriginHref({ value: "content/lp24-12-16" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241216_01.png",
+                  "https://upload.pictureserver.net/static/2025/20251216_01.png",
               }),
               new entities.OriginHref({ value: "content/lp24-12-16" }),
               new entities.Image({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241216gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251216gif.gif",
               }),
               new entities.OriginHref({ value: "content/lp24-12-05" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241205b.png",
+                  "https://upload.pictureserver.net/static/2025/20251205b.png",
               }),
               new entities.OriginHref({ value: "content/lp24-12-04" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241204b.png",
+                  "https://upload.pictureserver.net/static/2025/20251204b.png",
               }),
             ]),
             tableQueries: [
@@ -2686,12 +2682,12 @@ try {
                   products: [
                     {
                       id: "409176",
-                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie1.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251216Freebie1.png",
                       style: "padding-right: 10px; padding-left: 60px;",
                     },
                     {
                       id: "409071",
-                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie2.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251216Freebie2.png",
                       style: "padding-right: 60px; padding-left: 10px;",
                     },
                   ],
@@ -2702,12 +2698,12 @@ try {
                   products: [
                     {
                       id: "409037",
-                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie3.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251216Freebie3.png",
                       style: "padding-right: 10px; padding-left: 60px;",
                     },
                     {
                       id: "409123",
-                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie4.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251216Freebie4.png",
                       style: "padding-right: 60px; padding-left: 10px;",
                     },
                   ],
@@ -2718,9 +2714,9 @@ try {
           new entities.MondayFreebieLanding({
             insideBanner: {
               href: "content/lp24-12-04",
-              src: "https://upload.pictureserver.net/static/2024/uk202401216InsideBanner.png",
+              src: "https://upload.pictureserver.net/static/2025/uk202501216InsideBanner.png",
               src_config: {
-                "name": "202401216InsideBanner.png",
+                "name": "202501216InsideBanner.png",
               }
             },
             background: "#FFCCB7",
@@ -2736,24 +2732,24 @@ try {
                 name: "New York",
                 background: "#750000",
                 color: "#ffffff",
-                src: "https://upload.pictureserver.net/static/2024/20241216Category1.png",
+                src: "https://upload.pictureserver.net/static/2025/20251216Category1.png",
                 href: "https://www.beliani.ch/christmas-by-style/new-york-style-christmas/",
                 products: [
                   new entities.ProductInstance({
                     id: "525527",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category11.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category11.png",
                   }),
                   new entities.ProductInstance({
                     id: "429466",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category12.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category12.png",
                   }),
                   new entities.ProductInstance({
                     id: "416655",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category13.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category13.png",
                   }),
                   new entities.ProductInstance({
                     id: "296313",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category14.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category14.png",
                   }),
                 ],
               }),
@@ -2761,24 +2757,24 @@ try {
                 name: "Traditional",
                 background: "#FFCCB7",
                 color: "#000000",
-                src: "https://upload.pictureserver.net/static/2024/20241216Category2.png",
+                src: "https://upload.pictureserver.net/static/2025/20251216Category2.png",
                 href: "https://www.beliani.ch/christmas-by-style/traditional-christmas/",
                 products: [
                   new entities.ProductInstance({
                     id: "340565",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category21.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category21.png",
                   }),
                   new entities.ProductInstance({
                     id: "295319",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category22.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category22.png",
                   }),
                   new entities.ProductInstance({
                     id: "499948",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category23.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category23.png",
                   }),
                   new entities.ProductInstance({
                     id: "335169",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category24.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category24.png",
                   }),
                 ],
               }),
@@ -2786,24 +2782,24 @@ try {
                 name: "Rustic",
                 background: "#750000",
                 color: "#ffffff",
-                src: "https://upload.pictureserver.net/static/2024/20241216Category3.png",
+                src: "https://upload.pictureserver.net/static/2025/20251216Category3.png",
                 href: "https://www.beliani.ch/christmas-by-style/rustic-christmas/",
                 products: [
                   new entities.ProductInstance({
                     id: "202633",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category31.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category31.png",
                   }),
                   new entities.ProductInstance({
                     id: "340925",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category32.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category32.png",
                   }),
                   new entities.ProductInstance({
                     id: "336323",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category33.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category33.png",
                   }),
                   new entities.ProductInstance({
                     id: "376699",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category34.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category34.png",
                   }),
                 ],
               }),
@@ -2811,24 +2807,24 @@ try {
                 name: "Scandinavian",
                 background: "#FFCCB7",
                 color: "#000000",
-                src: "https://upload.pictureserver.net/static/2024/20241216Category4.png",
+                src: "https://upload.pictureserver.net/static/2025/20251216Category4.png",
                 href: "https://www.beliani.ch/christmas-by-style/scandinavian-christmas/",
                 products: [
                   new entities.ProductInstance({
                     id: "340487",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category41.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category41.png",
                   }),
                   new entities.ProductInstance({
                     id: "298107",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category42.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category42.png",
                   }),
                   new entities.ProductInstance({
                     id: "429928",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category43.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category43.png",
                   }),
                   new entities.ProductInstance({
                     id: "229230",
-                    src: "https://upload.pictureserver.net/static/2024/20241216Category44.png",
+                    src: "https://upload.pictureserver.net/static/2025/20251216Category44.png",
                   }),
                 ],
               }),
@@ -2837,22 +2833,22 @@ try {
               new entities.OriginHref({ value: "content/lp24-12-16" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241216_01.png",
+                  "https://upload.pictureserver.net/static/2025/20251216_01.png",
               }),
               new entities.OriginHref({ value: "content/lp24-12-16" }),
               new entities.Image({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241216gif.gif",
+                  "https://upload.pictureserver.net/static/2025/20251216gif.gif",
               }),
               new entities.OriginHref({ value: "content/lp24-12-05" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241205b.png",
+                  "https://upload.pictureserver.net/static/2025/20251205b.png",
               }),
               new entities.OriginHref({ value: "content/lp24-12-04" }),
               new entities.SlugImage({
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241204b.png",
+                  "https://upload.pictureserver.net/static/2025/20251204b.png",
               }),
             ]),
             tableQueries: [
@@ -2913,12 +2909,12 @@ try {
                   products: [
                     {
                       id: "409176",
-                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie1.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251216Freebie1.png",
                       style: "padding-right: 10px; padding-left: 60px;",
                     },
                     {
                       id: "409071",
-                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie2.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251216Freebie2.png",
                       style: "padding-right: 60px; padding-left: 10px;",
                     },
                   ],
@@ -2929,12 +2925,12 @@ try {
                   products: [
                     {
                       id: "409037",
-                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie3.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251216Freebie3.png",
                       style: "padding-right: 10px; padding-left: 60px;",
                     },
                     {
                       id: "409123",
-                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie4.png",
+                      src: "https://upload.pictureserver.net/static/2025/20251216Freebie4.png",
                       style: "padding-right: 60px; padding-left: 10px;",
                     },
                   ],
@@ -3201,7 +3197,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 13:03:44",
+                last_on: "2025-10-14 13:03:44",
                 last_by: "",
               },
               french: {
@@ -3498,7 +3494,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 13:03:44",
+                last_on: "2025-10-14 13:03:44",
                 last_by: "",
               },
             },
@@ -3512,7 +3508,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-07-07 13:40:46 by Malwina Mieszala",
               },
               search: {
@@ -3603,7 +3599,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-01 13:20:29 by Joanna Boruk",
               },
               search: {
@@ -3695,7 +3691,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-01 13:21:01 by Joanna Boruk",
               },
               search: {
@@ -3954,7 +3950,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-08 14:46:01 by Ewa Papka",
               },
               search: {
@@ -4047,7 +4043,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-08 16:23:09 by Ana Barros",
               },
               search: {
@@ -4139,7 +4135,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-11 10:28:56 by Wout van Zeeburg ",
               },
               search: {
@@ -4231,7 +4227,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-13 09:09:21 by Michela Damiani",
               },
               search: {
@@ -4325,7 +4321,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-13 09:17:04 by Renata Sioła",
               },
               search: {
@@ -4419,7 +4415,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-13 09:17:09 by Renata Sioła",
               },
               search: {
@@ -4453,7 +4449,7 @@ try {
               ShopHPrice: "329.99",
               exclude_from_notification: "0",
               available: "0",
-              available_date: "2024-05-25",
+              available_date: "2025-05-25",
               available_weeks: "0",
               available_container_id: null,
               available_date_change_type: "manual",
@@ -4496,7 +4492,7 @@ try {
               main_assigned_category: "3050",
               main_assigned_group: "2560",
               available: "0",
-              available_date: "2024-05-25",
+              available_date: "2025-05-25",
               available_weeks: "0",
               available_container_id: null,
               available_date_change_type: "manual",
@@ -4634,7 +4630,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-14 11:09:42 by Anna Iwanowska",
               },
               search: {
@@ -4726,7 +4722,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-14 13:08:50 by Agata Bugorska",
               },
               search: {
@@ -4981,7 +4977,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-14 15:44:38 by Anna Swiderski",
               },
               search: {
@@ -5072,7 +5068,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-15 11:36:54 by Neea Tallila",
               },
               search: {
@@ -5163,7 +5159,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-20 15:13:59 by Aleksandra Romanowicz",
               },
               search: {
@@ -5255,7 +5251,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2020-10-20 16:17:13 by Ana Jakubik",
               },
               search: {
@@ -5512,7 +5508,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2021-04-29 10:27:59 by Sandra Kruczynska ",
               },
               search: {
@@ -5721,7 +5717,7 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-01-10 16:25:37 by Malwina Konys",
+                inactive: "on 2025-01-10 16:25:37 by Malwina Konys",
                 old: "on 2021-08-25 08:01:27 by Patricia Chudjakova",
               },
               search: {
@@ -5813,8 +5809,8 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-10-15 15:58:28 by ",
-                old: "on 2024-04-16 14:30:09 by ",
+                inactive: "on 2025-10-15 15:58:28 by ",
+                old: "on 2025-04-16 14:30:09 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -5902,8 +5898,8 @@ try {
               master_auction_name:
                 "beliani.ch Weihnachtsbaum mit Schnee weiss 180 cm BASSIE",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:12 by ",
-                old: "on 2024-09-05 09:41:12 by ",
+                inactive: "on 2025-09-05 09:41:12 by ",
+                old: "on 2025-09-05 09:41:12 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -6179,7 +6175,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 13:05:00",
+                last_on: "2025-10-14 13:05:00",
                 last_by: "",
               },
               italian: {
@@ -6478,7 +6474,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 13:05:00",
+                last_on: "2025-10-14 13:05:00",
                 last_by: "",
               },
             },
@@ -7815,7 +7811,7 @@ try {
               master_auction_name:
                 "beliani.ch Dekofigur weiss  KITTILA  3er Set Engelform mit LED",
               buttons_log: {
-                inactive: "on 2024-08-20 11:10:58 by ",
+                inactive: "on 2025-08-20 11:10:58 by ",
                 old: "on 2020-11-26 10:51:56 by Renata Sioła",
               },
               search: {
@@ -8855,8 +8851,8 @@ try {
               master_auction_name:
                 "beliani.ch Dekofigur weiss  KITTILA  3er Set Engelform mit LED",
               buttons_log: {
-                inactive: "on 2024-10-15 15:58:45 by ",
-                old: "on 2024-04-16 14:30:20 by ",
+                inactive: "on 2025-10-15 15:58:45 by ",
+                old: "on 2025-04-16 14:30:20 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -8948,8 +8944,8 @@ try {
               master_auction_name:
                 "beliani.ch Dekofigur weiss  KITTILA  3er Set Engelform mit LED",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:31 by ",
-                old: "on 2024-09-05 09:41:31 by ",
+                inactive: "on 2025-09-05 09:41:31 by ",
+                old: "on 2025-09-05 09:41:31 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -9160,7 +9156,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-12-03 12:37:02",
+                last_on: "2025-12-03 12:37:02",
                 last_by: "Victoria Tomescu",
               },
               swedish: {
@@ -9512,7 +9508,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 13:02:51",
+                last_on: "2025-10-14 13:02:51",
                 last_by: "",
               },
             },
@@ -10295,7 +10291,7 @@ try {
               master_auction_name:
                 "beliani.ch Blanket, TANTAN, Burgundy 180x220 cm DEF",
               buttons_log: {
-                inactive: "on 2024-08-20 11:12:06 by ",
+                inactive: "on 2025-08-20 11:12:06 by ",
                 old: "on 2021-10-08 12:20:32 by Malgorzata Chojnacka",
               },
               search: {
@@ -11561,7 +11557,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-12 14:23:22",
+                last_on: "2025-04-12 14:23:22",
                 last_by: "Oona Jouste",
               },
               slovak: {
@@ -11576,7 +11572,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-12 12:40:26",
+                last_on: "2025-04-12 12:40:26",
                 last_by: "Zuzana Kočišová",
               },
               danish: {
@@ -11591,7 +11587,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-14 13:11:49",
+                last_on: "2025-04-14 13:11:49",
                 last_by: "Shqiprim\tHoxha",
               },
               german: {
@@ -11605,7 +11601,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-12 12:00:27",
+                last_on: "2025-04-12 12:00:27",
                 last_by: "Justyna Bola",
               },
               germanDE: {
@@ -11619,7 +11615,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-12 12:09:09",
+                last_on: "2025-04-12 12:09:09",
                 last_by: "Justyna Bola",
               },
               french: {
@@ -11633,7 +11629,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-29 16:00:55",
+                last_on: "2025-04-29 16:00:55",
                 last_by: "Gaelle Duthe",
               },
               italian: {
@@ -11648,7 +11644,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-12 14:38:52",
+                last_on: "2025-04-12 14:38:52",
                 last_by: "Arianna Quattropani",
               },
               swedish: {
@@ -11662,7 +11658,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-16 15:17:00",
+                last_on: "2025-04-16 15:17:00",
                 last_by: "Nilla Kristensson",
               },
               norsk: {
@@ -11677,7 +11673,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-12 18:36:09",
+                last_on: "2025-04-12 18:36:09",
                 last_by: "Ilya Yushkevich",
               },
               Hungarian: {
@@ -11692,7 +11688,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-15 09:49:35",
+                last_on: "2025-04-15 09:49:35",
                 last_by: "Réka Kovács",
               },
               dutch: {
@@ -11707,7 +11703,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-14 22:55:40",
+                last_on: "2025-04-14 22:55:40",
                 last_by: "Gabian Kingma",
               },
               polish: {
@@ -11722,7 +11718,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-04 08:02:53",
+                last_on: "2025-04-04 08:02:53",
                 last_by: "Weronika Durys",
               },
               czech: {
@@ -11736,7 +11732,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-28 23:36:22",
+                last_on: "2025-04-28 23:36:22",
                 last_by: "Magdaléna Duchková",
               },
               english: {
@@ -11751,7 +11747,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-04 08:02:53",
+                last_on: "2025-04-04 08:02:53",
                 last_by: "Weronika Durys",
               },
               portugal: {
@@ -11766,7 +11762,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-15 10:22:16",
+                last_on: "2025-04-15 10:22:16",
                 last_by: "Sandro Marmelo",
               },
               spanish: {
@@ -11780,7 +11776,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-12 13:49:59",
+                last_on: "2025-04-12 13:49:59",
                 last_by: "Cristina Cancillo",
               },
               romanian: {
@@ -11802,7 +11798,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-04 08:02:53",
+                last_on: "2025-04-04 08:02:53",
                 last_by: "Weronika Durys",
               },
               polish: {
@@ -11816,7 +11812,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-04 08:02:53",
+                last_on: "2025-04-04 08:02:53",
                 last_by: "Weronika Durys",
               },
               german: {
@@ -11830,7 +11826,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-12 12:00:27",
+                last_on: "2025-04-12 12:00:27",
                 last_by: "Justyna Bola",
               },
               germanDE: {
@@ -11844,7 +11840,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-12 12:09:09",
+                last_on: "2025-04-12 12:09:09",
                 last_by: "Justyna Bola",
               },
               slovak: {
@@ -11858,7 +11854,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-12 12:40:26",
+                last_on: "2025-04-12 12:40:26",
                 last_by: "Zuzana Kočišová",
               },
               spanish: {
@@ -11872,7 +11868,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-12 13:49:59",
+                last_on: "2025-04-12 13:49:59",
                 last_by: "Cristina Cancillo",
               },
               finnish: {
@@ -11886,7 +11882,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-12 14:23:22",
+                last_on: "2025-04-12 14:23:22",
                 last_by: "Oona Jouste",
               },
               italian: {
@@ -11900,7 +11896,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-12 14:38:52",
+                last_on: "2025-04-12 14:38:52",
                 last_by: "Arianna Quattropani",
               },
               norsk: {
@@ -11914,7 +11910,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-12 18:36:09",
+                last_on: "2025-04-12 18:36:09",
                 last_by: "Ilya Yushkevich",
               },
               danish: {
@@ -11928,7 +11924,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-14 13:11:49",
+                last_on: "2025-04-14 13:11:49",
                 last_by: "Shqiprim\tHoxha",
               },
               dutch: {
@@ -11942,7 +11938,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-14 22:55:40",
+                last_on: "2025-04-14 22:55:40",
                 last_by: "Gabian Kingma",
               },
               Hungarian: {
@@ -11956,7 +11952,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-15 09:49:35",
+                last_on: "2025-04-15 09:49:35",
                 last_by: "Réka Kovács",
               },
               portugal: {
@@ -11970,7 +11966,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-15 10:22:16",
+                last_on: "2025-04-15 10:22:16",
                 last_by: "Sandro Marmelo",
               },
               swedish: {
@@ -11984,7 +11980,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-16 15:17:00",
+                last_on: "2025-04-16 15:17:00",
                 last_by: "Nilla Kristensson",
               },
               czech: {
@@ -11998,7 +11994,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-28 23:36:22",
+                last_on: "2025-04-28 23:36:22",
                 last_by: "Magdaléna Duchková",
               },
               french: {
@@ -12012,7 +12008,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-29 16:00:55",
+                last_on: "2025-04-29 16:00:55",
                 last_by: "Gaelle Duthe",
               },
               romanian: {
@@ -12032,8 +12028,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 07:52:34 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 07:52:34 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12122,8 +12118,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:39 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:39 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12212,8 +12208,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:41 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:41 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12301,8 +12297,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:44 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:44 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12391,8 +12387,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:46 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:46 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12481,8 +12477,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:48 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:48 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12571,8 +12567,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:50 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:50 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12661,8 +12657,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:53 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:53 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12751,8 +12747,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:55 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:55 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12841,8 +12837,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:57 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:57 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -12931,8 +12927,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:09:59 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:09:59 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13021,8 +13017,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:10:01 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:10:01 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13111,8 +13107,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:10:03 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:10:03 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13201,8 +13197,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:10:05 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:10:05 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13291,8 +13287,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:10:08 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:10:08 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13381,8 +13377,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:10:11 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:10:11 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13471,8 +13467,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-05-21 12:12:45 by Katarzyna Wiśniewska",
-                old: "on 2024-04-04 08:10:16 by Weronika Durys",
+                inactive: "on 2025-05-21 12:12:45 by Katarzyna Wiśniewska",
+                old: "on 2025-04-04 08:10:16 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13773,8 +13769,8 @@ try {
               redirects: "",
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-04-05 10:17:08 by Weronika Durys",
-                old: "on 2024-04-05 10:17:39 by Weronika Durys",
+                inactive: "on 2025-04-05 10:17:08 by Weronika Durys",
+                old: "on 2025-04-05 10:17:39 by Weronika Durys",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13868,8 +13864,8 @@ try {
               master_auction_name:
                 "beliani.ch Blanket, TANTAN, Burgundy 180x220 cm DEF",
               buttons_log: {
-                inactive: "on 2024-10-15 15:59:20 by ",
-                old: "on 2024-04-16 14:30:21 by ",
+                inactive: "on 2025-10-15 15:59:20 by ",
+                old: "on 2025-04-16 14:30:21 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -13956,8 +13952,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-04-16 14:31:04 by ",
-                old: "on 2024-04-16 14:31:04 by ",
+                inactive: "on 2025-04-16 14:31:04 by ",
+                old: "on 2025-04-16 14:31:04 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -14046,8 +14042,8 @@ try {
               master_auction_name:
                 "beliani.ch Blanket, TANTAN, Burgundy 180x220 cm DEF",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:33 by ",
-                old: "on 2024-09-05 09:41:33 by ",
+                inactive: "on 2025-09-05 09:41:33 by ",
+                old: "on 2025-09-05 09:41:33 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -14136,8 +14132,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch 2 Seater Right APRICA, Blue",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:35 by ",
-                old: "on 2024-09-05 09:42:35 by ",
+                inactive: "on 2025-09-05 09:42:35 by ",
+                old: "on 2025-09-05 09:42:35 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -14278,7 +14274,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-12-04 07:04:37",
+                last_on: "2025-12-04 07:04:37",
                 last_by: "Robert Vaida",
               },
               italian: {
@@ -14705,7 +14701,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 13:02:51",
+                last_on: "2025-10-14 13:02:51",
                 last_by: "",
               },
             },
@@ -15481,7 +15477,7 @@ try {
               master_auction_name:
                 "beliani.ch LED decoration, NARUSKA, black DEF",
               buttons_log: {
-                inactive: "on 2024-08-20 11:12:06 by ",
+                inactive: "on 2025-08-20 11:12:06 by ",
                 old: "on 2021-10-29 14:16:20 by Malgorzata Chojnacka",
               },
               search: {
@@ -16718,8 +16714,8 @@ try {
               master_auction_name:
                 "beliani.ch LED decoration, NARUSKA, black DEF",
               buttons_log: {
-                inactive: "on 2024-10-15 15:59:21 by ",
-                old: "on 2024-04-16 14:30:21 by ",
+                inactive: "on 2025-10-15 15:59:21 by ",
+                old: "on 2025-04-16 14:30:21 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -16807,8 +16803,8 @@ try {
               master_auction_name:
                 "beliani.ch LED decoration, NARUSKA, black DEF",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:33 by ",
-                old: "on 2024-09-05 09:41:33 by ",
+                inactive: "on 2025-09-05 09:41:33 by ",
+                old: "on 2025-09-05 09:41:33 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -17103,7 +17099,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-12-05 10:04:03",
+                last_on: "2025-12-05 10:04:03",
                 last_by: "Victoria Tomescu",
               },
               italian: {
@@ -17388,7 +17384,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 13:02:44",
+                last_on: "2025-10-14 13:02:44",
                 last_by: "",
               },
             },
@@ -18188,7 +18184,7 @@ try {
               master_auction_name:
                 "beliani.ch Set of 2 Cushions 45x45 cm,  DONNER, white",
               buttons_log: {
-                inactive: "on 2024-08-20 11:12:06 by ",
+                inactive: "on 2025-08-20 11:12:06 by ",
                 old: "on 2021-12-14 12:25:04 by Przemyslaw Robert",
               },
               search: {
@@ -19626,7 +19622,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 12:55:35",
+                last_on: "2025-10-14 12:55:35",
                 last_by: "",
               },
               french: {
@@ -19794,7 +19790,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-05-10 14:44:57",
+                last_on: "2025-05-10 14:44:57",
                 last_by: "Amândio Cadavez",
               },
               english: {
@@ -20062,7 +20058,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:55:35",
+                last_on: "2025-10-14 12:55:35",
                 last_by: "",
               },
             },
@@ -21575,8 +21571,8 @@ try {
               master_auction_name:
                 "beliani.ch Set of 2 Cushions 45x45 cm,  DONNER, white",
               buttons_log: {
-                inactive: "on 2024-10-15 15:59:23 by ",
-                old: "on 2024-04-16 14:30:21 by ",
+                inactive: "on 2025-10-15 15:59:23 by ",
+                old: "on 2025-04-16 14:30:21 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -21661,8 +21657,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Pouffe, YANKTON, Pink",
               buttons_log: {
-                inactive: "on 2024-10-15 16:02:18 by ",
-                old: "on 2024-04-16 14:30:51 by ",
+                inactive: "on 2025-10-15 16:02:18 by ",
+                old: "on 2025-04-16 14:30:51 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -21754,8 +21750,8 @@ try {
               master_auction_name:
                 "beliani.ch Set of 2 Cushions 45x45 cm,  DONNER, white",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:34 by ",
-                old: "on 2024-09-05 09:41:34 by ",
+                inactive: "on 2025-09-05 09:41:34 by ",
+                old: "on 2025-09-05 09:41:34 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -21840,8 +21836,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Pouffe, YANKTON, Pink",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:15 by ",
-                old: "on 2024-09-05 09:42:15 by ",
+                inactive: "on 2025-09-05 09:42:15 by ",
+                old: "on 2025-09-05 09:42:15 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -21982,7 +21978,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-11-27 14:42:11",
+                last_on: "2025-11-27 14:42:11",
                 last_by: "Victoria Tomescu",
               },
               english: {
@@ -22406,7 +22402,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 13:03:04",
+                last_on: "2025-10-14 13:03:04",
                 last_by: "",
               },
             },
@@ -23187,7 +23183,7 @@ try {
               master_auction_name:
                 "beliani.ch Christmas tree, FIDDLE, green, 210cm, pre-lit\\n",
               buttons_log: {
-                inactive: "on 2024-08-20 11:13:16 by ",
+                inactive: "on 2025-08-20 11:13:16 by ",
                 old: "on 2022-10-20 14:54:23 by Malgorzata Chojnacka",
               },
               search: {
@@ -24203,7 +24199,7 @@ try {
             },
             editable_fields: [],
             id: 336516,
-            inactive_log: "on 2024-01-31 10:31:12 by Karolina Janik",
+            inactive_log: "on 2025-01-31 10:31:12 by Karolina Janik",
             old_log: "on 2022-10-28 11:38:18 by Renata Sioła",
             article_name: "FIDDLE",
           },
@@ -24441,8 +24437,8 @@ try {
               master_auction_name:
                 "beliani.ch Christmas tree, FIDDLE, green, 210cm, pre-lit\\n",
               buttons_log: {
-                inactive: "on 2024-10-15 16:00:17 by ",
-                old: "on 2024-04-16 14:30:35 by ",
+                inactive: "on 2025-10-15 16:00:17 by ",
+                old: "on 2025-04-16 14:30:35 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -24530,8 +24526,8 @@ try {
               master_auction_name:
                 "beliani.ch Christmas tree, FIDDLE, green, 210cm, pre-lit\\n",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:52 by ",
-                old: "on 2024-09-05 09:41:52 by ",
+                inactive: "on 2025-09-05 09:41:52 by ",
+                old: "on 2025-09-05 09:41:52 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -24773,7 +24769,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 13:03:06",
+                last_on: "2025-10-14 13:03:06",
                 last_by: "",
               },
               french: {
@@ -25099,7 +25095,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 13:03:06",
+                last_on: "2025-10-14 13:03:06",
                 last_by: "",
               },
             },
@@ -25894,7 +25890,7 @@ try {
               master_auction_name:
                 "beliani.ch LED Decorative Figurine, SVIDAL, wooden, 62cm",
               buttons_log: {
-                inactive: "on 2024-08-20 11:13:17 by ",
+                inactive: "on 2025-08-20 11:13:17 by ",
                 old: "on 2022-10-26 14:40:31 by Malgorzata Chojnacka",
               },
               search: {
@@ -26990,8 +26986,8 @@ try {
               master_auction_name:
                 "beliani.ch LED Decorative Figurine, SVIDAL, wooden, 62cm",
               buttons_log: {
-                inactive: "on 2024-10-15 16:00:19 by ",
-                old: "on 2024-04-16 14:30:35 by ",
+                inactive: "on 2025-10-15 16:00:19 by ",
+                old: "on 2025-04-16 14:30:35 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -27081,8 +27077,8 @@ try {
               master_auction_name:
                 "beliani.ch LED Decorative Figurine, SVIDAL, wooden, 62cm",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:52 by ",
-                old: "on 2024-09-05 09:41:52 by ",
+                inactive: "on 2025-09-05 09:41:52 by ",
+                old: "on 2025-09-05 09:41:52 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -27221,7 +27217,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-11-29 12:16:11",
+                last_on: "2025-11-29 12:16:11",
                 last_by: "Victoria Tomescu",
               },
               polish: {
@@ -27647,7 +27643,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:56:21",
+                last_on: "2025-10-14 12:56:21",
                 last_by: "",
               },
             },
@@ -28415,7 +28411,7 @@ try {
               redirects: "",
               master_auction_name: "beliani.ch LED Christmas Tree IKOLA",
               buttons_log: {
-                inactive: "on 2024-08-20 11:13:17 by ",
+                inactive: "on 2025-08-20 11:13:17 by ",
                 old: "on 2022-11-28 13:13:12 by Natalia Kowalewska",
               },
               search: {
@@ -29479,8 +29475,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch LED Christmas Tree IKOLA",
               buttons_log: {
-                inactive: "on 2024-10-15 16:00:25 by ",
-                old: "on 2024-04-16 14:30:35 by ",
+                inactive: "on 2025-10-15 16:00:25 by ",
+                old: "on 2025-04-16 14:30:35 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -29567,8 +29563,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch LED Christmas Tree IKOLA",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:53 by ",
-                old: "on 2024-09-05 09:41:53 by ",
+                inactive: "on 2025-09-05 09:41:53 by ",
+                old: "on 2025-09-05 09:41:53 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -29811,7 +29807,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 12:56:21",
+                last_on: "2025-10-14 12:56:21",
                 last_by: "",
               },
               italian: {
@@ -30140,7 +30136,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:56:21",
+                last_on: "2025-10-14 12:56:21",
                 last_by: "",
               },
             },
@@ -30921,7 +30917,7 @@ try {
               master_auction_name:
                 "beliani.ch Set of 2 LED Stars, MOTTI, Red, 45 cm",
               buttons_log: {
-                inactive: "on 2024-08-20 11:13:17 by ",
+                inactive: "on 2025-08-20 11:13:17 by ",
                 old: "on 2022-11-29 09:18:08 by Natalia Kowalewska",
               },
               search: {
@@ -32170,8 +32166,8 @@ try {
               master_auction_name:
                 "beliani.ch Set of 2 LED Stars, MOTTI, Red, 45 cm",
               buttons_log: {
-                inactive: "on 2024-10-15 16:00:25 by ",
-                old: "on 2024-04-16 14:30:35 by ",
+                inactive: "on 2025-10-15 16:00:25 by ",
+                old: "on 2025-04-16 14:30:35 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -32259,8 +32255,8 @@ try {
               master_auction_name:
                 "beliani.ch Set of 2 LED Stars, MOTTI, Red, 45 cm",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:53 by ",
-                old: "on 2024-09-05 09:41:53 by ",
+                inactive: "on 2025-09-05 09:41:53 by ",
+                old: "on 2025-09-05 09:41:53 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -32357,7 +32353,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 12:56:15",
+                last_on: "2025-10-14 12:56:15",
                 last_by: "",
               },
               italian: {
@@ -32471,7 +32467,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-02-01 12:33:09",
+                last_on: "2025-02-01 12:33:09",
                 last_by: "Zuzana Kočišová",
               },
               czech: {
@@ -32824,7 +32820,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:56:15",
+                last_on: "2025-10-14 12:56:15",
                 last_by: "",
               },
             },
@@ -33600,7 +33596,7 @@ try {
               master_auction_name:
                 "beliani.ch Fireplace Mantel NARNIA dark wood",
               buttons_log: {
-                inactive: "on 2024-08-20 11:13:17 by ",
+                inactive: "on 2025-08-20 11:13:17 by ",
                 old: "on 2022-11-29 13:31:47 by Malgorzata Chojnacka",
               },
               search: {
@@ -34498,8 +34494,8 @@ try {
               master_auction_name:
                 "beliani.ch Fireplace Mantel NARNIA dark wood",
               buttons_log: {
-                inactive: "on 2024-10-15 16:00:25 by ",
-                old: "on 2024-04-16 14:30:35 by ",
+                inactive: "on 2025-10-15 16:00:25 by ",
+                old: "on 2025-04-16 14:30:35 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -34585,8 +34581,8 @@ try {
               master_auction_name:
                 "beliani.ch Fireplace Mantel NARNIA dark wood",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:53 by ",
-                old: "on 2024-09-05 09:41:53 by ",
+                inactive: "on 2025-09-05 09:41:53 by ",
+                old: "on 2025-09-05 09:41:53 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -34696,7 +34692,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 12:56:47",
+                last_on: "2025-10-14 12:56:47",
                 last_by: "",
               },
               polish: {
@@ -35148,7 +35144,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:56:47",
+                last_on: "2025-10-14 12:56:47",
                 last_by: "",
               },
             },
@@ -36710,8 +36706,8 @@ try {
               master_auction_name:
                 "beliani.ch Rug, FENER, 140 x 200 cm, multicolour",
               buttons_log: {
-                inactive: "on 2024-10-15 16:01:24 by ",
-                old: "on 2024-04-16 14:30:37 by ",
+                inactive: "on 2025-10-15 16:01:24 by ",
+                old: "on 2025-04-16 14:30:37 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -36800,8 +36796,8 @@ try {
               master_auction_name:
                 "beliani.ch Rug, FENER, 140 x 200 cm, multicolour",
               buttons_log: {
-                inactive: "on 2024-09-05 09:41:56 by ",
-                old: "on 2024-09-05 09:41:56 by ",
+                inactive: "on 2025-09-05 09:41:56 by ",
+                old: "on 2025-09-05 09:41:56 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -37095,7 +37091,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-18 16:53:51",
+                last_on: "2025-10-18 16:53:51",
                 last_by: "Victoria Tomescu",
               },
               italian: {
@@ -37380,7 +37376,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:55:50",
+                last_on: "2025-10-14 12:55:50",
                 last_by: "",
               },
             },
@@ -37955,7 +37951,7 @@ try {
                 "Set of 3 Scented Candles, SHEER JOY, Bergamot/Wind of Sea/Sage Sea Salt",
               buttons_log: {
                 inactive:
-                  "on 2024-02-26 10:21:51 by Katarzyna Gościniec-Szczuplak",
+                  "on 2025-02-26 10:21:51 by Katarzyna Gościniec-Szczuplak",
                 old: "on 2023-09-19 09:56:04 by Rafal Benich",
               },
               search: {
@@ -38976,8 +38972,8 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Bergamot/Wind of Sea/Sage Sea Salt",
               buttons_log: {
-                inactive: "on 2024-10-15 16:02:13 by ",
-                old: "on 2024-04-16 14:30:50 by ",
+                inactive: "on 2025-10-15 16:02:13 by ",
+                old: "on 2025-04-16 14:30:50 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -39067,8 +39063,8 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Bergamot/Wind of Sea/Sage Sea Salt",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:15 by ",
-                old: "on 2024-09-05 09:42:15 by ",
+                inactive: "on 2025-09-05 09:42:15 by ",
+                old: "on 2025-09-05 09:42:15 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -39362,7 +39358,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-18 17:03:18",
+                last_on: "2025-10-18 17:03:18",
                 last_by: "Victoria Tomescu",
               },
               italian: {
@@ -39647,7 +39643,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:55:50",
+                last_on: "2025-10-14 12:55:50",
                 last_by: "",
               },
             },
@@ -40221,7 +40217,7 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Lavender/Rosemary Lavender/Geranium Lavender",
               buttons_log: {
-                inactive: "on 2024-04-02 06:35:03 by Rafal Benich",
+                inactive: "on 2025-04-02 06:35:03 by Rafal Benich",
                 old: "on 2023-09-19 10:19:53 by Rafal Benich",
               },
               search: {
@@ -41242,8 +41238,8 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Lavender/Rosemary Lavender/Geranium Lavender",
               buttons_log: {
-                inactive: "on 2024-10-15 16:02:13 by ",
-                old: "on 2024-04-16 14:30:50 by ",
+                inactive: "on 2025-10-15 16:02:13 by ",
+                old: "on 2025-04-16 14:30:50 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -41333,8 +41329,8 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Lavender/Rosemary Lavender/Geranium Lavender",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:15 by ",
-                old: "on 2024-09-05 09:42:15 by ",
+                inactive: "on 2025-09-05 09:42:15 by ",
+                old: "on 2025-09-05 09:42:15 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -41627,7 +41623,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-18 17:11:16",
+                last_on: "2025-10-18 17:11:16",
                 last_by: "Victoria Tomescu",
               },
               italian: {
@@ -41912,7 +41908,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:55:50",
+                last_on: "2025-10-14 12:55:50",
                 last_by: "",
               },
             },
@@ -42486,7 +42482,7 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Golden Apple/Chocolate/Amber",
               buttons_log: {
-                inactive: "on 2024-03-12 06:06:17 by Rafal Benich",
+                inactive: "on 2025-03-12 06:06:17 by Rafal Benich",
                 old: "on 2023-09-19 10:41:37 by Rafal Benich",
               },
               search: {
@@ -43507,8 +43503,8 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Golden Apple/Chocolate/Amber",
               buttons_log: {
-                inactive: "on 2024-10-15 16:02:14 by ",
-                old: "on 2024-04-16 14:30:50 by ",
+                inactive: "on 2025-10-15 16:02:14 by ",
+                old: "on 2025-04-16 14:30:50 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -43598,8 +43594,8 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Golden Apple/Chocolate/Amber",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:15 by ",
-                old: "on 2024-09-05 09:42:15 by ",
+                inactive: "on 2025-09-05 09:42:15 by ",
+                old: "on 2025-09-05 09:42:15 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -43891,7 +43887,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-22 10:34:04",
+                last_on: "2025-10-22 10:34:04",
                 last_by: "Victoria Tomescu",
               },
               italian: {
@@ -44176,7 +44172,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:55:49",
+                last_on: "2025-10-14 12:55:49",
                 last_by: "",
               },
             },
@@ -44750,7 +44746,7 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Ocean/White Tea/Summer Meadow",
               buttons_log: {
-                inactive: "on 2024-04-02 06:35:12 by Rafal Benich",
+                inactive: "on 2025-04-02 06:35:12 by Rafal Benich",
                 old: "on 2023-09-19 11:07:19 by Rafal Benich",
               },
               search: {
@@ -45771,8 +45767,8 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Ocean/White Tea/Summer Meadow",
               buttons_log: {
-                inactive: "on 2024-10-15 16:02:14 by ",
-                old: "on 2024-04-16 14:30:50 by ",
+                inactive: "on 2025-10-15 16:02:14 by ",
+                old: "on 2025-04-16 14:30:50 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -45862,8 +45858,8 @@ try {
               master_auction_name:
                 "Set of 3 Scented Candles, SHEER JOY, Ocean/White Tea/Summer Meadow",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:15 by ",
-                old: "on 2024-09-05 09:42:15 by ",
+                inactive: "on 2025-09-05 09:42:15 by ",
+                old: "on 2025-09-05 09:42:15 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -46001,7 +45997,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-11-27 14:07:14",
+                last_on: "2025-11-27 14:07:14",
                 last_by: "Victoria Tomescu",
               },
               swedish: {
@@ -46425,7 +46421,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:55:40",
+                last_on: "2025-10-14 12:55:40",
                 last_by: "",
               },
             },
@@ -47989,8 +47985,8 @@ try {
               master_auction_name:
                 "beliani.ch Christmas Tree, DENALI , Green, 240 cm",
               buttons_log: {
-                inactive: "on 2024-10-15 16:02:25 by ",
-                old: "on 2024-04-16 14:30:51 by ",
+                inactive: "on 2025-10-15 16:02:25 by ",
+                old: "on 2025-04-16 14:30:51 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -48078,8 +48074,8 @@ try {
               master_auction_name:
                 "beliani.ch Christmas Tree, DENALI , Green, 240 cm",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:15 by ",
-                old: "on 2024-09-05 09:42:15 by ",
+                inactive: "on 2025-09-05 09:42:15 by ",
+                old: "on 2025-09-05 09:42:15 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -48321,7 +48317,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-12-05 15:35:58",
+                last_on: "2025-12-05 15:35:58",
                 last_by: "Victoria Tomescu",
               },
               polish: {
@@ -48647,7 +48643,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:58:12",
+                last_on: "2025-10-14 12:58:12",
                 last_by: "",
               },
             },
@@ -50361,8 +50357,8 @@ try {
               master_auction_name:
                 "beliani.ch Cushion, EXACUM, 45x45 cm, white/red",
               buttons_log: {
-                inactive: "on 2024-10-15 16:02:45 by ",
-                old: "on 2024-04-16 14:30:52 by ",
+                inactive: "on 2025-10-15 16:02:45 by ",
+                old: "on 2025-04-16 14:30:52 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -50451,8 +50447,8 @@ try {
               master_auction_name:
                 "beliani.ch Cushion, EXACUM, 45x45 cm, white/red",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:17 by ",
-                old: "on 2024-09-05 09:42:17 by ",
+                inactive: "on 2025-09-05 09:42:17 by ",
+                old: "on 2025-09-05 09:42:17 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -50548,7 +50544,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-02-12 09:42:08",
+                last_on: "2025-02-12 09:42:08",
                 last_by: "Oona Jouste",
               },
               slovak: {
@@ -50618,7 +50614,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-01-03 15:30:05",
+                last_on: "2025-01-03 15:30:05",
                 last_by: "Justyna Bola",
               },
               germanDE: {
@@ -50632,7 +50628,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-01-03 15:30:05",
+                last_on: "2025-01-03 15:30:05",
                 last_by: "Justyna Bola",
               },
               czech: {
@@ -50646,7 +50642,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-01-19 00:36:22",
+                last_on: "2025-01-19 00:36:22",
                 last_by: "Jindřich Bartoš",
               },
               Hungarian: {
@@ -50660,7 +50656,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-01-02 15:07:57",
+                last_on: "2025-01-02 15:07:57",
                 last_by: "Réka Kovács",
               },
               french: {
@@ -50688,7 +50684,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-12-02 07:34:09",
+                last_on: "2025-12-02 07:34:09",
                 last_by: "Victoria Tomescu",
               },
               italian: {
@@ -50730,7 +50726,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-02-13 08:16:58",
+                last_on: "2025-02-13 08:16:58",
                 last_by: "Amândio Cadavez",
               },
               polish: {
@@ -50772,7 +50768,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-01-05 13:06:10",
+                last_on: "2025-01-05 13:06:10",
                 last_by: "Aleksander Oldberg",
               },
             },
@@ -50942,7 +50938,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-01-02 15:07:56",
+                last_on: "2025-01-02 15:07:56",
                 last_by: "Réka Kovács",
               },
               german: {
@@ -50956,7 +50952,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-01-03 15:30:05",
+                last_on: "2025-01-03 15:30:05",
                 last_by: "Justyna Bola",
               },
               germanDE: {
@@ -50970,7 +50966,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-01-03 15:30:05",
+                last_on: "2025-01-03 15:30:05",
                 last_by: "Justyna Bola",
               },
               swedish: {
@@ -50984,7 +50980,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-01-05 13:06:10",
+                last_on: "2025-01-05 13:06:10",
                 last_by: "Aleksander Oldberg",
               },
               czech: {
@@ -50998,7 +50994,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-01-19 00:36:22",
+                last_on: "2025-01-19 00:36:22",
                 last_by: "Jindřich Bartoš",
               },
               romanian: {
@@ -51012,7 +51008,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:58:15",
+                last_on: "2025-10-14 12:58:15",
                 last_by: "",
               },
             },
@@ -51024,7 +51020,7 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Sofa LERMON, beige",
               buttons_log: {
-                inactive: "on 2024-01-03 16:00:38 by Justyna Bola",
+                inactive: "on 2025-01-03 16:00:38 by Justyna Bola",
                 old: "on 2023-12-15 13:20:45 by Paulina Fabrykiewicz",
               },
               search: {
@@ -51200,7 +51196,7 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Sofa LERMON, beige",
               buttons_log: {
-                inactive: "on 2024-01-03 16:00:38 by Justyna Bola",
+                inactive: "on 2025-01-03 16:00:38 by Justyna Bola",
                 old: "on 2023-12-15 14:37:24 by Paulina Fabrykiewicz",
               },
               search: {
@@ -51376,7 +51372,7 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Sofa LERMON, beige",
               buttons_log: {
-                inactive: "on 2024-01-03 16:00:38 by Justyna Bola",
+                inactive: "on 2025-01-03 16:00:38 by Justyna Bola",
                 old: "on 2023-12-15 14:37:26 by Paulina Fabrykiewicz",
               },
               search: {
@@ -51904,7 +51900,7 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Sofa LERMON, beige",
               buttons_log: {
-                inactive: "on 2024-01-05 13:16:04 by Aleksander Oldberg",
+                inactive: "on 2025-01-05 13:16:04 by Aleksander Oldberg",
                 old: "on 2023-12-15 14:37:34 by Paulina Fabrykiewicz",
               },
               search: {
@@ -51992,7 +51988,7 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Sofa LERMON, beige",
               buttons_log: {
-                inactive: "on 2024-01-02 15:10:16 by Réka Kovács",
+                inactive: "on 2025-01-02 15:10:16 by Réka Kovács",
                 old: "on 2023-12-15 14:37:35 by Paulina Fabrykiewicz",
               },
               search: {
@@ -52168,7 +52164,7 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Sofa LERMON, beige",
               buttons_log: {
-                inactive: "on 2024-01-19 00:36:36 by Jindřich Bartoš",
+                inactive: "on 2025-01-19 00:36:36 by Jindřich Bartoš",
                 old: "on 2023-12-15 14:37:38 by Paulina Fabrykiewicz",
               },
               search: {
@@ -52517,8 +52513,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Sofa LERMON, beige",
               buttons_log: {
-                inactive: "on 2024-10-15 16:02:46 by ",
-                old: "on 2024-04-16 14:30:52 by ",
+                inactive: "on 2025-10-15 16:02:46 by ",
+                old: "on 2025-04-16 14:30:52 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -52603,8 +52599,8 @@ try {
               redirects: [],
               master_auction_name: "beliani.ch Sofa LERMON, beige",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:17 by ",
-                old: "on 2024-09-05 09:42:17 by ",
+                inactive: "on 2025-09-05 09:42:17 by ",
+                old: "on 2025-09-05 09:42:17 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -52700,7 +52696,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-07-08 10:41:53",
+                last_on: "2025-07-08 10:41:53",
                 last_by: "Oona Jouste",
               },
               slovak: {
@@ -52714,7 +52710,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-20 12:51:55",
+                last_on: "2025-06-20 12:51:55",
                 last_by: "Zuzana Kočišová",
               },
               danish: {
@@ -52728,7 +52724,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-25 06:45:20",
+                last_on: "2025-06-25 06:45:20",
                 last_by: "Shqiprim\tHoxha",
               },
               english: {
@@ -52742,7 +52738,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-05-15 07:13:37",
+                last_on: "2025-05-15 07:13:37",
                 last_by: "Aleksandra Kuryś",
               },
               norsk: {
@@ -52756,7 +52752,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-20 16:36:43",
+                last_on: "2025-06-20 16:36:43",
                 last_by: "Ilya Yushkevich",
               },
               german: {
@@ -52770,7 +52766,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-21 13:48:57",
+                last_on: "2025-06-21 13:48:57",
                 last_by: "Justyna Bola",
               },
               germanDE: {
@@ -52784,7 +52780,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-21 13:48:57",
+                last_on: "2025-06-21 13:48:57",
                 last_by: "Justyna Bola",
               },
               czech: {
@@ -52798,7 +52794,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-21 14:48:03",
+                last_on: "2025-06-21 14:48:03",
                 last_by: "Daniela Horuckova",
               },
               french: {
@@ -52812,7 +52808,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-20 15:54:04",
+                last_on: "2025-06-20 15:54:04",
                 last_by: "Raphaël Pereira",
               },
               romanian: {
@@ -52826,7 +52822,7 @@ try {
                 updated: "1",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 12:57:07",
+                last_on: "2025-10-14 12:57:07",
                 last_by: "",
               },
               italian: {
@@ -52840,7 +52836,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-25 16:09:33",
+                last_on: "2025-06-25 16:09:33",
                 last_by: "Stefano Picone",
               },
               dutch: {
@@ -52854,7 +52850,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-24 11:19:11",
+                last_on: "2025-06-24 11:19:11",
                 last_by: "Jessica Stok",
               },
               Hungarian: {
@@ -52868,7 +52864,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-24 09:10:09",
+                last_on: "2025-06-24 09:10:09",
                 last_by: "Réka Kovács",
               },
               portugal: {
@@ -52882,7 +52878,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-21 11:24:08",
+                last_on: "2025-06-21 11:24:08",
                 last_by: "Amândio Cadavez",
               },
               polish: {
@@ -52896,7 +52892,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-04-30 09:43:45",
+                last_on: "2025-04-30 09:43:45",
                 last_by: "Aleksandra Kuryś",
               },
               spanish: {
@@ -52910,7 +52906,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-20 13:41:22",
+                last_on: "2025-06-20 13:41:22",
                 last_by: "Cristina Cancillo",
               },
               swedish: {
@@ -52924,7 +52920,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-06-24 17:20:04",
+                last_on: "2025-06-24 17:20:04",
                 last_by: "Nilla Kristensson",
               },
             },
@@ -52940,7 +52936,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-30 08:52:12",
+                last_on: "2025-04-30 08:52:12",
                 last_by: "Aleksandra Kuryś",
               },
               polish: {
@@ -52954,7 +52950,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-04-30 08:52:12",
+                last_on: "2025-04-30 08:52:12",
                 last_by: "Aleksandra Kuryś",
               },
               slovak: {
@@ -52968,7 +52964,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-20 12:51:55",
+                last_on: "2025-06-20 12:51:55",
                 last_by: "Zuzana Kočišová",
               },
               spanish: {
@@ -52982,7 +52978,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-20 13:41:22",
+                last_on: "2025-06-20 13:41:22",
                 last_by: "Cristina Cancillo",
               },
               finnish: {
@@ -52996,7 +52992,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-20 15:43:39",
+                last_on: "2025-06-20 15:43:39",
                 last_by: "Olivia Halonen",
               },
               french: {
@@ -53010,7 +53006,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-20 15:54:04",
+                last_on: "2025-06-20 15:54:04",
                 last_by: "Raphaël Pereira",
               },
               norsk: {
@@ -53024,7 +53020,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-20 16:36:43",
+                last_on: "2025-06-20 16:36:43",
                 last_by: "Ilya Yushkevich",
               },
               portugal: {
@@ -53038,7 +53034,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-21 11:12:17",
+                last_on: "2025-06-21 11:12:17",
                 last_by: "Amândio Cadavez",
               },
               german: {
@@ -53052,7 +53048,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-21 13:48:57",
+                last_on: "2025-06-21 13:48:57",
                 last_by: "Justyna Bola",
               },
               germanDE: {
@@ -53066,7 +53062,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-21 13:48:57",
+                last_on: "2025-06-21 13:48:57",
                 last_by: "Justyna Bola",
               },
               czech: {
@@ -53080,7 +53076,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-21 14:48:03",
+                last_on: "2025-06-21 14:48:03",
                 last_by: "Daniela Horuckova",
               },
               Hungarian: {
@@ -53094,7 +53090,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-24 09:10:09",
+                last_on: "2025-06-24 09:10:09",
                 last_by: "Réka Kovács",
               },
               dutch: {
@@ -53108,7 +53104,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-24 11:19:11",
+                last_on: "2025-06-24 11:19:11",
                 last_by: "Jessica Stok",
               },
               swedish: {
@@ -53122,7 +53118,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-24 17:20:04",
+                last_on: "2025-06-24 17:20:04",
                 last_by: "Nilla Kristensson",
               },
               danish: {
@@ -53136,7 +53132,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-25 06:45:20",
+                last_on: "2025-06-25 06:45:20",
                 last_by: "Shqiprim\tHoxha",
               },
               italian: {
@@ -53150,7 +53146,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-06-25 16:09:33",
+                last_on: "2025-06-25 16:09:33",
                 last_by: "Stefano Picone",
               },
               romanian: {
@@ -53164,7 +53160,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-04 13:15:54",
+                last_on: "2025-10-04 13:15:54",
                 last_by: "Robert Vaida",
               },
             },
@@ -53176,8 +53172,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-21 14:44:18 by Justyna Bola",
-                old: "on 2024-04-30 08:24:09 by Aleksandra Kuryś",
+                inactive: "on 2025-06-21 14:44:18 by Justyna Bola",
+                old: "on 2025-04-30 08:24:09 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53266,8 +53262,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-05-16 08:20:49 by Aleksandra Kuryś",
-                old: "on 2024-04-30 09:41:18 by Aleksandra Kuryś",
+                inactive: "on 2025-05-16 08:20:49 by Aleksandra Kuryś",
+                old: "on 2025-04-30 09:41:18 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53356,8 +53352,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-21 14:44:18 by Justyna Bola",
-                old: "on 2024-04-30 09:41:20 by Aleksandra Kuryś",
+                inactive: "on 2025-06-21 14:44:18 by Justyna Bola",
+                old: "on 2025-04-30 09:41:20 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53447,8 +53443,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-20 16:04:23 by Raphaël Pereira",
-                old: "on 2024-04-30 09:41:22 by Aleksandra Kuryś",
+                inactive: "on 2025-06-20 16:04:23 by Raphaël Pereira",
+                old: "on 2025-04-30 09:41:22 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53537,8 +53533,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-21 14:44:18 by Justyna Bola",
-                old: "on 2024-04-30 09:41:24 by Aleksandra Kuryś",
+                inactive: "on 2025-06-21 14:44:18 by Justyna Bola",
+                old: "on 2025-04-30 09:41:24 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53627,8 +53623,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-20 13:56:44 by Cristina Cancillo",
-                old: "on 2024-04-30 09:41:26 by Aleksandra Kuryś",
+                inactive: "on 2025-06-20 13:56:44 by Cristina Cancillo",
+                old: "on 2025-04-30 09:41:26 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53717,8 +53713,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-05-16 08:20:49 by Aleksandra Kuryś",
-                old: "on 2024-04-30 09:41:28 by Aleksandra Kuryś",
+                inactive: "on 2025-05-16 08:20:49 by Aleksandra Kuryś",
+                old: "on 2025-04-30 09:41:28 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53807,8 +53803,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-08-08 12:23:47 by Malwina Konys",
-                old: "on 2024-04-30 09:41:30 by Aleksandra Kuryś",
+                inactive: "on 2025-08-08 12:23:47 by Malwina Konys",
+                old: "on 2025-04-30 09:41:30 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53897,8 +53893,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-25 16:08:08 by Stefano Picone",
-                old: "on 2024-04-30 09:41:32 by Aleksandra Kuryś",
+                inactive: "on 2025-06-25 16:08:08 by Stefano Picone",
+                old: "on 2025-04-30 09:41:32 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -53987,8 +53983,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-21 11:24:16 by Amândio Cadavez",
-                old: "on 2024-04-30 09:41:34 by Aleksandra Kuryś",
+                inactive: "on 2025-06-21 11:24:16 by Amândio Cadavez",
+                old: "on 2025-04-30 09:41:34 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54077,8 +54073,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-25 11:21:37 by Nilla Kristensson",
-                old: "on 2024-04-30 09:41:37 by Aleksandra Kuryś",
+                inactive: "on 2025-06-25 11:21:37 by Nilla Kristensson",
+                old: "on 2025-04-30 09:41:37 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54167,8 +54163,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-24 09:18:51 by Réka Kovács",
-                old: "on 2024-04-30 09:41:39 by Aleksandra Kuryś",
+                inactive: "on 2025-06-24 09:18:51 by Réka Kovács",
+                old: "on 2025-04-30 09:41:39 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54257,8 +54253,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-25 06:52:32 by Shqiprim\tHoxha",
-                old: "on 2024-04-30 09:41:41 by Aleksandra Kuryś",
+                inactive: "on 2025-06-25 06:52:32 by Shqiprim\tHoxha",
+                old: "on 2025-04-30 09:41:41 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54347,8 +54343,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-21 14:58:34 by Daniela Horuckova",
-                old: "on 2024-04-30 09:41:45 by Aleksandra Kuryś",
+                inactive: "on 2025-06-21 14:58:34 by Daniela Horuckova",
+                old: "on 2025-04-30 09:41:45 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54438,8 +54434,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-20 15:54:04 by Olivia Halonen",
-                old: "on 2024-04-30 09:41:48 by Aleksandra Kuryś",
+                inactive: "on 2025-06-20 15:54:04 by Olivia Halonen",
+                old: "on 2025-04-30 09:41:48 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54528,8 +54524,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-20 16:46:24 by Ilya Yushkevich",
-                old: "on 2024-04-30 09:41:50 by Aleksandra Kuryś",
+                inactive: "on 2025-06-20 16:46:24 by Ilya Yushkevich",
+                old: "on 2025-04-30 09:41:50 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54618,8 +54614,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-06-20 12:57:07 by Zuzana Kočišová",
-                old: "on 2024-04-30 09:41:52 by Aleksandra Kuryś",
+                inactive: "on 2025-06-20 12:57:07 by Zuzana Kočišová",
+                old: "on 2025-04-30 09:41:52 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54709,8 +54705,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-10-04 13:23:43 by Robert Vaida",
-                old: "on 2024-04-30 09:41:54 by Aleksandra Kuryś",
+                inactive: "on 2025-10-04 13:23:43 by Robert Vaida",
+                old: "on 2025-04-30 09:41:54 by Aleksandra Kuryś",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54797,8 +54793,8 @@ try {
               redirects: [],
               master_auction_name: " 3 Seater Fabric Sofa Light Beige VINSTRA",
               buttons_log: {
-                inactive: "on 2024-09-05 09:42:36 by ",
-                old: "on 2024-09-05 09:42:36 by ",
+                inactive: "on 2025-09-05 09:42:36 by ",
+                old: "on 2025-09-05 09:42:36 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -54893,7 +54889,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-04 14:17:06",
+                last_on: "2025-09-04 14:17:06",
                 last_by: "Stefano Picone",
               },
               french: {
@@ -54908,7 +54904,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-26 11:33:30",
+                last_on: "2025-09-26 11:33:30",
                 last_by: "Raphaël Pereira",
               },
               spanish: {
@@ -54922,7 +54918,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-04 18:04:31",
+                last_on: "2025-09-04 18:04:31",
                 last_by: "Cristina Cancillo",
               },
               danish: {
@@ -54936,7 +54932,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-30 07:55:46",
+                last_on: "2025-09-30 07:55:46",
                 last_by: "Shqiprim\tHoxha",
               },
               english: {
@@ -54951,7 +54947,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-25 09:49:29",
+                last_on: "2025-09-25 09:49:29",
                 last_by: "Natalia Kowalewska",
               },
               slovak: {
@@ -54965,7 +54961,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-05 09:27:13",
+                last_on: "2025-09-05 09:27:13",
                 last_by: "Bibiana Vysokajova",
               },
               czech: {
@@ -54979,7 +54975,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-11 23:15:54",
+                last_on: "2025-09-11 23:15:54",
                 last_by: "Magdaléna Duchková",
               },
               dutch: {
@@ -54993,7 +54989,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-05 10:14:43",
+                last_on: "2025-09-05 10:14:43",
                 last_by: "Gabian Kingma",
               },
               swedish: {
@@ -55007,7 +55003,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-27 14:08:06",
+                last_on: "2025-09-27 14:08:06",
                 last_by: "Aleksander Oldberg",
               },
               norsk: {
@@ -55021,7 +55017,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-25 16:05:06",
+                last_on: "2025-09-25 16:05:06",
                 last_by: "Synne Wahlquist Skurdal",
               },
               german: {
@@ -55036,7 +55032,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-25 14:42:57",
+                last_on: "2025-09-25 14:42:57",
                 last_by: "Justyna Bola",
               },
               germanDE: {
@@ -55051,7 +55047,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-25 14:42:57",
+                last_on: "2025-09-25 14:42:57",
                 last_by: "Justyna Bola",
               },
               Hungarian: {
@@ -55065,7 +55061,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-05 11:10:40",
+                last_on: "2025-09-05 11:10:40",
                 last_by: "Réka Kovács",
               },
               polish: {
@@ -55079,7 +55075,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-25 09:49:29",
+                last_on: "2025-09-25 09:49:29",
                 last_by: "Natalia Kowalewska",
               },
               portugal: {
@@ -55093,7 +55089,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-05 10:25:38",
+                last_on: "2025-09-05 10:25:38",
                 last_by: "Sandro Marmelo",
               },
               finnish: {
@@ -55108,7 +55104,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-09-25 14:07:22",
+                last_on: "2025-09-25 14:07:22",
                 last_by: "Oona Jouste",
               },
               romanian: {
@@ -55122,7 +55118,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopSAAlias",
-                last_on: "2024-10-14 12:57:37",
+                last_on: "2025-10-14 12:57:37",
                 last_by: "",
               },
             },
@@ -55138,7 +55134,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-08-30 06:53:37",
+                last_on: "2025-08-30 06:53:37",
                 last_by: "Natalia Kowalewska",
               },
               polish: {
@@ -55152,7 +55148,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-08-30 06:53:37",
+                last_on: "2025-08-30 06:53:37",
                 last_by: "Natalia Kowalewska",
               },
               italian: {
@@ -55166,7 +55162,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-04 14:17:06",
+                last_on: "2025-09-04 14:17:06",
                 last_by: "Stefano Picone",
               },
               finnish: {
@@ -55180,7 +55176,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-04 15:19:23",
+                last_on: "2025-09-04 15:19:23",
                 last_by: "Oona Jouste",
               },
               spanish: {
@@ -55194,7 +55190,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-04 18:04:31",
+                last_on: "2025-09-04 18:04:31",
                 last_by: "Cristina Cancillo",
               },
               swedish: {
@@ -55208,7 +55204,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-05 07:40:34",
+                last_on: "2025-09-05 07:40:34",
                 last_by: "Nilla Kristensson",
               },
               slovak: {
@@ -55222,7 +55218,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-05 09:27:13",
+                last_on: "2025-09-05 09:27:13",
                 last_by: "Bibiana Vysokajova",
               },
               dutch: {
@@ -55236,7 +55232,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-05 10:14:43",
+                last_on: "2025-09-05 10:14:43",
                 last_by: "Gabian Kingma",
               },
               Hungarian: {
@@ -55250,7 +55246,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-05 11:10:40",
+                last_on: "2025-09-05 11:10:40",
                 last_by: "Réka Kovács",
               },
               portugal: {
@@ -55264,7 +55260,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-05 10:25:38",
+                last_on: "2025-09-05 10:25:38",
                 last_by: "Sandro Marmelo",
               },
               french: {
@@ -55278,7 +55274,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-05 15:09:01",
+                last_on: "2025-09-05 15:09:01",
                 last_by: "Gaelle Duthe",
               },
               norsk: {
@@ -55292,7 +55288,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-06 08:49:13",
+                last_on: "2025-09-06 08:49:13",
                 last_by: "Synne Wahlquist Skurdal",
               },
               danish: {
@@ -55306,7 +55302,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-06 13:23:27",
+                last_on: "2025-09-06 13:23:27",
                 last_by: "Shqiprim\tHoxha",
               },
               german: {
@@ -55320,7 +55316,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-09 13:35:25",
+                last_on: "2025-09-09 13:35:25",
                 last_by: "Sandra Taschke",
               },
               germanDE: {
@@ -55334,7 +55330,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-09 13:35:25",
+                last_on: "2025-09-09 13:35:25",
                 last_by: "Sandra Taschke",
               },
               czech: {
@@ -55348,7 +55344,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-09-11 23:15:54",
+                last_on: "2025-09-11 23:15:54",
                 last_by: "Magdaléna Duchková",
               },
               romanian: {
@@ -55362,7 +55358,7 @@ try {
                 updated: "0",
                 table_name: "sa",
                 field_name: "ShopDesription",
-                last_on: "2024-10-14 12:57:37",
+                last_on: "2025-10-14 12:57:37",
                 last_by: "",
               },
             },
@@ -55377,8 +55373,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-09 13:47:19 by Sandra Taschke",
-                old: "on 2024-08-30 06:48:36 by Natalia Kowalewska",
+                inactive: "on 2025-09-09 13:47:19 by Sandra Taschke",
+                old: "on 2025-08-30 06:48:36 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -55470,8 +55466,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-03 09:39:42 by Natalia Kowalewska",
-                old: "on 2024-08-30 07:37:15 by Natalia Kowalewska",
+                inactive: "on 2025-09-03 09:39:42 by Natalia Kowalewska",
+                old: "on 2025-08-30 07:37:15 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -55561,8 +55557,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-09 13:47:28 by Sandra Taschke",
-                old: "on 2024-08-30 07:37:17 by Natalia Kowalewska",
+                inactive: "on 2025-09-09 13:47:28 by Sandra Taschke",
+                old: "on 2025-08-30 07:37:17 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -55652,8 +55648,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-05 15:16:45 by Gaelle Duthe",
-                old: "on 2024-08-30 07:37:19 by Natalia Kowalewska",
+                inactive: "on 2025-09-05 15:16:45 by Gaelle Duthe",
+                old: "on 2025-08-30 07:37:19 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -55743,8 +55739,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-09 13:47:39 by Sandra Taschke",
-                old: "on 2024-08-30 07:37:21 by Natalia Kowalewska",
+                inactive: "on 2025-09-09 13:47:39 by Sandra Taschke",
+                old: "on 2025-08-30 07:37:21 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -55834,8 +55830,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-04 18:10:21 by Cristina Cancillo",
-                old: "on 2024-08-30 07:37:24 by Natalia Kowalewska",
+                inactive: "on 2025-09-04 18:10:21 by Cristina Cancillo",
+                old: "on 2025-08-30 07:37:24 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -55925,8 +55921,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-03 09:39:42 by Natalia Kowalewska",
-                old: "on 2024-08-30 07:37:26 by Natalia Kowalewska",
+                inactive: "on 2025-09-03 09:39:42 by Natalia Kowalewska",
+                old: "on 2025-08-30 07:37:26 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56016,8 +56012,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-05 10:22:09 by Gabian Kingma",
-                old: "on 2024-08-30 07:37:28 by Natalia Kowalewska",
+                inactive: "on 2025-09-05 10:22:09 by Gabian Kingma",
+                old: "on 2025-08-30 07:37:28 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56107,8 +56103,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-08-30 07:37:30 by Natalia Kowalewska",
-                old: "on 2024-09-03 11:01:25 by ",
+                inactive: "on 2025-08-30 07:37:30 by Natalia Kowalewska",
+                old: "on 2025-09-03 11:01:25 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56199,8 +56195,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-05 10:04:57 by Stefano Picone",
-                old: "on 2024-08-30 07:37:32 by Natalia Kowalewska",
+                inactive: "on 2025-09-05 10:04:57 by Stefano Picone",
+                old: "on 2025-08-30 07:37:32 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56290,8 +56286,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-05 10:28:08 by Sandro Marmelo",
-                old: "on 2024-08-30 07:37:34 by Natalia Kowalewska",
+                inactive: "on 2025-09-05 10:28:08 by Sandro Marmelo",
+                old: "on 2025-08-30 07:37:34 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56380,8 +56376,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-05 07:46:22 by Nilla Kristensson",
-                old: "on 2024-08-30 07:37:37 by Natalia Kowalewska",
+                inactive: "on 2025-09-05 07:46:22 by Nilla Kristensson",
+                old: "on 2025-08-30 07:37:37 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56470,8 +56466,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-05 11:12:47 by Réka Kovács",
-                old: "on 2024-08-30 07:37:39 by Natalia Kowalewska",
+                inactive: "on 2025-09-05 11:12:47 by Réka Kovács",
+                old: "on 2025-08-30 07:37:39 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56561,8 +56557,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-06 13:26:30 by Shqiprim\tHoxha",
-                old: "on 2024-08-30 07:37:41 by Natalia Kowalewska",
+                inactive: "on 2025-09-06 13:26:30 by Shqiprim\tHoxha",
+                old: "on 2025-08-30 07:37:41 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56652,8 +56648,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-11 23:17:55 by Magdaléna Duchková",
-                old: "on 2024-08-30 07:37:43 by Natalia Kowalewska",
+                inactive: "on 2025-09-11 23:17:55 by Magdaléna Duchková",
+                old: "on 2025-08-30 07:37:43 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56743,8 +56739,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-04 15:36:54 by Oona Jouste",
-                old: "on 2024-08-30 07:37:45 by Natalia Kowalewska",
+                inactive: "on 2025-09-04 15:36:54 by Oona Jouste",
+                old: "on 2025-08-30 07:37:45 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56833,8 +56829,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-06 08:54:23 by Synne Wahlquist Skurdal",
-                old: "on 2024-08-30 07:37:47 by Natalia Kowalewska",
+                inactive: "on 2025-09-06 08:54:23 by Synne Wahlquist Skurdal",
+                old: "on 2025-08-30 07:37:47 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -56924,8 +56920,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-05 09:27:24 by Bibiana Vysokajova",
-                old: "on 2024-08-30 07:37:49 by Natalia Kowalewska",
+                inactive: "on 2025-09-05 09:27:24 by Bibiana Vysokajova",
+                old: "on 2025-08-30 07:37:49 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -57015,8 +57011,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-10-15 16:04:28 by ",
-                old: "on 2024-08-30 07:37:52 by Natalia Kowalewska",
+                inactive: "on 2025-10-15 16:04:28 by ",
+                old: "on 2025-08-30 07:37:52 by Natalia Kowalewska",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -57103,8 +57099,8 @@ try {
               master_auction_name:
                 "beliani.ch Electric Fireplace, NYIRI, White ",
               buttons_log: {
-                inactive: "on 2024-09-10 13:28:44 by Gabian Kingma",
-                old: "on 2024-09-05 09:42:54 by ",
+                inactive: "on 2025-09-10 13:28:44 by Gabian Kingma",
+                old: "on 2025-09-05 09:42:54 by ",
               },
               search: {
                 title: "SHOW IN SA PC",
@@ -57125,7 +57121,7 @@ try {
     ],
     shops: SHOPS,
     config: {
-      server_url: "https://upload.pictureserver.net/static/2024/",
+      server_url: "https://upload.pictureserver.net/static/2025/",
       campaign_url: "https://www.prologistics.info/news_email.php?id=",
       issue_url: "https://www.prologistics.info/react/logs/issue_logs/",
       alarm_days: 7,
