@@ -131,6 +131,26 @@ export async function mondayOfferFreeebies({
                   </td>
               </tr>
 
+              ${!inside ?
+              `
+                <tr>
+                  <td style="background-color: ${offerPart.background || background}; color: ${offerPart.color || "#000"};">
+                    ${Space()}
+                  </td>
+                </tr>
+              `
+              :
+              `<tr>
+                  <td style="background-color: ${inside.background || background}; color: ${inside.color || "#000"};">
+                    ${Space()}
+                    ${ImageWithLink({
+                      href: links[8],
+                      src: links[9],
+                    })}
+                    ${Space({ className: "newsletterBottom60px" })}
+                  </td>
+              </tr>`
+              }
 
               <tr>
                   <td class="newsletterContainer" style="background-color: ${

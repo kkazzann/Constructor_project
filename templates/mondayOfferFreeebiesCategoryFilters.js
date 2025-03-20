@@ -39,6 +39,7 @@ export async function mondayOfferFreeebiesCategoryFilters({
   background,
   offerPart,
   intro,
+  inside,
   date,
   add_utm,
 }) {
@@ -131,20 +132,39 @@ export async function mondayOfferFreeebiesCategoryFilters({
                     })}
                   </td>
               </tr>
-
-
+              ${!inside ?
+              `
+                <tr>
+                  <td style="background-color: ${offerPart.background || background}; color: ${offerPart.color || "#000"};">
+                    ${Space()}
+                  </td>
+                </tr>
+              `
+              :
+              `<tr>
+                  <td style="background-color: ${inside.background || background}; color: ${inside.color || "#000"};">
+                    ${Space()}
+                    ${ImageWithLink({
+                      href: links[8],
+                      src: links[9],
+                    })}
+                    ${Space({ className: "newsletterBottom60px" })}
+                  </td>
+              </tr>`
+              }
               <tr>
                   <td class="newsletterContainer" style="background-color: ${
                     freebies.options.background || background
                     }; color: ${
                     offerPart.color || "#000"
                   };">
-                      ${Space()}
+                      
                       ${
                         offerPart.type === "code"
                           ? OfferPartCode({
                               color: offerPart.color,
                               data: queries.offerPart,
+                              //data2: queries.ChooseFrom,
                               href: links[0],
                               getPhrase,
                               type,
