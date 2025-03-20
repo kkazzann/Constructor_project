@@ -6,19 +6,6 @@ const FreebiesGenerator = ({ freebies, getProductById }) => {
   
   return freebies
     .map((freebie, idx) => {
-      if (idx === freebies.length - 1) {
-        return `
-        ${Freebies({
-          products: freebie.products.map((item) => ({
-            ...item,
-            ...priceFree(getProductById(item.id, item.src)),
-          })),
-          size: freebie.size,
-        })}
-        ${Space({ className: "newsletterBottom80px" })}
-        `;
-      }
-
       return `
         ${Freebies({
           products: freebie.products.map((item) => ({

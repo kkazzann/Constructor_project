@@ -46,7 +46,7 @@ export function OfferPartCode({ color, data, getPhrase, queries, paragraph1, par
     
     <tr>
       <td >
-        ${Paragraph(data ? data[2] :paragraph3, "center")}
+        ${Paragraph(data ? data[3] :paragraph3, "center")}
       </td>
     </tr>
 

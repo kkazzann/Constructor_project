@@ -166,7 +166,7 @@ export default [
     "Unsubscribe title": "Afmelden",
     "Company Details": "Bedrijfsinformatie",
     "Address": "Beliani (EU) GmbH 6340 Baar Switzerland",
-    "Mobile number": "Telefoonnummer: (038) 7440 103;",
+    "Mobile number": "Telefoonnummer: (020) 7871 308;",
     "Email address": "E-mail:",
     "Mail to": "mailto:mail@beliani.nl",
     "Email": "mail@beliani.nl",

@@ -724,7 +724,9 @@ export function Footer(sections, options) {
                 <tr>
                     <td class="newsletterTopBottomContainer" align="left">
                         <span class="newsletterConditions" style="color: #000000;">${conditionsTitle} ${
-            conditionsText.length === 4
+            conditionsText.length === 5
+            ?  conditionsText[4] + " " + conditionsText[1]
+            : conditionsText.length === 4
             ?  conditionsText[3] + " " + conditionsText[1]
             : conditionsText.length === 3
             ? conditionsText[0] + " " + conditionsText[1]

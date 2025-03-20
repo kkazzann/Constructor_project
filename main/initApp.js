@@ -174,6 +174,7 @@ export function initApp({ campaigns, shops, config }) {
         getProductById: handlers.getProductById,
         getCategoryTitle: handlers.getCategoryTitle,
         getCategoryLink: handlers.getCategoryLink,
+        add_utm: (link) => templateToRender.type == 'newsletter' ? link + '?utm_source=newsletter&utm_medium=email&utm_campaign=' + ids[country] : link,
         getFooter: handlers.getFooter,
         getHeader: handlers.getHeader,
         getPhrase: handlers.getPhrase,
