@@ -29,6 +29,7 @@ import {
   TopImageTitle,
   TopImageTitleIF,
   CategoryOneLastWhite,
+  CategoryOneBannerWhite,
 } from "../components/index.js";
 import { OfferPart } from "../components/OfferPart.js";
 import { OfferPartCode } from "../components/OfferPartCode.js";
@@ -137,7 +138,7 @@ export async function Office({
                 title1: queries.tit[0],
                 title2: queries.tit[1],
                 color: topImageColor,
-                type: "equals",
+                type: "up_to",
                 })}`
                 }
                 
@@ -146,8 +147,8 @@ export async function Office({
                 </td>
             </tr>
             <tr>
-                <td style="background-color: #FEBC66;">
-                    ${CategoryOneBanner({
+                <td style="background-color: #750000;">
+                    ${CategoryOneBannerWhite({
                       href: getCategoryLink(categories[0].href),
                       hrefSecond: links[3],
                       name: queries?.categories[0]
@@ -165,7 +166,7 @@ export async function Office({
                 </td>
             </tr>
             <tr>
-                <td style="background-color: #FF4E26;">
+                <td style="background-color: #FF2F00;">
                     ${CategoryOneWhite({
                       href: getCategoryLink(categories[1].href),
                       name: queries?.categories[2]
@@ -182,8 +183,8 @@ export async function Office({
                 </td>
             </tr>
             <tr>
-                <td style="background-color: #FEBC66;">
-                    ${CategoryOne({
+                <td style="background-color: #750000;">
+                    ${CategoryOneWhite({
                       href: getCategoryLink(categories[2].href),
                       name: queries?.categories[4]
                         ? queries.categories[4]
@@ -199,7 +200,7 @@ export async function Office({
                 </td>
             </tr>
             <tr>
-                <td style="background-color: #FF4E26;">
+                <td style="background-color: #FF2F00;">
                     ${CategoryOneLastWhite({
                       href: getCategoryLink(categories[3].href),
                       name: queries?.categories[6]
@@ -248,7 +249,7 @@ export async function Office({
                                         <tr>
                                             <td style="padding-left: 0px; padding-right: 0px;">
                                                 <a href=${getCategoryLink(categories[4].href)}>
-                                                    <img width="100%" src="https://upload.pictureserver.net/static/2025/250326category_06.png" style="display: block;" />
+                                                    <img width="100%" src="https://upload.pictureserver.net/static/2025/250402category_05.png" style="display: block;" />
                                                 </a>
                                                 <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                     <tbody>
@@ -278,7 +279,7 @@ export async function Office({
                                         <tr>
                                             <td style="padding-left: 0px; padding-right: 0px;">
                                                 <a href=${getCategoryLink(categories[5].href)}>
-                                                    <img width="100%" src="https://upload.pictureserver.net/static/2025/250326category_05.png" style="display: block;" />
+                                                    <img width="100%" src="https://upload.pictureserver.net/static/2025/250402category_06.png" style="display: block;" />
                                                 </a>
                                                 <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                     <tbody>
@@ -310,7 +311,7 @@ export async function Office({
                                         <tr>
                                             <td style="padding-left: 0px; padding-right: 0px;">
                                                 <a href=${getCategoryLink(categories[6].href)}>
-                                                    <img width="100%" src="https://upload.pictureserver.net/static/2025/250326category_07.png" style="display: block;" />
+                                                    <img width="100%" src="https://upload.pictureserver.net/static/2025/250402category_07.png" style="display: block;" />
                                                 </a>
                                                 <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                     <tbody>
@@ -340,7 +341,7 @@ export async function Office({
                                         <tr>
                                             <td style="padding-left: 0px; padding-right: 0px;">
                                                 <a href=${getCategoryLink(categories[7].href)}>
-                                                    <img width="100%" src="https://upload.pictureserver.net/static/2025/250326category_08.png" style="display: block;" />
+                                                    <img width="100%" src="https://upload.pictureserver.net/static/2025/250402category_08.png" style="display: block;" />
                                                 </a>
                                                 <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                     <tbody>

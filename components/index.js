@@ -8,7 +8,6 @@ import { CategoryTwo } from "./categoryTwo.js";
 import { CategorySecond } from "./categorySecond.js";
 import { CategoryBlock } from "./catgeoryBlock.js";
 import { Freebies } from "./freebies.js";
-import { ThisMayInterestYou } from "./interest_you.js";
 import { Intro } from "./intro.js";
 import { Line } from "./Line.js";
 import { WhiteLine } from "./whiteLine.js";
@@ -30,6 +29,8 @@ import { CategoryOneWhite } from "./categoryOneWhite.js";
 import { TopImageTitle } from "./TopImageTitle.js";
 import { TopImageTitleIF } from "./TopImageTitleIF.js";
 import { CategoryOneLastWhite } from "./categoryOneLastWhite.js";
+import { CategoryOneBannerWhite } from "./categoryOneBannerWhite.js";
+import { AdditionalCategories } from "./additional_categories.js";
 
 export {
   ProductWithSize,
@@ -42,7 +43,6 @@ export {
   GetCode,
   Category,
   Freebies,
-  ThisMayInterestYou,
   Intro,
   Line,
   WhiteLine,
@@ -64,4 +64,6 @@ export {
   TopImageTitle,
   TopImageTitleIF,
   CategoryOneLastWhite,
+  CategoryOneBannerWhite,
+  AdditionalCategories,
 };

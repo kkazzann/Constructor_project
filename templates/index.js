@@ -28,6 +28,7 @@ import { HallwayLP } from "./HallwayLP.js";
 import { Rugs } from "./Rugs.js";
 import { Living } from "./Living.js";
 import { Office } from "./Office.js";
+import { RegularWednesdayNslt } from "./test.js";
 
 export const templates = {
   newsletter_FGG,
@@ -60,4 +61,5 @@ export const templates = {
   Rugs,
   Living,
   Office,
+  RegularWednesdayNslt,
 };

@@ -5,7 +5,7 @@ export const Title = ({title, color, align = "left", className = "newsletterTitl
       <tbody>
           <tr>
               <td align="${align}">
-                  <span class="${className}" style="color: ${color || "#000000"}">
+                  <span class="${className}" style="color: ${color}">
                       ${title}
                   </span>
               </td>

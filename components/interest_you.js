@@ -8,7 +8,7 @@
 
 
 
-export function ThisMayInterestYou({title, categories}) {
+export function AdditionalCategories({categories}) {
 
 
 
@@ -21,7 +21,7 @@ export function ThisMayInterestYou({title, categories}) {
               <tr>
                   <td align="center" class="newsletterBottom35px" >
                       <span class="newsletterTitle">
-                          ${title}
+                          ${queries.additional[0]}
                       </span>
                   </td>
               </tr>
@@ -44,7 +44,7 @@ export function ThisMayInterestYou({title, categories}) {
                               </tr>
                               <tr>
                                   <td align="center" style="text-align: center;">
-                                      <a href=${categories[0].href} style="color: #000000; text-decoration: underline;" class="newsletterInterestYouCta">${categories[0].name}</a>
+                                      <a href=${categories[0].href} style="color: #000000; text-decoration: underline;" class="newsletterInterestYouCta">${queries.additional[1]}</a>
                                   </td>
                               </tr>
                           </tbody>
@@ -62,7 +62,7 @@ export function ThisMayInterestYou({title, categories}) {
                               </tr>
                               <tr>
                                   <td align="center" style="text-align: center;">
-                                      <a href=${categories[1].href} style="color: #000000; text-decoration: underline;" class="newsletterInterestYouCta">${categories[1].name}</a>
+                                      <a href=${categories[1].href} style="color: #000000; text-decoration: underline;" class="newsletterInterestYouCta">${queries.additional[2]}</a>
                                   </td>
                               </tr>
                           </tbody>
@@ -82,7 +82,7 @@ export function ThisMayInterestYou({title, categories}) {
                               </tr>
                               <tr>
                                   <td align="center" style="text-align: center;">
-                                      <a href=${categories[2].href} style="color: #000000; text-decoration: underline;" class="newsletterInterestYouCta">${categories[2].name}</a>
+                                      <a href=${categories[2].href} style="color: #000000; text-decoration: underline;" class="newsletterInterestYouCta">${queries.additional[3]}</a>
                                   </td>
                               </tr>
                           </tbody>
@@ -100,7 +100,7 @@ export function ThisMayInterestYou({title, categories}) {
                               </tr>
                               <tr>
                                   <td align="center" style="text-align: center;">
-                                      <a href=${categories[3].href} style="color: #000000; text-decoration: underline;" class="newsletterInterestYouCta">${categories[3].name}</a>
+                                      <a href=${categories[3].href} style="color: #000000; text-decoration: underline;" class="newsletterInterestYouCta">${queries.additional[4]}</a>
                                   </td>
                               </tr>
                           </tbody>
