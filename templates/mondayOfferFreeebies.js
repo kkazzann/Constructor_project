@@ -39,6 +39,7 @@ export async function mondayOfferFreeebies({
   background,
   offerPart,
   intro,
+  inside,
   date,
 }) {
   const codes = getCodes(queries);
@@ -158,7 +159,6 @@ export async function mondayOfferFreeebies({
                     }; color: ${
                     offerPart.color || "#000"
                   };">
-                      ${Space()}
                       ${
                         offerPart.type === "code"
                           ? OfferPartCode({
@@ -220,15 +220,6 @@ export async function mondayOfferFreeebies({
                 ${FreebiesGenerator({
                   background,
                   freebies: freebies.items,
-                  getProductById,
-                })}
-                  </td>
-              </tr>
-              <tr>
-                <td style="background-color: ${ freebies.options.background || background }; color: ${ freebies.options?.color || "#000" };">
-                ${FreebiesGenerator({
-                  background,
-                  freebies: freebies.items1,
                   getProductById,
                 })}
                   </td>
