@@ -1,0 +1,1 @@
+export const kaczka = "https://pictureserver.net/static/"

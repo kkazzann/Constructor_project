@@ -24,11 +24,9 @@ export const Category = isAllowToRender(
         return `
             <table border="0" cellspacing="0" cellpadding="0" width="100%">
                   <tbody>
+                    
                     <tr>
-                      <td class="newsletterBottom35px"></td>
-                    </tr>
-                    <tr>
-                      <td>
+                      <td class="newsletterContainer">
                         ${Title({ title: name, align: "left", color: color })}
                       </td>
                     </tr>
@@ -36,7 +34,7 @@ export const Category = isAllowToRender(
                       <td class="newsletterBottom35px"></td>
                     </tr>
                     <tr>
-                      <td>
+                      <td class="newsletterContainer">
                         <a href="${href}">
                           <img alt="${name}" src="${src}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
                         </a>

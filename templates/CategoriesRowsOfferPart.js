@@ -2,6 +2,7 @@ import { OfferPart } from "../components/OfferPart.js";
 import { YouTube } from "../components/YouTube.js";
 import { Footer } from "../components/footer.js";
 import { Header } from "../components/header.js";
+import { kaczka } from "../server.js";
 import {
   Line,
   Category,
@@ -146,7 +147,7 @@ export async function CategoriesRowsOfferPart({
     RO:     ['https://www.beliani.ro/birou/birouri/toate+produsele/?Caracteristici=Cu_sertare,Cu_rafturi&sort=default'],
   };
 
-
+  const check1 = [queries.intro[2], queries.intro[3], queries.intro[4]]
 
 
 
@@ -154,7 +155,7 @@ export async function CategoriesRowsOfferPart({
     getProductById(item.id, item.src)
     )
     console.log(getPhrase('See more'))
-    console.log(queries.category_paragraph[1])
+    console.log(check1)
   return `
   ${Header(
     {
@@ -250,133 +251,277 @@ export async function CategoriesRowsOfferPart({
 </table>
 
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #000;" id='newsletter'>
+             
               <tr>
-                <td align="center" style="background-color: #FFCCB7;" class="newsletterContainer">
-                  ${Intro({
-                    paragraph: queries.intro[0], 
-                    color: "#000", 
-                    align:'left',
-                    title:'no_title'
-                  })}
-                  </td>
+                <td style="background-color: #FFE6DB;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
-              </tr>
-              <tr>
-                <td style="background-color: #FD9000;" class="newsletterBottom20px"></td>
-              </tr>
-              <tr>
-                <td style="background-color: #FD9000">
-                ${Timer({
-                  
-                  title: queries.timer[0],
-                  subtitle: queries.timer[1],
-                  
-                  href: links[4],
-                  imageSrc: gif_src[country],
-                  style: {
-                    bgColor: "#FD9000",
-                    textColor: "#000",
-                    align: "center",
-                  },
-                  cta: getPhrase("Shop now"),
-                })}
+                <td style="background-color: #FFE6DB">
+                      ${ImageWithLink({
+                        href: links[19],
+                        src: links[20],
+                      })}
                 </td>
               </tr>
-              <tr>
-                <td style="background-color: #FD9000;" class="newsletterBottom20px"></td>
               </tr>
+                 <tr>
+                <td style="background-color:  #FFE6DB;" class="newsletterBottom80px"></td>
+              </tr>
+              
               <tr>
-                <td style="background-color: #FD9000">
+                <td style="background-color: #FFE6DB">
                       ${ImageWithLink({
-                        href: links[4],
-                        src: 'https://upload.pictureserver.net/static/2025/250227_03free.png',
+                        href: getProductById("405510").href,
+                        src: links[21],
                       })}
                 </td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom60px"></td>
+                <td align="center" style="background-color: #FF5933;" class="newsletterContainer">
+                  ${Intro({
+                    paragraph: queries.intro[1], 
+                    color: "#000", 
+                    align:'left',
+                    title:'no_title',
+                    spaceClassName: "newsletterBottom60px",
+                  })}
+                  </td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                <td style="background-color: #FF5933;" class="newsletterBottom60px"></td>
+              </tr>
+               <tr>
+                <td style="background-color: #FF5933">
+                      ${ImageWithLink({
+                        href: getProductById("405510").href,
+                        src: kaczka + '2025/cat_1_gif_20250328.gif',
+                      })}
+                </td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FF5933;" class="newsletterBottom35px"></td>
+                </tr>
+                <tr>
+                  <td align="center" style="background-color: #FF5933;">
+                    ${Paragraph({
+                      paragraph: queries.intro.slice(2, 5),
+                      type: "split",
+                      color: categories[0].color,
+                      
+                      
+                    
+                    })}
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background-color: #FF5933;" class="newsletterBottom35px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:  #FF5933;">
                         ${Category({
-                          href: add_utm(cat1[country]), 
-                          name: queries.category_paragraph[0],
-                          
-                          src: categories[0].src,
+                          href: getProductById("405510").href,
+                          name: "aaa",
+                          src: kaczka + "2025/cat_1_20250328.png",
                           cta: getPhrase("Shop now"),
-                          type: "monday",
+                          type:"no_products_only_img",
                           color: categories[0].color,
-                          products: categories[0].products.map((item) =>
-                            getProductById(item.id, item.src)
-                          ),
-                        
+                        })}
+                    </td>
+                </tr>
 
-                        })}
-                    </td>
-              </tr>
-             <tr>
-                <td style="background-color: #FF2F00;" class="newsletterBottom35px"></td>
+                <tr>
+                <td style="background-color: #FF5933;" class="newsletterBottom80px"></td>
               </tr>
               <tr>
-                    <td style="background-color: #FF2F00;">
+                <td style="background-color: #FFE6DB;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                <td style="background-color: #FFE6DB">
+                      ${ImageWithLink({
+                        href: getProductById("170608").href,
+                        src: links[22],
+                      })}
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="background-color:  #FFE6DB;" class="newsletterContainer">
+                  ${Intro({
+                    paragraph: queries.intro[6], 
+                    color: "#000", 
+                    align:'left',
+                    title:'no_title',
+                    spaceClassName: "newsletterBottom60px",
+                  })}
+                  </td>
+              </tr>
+              <tr>
+                <td style="background-color:  #FFE6DB;" class="newsletterBottom60px"></td>
+              </tr>
+               <tr>
+                <td style="background-color:  #FFE6DB">
+                      ${ImageWithLink({
+                        href: getProductById("170608").href,
+                        src: kaczka + "2025/cat_2_gif_20250328.gif",
+                      })}
+                </td>
+              </tr>
+              <tr>
+                  <td style="background-color:  #FFE6DB;" class="newsletterBottom35px"></td>
+                </tr>
+                <tr>
+                  <td align="center" style="background-color:  #FFE6DB;">
+                    ${Paragraph({
+                      paragraph: queries.intro.slice(7, 10),
+                      type: "split",
+                      color: categories[0].color,
+                     
+                    })}
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background-color:  #FFE6DB;" class="newsletterBottom35px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:   #FFE6DB;">
                         ${Category({
-                          href: add_utm(cat2[country]), 
-                          name: queries.category_paragraph[1],
-                          
-                          src: categories[1].src,
+                          href: getProductById("170608").href,
+                          name: "aaa",
+                          src: kaczka + "2025/cat_2_20250328.png",
                           cta: getPhrase("Shop now"),
-                          type: "monday",
-                          color: categories[1].color,
-                          products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src)
-                          ),
-                        
-
+                          type:"no_products_only_img",
+                          color: categories[0].color,
                         })}
                     </td>
+                </tr>
+                <tr>
+                <td style="background-color:  #FFE6DB;" class="newsletterBottom80px"></td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FFE6DB">
+                      ${ImageWithLink({
+                        href: getProductById("574907").href,
+                        src: links[23],
+                      })}
+                </td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                <td align="center" style="background-color:  #FF5933;" class="newsletterContainer">
+                  ${Intro({
+                    paragraph: queries.intro[11], 
+                    color: "#000", 
+                    align:'left',
+                    title:'no_title',
+                    spaceClassName: "newsletterBottom60px",
+                    
+                  })}
+                  </td>
+              </tr>
+              <tr>
+                <td style="background-color:  #FF5933;" class="newsletterBottom60px"></td>
+              </tr>
+               <tr>
+                <td style="background-color:  #FF5933">
+                      ${ImageWithLink({
+                        href: getProductById("574907").href,
+                        src: kaczka + "2025/cat_3_gif_20250328.gif",
+                      })}
+                </td>
+              </tr>
+              <tr>
+                  <td style="background-color:  #FF5933;" class="newsletterBottom35px"></td>
+                </tr>
+                <tr>
+                  <td align="center" style="background-color:  #FF5933;">
+                    ${Paragraph({
+                      paragraph: queries.intro.slice(12, 15),
+                      type: "split",
+                      color: categories[0].color,
+                     
+                    })}
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background-color:  #FF5933;" class="newsletterBottom35px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:   #FF5933;">
                         ${Category({
-                          href: getCategoryLink(categories[3].href),
-                          name: queries.category_paragraph[2],
-                          
-                          src: categories[2].src,
+                          href: getProductById("574907").href,
+                          name: "aaa",
+                          src: kaczka + "2025/cat_3_20250328.png",
                           cta: getPhrase("Shop now"),
-                          type: "monday",
-                          color: categories[2].color,
-                          products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src)
-                          ),
+                          type:"no_products_only_img",
+                          color: categories[0].color,
                         })}
                     </td>
+                </tr>
+                 <tr>
+                <td style="background-color:  #FF5933;" class="newsletterBottom80px"></td>
               </tr>
               <tr>
-                <td style="background-color: #FF2F00;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FFE6DB;" class="newsletterBottom35px"></td>
+              </tr>
+                 <tr>
+                <td style="background-color: #FFE6DB">
+                      ${ImageWithLink({
+                        href: getProductById("271190").href,
+                        src: links[24],
+                      })}
+                </td>
               </tr>
               <tr>
-                    <td style="background-color:  #FF2F00;">
+                <td align="center" style="background-color: #FFE6DB;" class="newsletterContainer">
+                  ${Intro({
+                    paragraph: queries.intro[16], 
+                    color: "#000", 
+                    align:'left',
+                    title:'no_title',
+                    spaceClassName: "newsletterBottom60px",
+                    
+                  })}
+                  </td>
+              </tr>
+              <tr>
+                <td style="background-color: #FFE6DB;" class="newsletterBottom60px"></td>
+              </tr>
+               <tr>
+                <td style="background-color: #FFE6DB">
+                      ${ImageWithLink({
+                        href: getProductById("271190").href,
+                        src: kaczka + "2025/cat_4_gif_20250328.gif",
+                      })}
+                </td>
+              </tr>
+              <tr>
+                  <td style="background-color: #FFE6DB;" class="newsletterBottom35px"></td>
+                </tr>
+                <tr>
+                  <td align="center" style="background-color: #FFE6DB;">
+                    ${Paragraph({
+                      paragraph: queries.intro.slice(17, 20),
+                      type: "split",
+                      color: categories[0].color,
+                     
+                    })}
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background-color: #FFE6DB;" class="newsletterBottom35px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:  #FFE6DB;">
                         ${Category({
-                          href: add_utm(cat4[country]), 
-                          name: queries.category_paragraph[3],
-                          
-                          src: categories[3].src,
+                          href: getProductById("271190").href,
+                          name: "aaa",
+                          src: kaczka + "2025/cat_4_20250328.png",
                           cta: getPhrase("Shop now"),
-                          type: "monday",
-                          color: categories[3].color,
-                          products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src)
-                            
-                          ),
-                        
-
+                          type:"no_products_only_img",
+                          color: categories[0].color,
                         })}
                     </td>
+                </tr>
+                 <tr>
+                <td style="background-color:  #FFE6DB;" class="newsletterBottom80px"></td>
               </tr>
               <tr>
                   <td class="newsletterContainer">

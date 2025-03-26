@@ -115,6 +115,11 @@ export default {
       line-height: 1.20;
       font-weight: 600;
     }
+    .newsletterMarkTitle {
+          font-size: 25px;
+          font-family: "Open Sans", sans-serif;
+          line-height: 1;
+        }
 
     .newsletterIntroTitle {
       font-size: 35px;
@@ -245,7 +250,9 @@ export default {
       .newsletterSocialIcon {
         padding-left: 13px !important;
       }
-    
+    .newsletterMarkTitle {
+              font-size: 18px;
+            }
       .newsletterTopBottomContainer {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
@@ -1104,6 +1111,10 @@ export default {
        font-size: 18px;
        line-height: 1.20;
      }
+    .newsletterMarkTitle {
+            font-size: 25px;
+            line-height: 1;
+          }
      
      #newsletter .newsletterTitle {
        font-size: 30px;
@@ -1240,7 +1251,9 @@ export default {
        #newsletter .newsletterFooterCategoryRIGHTBottom {
          padding-left: 5px !important;
        }
-     
+      .newsletterMarkTitle {
+              font-size: 18px;
+            }
        #newsletter .newsletterFooterCategoryLEFT {
          padding-bottom: 10px !important;
          padding-right: 5px !important;

@@ -43,27 +43,27 @@ export async function friday_no_products_only_img({
 
 }) {
   const gif_src = {
-    CHDE:  ['https://gen.sendtric.com/countdown/ia52kwo0ab'],
-    CHFR:   ['https://gen.sendtric.com/countdown/kh6vdpkdcv'],
-    FR:     ['https://gen.sendtric.com/countdown/kh6vdpkdcv'],
-    UK:     ['https://gen.sendtric.com/countdown/54ixbfjghn'],
-    DE:     ['https://gen.sendtric.com/countdown/ia52kwo0ab'],
-    AT:     ['https://gen.sendtric.com/countdown/ia52kwo0ab'],
-    ES:     ['https://gen.sendtric.com/countdown/5x36adbeza'],
-    PL:     ['https://gen.sendtric.com/countdown/vjpcx2k1vg'],
-    NL:     ['https://gen.sendtric.com/countdown/bxouadl5qm'],
-    PT:     ['https://gen.sendtric.com/countdown/s7oae3yla0'],
-    IT:     ['https://gen.sendtric.com/countdown/6zkxrqr3p3'],
-    SE:     ['https://gen.sendtric.com/countdown/cqfy2gl7kg'],
-    HU:     ['https://gen.sendtric.com/countdown/h8kqsqj3t2'],
-    DK:     ['https://gen.sendtric.com/countdown/cw2s1iqu37'],
-    CZ:     ['https://gen.sendtric.com/countdown/k71t0fedbe'],
-    FI:     ['https://gen.sendtric.com/countdown/yopohlyqq4'],
-    NO:     ['https://gen.sendtric.com/countdown/tqee2n7cnu'],
-    SK:     ['https://gen.sendtric.com/countdown/8x36h6b1eb'],
-    BENL:   ['https://gen.sendtric.com/countdown/bxouadl5qm'],
-    BEFR:   ['https://gen.sendtric.com/countdown/kh6vdpkdcv'],
-    RO:     ['https://gen.sendtric.com/countdown/qmfn6uxaat'],
+    CHDE:  ['https://gen.sendtric.com/countdown/m65au105mm'],
+    CHFR:   ['https://gen.sendtric.com/countdown/ge79rt92yn'],
+    FR:     ['https://gen.sendtric.com/countdown/ge79rt92yn'],
+    UK:     ['https://gen.sendtric.com/countdown/dlm6unqa2g'],
+    DE:     ['https://gen.sendtric.com/countdown/m65au105mm'],
+    AT:     ['https://gen.sendtric.com/countdown/m65au105mm'],
+    ES:     ['https://gen.sendtric.com/countdown/m1vrjf4qms'],
+    PL:     ['https://gen.sendtric.com/countdown/1f3znph1s5'],
+    NL:     ['https://gen.sendtric.com/countdown/rqb0q9ia2a'],
+    PT:     ['https://gen.sendtric.com/countdown/2k1jq7cg0i'],
+    IT:     ['https://gen.sendtric.com/countdown/d7zvfd943c'],
+    SE:     ['https://gen.sendtric.com/countdown/xq2dl02pir'],
+    HU:     ['https://gen.sendtric.com/countdown/8qnzdzzvgv'],
+    DK:     ['https://gen.sendtric.com/countdown/l4t02udq9l'],
+    CZ:     ['https://gen.sendtric.com/countdown/ls9pnrex33'],
+    FI:     ['https://gen.sendtric.com/countdown/p3r43h8802'],
+    NO:     ['https://gen.sendtric.com/countdown/7l2rdujq6k'],
+    SK:     ['https://gen.sendtric.com/countdown/98slx17v40'],
+    BENL:   ['https://gen.sendtric.com/countdown/rqb0q9ia2a'],
+    BEFR:   ['https://gen.sendtric.com/countdown/ge79rt92yn'],
+    RO:     ['https://gen.sendtric.com/countdown/fxd2lfgu2s'],
   };
   return `
   ${Header(
@@ -113,7 +113,7 @@ export async function friday_no_products_only_img({
     { type }
   )}
 
-   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #FFCCB7; color: #000;" id='newsletter'>
+   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #F6E7E6; color: #000;" id='newsletter'>
 
  <tbody>
 
@@ -159,136 +159,218 @@ export async function friday_no_products_only_img({
 
 </table>
 
-  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #000; background-color: #FFCCB7;" id='newsletter'>
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #000; background-color: #F6E7E6;" id='newsletter'>
               <tr>
-                <td align="center" style="background-color: #FFCCB7;" class="newsletterContainer">
+                <td align="center" style="background-color: #F6E7E6;" class="newsletterContainer">
                   ${Intro({
                     paragraph: queries.intro[0], 
                     color: "#000", 
-                    align:'left',
+                    align:'center',
                     title:'no_title'
                   })}
                   </td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+                <tr>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom20px"></td>
               </tr>
-            
-              <tr>
+              </tr>
+                    <tr>
                 <td style="background-color: #FFCCB7">
+                ${Timer({
+                  
+                  title: queries.timer[0],
+                  subtitle: queries.timer[1],
+                  
+                  href: links[4],
+                  imageSrc: gif_src[country],
+                  style: {
+                    bgColor: "#FFCCB7",
+                    textColor: "#000",
+                    align: "center",
+                  },
+                  cta: getPhrase("Shop now"),
+                })}
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom20px"></td>
+              </tr>
+              <tr>
+                <td style="background-color: #F6E7E6">
                       ${ImageWithLink({
                         href: links[4],
-                        src: links[18],
+                        src: 'https://upload.pictureserver.net/static/2025/2500320_03free.png',
                       })}
                 </td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom60px"></td>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom60px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                    <td style="background-color:  #F6E7E6;">
                         ${Category({
-                          name: categories[0].name,
+                          name: queries.category_paragraph[0],
                           href: getCategoryLink(categories[0].href), 
                           src: links[11],
                           cta: getPhrase("Shop now"),
-                          type: "no_products_only_img",
+                          type: "no_products",
                           color: categories[0].color,
                         })}
                     </td>
               </tr>
              <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom80px"></td>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                <td style="background-color: #F6E7E6;" class="newsletterContainer">${Line()}</td>
+              </tr>
+               <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #F6E7E6;">
                         ${Category({
-                          name: categories[1].name,
+                          name: queries.category_paragraph[1],
                           href: getCategoryLink(categories[1].href), 
                           src: links[12],
                           cta: getPhrase("Shop now"),
-                          type: "no_products_only_img",
+                          type: "no_products",
                           color: categories[1].color,
                         })}
                     </td>
               </tr>
-             <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom80px"></td>
+            <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                <td style="background-color: #F6E7E6;" class="newsletterContainer">${Line()}</td>
+              </tr>
+               <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #F6E7E6;">
                         ${Category({
-                          name: categories[2].name,
+                          name: queries.category_paragraph[2],
                           href: getCategoryLink(categories[2].href), 
                           src: links[13],
                           cta: getPhrase("Shop now"),
-                          type: "no_products_only_img",
+                          type: "no_products",
                           color: categories[2].color,
                         })}
                     </td>
               </tr>
              <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom80px"></td>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                <td style="background-color: #F6E7E6;" class="newsletterContainer">${Line()}</td>
+              </tr>
+               <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #F6E7E6;">
                         ${Category({
-                          name: categories[3].name,
+                          name: queries.category_paragraph[3],
                           href: getCategoryLink(categories[3].href), 
                           src: links[14],
                           cta: getPhrase("Shop now"),
-                          type: "no_products_only_img",
+                          type: "no_products",
                           color: categories[3].color,
                         })}
                     </td>
               </tr>
              <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom80px"></td>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                <td style="background-color: #F6E7E6;" class="newsletterContainer">${Line()}</td>
+              </tr>
+               <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #F6E7E6;">
                         ${Category({
-                          name: categories[4].name,
+                          name: queries.category_paragraph[4],
                           href: getCategoryLink(categories[4].href), 
                           src: links[15],
                           cta: getPhrase("Shop now"),
-                          type: "no_products_only_img",
+                          type: "no_products",
                           color: categories[4].color,
                         })}
                     </td>
               </tr>
              <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom80px"></td>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                <td style="background-color: #F6E7E6;" class="newsletterContainer">${Line()}</td>
+              </tr>
+               <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #F6E7E6;">
                         ${Category({
-                          name: categories[5].name,
+                          name: queries.category_paragraph[5],
                           href: getCategoryLink(categories[5].href), 
                           src: links[16],
                           cta: getPhrase("Shop now"),
-                          type: "no_products_only_img",
+                          type: "no_products",
                           color: categories[5].color,
                         })}
                     </td>
               </tr>
              <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom80px"></td>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                <td style="background-color: #F6E7E6;" class="newsletterContainer">${Line()}</td>
+              </tr>
+               <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+              </tr>
+             <tr>
+                    <td style="background-color:  #F6E7E6;">
                         ${Category({
-                          name: categories[6].name,
+                          name: queries.category_paragraph[6],
                           href: getCategoryLink(categories[6].href), 
                           src: links[17],
                           cta: getPhrase("Shop now"),
-                          type: "no_products_only_img",
+                          type: "no_products",
                           color: categories[6].color,
                         })}
                     </td>
               </tr>
              <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom80px"></td>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterContainer">${Line()}</td>
+              </tr>
+               <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom35px"></td>
+              </tr>
+              <tr>
+                    <td style="background-color:  #F6E7E6;">
+                        ${Category({
+                          name: queries.category_paragraph[7],
+                          href: getCategoryLink(categories[7].href), 
+                          src: links[18],
+                          cta: getPhrase("Shop now"),
+                          type: "no_products",
+                          color: categories[7].color,
+                        })}
+                    </td>
+              </tr>
+             
+             
+             <tr>
+                <td style="background-color: #F6E7E6;" class="newsletterBottom80px"></td>
               </tr>
               
               <tr>

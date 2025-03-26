@@ -405,7 +405,7 @@ export default [
     "Shop All Categories": "Handla alla kategorier",
     "Soon Ending Campaigns": "Utgående kampanjer",
     "Shop limited-time deals": "Se våra tillfälliga erbjudanden",
-    "Shop now": "Handla nu",
+    "Shop now": "Köp nu",
     "See more": "Se mer",
     "Conditions:": "Villkor:",
     "Conditions Regular": "Alla varor är beroende av tillgänglighet. Alla priser kan komma att ändras utan förvarning.",
