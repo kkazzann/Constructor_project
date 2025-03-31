@@ -662,7 +662,7 @@ export default [
     "Category href 7": "https://www.beliani.it/illuminazione",
     "Category href 8": "https://www.beliani.it/tappeti",
     "Klarna src": "https://upload.pictureserver.net/static/2024/it_klarna.png",
-    "Klarna href": "https://www.beliani.it/content/payment/",
+    "Klarna href": "https://www.beliani.it/content/pagamento/",
     "Socials Title": "Seguici",
     "Instagram src": "https://beliani.info/newsletter/2022/footerInstagram2022New.jpg",
     "Instagram href": "https://www.instagram.com/beliani_italia/",
