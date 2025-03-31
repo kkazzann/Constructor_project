@@ -1036,7 +1036,7 @@ export default [
     "Unsubscribe title": "Lopeta tilaus",
     "Company Details": "Yhtiön tiedot",
     "Address": "Beliani (DE) GmbH 6340 Baar Sveitsi",
-    "Mobile number": "Puhelinnumero: 09 4245 0464;",
+    "Mobile number": "Puhelinnumero: 09 3157 9611;",
     "Email address": "sähköposti:",
     "Mail to": "mailto:mail@beliani.fi",
     "Email": "mail@beliani.fi",
