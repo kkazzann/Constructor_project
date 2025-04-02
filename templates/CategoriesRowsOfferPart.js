@@ -194,7 +194,7 @@ export async function CategoriesRowsOfferPart({
                     src: item.src,
                     color: item.color,
                     cta: getPhrase("Shop now"),
-                    line: "https://upload.pictureserver.net/static/2024/white_line.jpg",
+                    line: "https://pictureserver.net/static/2024/white_line.jpg",
                   })}
                 </td>
               </tr>

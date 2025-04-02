@@ -113,7 +113,7 @@ export async function mondayOfferLines({
                         `${TopImageTitle({
                             href: links[0],
                             title1: queries.tit[0],
-                            //title2: queries.tit[1],
+                            title2: '', // <--- dodaj to!
                             color: "#000000",
                             type: "singleLine",
                           })}`

@@ -14,6 +14,7 @@ import {
   Freebies,
   Product,
   ProductWithSize,
+  TopImageTitle,
 } from "../components/index.js";
 
 export async function CategoriesRows({
@@ -81,14 +82,36 @@ export async function CategoriesRows({
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
-                <tr>
-                  <td align="center">
-                    ${ImageWithLink({
-                      href: links[0],
-                      src: links[1],
-                    })}
-                  </td>
-              </tr>
+                ${type === "newsletter" ? 
+                `<tr>
+                      <td align="center">
+                        ${ImageWithLink({
+                          href: links[0],
+                          src: links[1],
+                        })}
+                      </td>
+                  </tr>`
+                : 
+                  `<tr>
+                      <td align="center">
+                        ${!queries.tit ?
+                        `
+                          ${ImageWithLink({
+                            href: links[0],
+                            src: links[1],
+                          })}` 
+                        :
+                        `${TopImageTitle({
+                            href: links[0],
+                            title1: queries.tit[0],
+                            title2: '', // <--- dodaj to!
+                            color: "#000000",
+                            type: "singleLine",
+                          })}`
+                        }
+                      </td>
+                  </tr>`
+              }
               <tr>
                   <td align="center">
                     ${ImageWithLink({

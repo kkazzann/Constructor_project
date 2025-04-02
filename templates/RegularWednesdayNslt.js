@@ -3,18 +3,23 @@ import { Header } from "../components/header.js";
 import {
   Line,
   Category,
-  GetCode,
   Intro,
   Paragraph,
   ImageWithLink,
   Space,
-  Freebies,
   Product,
-  ProductWithSize,
+  OfferPartCodes,
+  Timer,
+  TopImageTitle,
+  AdditionalCategories,
 } from "../components/index.js";
+import { OfferPart } from "../components/OfferPart.js";
+import { OfferPartCode } from "../components/OfferPartCode.js";
 import { priceFree } from "../helpers/priceFree.js";
+import templates from "../main/data/templates.js";
+import { getCodes } from "../utils/getCodes.js";
 
-export async function TimerGIF({
+export async function RegularWednesdayNslt({
   links,
   getProductById,
   getCategoryLink,
@@ -24,12 +29,40 @@ export async function TimerGIF({
   getHeader,
   queries,
   id,
-  shop,
+  origin,
   country,
   type,
   categories,
   background,
+  header,
+  offerPart,
+  intro,
+  timer,
+  data,
+  item,
+  add_utm
 }) {
+  const codes = getCodes(queries);
+  const timer_link = {
+    CHDE: [""],
+    CHFR: [""],
+    UK: [""],
+    DE: [""],
+    FR: [""],
+    AT: [""],
+    ES: [""],
+    PL: [""],
+    NL: [""],
+    PT: [""],
+    IT: [""],
+    SE: [""],
+    HU: [""],
+    DK: [""],
+    CZ: [""],
+    FI: [""],
+    NO: [""],
+    SK: [""],
+  };
   return `
   ${Header(
     {
@@ -77,186 +110,113 @@ export async function TimerGIF({
     },
     { type }
   )}
-  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7; color: #000;" id="newsletter">
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
         <tbody>
-              <tr>
-                  <td align="center">
-                    ${ImageWithLink({
-                      href: links[0],
-                      src: links[1],
-                    })}
-                  </td>
-              </tr>
-              <tr>
-                  <td align="center">
-                    ${ImageWithLink({
-                      href: links[2],
-                      src: links[3],
-                    })}
-                  </td>
-              </tr>
-
-
-              <tr>
-                <td class="newsletterContainer" style="background-color: #ffccb7; ">
-                    ${Space()}
-                    ${Paragraph(queries.intro)}
-                    ${Space({ className: "newsletterBottom80px" })}
+            ${type === "newsletter"
+              ? `
+                <tr>
+                    <td align="center">
+                      ${ImageWithLink({
+                        href: links[0],
+                        src: links[1],
+                      })}
+                    </td>
+                </tr>
+              `
+              : `
+                <tr>
+                    <td align="center">
+                      ${!queries.tit ?
+                      `
+                        ${ImageWithLink({
+                          href: links[0],
+                          src: links[1],
+                        })}
+                      `
+                      :
+                      `
+                        ${TopImageTitle({
+                          href: links[0],
+                          title1: queries.tit[0],
+                          title2: queries.tit[1],
+                          color: "#000000",
+                          type: "up_to",
+                        })}
+                      `
+                      }
+                    </td>
+                </tr>
+                  
+              `
+            }
+            <tr>
+                <td style="background-color: ${categories[0]?.background || background}; color: ${categories[0]?.color || "#000000"}">
+                    <tbody>
+                    ${categories
+                      .map((item, index) => {
+                        console.log(`Sprawdzam href dla kategorii ${index}:`, item.href);
+                        const isLast = index === categories.length - 1; // Sprawdzenie, czy to ostatni element
+                        const background = item.background; // Domyślny kolor tła
+                        const color = item.color; // Domyślny kolor tekstu
+                        const srcValue = item.src?.value || ""; // Pobranie `value`, jeśli istnieje
+                    
+                        // Pobieranie poprawnego indeksu dla `queries.categories`
+                        const dataIndex = index * 2; 
+                        if (dataIndex >= queries.categories.length) return ""; // Zabezpieczenie przed wyjściem poza zakres
+                    
+                        const title = queries.categories[dataIndex] || "Default Title";
+                        const paragraph = queries.categories[dataIndex + 1] || "Default Paragraph";
+                    
+                        return `
+                        <tr>
+                            <td style="background-color: ${background}; color: ${color};">
+                              ${Category({
+                                data: [title, paragraph], // Przekazanie poprawnej pary danych
+                                href: getCategoryLink(item.href),
+                                name: title,
+                                color: item.color,
+                                desc: paragraph,
+                                src: item.src,
+                                cta: getPhrase("Shop now"),
+                                type: "wednesday",
+                                products: item.products?.map((item) =>
+                                  getProductById(item.id, item.src)
+                                ) || [],
+                              })}
+                            </td>
+                        </tr>
+                        `;
+                      })
+                      .join("")}
                 </td>
-              </tr>
-              
-
-              <tr>
-                  <td style="background-color: #ffccb7;">
-                      ${Category({
-                        href: getCategoryLink(
-                          "https://www.beliani.ch/office-furniture/desks-eng/"
-                        ),
-                        name: queries.categories[0],
-                        src: "https://pictureserver.net/static/2024/20240603Category1.png",
-                        cta: queries.cta,
-                        type: "monday",
-                        products: [
-                          getProductById(
-                            "238646",
-                            "https://pictureserver.net/static/2024/20240603Category11.png"
-                          ),
-                          getProductById(
-                            "319065",
-                            "https://pictureserver.net/static/2024/20240603Category12.png"
-                          ),
-                          getProductById(
-                            "319062",
-                            "https://pictureserver.net/static/2024/20240603Category13.png"
-                          ),
-                          getProductById(
-                            "310523",
-                            "https://pictureserver.net/static/2024/20240603Category14.png"
-                          ),
-                        ],
-                      })}
-                  </td>
-              </tr>
-
-                <tr>
-                    <td class="newsletterContainer">
-                        ${Line()}
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="background-color: ${
-                      categories[0]?.background || background || "#ffffff"
-                    };">
-                        ${Space({ className: "newsletterBottom80px" })}
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="background-color: ${
-                      categories[0]?.background || background || "#ffffff"
-                    }; color: ${categories[0]?.color || "#000000"}">
-                      ${Category({
-                        href:
-                          typeof categories[0].href === "object"
-                            ? categories[0].href[country]
-                            : getCategoryLink(categories[0].href),
-                        name:
-                          "isCategoriesDB" in categories[0] &&
-                          categories[0].isCategoriesDB
-                            ? getCategoryTitle(categories[0].name)
-                            : queries.categories[0],
-                        src: categories[0].src,
-                        cta: getPhrase("Shop now"),
-                        color: categories[0]?.color,
-                        type: "monday",
-                        products: categories[0].products.map((item) =>
-                          getProductById(item.id, item.src)
-                        ),
-                      })}
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="newsletterContainer">
-                        ${Line()}
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="background-color: ${
-                      categories[1]?.background || background || "#ffffff"
-                    };">
-                        ${Space()}
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="background-color: ${
-                      categories[1]?.background || background || "#ffffff"
-                    }; color: ${categories[1]?.color || "#000000"}">
-                        ${Category({
-                          href:
-                            typeof categories[0].href === "object"
-                              ? categories[1].href[country]
-                              : getCategoryLink(categories[1].href),
-                          name:
-                            "isCategoriesDB" in categories[1] &&
-                            categories[1].isCategoriesDB
-                              ? getCategoryTitle(categories[1].name)
-                              : queries.categories[1],
-                          src: categories[1].src,
-                          cta: getPhrase("Shop now"),
-                          color: categories[1]?.color,
-                          type: "monday",
-                          products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src)
-                          ),
-                        })}
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="newsletterContainer">
-                        ${Line()}
-                    </td>
-                </tr>
-
-                
-                <tr>
-                    <td style="background-color: ${
-                      categories[2]?.background || background || "#ffffff"
-                    };">
-                        ${Space()}
-                    </td>
-                </tr>
-                  <tr>
-                    <td style="background-color: ${
-                      categories[2]?.background || background || "#ffffff"
-                    }; color: ${categories[2]?.color || "#000000"}">
-                        ${Category({
-                          href:
-                            typeof categories[0].href === "object"
-                              ? categories[2].href[country]
-                              : getCategoryLink(categories[2].href),
-                          name:
-                            "isCategoriesDB" in categories[2] &&
-                            categories[2].isCategoriesDB
-                              ? getCategoryTitle(categories[2].name)
-                              : queries.categories[2],
-                          src: categories[2].src,
-                          cta: getPhrase("Shop now"),
-                          color: categories[2]?.color,
-                          type: "monday",
-                          products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src)
-                          ),
-                        })}
-                    </td>
-                </tr>
-          <tbody>
+            </tr>
+            <tr>
+                <td style="background-color: #ffffff; color: #000000;">
+                    ${AdditionalCategories({
+                      // text1: queries.additional[0],
+                      // text2: queries.additional[1],
+                      // text3: queries.additional[2],
+                      // text4: queries.additional[3],
+                      // text5: queries.additional[4],
+                      // href1: categories[4].href,
+                      // href2: categories[5].href,
+                      // href3: categories[6].href,
+                      // href4: categories[7].href,
+                      // src1: categories[4].src,
+                      // src2: categories[5].src,
+                      // src3: categories[6].src,
+                      // src4: categories[7].src,
+                        ...queries.additional.reduce((acc, text, i) => ({ ...acc, [`text${i + 1}`]: text }), {}),
+                        ...[4, 5, 6, 7].reduce((acc, i, idx) => ({
+                          ...acc,
+                          [`href${idx + 1}`]: categories[i]?.href,
+                          [`src${idx + 1}`]: categories[i]?.src
+                        }), {})
+                    })}
+                </td>
+            </tr>
+        <tbody>
       </table>
-
       <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
           <tbody>
               <tr>
@@ -307,7 +267,7 @@ export async function TimerGIF({
               ? getFooter("Delivery src")
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
-            exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
+            exclude: ["CHIT"].includes(
               country
             ),
           },
