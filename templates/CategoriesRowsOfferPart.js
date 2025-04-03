@@ -42,27 +42,27 @@ export async function CategoriesRowsOfferPart({
 
 }) {
   const gif_src = {
-    CHDE:  ['https://gen.sendtric.com/countdown/dgg54bfzg1'],
-    CHFR:   ['https://gen.sendtric.com/countdown/wql18bvdmu'],
-    FR:     ['https://gen.sendtric.com/countdown/wql18bvdmu'],
-    UK:     ['https://gen.sendtric.com/countdown/53mu74airs'],
-    DE:     ['https://gen.sendtric.com/countdown/dgg54bfzg1'],
-    AT:     ['https://gen.sendtric.com/countdown/dgg54bfzg1'],
-    ES:     ['https://gen.sendtric.com/countdown/wtvmwr8gwe'],
-    PL:     ['https://gen.sendtric.com/countdown/ioxokryxw8'],
-    NL:     ['https://gen.sendtric.com/countdown/8zlcjzkavp'],
-    PT:     ['https://gen.sendtric.com/countdown/xmc7bcgedj'],
-    IT:     ['https://gen.sendtric.com/countdown/pvz1k3xe2z'],
-    SE:     ['https://gen.sendtric.com/countdown/vvg5cxg9jf'],
-    HU:     ['https://gen.sendtric.com/countdown/kgygbjx155'],
-    DK:     ['https://gen.sendtric.com/countdown/zwqv7inuvb'],
-    CZ:     ['https://gen.sendtric.com/countdown/adxozvivqg'],
-    FI:     ['https://gen.sendtric.com/countdown/74ceqe1pnq'],
-    NO:     ['https://gen.sendtric.com/countdown/601ckbp38f'],
-    SK:     ['https://gen.sendtric.com/countdown/jcd1yqzlu6'],
-    BENL:   ['https://gen.sendtric.com/countdown/8zlcjzkavp'],
-    BEFR:   ['https://gen.sendtric.com/countdown/wql18bvdmu'],
-    RO:     ['https://gen.sendtric.com/countdown/ojjgog6jcg'],
+    CHDE:  ['dgg54bfzg1'],
+    CHFR:   ['wql18bvdmu'],
+    FR:     ['wql18bvdmu'],
+    UK:     ['53mu74airs'],
+    DE:['https://gen.sendtric.com/countdown/2dhd5v4wy6'],
+    AT:     ['dgg54bfzg1'],
+    ES:     ['wtvmwr8gwe'],
+    PL:     ['ioxokryxw8'],
+    NL:     ['8zlcjzkavp'],
+    PT:     ['xmc7bcgedj'],
+    IT:     ['pvz1k3xe2z'],
+    SE:     ['vvg5cxg9jf'],
+    HU:     ['kgygbjx155'],
+    DK:     ['zwqv7inuvb'],
+    CZ:     ['adxozvivqg'],
+    FI:     ['74ceqe1pnq'],
+    NO:     ['601ckbp38f'],
+    SK:     ['jcd1yqzlu6'],
+    BENL:   ['8zlcjzkavp'],
+    BEFR:   ['wql18bvdmu'],
+    RO:     ['ojjgog6jcg'],
   };
 
 
@@ -196,7 +196,7 @@ export async function CategoriesRowsOfferPart({
           ? ["#fd9000"].includes(background)
             ? getHeader("Header delivery_cosy src")
             : getHeader("Header delivery src")
-          : ["#FFCCB7"].includes(background)
+          : ["#FFEDE6"].includes(background)
           ? getHeader("Header asembly src")
           : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
@@ -206,7 +206,7 @@ export async function CategoriesRowsOfferPart({
     { type }
   )}
 
-   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #FFCCB7; color: #000;" id='newsletter'>
+   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #FFEDE6; color: #000;" id='newsletter'>
 
 
    
@@ -234,9 +234,9 @@ export async function CategoriesRowsOfferPart({
             `${TopImageTitle({
                 href: links[0],
                 title1: queries.tit[0],
-                title2: queries.tit[1],
+                title2: queries.tit[0],
                 color: "#000000",
-                type: "up_to",
+                type: "singleLine",
               })}`
             }
           </td>
@@ -251,9 +251,9 @@ export async function CategoriesRowsOfferPart({
       </td>
   </tr>
   </table>
-  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #FFCCB7;" id='newsletter'>
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #FFEDE6;" id='newsletter'>
               <tr>
-                <td align="center" style="background-color: #FFCCB7;" class="newsletterContainer">
+                <td align="center" style="background-color: #FFEDE6;" class="newsletterContainer">
                   ${Intro({
                     paragraph: queries.intro[0], 
                     color: "#000", 
@@ -263,7 +263,7 @@ export async function CategoriesRowsOfferPart({
                   </td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FFEDE6;" class="newsletterBottom35px"></td>
               </tr>
 
 
@@ -298,7 +298,7 @@ export async function CategoriesRowsOfferPart({
                 <td style="background-color: #FD9000">
                       ${ImageWithLink({
                         href: links[4],
-                        src: 'https://upload.pictureserver.net/static/2025/250403_freebis.png',
+                        src: 'https://upload.pictureserver.net/static/2025/250410_freebis.png',
                       })}
                 </td>
               </tr>
@@ -307,10 +307,10 @@ export async function CategoriesRowsOfferPart({
 
           
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom60px"></td>
+                <td style="background-color: #FFEDE6;" class="newsletterBottom60px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                    <td style="background-color:  #FFEDE6;">
                         ${Category({
                           href: getCategoryLink(categories[0].href),
                           name: queries.category_paragraph[0],
@@ -328,10 +328,10 @@ export async function CategoriesRowsOfferPart({
                     </td>
               </tr>
              <tr>
-                <td style="background-color: #FEB24D;" class="newsletterBottom35px"></td>
+                <td style="background-color: #B37373;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color: #FEB24D;">
+                    <td style="background-color: #B37373;">
                         ${Category({
                           href: getCategoryLink(categories[1].href),
                           name: queries.category_paragraph[2],
@@ -349,10 +349,10 @@ export async function CategoriesRowsOfferPart({
                     </td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FFEDE6;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FFCCB7;">
+                    <td style="background-color:  #FFEDE6;">
                         ${Category({
                           href: getCategoryLink(categories[2].href),
                           name: queries.category_paragraph[4],
@@ -368,10 +368,10 @@ export async function CategoriesRowsOfferPart({
                     </td>
               </tr>
               <tr>
-                <td style="background-color: #FEB24D;" class="newsletterBottom35px"></td>
+                <td style="background-color: #B37373;" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color: #FEB24D;">
+                    <td style="background-color: #B37373;">
                         ${Category({
                           href: getCategoryLink(categories[3].href),
                           name: queries.category_paragraph[6],
@@ -492,7 +492,7 @@ export async function CategoriesRowsOfferPart({
           klarna: {
             src: getFooter("Klarna src"),
             href: getFooter("Klarna href"),
-            exclude: ["SK", "HU", "BEFR", "BENL"].includes(country),
+            exclude: ["HU"].includes(country),
           },
           socials: {
             title: getFooter("Socials Title"),

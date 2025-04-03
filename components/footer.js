@@ -755,7 +755,7 @@ export function Footer(sections, options) {
                 <tr>
                     <td align="center" class="newsletterFooterCompanyDetails">
                         <span style="color: #000000;text-align: center; font-size:11px;">
-                            <b><font style="font-size: 10px;">${title}</font></b>
+                            <b><font style="font-size: 11px;">${title}</font></b>
                             <br />${address}<br />${mobileNumber} ${emailAddress}
                             <a href="${mailTo}">${email}</a>
                             <br />${commercialRegister}<br />${vat}
