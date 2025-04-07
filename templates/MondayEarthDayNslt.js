@@ -4,6 +4,7 @@ import {
   Line,
   Category,
   Intro,
+  Earth_Day,
   Paragraph,
   ImageWithLink,
   Space,
@@ -11,7 +12,6 @@ import {
   OfferPartCodes,
   Timer,
   TopImageTitle,
-  AdditionalCategories,
 } from "../components/index.js";
 import { OfferPart } from "../components/OfferPart.js";
 import { OfferPartCode } from "../components/OfferPartCode.js";
@@ -19,7 +19,7 @@ import { priceFree } from "../helpers/priceFree.js";
 import templates from "../main/data/templates.js";
 import { getCodes } from "../utils/getCodes.js";
 
-export async function RegularWednesdayNslt({
+export async function MondayEarthDayNslt({
   links,
   getProductById,
   getCategoryLink,
@@ -40,29 +40,34 @@ export async function RegularWednesdayNslt({
   timer,
   data,
   item,
-  add_utm
+  add_utm,
+  EarthDaySrc,
+  EarthDayPart,
+  earth,
 }) {
   const codes = getCodes(queries);
-  const timer_link = {
-    CHDE: [""],
-    CHFR: [""],
-    UK: [""],
-    DE: [""],
-    FR: [""],
-    AT: [""],
-    ES: [""],
-    PL: [""],
-    NL: [""],
-    PT: [""],
-    IT: [""],
-    SE: [""],
-    HU: [""],
-    DK: [""],
-    CZ: [""],
-    FI: [""],
-    NO: [""],
-    SK: [""],
-  };
+  //console.log(categories.href);
+  console.log("queries.categories[0]:", typeof queries.categories[0], JSON.stringify(queries.categories[0]));
+  console.log("queries.categories[1]:", typeof queries.categories[1], JSON.stringify(queries.categories[1]));
+// Bezpośrednie przekazanie stringów z uniknięciem potencjalnych problemów
+let categoryName = queries.categories[0];
+let categoryDesc = queries.categories[1];
+
+// Upewnij się, że tekst jest bezpieczny do wyświetlenia w HTML
+// Usuwamy potencjalnie problematyczne znaki lub stosujemy kodowanie HTML
+function sanitizeHtml(text) {
+  if (typeof text !== 'string') {
+    return String(text);
+  }
+  
+  // Prosta funkcja sanityzacji, można rozbudować w razie potrzeby
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
   return `
   ${Header(
     {
@@ -134,21 +139,102 @@ export async function RegularWednesdayNslt({
                         })}
                       `
                       :
-                      `
-                        ${TopImageTitle({
-                          href: links[0],
-                          title1: queries.tit[0],
-                          title2: queries.tit[1],
-                          color: "#000000",
-                          type: "up_to",
-                        })}
-                      `
+                      `${TopImageTitle({
+                            href: links[0],
+                            title1: queries.tit[0],
+                            title2: '', // <--- dodaj to!
+                            color: "#000000",
+                            type: "singleLine",
+                          })}`
                       }
                     </td>
                 </tr>
                   
               `
             }
+            <tr>
+                <td align="center">
+                ${ImageWithLink({
+                    href: links[2],
+                    src: links[3],
+                })}
+                </td>
+            </tr>
+            <tr>
+                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                    ${Space()}
+                </td> 
+            </tr>
+            <tr>
+                <td class="newsletterContainer" style="background-color: ${earth?.background || background};">
+                    ${Intro({
+                        data: queries.intro,
+                        align: "center",
+                        type: "paragraph",
+                    })}
+                </td>
+            </tr>
+            <tr>
+                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                    ${Space({className: "newsletterBottom60px"})}
+                </td> 
+            </tr>
+            <tr>
+                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                    ${Line()}
+                </td> 
+            </tr>
+             <tr>
+                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                    ${Space()}
+                </td> 
+            </tr>
+            <tr>
+                <td class="newsletterContainer" style="background-color: ${earth?.background || background};">
+                    ${Intro({
+                        data: queries.introEarth,
+                        align: "center",
+                    })}
+                </td>
+            </tr>
+            <tr>
+                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                    ${Space()}
+                </td> 
+            </tr>
+            <tr>
+                <td class="newsletterContainer" style="background-color: ${earth?.background || background};">
+                ${Earth_Day({
+                    data: [
+                        queries.EarthDayPart[0], // Główny tytuł
+                        "", // Brak paragrafu, więc pusty string
+                        [
+                            {
+                                title: queries.EarthDayPart[1], // Tytuł pierwszej inicjatywy
+                                image: EarthDaySrc[0].src,      // Obrazek pierwszej inicjatywy
+                                link: add_utm(queries.earthHref[0])      // Link pierwszej inicjatywy
+                            },
+                            {
+                                title: queries.EarthDayPart[2], // Tytuł drugiej inicjatywy
+                                image: EarthDaySrc[1].src,      // Obrazek drugiej inicjatywy
+                                link: add_utm(queries.earthHref[0])      // Link drugiej inicjatywy
+                            },
+                            {
+                                title: queries.EarthDayPart[3], // Tytuł trzeciej inicjatywy  
+                                image: EarthDaySrc[2].src,      // Obrazek trzeciej inicjatywy
+                                link: add_utm(queries.earthHref[0])      // Link trzeciej inicjatywy
+                            }
+                        ]
+                    ],
+                    align: "center",
+                    href: add_utm(queries.earthHref[0]),
+                    cta: getPhrase("See more"),
+                    idx: 3, 
+                    len: 3,
+                    type: "title" // Opcjonalnie - jeśli chcesz wyświetlić tylko tytuł bez paragrafu
+                })}
+                </td>
+            </tr>
             <tr>
                 <td style="background-color: ${categories[0]?.background || background}; color: ${categories[0]?.color || "#000000"}">
                     <tbody>
@@ -172,13 +258,15 @@ export async function RegularWednesdayNslt({
                             <td style="background-color: ${background}; color: ${color};">
                               ${Category({
                                 data: [title, paragraph], // Przekazanie poprawnej pary danych
-                                href: getCategoryLink(item.href),
+                                href: queries?.filters
+                                  ? add_utm(queries.filters[index])
+                                  : getCategoryLink(categories[index].href),
                                 name: title,
                                 color: item.color,
                                 desc: paragraph,
                                 src: item.src,
                                 cta: getPhrase("Shop now"),
-                                type: "wednesday",
+                                type: "mondaywithparagraph",
                                 products: item.products?.map((item) =>
                                   getProductById(item.id, item.src)
                                 ) || [],
@@ -190,34 +278,11 @@ export async function RegularWednesdayNslt({
                       .join("")}
                 </td>
             </tr>
-            <tr>
-                <td style="background-color: #ffffff; color: #000000;">
-                    ${AdditionalCategories({
-                      // text1: queries.additional[0],
-                      // text2: queries.additional[1],
-                      // text3: queries.additional[2],
-                      // text4: queries.additional[3],
-                      // text5: queries.additional[4],
-                      // href1: categories[4].href,
-                      // href2: categories[5].href,
-                      // href3: categories[6].href,
-                      // href4: categories[7].href,
-                      // src1: categories[4].src,
-                      // src2: categories[5].src,
-                      // src3: categories[6].src,
-                      // src4: categories[7].src,
-                        ...queries.additional.reduce((acc, text, i) => ({ ...acc, [`text${i + 1}`]: text }), {}),
-                        ...[4, 5, 6, 7].reduce((acc, i, idx) => ({
-                          ...acc,
-                          [`href${idx + 1}`]: categories[i]?.href,
-                          [`src${idx + 1}`]: categories[i]?.src
-                        }), {})
-                    })}
-                </td>
-            </tr>
-        <tbody>
+
+          <tbody>
       </table>
-      <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
           <tbody>
               <tr>
                   <td align="left">
@@ -259,6 +324,7 @@ export async function RegularWednesdayNslt({
               </tr>
           </tbody>
       </table>
+
       ${Footer(
         {
           id,

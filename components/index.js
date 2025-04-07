@@ -15,6 +15,7 @@ import { ProductWithSize } from "./productwithsize.js";
 import { OfferPartCodes } from "./OfferPartCodes.js";
 import { TopImageTitle } from "./TopImageTitle.js";
 import { AdditionalCategories } from "./additional_categories.js";
+import { Earth_Day } from "./earth_day.js"
 
 export {
   ProductWithSize,
@@ -34,4 +35,5 @@ export {
   OfferPartCodes,
   TopImageTitle,
   AdditionalCategories,
+  Earth_Day,
 };

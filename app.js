@@ -103,6 +103,589 @@ try {
     campaigns: [
 
       new entities.Campaign({
+        date: "2025.04.21",
+        issueCardId: "334022",
+        name: "March Peak - Earth Day",
+        startId: "32388",
+        figmaUrl: "https://www.figma.com/design/IjK9bpuYSsDvyYGnJwhnQG/2025.04.07-Free-scatter-cushion-(Copy)?m=auto&fuid=1328681953229888224",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: false,
+        optimizeImg: false,
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER, 
+            template: templates.MondayEarthDayNslt,
+            background: "#FFCCB7",
+            wrapper: types.WRAPPER,
+            css: types.CSS.NS,
+            intro: {
+              background: "#FFCCB7",
+              color: "#000000",
+            },
+            earth: {
+              background: "#FFCCB7",
+              color: "#000000",
+            },
+            EarthDaySrc: [
+              {
+                src: getImageUrl("20250421Earth1.png", true),
+              },
+              {
+                src: getImageUrl("20250421Earth2.png", true),
+              },
+              {
+                src: getImageUrl("20250421Earth3.png", true),
+              },
+            ],
+            categories: [
+              {
+                name: "Natural materials",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250421Category1.png", true),
+                href: "",
+                type: "mondaywithparagraph",
+                products: [
+                  {
+                    id: "514447",
+                    src: getImageUrl("20250421Category11.png", true),
+                  },
+                  {
+                    id: "371401",
+                    src: getImageUrl("20250421Category12.png", true),
+                  },
+                  {
+                    id: "408516",
+                    src: getImageUrl("20250421Category13.png", true),
+                  },
+                  {
+                    id: "433272",
+                    src: getImageUrl("20250421Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Outdoor spaces",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250421Category2.png", true),
+                href: "",
+                type: "mondaywithparagraph",
+                products: [
+                  {
+                    id: "76376",
+                    src: getImageUrl("20250421Category21.png", true),
+                  },
+                  {
+                    id: "207309",
+                    src: getImageUrl("20250421Category22.png", true),
+                  },
+                  {
+                    id: "598184",
+                    src: getImageUrl("20250421Category23.png", true),
+                  },
+                  {
+                    id: "587558",
+                    src: getImageUrl("20250421Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Accessories",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250421Category3.png", true),
+                href: "",
+                type: "mondaywithparagraph",
+                products: [
+                  {
+                    id: "315442",
+                    src: getImageUrl("20250421Category31.png", true),
+                  },
+                  {
+                    id: "426151",
+                    src: getImageUrl("20250421Category32.png", true),
+                  },
+                  {
+                    id: "437955",
+                    src: getImageUrl("20250421Category33.png", true),
+                  },
+                  {
+                    id: "558373",
+                    src: getImageUrl("20250421Category34.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-21",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250303_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-21",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value: getImageUrl("20250421_gif.gif", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-14",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250414b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-11",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250411b.png", true),
+                },
+              },
+              // {
+              //   query: true,
+              //   href: {
+              //     type: "relation",
+              //     relyOn: "origin",
+              //     placeholderPosition: "0",
+              //     value: "content/lp25-03-03",
+              //   },
+              // },
+              // {
+              //   src: {
+              //     type: "relation",
+              //     relyOn: "slug",
+              //     placeholderPosition: "38",
+              //     value:
+              //       getImageUrl("_20250307.png", true),
+              //   },
+              // },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "13",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "17:18",
+                name: "introEarth",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "19:22",
+                name: "EarthDayPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "24",
+                name: "earthHref",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "23",
+                name: "earthCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "31",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "25:30",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "14:16",
+                name: "filters",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "36:37",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.MondayEarthDayNslt,
+            background: "#FFCCB7",
+            css: types.CSS.LP,
+            intro: {
+              background: "#FFCCB7",
+              color: "#000000",
+            },
+            earth: {
+              background: "#FFCCB7",
+              color: "#000000",
+            },
+            EarthDaySrc: [
+              {
+                src: getImageUrl("20250421Earth1.png", true),
+              },
+              {
+                src: getImageUrl("20250421Earth2.png", true),
+              },
+              {
+                src: getImageUrl("20250421Earth3.png", true),
+              },
+            ],
+            categories: [
+              {
+                name: "Natural materials",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250421Category1.png", true),
+                href: "",
+                type: "mondaywithparagraph",
+                products: [
+                  {
+                    id: "514447",
+                    src: getImageUrl("20250421Category11.png", true),
+                  },
+                  {
+                    id: "371401",
+                    src: getImageUrl("20250421Category12.png", true),
+                  },
+                  {
+                    id: "408516",
+                    src: getImageUrl("20250421Category13.png", true),
+                  },
+                  {
+                    id: "433272",
+                    src: getImageUrl("20250421Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Outdoor spaces",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250421Category2.png", true),
+                href: "",
+                type: "mondaywithparagraph",
+                products: [
+                  {
+                    id: "76376",
+                    src: getImageUrl("20250421Category21.png", true),
+                  },
+                  {
+                    id: "207309",
+                    src: getImageUrl("20250421Category22.png", true),
+                  },
+                  {
+                    id: "598184",
+                    src: getImageUrl("20250421Category23.png", true),
+                  },
+                  {
+                    id: "587558",
+                    src: getImageUrl("20250421Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Accessories",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250421Category3.png", true),
+                href: "",
+                type: "mondaywithparagraph",
+                products: [
+                  {
+                    id: "315442",
+                    src: getImageUrl("20250421Category31.png", true),
+                  },
+                  {
+                    id: "426151",
+                    src: getImageUrl("20250421Category32.png", true),
+                  },
+                  {
+                    id: "437955",
+                    src: getImageUrl("20250421Category33.png", true),
+                  },
+                  {
+                    id: "558373",
+                    src: getImageUrl("20250421Category34.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-21",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250303_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-21",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value: getImageUrl("20250421_gif.gif", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-14",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250414b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-11",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250411b.png", true),
+                },
+              },
+              // {
+              //   query: true,
+              //   href: {
+              //     type: "relation",
+              //     relyOn: "origin",
+              //     placeholderPosition: "0",
+              //     value: "content/lp25-03-03",
+              //   },
+              // },
+              // {
+              //   src: {
+              //     type: "relation",
+              //     relyOn: "slug",
+              //     placeholderPosition: "38",
+              //     value:
+              //       getImageUrl("_20250307.png", true),
+              //   },
+              // },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "13",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "11",
+                name: "tit",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "17:18",
+                name: "introEarth",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "19:22",
+                name: "EarthDayPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "24",
+                name: "earthHref",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "23",
+                name: "earthCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "31",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "25:30",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "14:16",
+                name: "filters",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "21.04.25 - March Peak - Earth Day!",
+                tableRange: "36:37",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+          },
+        ],
+      }),
+      new entities.Campaign({
       startId: "30425",
       name: "March Peak reminder",
       date: "2025.04.14",
@@ -612,7 +1195,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         templates: [
           {
@@ -644,8 +1227,8 @@ try {
                 href: "https://www.beliani.ch/living-room-furniture/",
                 products: [
                   {
-                    id: "306283",
-                    src: getImageUrl("20250407Category11.png", true),
+                    id: origin.includes("HU") ? "306283" : "231605", //id: "306283",
+                    src: origin.includes("HU") ? getImageUrl("20250407Category11.png", true) : getImageUrl("20250407huCategory11.png", true),
                   },
                   {
                     id: "421836",
@@ -978,8 +1561,8 @@ try {
                 href: "https://www.beliani.ch/living-room-furniture/",
                 products: [
                   {
-                    id: "306283",
-                    src: getImageUrl("20250407Category11.png", true),
+                    id: origin.includes("HU") ? "306283" : "231605", //id: "306283",
+                    src: origin.includes("HU") ? getImageUrl("20250407Category11.png", true) : getImageUrl("20250407huCategory11.png", true),
                   },
                   {
                     id: "421836",
@@ -1301,7 +1884,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         templates: [
           {

@@ -15,6 +15,7 @@ import { mondayOfferLines } from "./mondayOfferLines.js";
 import { mondayOfferFreeebiesCategoryFilters } from "./mondayOfferFreeebiesCategoryFilters.js"
 import { RegularNslt } from "./RegularNslt.js"
 import { RegularWednesdayNslt } from "./RegularWednesdayNslt.js"
+import { MondayEarthDayNslt } from "./MondayEarthDayNslt.js"
 
 export const templates = {
   newsletter_FGG,
@@ -34,4 +35,5 @@ export const templates = {
   mondayOfferFreeebiesCategoryFilters,
   RegularNslt,
   RegularWednesdayNslt,
+  MondayEarthDayNslt,
 };
