@@ -103,7 +103,7 @@ try {
     campaigns: [
 
       new entities.Campaign({
-        date: "2025.04.07",
+        date: "2025.04.10",
         startId: "32260",
         name: "aktualna",
         startId: "32260",
@@ -462,7 +462,7 @@ try {
           {
             name: "Landing",
             type: types.LANDINGPAGE,
-            template: templates.mondayOfferFreeebies,
+            template: templates.CategoriesRowsOfferPart,
             background: "#FD9000",
             css: types.CSS.LP,
             offerPart: {
@@ -480,114 +480,179 @@ try {
             },
             categories: [
               {
-                name: "Living room",
-                background: "#FFCCB7",
-                color: "#000000",
-                src: getImageUrl("20250407Category1.png", true),
-                href: "https://www.beliani.ch/living-room-furniture/",
+                name: "beds",
+                background: "#FFEDE6",
+                color: "#000",
+                src: getImageUrl("250410_cat1.png", true),
+                href: "https://www.beliani.ch/bathtubs-hot-tubs/",
                 products: [
+                  
                   {
-                    id: "306283",
-                    src: getImageUrl("20250407Category11.png", true),
+                    id:  "59126",
+                    src: getImageUrl("250410_04.png", true),
                   },
                   {
-                    id: "421836",
-                    src: getImageUrl("20250407Category12.png", true),
+                    id: "6954",
+                    src: getImageUrl("250410_05.png", true),
                   },
                   {
-                    id: "383651",
-                    src: getImageUrl("20250407Category13.png", true),
+                    id: "431804",
+                    src: getImageUrl("250410_06.png", true),
                   },
                   {
-                    id: "290095",
-                    src: getImageUrl("20250407Category14.png", true),
+                    id: "417176",
+                    src: getImageUrl("250410_07.png", true),
                   },
+  
                 ],
               },
               {
-                name: "Bedroom",
-                background: "#FD9000",
-                color: "#000000",
-                src: getImageUrl("20250407Category2.png", true),
-                href: "https://www.beliani.ch/bedroom-furniture/",
+                name: "wooden-beds",
+                background: "#B37373",
+                color: "#fff",
+                src: getImageUrl("250410_cat2.png", true),
+                href: "ttps://www.beliani.ch/bathroom-furniture/storage/",
                 products: [
                   {
-                    id: "92894",
-                    src: getImageUrl("20250407Category21.png", true),
+                    id: "580771",
+                    src: getImageUrl("250410_08.png", true),
                   },
                   {
-                    id: "440882",
-                    src: getImageUrl("20250407Category22.png", true),
+                    id: "310626",
+                    src: getImageUrl("250410_09.png", true),
                   },
                   {
-                    id: "363379",
-                    src: getImageUrl("20250407Category23.png", true),
+                    id: "588752",
+                    src: getImageUrl("250410_10.png", true),
                   },
                   {
-                    id: "71096",
-                    src: getImageUrl("20250407Category24.png", true),
+                    id: "571961",
+                    src: getImageUrl("250410_11.png", true),
                   },
+  
                 ],
               },
               {
-                name: "Dining room",
-                background: "#FFCCB7",
-                color: "#000000",
-                src: getImageUrl("20250407Category3.png", true),
-                href: "https://www.beliani.ch/dining-room-furniture/",
+                name: "fabric-beds",
+                background: "#FFEDE6",
+                color: "#000",
+                src: getImageUrl("250410_cat3.png", true),
+                href: "https://www.beliani.ch/bathroom-furniture/bathroom-accessories/",
                 products: [
                   {
-                    id: "567944",
-                    src: getImageUrl("20250407Category31.png", true),
+                    id: "561414",
+                    src: getImageUrl("250410_12.png", true),
                   },
                   {
-                    id: "216522",
-                    src: getImageUrl("20250407Category32.png", true),
+                    id: "515471",
+                    src: getImageUrl("250410_13.png", true),
                   },
                   {
-                    id: "330604",
-                    src: getImageUrl("20250407Category33.png", true),
+                    id: "329293",
+                    src: getImageUrl("250410_14.png", true),
                   },
                   {
-                    id: "438918",
-                    src: getImageUrl("20250407Category34.png", true),
+                    id: "320374",
+                    src: getImageUrl("250410_15.png", true),
                   },
+  
                 ],
               },
               {
-                name: "Accessories",
-                background: "#FD9000",
-                color: "#000000",
-                src: getImageUrl("20250407Category4.png", true),
-                href: "https://www.beliani.ch/home-accessories/accessories-decor/",
+                name: "metal-beds",
+                background: "#B37373",
+                color: "#fff",
+                src: getImageUrl("250410_cat4.png", true),
+                href: "https://www.beliani.ch/bathroom-furniture/mirrors/",
                 products: [
                   {
-                    id: "319891",
-                    src: getImageUrl("20250407Category41.png", true),
+                    id: "580790",
+                    src: getImageUrl("250410_16.png", true),
                   },
                   {
-                    id: "555070",
-                    src: getImageUrl("20250407Category42.png", true),
+                    id: "161417",
+                    src: getImageUrl("250410_17.png", true),
                   },
                   {
-                    id: "527231",
-                    src: getImageUrl("20250407Category43.png", true),
+                    id: "523081",
+                    src: getImageUrl("250410_18.png", true),
                   },
                   {
-                    id: "523836",
-                    src: getImageUrl("20250407Category44.png", true),
+                    id: "203129",
+                    src: getImageUrl("250410_19.png", true),
                   },
+  
                 ],
               },
+             
             ],
-            links: [
+            links: [{
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-04-10",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "38",
+                value: getImageUrl("250410_01.png", true),
+            
+            },},
               {
                 query: true,
                 href: {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-04-07",
+                  value: "content/lp25-04-10",
+                },
+              },
+              {
+                
+                  
+                value: getImageUrl("250410_02.png", true),
+
+               
+              },
+             
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-04-07",
+              },
+            },
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp25-04-03",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "38",
+                value: getImageUrl("20250403b.png", true),
+              },
+            },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-02",
                 },
               },
               {
@@ -595,58 +660,29 @@ try {
                   type: "relation",
                   relyOn: "slug",
                   placeholderPosition: "38",
-                  value:
-                    getImageUrl("20250407_01.png", true),
+                  value: getImageUrl("20250402b.png", true),
                 },
               },
+              
               {
                 query: true,
                 href: {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-04-07",
-                },
-              },
-              {
-                value: getImageUrl("20250407_gif.gif", true),
-              },
-              {
-                query: true,
-                href: {
-                  type: "relation",
-                  relyOn: "origin",
-                  placeholderPosition: "0",
-                  value: "content/lp25-03-28",
+                  value: "content/lp25-02-17",
                 },
               },
               {
                 src: {
                   type: "relation",
                   relyOn: "slug",
-                  placeholderPosition: "38",
+                  placeholderPosition: "45",
                   value:
-                    getImageUrl("20250328b.png", true),
+                    "https://upload.pictureserver.net/static/2025/250403_03free.png",
                 },
               },
-              {
-                query: true,
-                href: {
-                  type: "relation",
-                  relyOn: "origin",
-                  placeholderPosition: "0",
-                  value: "content/lp25-03-27",
-                },
-              },
-              {
-                src: {
-                  type: "relation",
-                  relyOn: "slug",
-                  placeholderPosition: "38",
-                  value:
-                    getImageUrl("20250327b.png", true),
-                },
-              },
+
               {
                 query: true,
                 href: {
@@ -660,89 +696,65 @@ try {
                 src: {
                   type: "relation",
                   relyOn: "slug",
-                  placeholderPosition: "38",
+                  placeholderPosition: "45",
                   value:
-                    getImageUrl("_20250307.png", true),
+                    "https://upload.pictureserver.net/static/2025/_20250307.png",
                 },
               },
+
+
+  
+   
             ],
             tableQueries: [
+
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "Voucher - 07.04.2025 - Free scatter cushion!",
-                tableRange: "20:24",
-                name: "offerPart",
-              },
-              {
-                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "Voucher - 07.04.2025 - Free scatter cushion!",
-                tableRange: "17:18",
+                tableName: "10.04.25 - Wellness bathroom!",
+                tableRange: "11",
                 name: "tit",
               },
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "Voucher - 07.04.2025 - Free scatter cushion!",
-                tableRange: "29:30",
+                tableName: "10.04.25 - Wellness bathroom!",
+                tableRange: "13",
                 name: "intro",
+                fallback: [
+                  "Extra 5% off everything",
+                ],
               },
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "Voucher - 07.04.2025 - Free scatter cushion!",
-                tableRange: "35",
-                name: "cta",
+                tableName: "10.04.25 - Wellness bathroom!",
+                tableRange: "14:15",
+                name: "timer",
+                fallback: [
+                  "Extra 5% off everything",
+                ],
               },
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "Voucher - 07.04.2025 - Free scatter cushion!",
-                tableRange: "26",
-                name: "code",
+                tableName: "10.04.25 - Wellness bathroom!",
+                tableRange: "16:23",
+                name: "category_paragraph",
+                fallback: [
+                  "Extra 5% off everything",
+                  
+                ],
               },
+    
+              
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "Voucher - 07.04.2025 - Free scatter cushion!",
-                tableRange: "24",
-                name: "codeCTA",
-              },
-              {
-                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "Voucher - 07.04.2025 - Free scatter cushion!",
-                tableRange: "31:34",
-                name: "categories",
-              },
-              {
-                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-                tableName: "Voucher - 07.04.2025 - Free scatter cushion!",
-                tableRange: "42:44",
+                tableName: "10.04.25 - Wellness bathroom!",
+                tableRange: "38",
                 name: "condition",
+                fallback: [
+                  "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                  'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
+                ],
               },
-              {
-                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
-                tableName: "Categories",
-                tableRange: "?majorDimension=COLUMNS",
-                name: "categoriesTitles",
-                tableColumns: false,
-              },
-              {
-                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
-                tableName: "Categories",
-                tableRange: "?majorDimension=COLUMNS",
-                name: "categoriesLinks",
-                tableColumns: false,
-              },
-              {
-                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
-                tableName: "Header",
-                tableRange: "?majorDimension=COLUMNS",
-                name: "header",
-                tableColumns: false,
-              },
-              {
-                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
-                tableName: "Footer",
-                tableRange: "?majorDimension=COLUMNS",
-                name: "footer",
-                tableColumns: false,
-              },
+             
             ],
             freebies: {
               options: {
