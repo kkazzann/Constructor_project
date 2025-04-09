@@ -39,7 +39,7 @@ export const Category = isAllowToRender(
               <tbody>
                   <tr>
                       <td align="center">
-                          <span class="newsletterParagraph">
+                          <span class="newsletterParagraph" style="color: #ffffff">
                               ${desc}
                           </span>
                       </td>
@@ -66,6 +66,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[0],
                         "center",
+                        `color: ${color || "#ffffff"}`
                       )}
                     </td>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
@@ -73,6 +74,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[1],
                         "center",
+                        `color: ${color || "#ffffff"}`
                       )}
                     </td>
                   </tr>
@@ -89,6 +91,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[2],
                         "center",
+                        `color: ${color || "#ffffff"}`
                       )}
                     </td>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
@@ -96,6 +99,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[3],
                         "center",
+                        `color: ${color || "#ffffff"}`
                       )}
                     </td>
                   </tr>

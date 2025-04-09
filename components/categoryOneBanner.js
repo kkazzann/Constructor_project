@@ -48,7 +48,7 @@ export const CategoryOneBanner = isAllowToRender(
           <table cellspacing="0" cellpadding="0" border="0" width="100%">
               <tbody>
                   <tr>
-                      <td align="center" style="color: #000000">
+                      <td align="center">
                           <span class="newsletterParagraph">
                               ${desc}
                           </span>

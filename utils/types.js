@@ -207,16 +207,15 @@ export default {
             padding-right: 20px !important;
           }
 
-          .newsletterProductContainerLEFT70px {
+          .newsletterProductContainerLast {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+          }
+
+          .newsletterProductContainer70px {
             width: 50% !important;
             vertical-align: top;
             padding-right: 10px;
-            padding-bottom: 70px;
-          }
-          
-          .newsletterProductContainerRIGHT70px {
-            width: 50% !important;
-            vertical-align: top;
             padding-left: 10px;
             padding-bottom: 70px;
           }
@@ -253,17 +252,15 @@ export default {
               padding-right: 10px !important;
             }
 
-            .newsletterProductContainerLEFT70px {
+            .newsletterProductContainerLast {
+              padding-left: 5px !important;
+              padding-right: 5px !important;
+            }
+
+            .newsletterProductContainer70px {
               width: 50% !important;
               vertical-align: top;
               padding-right: 5px !important;
-              padding-bottom: 50px !important;
-            }
-      
-            .newsletterProductContainerRIGHT70px {
-              width: 50% !important;
-              vertical-align: top;
-              padding-left: 5px !important;
               padding-bottom: 50px !important;
             }
 
@@ -1402,17 +1399,15 @@ export default {
             padding-right: 20px !important;
           }
 
-          .newsletterProductContainerLEFT70px {
+          .newsletterProductContainerLast {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+          }
+
+          .newsletterProductContainer70px {
             width: 50% !important;
             vertical-align: top;
             padding-right: 10px;
-            padding-bottom: 70px;
-          }
-          
-          .newsletterProductContainerRIGHT70px {
-            width: 50% !important;
-            vertical-align: top;
-            padding-left: 10px;
             padding-bottom: 70px;
           }
 
@@ -1450,18 +1445,16 @@ export default {
               padding-left: 10px !important;
               padding-right: 10px !important;
             }
+
+            .newsletterProductContainerLast {
+              padding-left: 5px !important;
+              padding-right: 5px !important;
+            }
             
-            .newsletterProductContainerLEFT70px {
+            .newsletterProductContainer70px {
               width: 50% !important;
               vertical-align: top;
               padding-right: 5px !important;
-              padding-bottom: 50px !important;
-            }
-        
-            .newsletterProductContainerRIGHT70px {
-              width: 50% !important;
-              vertical-align: top;
-              padding-left: 5px !important;
               padding-bottom: 50px !important;
             }
   
