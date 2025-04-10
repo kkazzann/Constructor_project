@@ -404,7 +404,7 @@ export default [
     "Watch now": "Titta nu",
     "Shop All Categories": "Handla alla kategorier",
     "Soon Ending Campaigns": "Utgående kampanjer",
-    "Shop limited-time deals": "Se våra tillfälliga erbjudanden",
+    "Shop limited-time deals": "Se våra aktuella erbjudanden",
     "Shop now": "Handla nu",
     "See more": "Se mer",
     "Conditions:": "Villkor:",
