@@ -161,7 +161,7 @@ function sanitizeHtml(text) {
                 </td>
             </tr>
             <tr>
-                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                <td class="newsletterContainer" style="background-color: ${earth?.background || background};">
                     ${Space()}
                 </td> 
             </tr>
@@ -175,17 +175,17 @@ function sanitizeHtml(text) {
                 </td>
             </tr>
             <tr>
-                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                <td class="newsletterContainer" style="background-color: ${earth?.background || background};">
                     ${Space({className: "newsletterBottom60px"})}
                 </td> 
             </tr>
             <tr>
-                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                <td class="newsletterContainer" style="background-color: ${earth?.background || background};">
                     ${Line()}
                 </td> 
             </tr>
              <tr>
-                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                <td class="newsletterContainer" style="background-color: ${earth?.background || background};">
                     ${Space()}
                 </td> 
             </tr>
@@ -198,7 +198,7 @@ function sanitizeHtml(text) {
                 </td>
             </tr>
             <tr>
-                <td class="newsletterContainer" style="color: ${earth?.background || background};">
+                <td class="newsletterContainer" style="background-color: ${earth?.background || background};">
                     ${Space()}
                 </td> 
             </tr>
@@ -380,7 +380,7 @@ function sanitizeHtml(text) {
           klarna: {
             src: getFooter("Klarna src"),
             href: getFooter("Klarna href"),
-            exclude: ["HU"].includes(country),
+            //exclude: ["HU"].includes(country),
           },
           socials: {
             title: getFooter("Socials Title"),

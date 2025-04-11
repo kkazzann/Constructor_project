@@ -263,7 +263,8 @@ export async function mondayOfferFreeebiesCategoryFilters({
                       categories[0]?.background || background
                     }; color: ${categories[0]?.color || "#000000"}">
                       ${Category({
-                        href: add_utm(queries.filters[0]),
+                        href: categories?.href 
+                        || categories[0].href,
                         name: queries?.categories
                           ? queries.categories[0]
                           : getCategoryTitle(categories[0].name),
@@ -291,7 +292,8 @@ export async function mondayOfferFreeebiesCategoryFilters({
                       categories[1]?.background || background
                     }; color: ${categories[1]?.color || "#000000"}">
                         ${Category({
-                          href: add_utm(queries.filters[1]),
+                          href: categories?.href 
+                          || add_utm(queries.filters[0]),
                           name: queries?.categories
                             ? queries.categories[1]
                             : getCategoryTitle(categories[1].name),
@@ -319,7 +321,8 @@ export async function mondayOfferFreeebiesCategoryFilters({
                       categories[2]?.background || background
                     }; color: ${categories[2]?.color || "#000000"}">
                         ${Category({
-                          href: add_utm(queries.filters[2]),
+                          href: categories?.href 
+                          || add_utm(queries.filters[1]),
                           name: queries?.categories
                             ? queries.categories[2]
                             : getCategoryTitle(categories[2].name),
@@ -347,7 +350,8 @@ export async function mondayOfferFreeebiesCategoryFilters({
                       categories[3]?.background || background
                     }; color: ${categories[3]?.color || "#000000"}">
                         ${Category({
-                          href: add_utm(queries.filters[3]),
+                          href: categories?.href 
+                          || add_utm(queries.filters[2]),
                           name: queries?.categories
                             ? queries.categories[3]
                             : getCategoryTitle(categories[3].name),
@@ -462,7 +466,7 @@ export async function mondayOfferFreeebiesCategoryFilters({
           klarna: {
             src: getFooter("Klarna src"),
             href: getFooter("Klarna href"),
-            exclude: ["HU"].includes(country),
+            //exclude: ["HU"].includes(country),
           },
           socials: {
             title: getFooter("Socials Title"),

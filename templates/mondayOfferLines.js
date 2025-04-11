@@ -361,7 +361,7 @@ export async function mondayOfferLines({
           klarna: {
             src: getFooter("Klarna src"),
             href: getFooter("Klarna href"),
-            exclude: ["SK", "HU", "BEFR", "BENL", "CHIT"].includes(country),
+            //exclude: ["SK", "HU", "BEFR", "BENL", "CHIT"].includes(country),
           },
           socials: {
             title: getFooter("Socials Title"),

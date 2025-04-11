@@ -103,6 +103,643 @@ try {
     campaigns: [
 
       new entities.Campaign({
+        date: "2025.04.28",
+        issueCardId: "357067",
+        name: "Free fire pit",
+        startId: "32676",
+        figmaUrl: "https://www.figma.com/design/WHq6Ct6hUbUP4IS35T8uRz/2025.04.28--Free-fire-pit--Copy-?node-id=6061-772&t=SIHDcr1oxf6X2bOo-0",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: false,
+        optimizeImg: false,
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            template: templates.mondayOfferFreeebiesCategoryFilters,
+            background: "#FFCCB7",
+            wrapper: types.WRAPPER,
+            css: types.CSS.NS,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FFCCB7",
+            },
+            intro: {
+              background: "#F6E7E6",
+              color: "#000000",
+            },
+            categories: [
+              {
+                name: "Cosy for Two",
+                background: "#F6E7E6",
+                color: "#000000",
+                src: getImageUrl("20250428Category1.png", true),
+                href: "https://www.beliani.ch/outdoor-furniture/balcony-furniture/",
+                products: [
+                  {
+                    id: "522681", //origin.includes("HU") ? "306283" : "231605",
+                    src: getImageUrl("20250428Category11.png", true), //origin.includes("HU") ? getImageUrl("20250428Category11.png", true) : getImageUrl("20250428huCategory11.png", true),
+                  },
+                  {
+                    id: "596587",
+                    src: getImageUrl("20250428Category12.png", true),
+                  },
+                  {
+                    id: "557385",
+                    src: getImageUrl("20250428Category13.png", true),
+                  },
+                  {
+                    id: "294544",
+                    src: getImageUrl("20250428Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Ideal for four",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250428Category2.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "588436",
+                    src: getImageUrl("20250428Category21.png", true),
+                  },
+                  {
+                    id: "525622",
+                    src: getImageUrl("20250428Category22.png", true),
+                  },
+                  {
+                    id: "257696",
+                    src: getImageUrl("20250428Category23.png", true),
+                  },
+                  {
+                    id: "569903",
+                    src: getImageUrl("20250428Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Spacious for six",
+                background: "#F6E7E6",
+                color: "#000000",
+                src: getImageUrl("20250428Category3.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "585606",
+                    src: getImageUrl("20250428Category31.png", true),
+                  },
+                  {
+                    id: "523743",
+                    src: getImageUrl("20250428Category32.png", true),
+                  },
+                  {
+                    id: "419180",
+                    src: getImageUrl("20250428Category33.png", true),
+                  },
+                  {
+                    id: "294731",
+                    src: getImageUrl("20250428Category34.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Ultimate 8-seater sets",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250428Category4.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "192221",
+                    src: getImageUrl("20250428Category41.png", true),
+                  },
+                  {
+                    id: "140721",
+                    src: getImageUrl("20250428Category42.png", true),
+                  },
+                  {
+                    id: "146646",
+                    src: getImageUrl("20250428Category43.png", true),
+                  },
+                  {
+                    id: "71531",
+                    src: getImageUrl("20250428Category44.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-28",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250428_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-28",
+                },
+              },
+              {
+                value: getImageUrl("20250428_gif.gif", true),
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-10",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250410b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-06",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250306b.png", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "20:24",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "29:30",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "38",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "26",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "24",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "31:34",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "35:37",
+                name: "filters",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "42:44",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FFCCB7",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "197902",
+                      src: getImageUrl("20250428Freebie1.png", true),
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                    {
+                      id: "197914",
+                      src: getImageUrl("20250428Freebie2.png", true),
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "197884",
+                      src: getImageUrl("20250428Freebie3.png", true),
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                    {
+                      id: "197917",
+                      src: getImageUrl("20250428Freebie4.png", true),
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.mondayOfferFreeebiesCategoryFilters,
+            background: "#FFCCB7",
+            css: types.CSS.LP,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FFCCB7",
+            },
+            intro: {
+              background: "#F6E7E6",
+              color: "#000000",
+            },
+            categories: [
+              {
+                name: "Cosy for Two",
+                background: "#F6E7E6",
+                color: "#000000",
+                src: getImageUrl("20250428Category1.png", true),
+                href: "https://www.beliani.ch/outdoor-furniture/balcony-furniture/",
+                products: [
+                  {
+                    id: "522681", //origin.includes("HU") ? "306283" : "231605",
+                    src: getImageUrl("20250428Category11.png", true), //origin.includes("HU") ? getImageUrl("20250428Category11.png", true) : getImageUrl("20250428huCategory11.png", true),
+                  },
+                  {
+                    id: "596587",
+                    src: getImageUrl("20250428Category12.png", true),
+                  },
+                  {
+                    id: "557385",
+                    src: getImageUrl("20250428Category13.png", true),
+                  },
+                  {
+                    id: "294544",
+                    src: getImageUrl("20250428Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Ideal for four",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250428Category2.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "588436",
+                    src: getImageUrl("20250428Category21.png", true),
+                  },
+                  {
+                    id: "525622",
+                    src: getImageUrl("20250428Category22.png", true),
+                  },
+                  {
+                    id: "257696",
+                    src: getImageUrl("20250428Category23.png", true),
+                  },
+                  {
+                    id: "569903",
+                    src: getImageUrl("20250428Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Spacious for six",
+                background: "#F6E7E6",
+                color: "#000000",
+                src: getImageUrl("20250428Category3.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "585606",
+                    src: getImageUrl("20250428Category31.png", true),
+                  },
+                  {
+                    id: "523743",
+                    src: getImageUrl("20250428Category32.png", true),
+                  },
+                  {
+                    id: "419180",
+                    src: getImageUrl("20250428Category33.png", true),
+                  },
+                  {
+                    id: "294731",
+                    src: getImageUrl("20250428Category34.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Ultimate 8-seater sets",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250428Category4.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "192221",
+                    src: getImageUrl("20250428Category41.png", true),
+                  },
+                  {
+                    id: "140721",
+                    src: getImageUrl("20250428Category42.png", true),
+                  },
+                  {
+                    id: "146646",
+                    src: getImageUrl("20250428Category43.png", true),
+                  },
+                  {
+                    id: "71531",
+                    src: getImageUrl("20250428Category44.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-28",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250428_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-28",
+                },
+              },
+              {
+                value: getImageUrl("20250428_gif.gif", true),
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-10",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250410b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-06",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250306b.png", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "20:24",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "17:18",
+                name: "tit",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "29:30",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "38",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "26",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "24",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "31:34",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "35:37",
+                name: "filrers",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 28.04.25 - Free fire pit!",
+                tableRange: "42:44",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FFCCB7",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "197902",
+                      src: getImageUrl("20250428Freebie1.png", true),
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                    {
+                      id: "197914",
+                      src: getImageUrl("20250428Freebie2.png", true),
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "197884",
+                      src: getImageUrl("20250428Freebie3.png", true),
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                    {
+                      id: "197917",
+                      src: getImageUrl("20250428Freebie4.png", true),
+                      style: "padding-right: 6px; padding-left: 6px;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        ],
+      }),
+      new entities.Campaign({
         date: "2025.04.21",
         issueCardId: "334022",
         name: "March Peak - Earth Day",

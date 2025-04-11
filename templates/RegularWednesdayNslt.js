@@ -314,7 +314,7 @@ export async function RegularWednesdayNslt({
           klarna: {
             src: getFooter("Klarna src"),
             href: getFooter("Klarna href"),
-            exclude: ["HU"].includes(country),
+            //exclude: ["HU"].includes(country),
           },
           socials: {
             title: getFooter("Socials Title"),
