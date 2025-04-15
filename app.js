@@ -117,7 +117,7 @@ try {
           {
             name: "Newsletter",
             type: types.NEWSLETTER,
-            template: templates.mondayOfferFreeebiesCategoryFilters,
+            template: templates.mondayRegularNslt,
             background: "#FFCCB7",
             wrapper: types.WRAPPER,
             css: types.CSS.NS,
@@ -426,7 +426,7 @@ try {
           {
             name: "Landing",
             type: types.LANDINGPAGE,
-            template: templates.mondayOfferFreeebiesCategoryFilters,
+            template: templates.mondayRegularNslt,
             background: "#FFCCB7",
             css: types.CSS.LP,
             offerPart: {
@@ -655,7 +655,7 @@ try {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
                 tableName: "Voucher - 28.04.25 - Free fire pit!",
                 tableRange: "35:37",
-                name: "filrers",
+                name: "filters",
               },
               {
                 tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
@@ -1032,6 +1032,80 @@ try {
                 tableColumns: false,
               },
             ],
+            footer_cat: [
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("_cat_01.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("_cat_02.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("_cat_03.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("_cat_04.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("_cat_05.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("_cat_06.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("_cat_07.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("_cat_08.png", true),
+                },
+              },
+            ]
           },
           {
             name: "Landing",
@@ -2527,7 +2601,7 @@ try {
           {
             name: "Newsletter",
             type: types.NEWSLETTER,
-            template: templates.mondayOfferFreeebiesCategoryFilters,
+            template: templates.mondayRegularNslt,
             background: "#FD9000",
             wrapper: types.WRAPPER,
             css: types.CSS.NS,
@@ -2873,7 +2947,7 @@ try {
           {
             name: "Landing",
             type: types.LANDINGPAGE,
-            template: templates.mondayOfferFreeebiesCategoryFilters,
+            template: templates.mondayRegularNslt,
             background: "#FD9000",
             css: types.CSS.LP,
             offerPart: {
@@ -3828,7 +3902,7 @@ try {
           {
             name: "Newsletter",
             type: types.NEWSLETTER,
-            template: templates.mondayOfferFreeebiesCategoryFilters,
+            template: templates.mondayRegularNslt,
             background: "#FFCCB7",
             wrapper: types.WRAPPER,
             css: types.CSS.NS,
@@ -4144,7 +4218,7 @@ try {
           {
             name: "Landing",
             type: types.LANDINGPAGE,
-            template: templates.mondayOfferFreeebiesCategoryFilters,
+            template: templates.mondayRegularNslt,
             background: "#FFCCB7",
             css: types.CSS.LP,
             offerPart: {

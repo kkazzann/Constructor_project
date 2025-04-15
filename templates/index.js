@@ -12,7 +12,7 @@ import { CategoriesRowsLinePriceTitle } from "./CategoriesRowsLinePriceTitle.js"
 import { CategoriesRowsLine } from "./CategoriesRowsLine.js";
 import { mondayOfferFreebiesInsideBanner } from "./mondayOfferFreebiesInsideBanner.js";
 import { mondayOfferLines } from "./mondayOfferLines.js";
-import { mondayOfferFreeebiesCategoryFilters } from "./mondayOfferFreeebiesCategoryFilters.js"
+import { mondayRegularNslt } from "./mondayRegularNslt.js"
 import { RegularNslt } from "./RegularNslt.js"
 import { RegularWednesdayNslt } from "./RegularWednesdayNslt.js"
 import { MondayEarthDayNslt } from "./MondayEarthDayNslt.js"
@@ -32,7 +32,7 @@ export const templates = {
   CategoriesRowsLinePriceTitle,
   CategoriesRowsLine,
   mondayOfferLines,
-  mondayOfferFreeebiesCategoryFilters,
+  mondayRegularNslt,
   RegularNslt,
   RegularWednesdayNslt,
   MondayEarthDayNslt,
