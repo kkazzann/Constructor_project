@@ -9,6 +9,7 @@ import { GetCode } from "./getCode.js";
 import { Title } from "./Title.js";
 import { Image } from "./Image.js";
 import { ImageWithLink } from "./ImageWithLink.js";
+import { Create2Columns_Grid } from "./Create2Columns_Grid.js";
 import { Paragraph } from "./Paragraph.js";
 import { Space } from "./Space.js";
 import { ProductWithSize } from "./productwithsize.js";
@@ -28,6 +29,7 @@ export {
   Category,
   Freebies,
   ThisMayInterestYou,
+  Create2Columns_Grid,
   Intro,
   Line,
   Product,

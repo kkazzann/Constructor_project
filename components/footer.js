@@ -733,7 +733,7 @@ export function Footer(sections, options) {
             : conditionsText.length === 2
             ? conditionsText[0]
             : conditionsText[0]
-
+            
         }</span>
                     </td>
                 </tr>

@@ -48,9 +48,6 @@ export async function MondayEarthDayNslt({
 }) {
   const codes = getCodes(queries);
   //console.log(categories.href);
-  console.log("queries.categories[0]:", typeof queries.categories[0], JSON.stringify(queries.categories[0]));
-  console.log("queries.categories[1]:", typeof queries.categories[1], JSON.stringify(queries.categories[1]));
-  console.log(links[1]);
 // Bezpośrednie przekazanie stringów z uniknięciem potencjalnych problemów
 let categoryName = queries.categories[0];
 let categoryDesc = queries.categories[1];
@@ -347,7 +344,7 @@ function sanitizeHtml(text) {
           thousandsMore: {
             title: getFooter("Title"),
             firstCategory: {
-              src: footer_cat[0],//src: getFooter("Category src 1"),
+              src: getFooter("Category src 1"),
               href: getCategoryLink("https://www.beliani.co.uk/sofas/all+products"),//href: getFooter("Category href 1"),
             },
             secondCategory: {

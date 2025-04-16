@@ -20,82 +20,7 @@ import { OfferPartCode } from "../components/OfferPartCode.js";
 import { priceFree } from "../helpers/priceFree.js";
 import { getCodes } from "../utils/getCodes.js";
 
-
-/**
- * Funkcja generująca sekcje kategorii dla newslettera/landing page
- * Zoptymalizowana logika przypisywania href z queries.filters
- */
-function generateCategoriesSection(categories, queries, background, add_utm, getCategoryTitle, getProductById, getPhrase, getCategoryLink) {
-  let categoriesHTML = '';
-  
-  // Sprawdź czy tablica categories istnieje i ma elementy
-  if (!categories || !categories.length) {
-    return categoriesHTML;
-  }
-  
-  // Sprawdź czy mamy tablicę queries.filters i określ jej długość
-  const filtersLength = queries?.filters?.length || 0;
-  let usedFiltersCount = 0; // Licznik użytych filtrów
-  
-  // Iteruj przez kategorie i generuj odpowiednie sekcje
-  categories.forEach((category, index) => {
-    // Dodaj spacer dla każdej kategorii
-    categoriesHTML += `
-      <tr>
-        <td style="background-color: ${category?.background || background};">
-          ${index === 0 
-            ? `${Space({ className: "newsletterBottom80px" })}`
-            : `${Space()}`
-          }
-        </td>
-      </tr>
-    `;
-    
-    // Określ właściwy href na podstawie zmodyfikowanej walidacji
-    let categoryHref;
-    
-    // Sprawdź czy kategoria ma własny href
-    if (category.href && category.href !== "") {
-      // Jeśli kategoria ma już określony href, użyj go
-      categoryHref = getCategoryLink(category.href);
-    } else if (categories.href) {
-      // Użyj ogólnego href dla wszystkich kategorii jeśli jest dostępny
-      categoryHref = getCategoryLink(categories.href);
-    } else if (usedFiltersCount < filtersLength) {
-      // Jeśli href jest pusty i mamy dostępne filtry, użyj kolejnego filtra
-      categoryHref = add_utm(queries.filters[usedFiltersCount]);
-      usedFiltersCount++; // Zwiększ licznik użytych filtrów
-    } else {
-      // W przeciwnym razie użyj pustego stringa
-      categoryHref = "";
-    }
-    
-    // Dodaj sekcję kategorii
-    categoriesHTML += `
-      <tr>
-        <td style="background-color: ${category?.background || background}; color: ${category?.color || "#000000"}">
-          ${Category({
-            href: categoryHref, // Już przetworzone przez getCategoryLink wyżej w odpowiednich przypadkach
-            name: queries?.categories 
-              ? queries.categories[index]
-              : getCategoryTitle(category.name),
-            src: category.src,
-            cta: getPhrase("Shop now"),
-            color: category?.color,
-            type: category.type,
-            products: category.products.map((item) =>
-              getProductById(item.id, item.src, item.name)
-            ),
-          })}
-        </td>
-      </tr>
-    `;
-  });
-  
-  return categoriesHTML;
-}
-
-export async function mondayRegularNslt({
+export async function mondayOfferFreeebiesCategoryFilters({
   links,
   getProductById,
   getCategoryLink,
@@ -119,16 +44,6 @@ export async function mondayRegularNslt({
   add_utm,
 }) {
   const codes = getCodes(queries);
-  const categoriesSectionHTML = generateCategoriesSection(
-    categories, 
-    queries, 
-    background, 
-    add_utm, 
-    getCategoryTitle,
-    getProductById, 
-    getPhrase,
-    getCategoryLink
-  );
   console.log();
   return `
   ${Header(
@@ -335,8 +250,122 @@ export async function mondayRegularNslt({
                   </td>
               </tr>
 
-              <!-- Wstawienie wygenerowanych dynamicznie sekcji kategorii -->
-              ${categoriesSectionHTML}
+                <tr>
+                    <td style="background-color: ${
+                      categories[0]?.background || background
+                    };">
+                        ${Space({ className: "newsletterBottom80px" })}
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="background-color: ${
+                      categories[0]?.background || background
+                    }; color: ${categories[0]?.color || "#000000"}">
+                      ${Category({
+                        href: categories?.href 
+                        || getCategoryLink(categories[0].href),
+                        name: queries?.categories
+                          ? queries.categories[0]
+                          : getCategoryTitle(categories[0].name),
+                        src: categories[0].src,
+                        cta: getPhrase("Shop now"),
+                        color: categories[0]?.color,
+                        type: categories[0].type,
+                        products: categories[0].products.map((item) =>
+                          getProductById(item.id, item.src)
+                        ),
+                      })}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: ${
+                      categories[1]?.background || background
+                    };">
+                        ${Space()}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: ${
+                      categories[1]?.background || background
+                    }; color: ${categories[1]?.color || "#000000"}">
+                        ${Category({
+                          href: categories?.href 
+                          || add_utm(queries.filters[0]),
+                          name: queries?.categories
+                            ? queries.categories[1]
+                            : getCategoryTitle(categories[1].name),
+                          src: categories[1].src,
+                          cta: getPhrase("Shop now"),
+                          color: categories[1]?.color,
+                          type: categories[1].type,
+                          products: categories[1].products.map((item) =>
+                            getProductById(item.id, item.src)
+                          ),
+                        })}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: ${
+                      categories[2]?.background || background
+                    };">
+                        ${Space()}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: ${
+                      categories[2]?.background || background
+                    }; color: ${categories[2]?.color || "#000000"}">
+                        ${Category({
+                          href: categories?.href 
+                          || add_utm(queries.filters[1]),
+                          name: queries?.categories
+                            ? queries.categories[2]
+                            : getCategoryTitle(categories[2].name),
+                          src: categories[2].src,
+                          cta: getPhrase("Shop now"),
+                          color: categories[2]?.color,
+                          type: categories[2].type,
+                          products: categories[2].products.map((item) =>
+                            getProductById(item.id, item.src)
+                          ),
+                        })}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: ${
+                      categories[3]?.background || background
+                    };">
+                        ${Space()}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: ${
+                      categories[3]?.background || background
+                    }; color: ${categories[3]?.color || "#000000"}">
+                        ${Category({
+                          href: categories?.href 
+                          || add_utm(queries.filters[2]),
+                          name: queries?.categories
+                            ? queries.categories[3]
+                            : getCategoryTitle(categories[3].name),
+                          src: categories[3].src,
+                          cta: getPhrase("Shop now"),
+                          color: categories[3]?.color,
+                          type: categories[3].type,
+                          products: categories[3].products.map((item) =>
+                            getProductById(item.id, item.src, item.name)
+                          ),
+                          
+                        })}
+                    </td>
+                </tr>
           <tbody>
       </table>
 

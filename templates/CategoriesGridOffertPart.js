@@ -30,7 +30,7 @@ export async function CategoriesGridOffertPart({
   categories,
   background,
 }) {
-  const codes = queries.getCode.join("").split("<br />");
+  //const codes = queries.getCode.join("").split("<br />");
   return `
   ${Header(
     {
@@ -99,35 +99,7 @@ export async function CategoriesGridOffertPart({
 
               <tr>
                 <td align="center" style="background-color: #ffccb7;">
-                  ${OfferPart({
-                    type,
-                    offerDate: queries.offerDate,
-                    code: queries.getCodes,
-                    href: links[0],
-                    offers: [
-                      {
-                        title: {
-                          value: queries.intro[0],
-                        },
-                        paragraph: queries.intro[1],
-                        code: codes[0],
-                      },
-                      {
-                        title: {
-                          value: queries.intro[2],
-                        },
-                        paragraph: queries.intro[3],
-                        code: codes[1],
-                      },
-                      {
-                        title: {
-                          value: queries.intro[4],
-                        },
-                        paragraph: queries.intro[5],
-                        code: codes[2],
-                      },
-                    ],
-                  })}
+
                   </td>
               </tr>
 
