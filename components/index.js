@@ -31,6 +31,8 @@ import { TopImageTitleIF } from "./TopImageTitleIF.js";
 import { CategoryOneLastWhite } from "./categoryOneLastWhite.js";
 import { CategoryOneBannerWhite } from "./categoryOneBannerWhite.js";
 import { AdditionalCategories } from "./additional_categories.js";
+import { TwoCategory } from "./twoCategories.js";
+import { Create2Columns_Grid } from "./Create2Columns_Grid.js";
 
 export {
   ProductWithSize,
@@ -66,4 +68,6 @@ export {
   CategoryOneLastWhite,
   CategoryOneBannerWhite,
   AdditionalCategories,
+  TwoCategory,
+  Create2Columns_Grid,
 };

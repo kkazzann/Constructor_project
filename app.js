@@ -102,6 +102,424 @@ try {
   initApp({
     campaigns: [
       new entities.Campaign({
+        startId: "32836",
+        name: "French Days/Mid season sale",
+        date: "2025.04.30",
+        issueCardId: "357113",
+        alarm: {
+          isActive: true,
+          description: "Add soon ending campaigns.",
+        },
+        isArchive: false,
+        optimizeImg: false,
+        figmaUrl:
+          "https://www.figma.com/design/68F9elKyEOboiWtI33XB4h/Armchair---Wednesday-2025.04.02?node-id=0-1&p=f&t=uBbBblish7lCRnsQ-0",
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            template: templates.FrenchDays,
+            css: types.CSS.NS,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FD9000",
+            },
+            intro: {
+              background: "#FD9000",
+              color: "#000000",
+            },
+            background: "#FD9000",
+            categories: [
+              [
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_1__.png", true),
+                  },
+                  href: "https://www.beliani.ch/garden-furniture/",
+                },
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_2__.png", true),
+                  },
+                  href: "https://www.beliani.ch/living-room-furniture/",
+                },
+              ],
+              [
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_3__.png", true),
+                  },
+                  href: "https://www.beliani.ch/bedroom-furniture/",
+                },
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_4__.png", true),
+                  },
+                  href: "https://www.beliani.ch/dining-room-furniture/",
+                },
+              ],
+              [
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_5__.png", true),
+                  },
+                  href: "https://www.beliani.ch/bathroom-furniture/",
+                },
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_6__.png", true),
+                  },
+                  href: "https://www.beliani.ch/office-furniture/",
+                },
+              ],
+              [
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_7__.png", true),
+                  },
+                  href: "https://www.beliani.ch/hallway/",
+                },
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_8__.png", true),
+                  },
+                  href: "https://www.beliani.ch/new/",
+                },
+              ],
+            ],
+            wrapper: types.WRAPPER,
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-30",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250430_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-10",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250410b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-06",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250306b.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250430gif.gif", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 30.04.2025 - French Days Mid season sale!",
+                tableRange: "26:33",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 30.04.2025 - French Days Mid season sale!",
+                tableRange: "42",
+                name: "shopall",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 30.04.2025 - French Days Mid season sale!",
+                tableRange: "44:45",
+                name: "condition",
+              },
+            ],
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.FrenchDays,
+            background: "#FD9000",
+            topImageColor: "#FD9000",
+            categories: [
+              [
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_1__.png", true),
+                  },
+                  href: "https://www.beliani.ch/garden-furniture/",
+                },
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_2__.png", true),
+                  },
+                  href: "https://www.beliani.ch/living-room-furniture/",
+                },
+              ],
+              [
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_3__.png", true),
+                  },
+                  href: "https://www.beliani.ch/bedroom-furniture/",
+                },
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_4__.png", true),
+                  },
+                  href: "https://www.beliani.ch/dining-room-furniture/",
+                },
+              ],
+              [
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_5__.png", true),
+                  },
+                  href: "https://www.beliani.ch/bathroom-furniture/",
+                },
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_6__.png", true),
+                  },
+                  href: "https://www.beliani.ch/office-furniture/",
+                },
+              ],
+              [
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_7__.png", true),
+                  },
+                  href: "https://www.beliani.ch/hallway/",
+                },
+                {
+                  src: {
+                    type: "relation",
+                    relyOn: "slug",
+                    placeholderPosition: "38",
+                    value:
+                      getImageUrl("_cat_8__.png", true),
+                  },
+                  href: "https://www.beliani.ch/new/",
+                },
+              ],
+            ],
+            css: types.CSS.LP,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FD9000",
+            },
+            intro: {
+              background: "#FD9000",
+              color: "#000000",
+            },
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-30",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250430_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "",
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-04-10",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250410b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-03-06",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250306b.png", true),
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250430gif.gif", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 30.04.2025 - French Days Mid season sale!",
+                tableRange: "26:33",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 30.04.2025 - French Days Mid season sale!",
+                tableRange: "42",
+                name: "shopall",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 30.04.2025 - French Days Mid season sale!",
+                tableRange: "44:45",
+                name: "condition",
+              },
+            ],
+          },
+        ],
+      }),
+      new entities.Campaign({
         startId: "32484",
         name: "Office",
         date: "2025.04.23",
@@ -270,7 +688,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "38",
                   value:
-                    getImageUrl("250423title_01.png", true),
+                    getImageUrl("20250423_01.png", true),
                 },
               },
               {
@@ -613,7 +1031,7 @@ try {
                   type: "relation",
                   relyOn: "origin",
                   placeholderPosition: "0",
-                  value: "content/lp25-04-11",
+                  value: "content/lp25-04-14",
                 },
               },
               {
@@ -622,7 +1040,7 @@ try {
                   relyOn: "slug",
                   placeholderPosition: "38",
                   value:
-                    getImageUrl("20250411b.png", true),
+                    getImageUrl("20250414b.png", true),
                 },
               },
               {

@@ -29,6 +29,7 @@ import { Rugs } from "./Rugs.js";
 import { Living } from "./Living.js";
 import { Office } from "./Office.js";
 import { RegularWednesdayNslt } from "./test.js";
+import { FrenchDays } from "./french.js";
 
 export const templates = {
   newsletter_FGG,
@@ -62,4 +63,5 @@ export const templates = {
   Living,
   Office,
   RegularWednesdayNslt,
+  FrenchDays,
 };
