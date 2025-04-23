@@ -103,6 +103,655 @@ try {
     campaigns: [
       
       new entities.Campaign({
+        date: "2025.05.12",
+        issueCardId: "360550",
+        name: "Free parasol or swing",
+        startId: "32932",
+        figmaUrl: "https://www.figma.com/design/L1R2HFXoTV8yrLVCzVH4dj/2025.05.12---Newsletter---Free-parasol-or-swing--Copy-?node-id=0-1&p=f&t=znYbjjWPYgQPErIW-0",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: false,
+        optimizeImg: false,
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            template: templates.mondayRegularNslt,
+            background: "#FD9000",
+            wrapper: types.WRAPPER,
+            css: types.CSS.NS,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FD9000",
+            },
+            intro: {
+              background: "#750000",
+              color: "#FFFFFF",
+            },
+            categories: [
+              {
+                name: "Dining sets",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250512Category1.png", true),
+                href: "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/",
+                products: [
+                  {
+                    id: "588455", //origin.includes("HU") ? "306283" : "231605",
+                    src: getImageUrl("20250512Category11.png", true), //origin.includes("HU") ? getImageUrl("20250512Category11.png", true) : getImageUrl("20250512huCategory11.png", true),
+                  },
+                  {
+                    id: "520673",
+                    src: getImageUrl("20250512Category12.png", true),
+                  },
+                  {
+                    id: "515130",
+                    src: getImageUrl("20250512Category13.png", true),
+                  },
+                  {
+                    id: "318366",
+                    src: getImageUrl("20250512Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Outdoor kitchen",
+                background: "#FD9000",
+                color: "#000000",
+                src: getImageUrl("20250512Category2.png", true),
+                href: "https://www.beliani.ch/outdoor-furniture/outdoor-kitchen/",
+                products: [
+                  {
+                    id: "603741",
+                    src: getImageUrl("20250512Category21.png", true),
+                  },
+                  {
+                    id: "603546",
+                    src: getImageUrl("20250512Category22.png", true),
+                  },
+                  {
+                    id: "524312",
+                    src: getImageUrl("20250512Category23.png", true),
+                  },
+                  {
+                    id: "526547",
+                    src: getImageUrl("20250512Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Fire pits & grills",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250512Category3.png", true),
+                href: "https://www.beliani.ch/garden-accessories/fire-pits/",
+                products: [
+                  {
+                    id: "197917",
+                    src: getImageUrl("20250512Category31.png", true),
+                  },
+                  {
+                    id: "301788",
+                    src: getImageUrl("20250512Category32.png", true),
+                  },
+                  {
+                    id: "315858",
+                    src: getImageUrl("20250512Category33.png", true),
+                  },
+                  {
+                    id: "197914",
+                    src: getImageUrl("20250512Category34.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Lanterns",
+                background: "#FD9000",
+                color: "#000000",
+                src: getImageUrl("20250512Category4.png", true),
+                href: "https://www.beliani.ch/garden-accessories/garden-lanterns/",
+                products: [
+                  {
+                    id: "200059",
+                    src: getImageUrl("20250512Category41.png", true),
+                  },
+                  {
+                    id: "106078",
+                    src: getImageUrl("20250512Category42.png", true),
+                  },
+                  {
+                    id: "325520",
+                    src: getImageUrl("20250512Category43.png", true),
+                  },
+                  {
+                    id: "199499",
+                    src: getImageUrl("20250512Category44.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-12",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250512_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-12",
+                },
+              },
+              {
+                value: getImageUrl("20250512_gif.gif", true),
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-02",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250502b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-01",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250501b.png", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "22:26",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "31:32",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "37",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "28",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "26",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "33:36",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "41:43",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FD9000",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "57652",
+                      src: getImageUrl("20250512Freebie1.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "57653",
+                      src: getImageUrl("20250512Freebie2.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "130931",
+                      src: getImageUrl("20250512Freebie3.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "145059",
+                      src: getImageUrl("20250512Freebie4.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "	30178",
+                      src: getImageUrl("20250512Freebie5.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "30179",
+                      src: getImageUrl("20250512Freebie6.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.mondayRegularNslt,
+            background: "#FD9000",
+            css: types.CSS.LP,
+            tit: {
+              color: "#000",
+              type: "standard",
+            },
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FD9000",
+            },
+            intro: {
+              background: "#750000",
+              color: "#FFFFFF",
+            },
+            categories: [
+              {
+                name: "Dining sets",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250512Category1.png", true),
+                href: "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/",
+                products: [
+                  {
+                    id: "588455", //origin.includes("HU") ? "306283" : "231605",
+                    src: getImageUrl("20250512Category11.png", true), //origin.includes("HU") ? getImageUrl("20250512Category11.png", true) : getImageUrl("20250512huCategory11.png", true),
+                  },
+                  {
+                    id: "520673",
+                    src: getImageUrl("20250512Category12.png", true),
+                  },
+                  {
+                    id: "515130",
+                    src: getImageUrl("20250512Category13.png", true),
+                  },
+                  {
+                    id: "318366",
+                    src: getImageUrl("20250512Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Outdoor kitchen",
+                background: "#FD9000",
+                color: "#000000",
+                src: getImageUrl("20250512Category2.png", true),
+                href: "https://www.beliani.ch/outdoor-furniture/outdoor-kitchen/",
+                products: [
+                  {
+                    id: "603741",
+                    src: getImageUrl("20250512Category21.png", true),
+                  },
+                  {
+                    id: "603546",
+                    src: getImageUrl("20250512Category22.png", true),
+                  },
+                  {
+                    id: "524312",
+                    src: getImageUrl("20250512Category23.png", true),
+                  },
+                  {
+                    id: "526547",
+                    src: getImageUrl("20250512Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Fire pits & grills",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250512Category3.png", true),
+                href: "https://www.beliani.ch/garden-accessories/fire-pits/",
+                products: [
+                  {
+                    id: "197917",
+                    src: getImageUrl("20250512Category31.png", true),
+                  },
+                  {
+                    id: "301788",
+                    src: getImageUrl("20250512Category32.png", true),
+                  },
+                  {
+                    id: "315858",
+                    src: getImageUrl("20250512Category33.png", true),
+                  },
+                  {
+                    id: "197914",
+                    src: getImageUrl("20250512Category34.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Lanterns",
+                background: "#FD9000",
+                color: "#000000",
+                src: getImageUrl("20250512Category4.png", true),
+                href: "https://www.beliani.ch/garden-accessories/garden-lanterns/",
+                products: [
+                  {
+                    id: "200059",
+                    src: getImageUrl("20250512Category41.png", true),
+                  },
+                  {
+                    id: "106078",
+                    src: getImageUrl("20250512Category42.png", true),
+                  },
+                  {
+                    id: "325520",
+                    src: getImageUrl("20250512Category43.png", true),
+                  },
+                  {
+                    id: "199499",
+                    src: getImageUrl("20250512Category44.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-12",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250512_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-12",
+                },
+              },
+              {
+                value: getImageUrl("20250512_gif.gif", true),
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-02",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250502b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-01",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250501b.png", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "19:20",
+                name: "tit",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "22:26",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "31:32",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "37",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "28",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "26",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "33:36",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 12.05.25 - Free parasol or swing!",
+                tableRange: "41:43",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FD9000",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "57652",
+                      src: getImageUrl("20250512Freebie1.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "57653",
+                      src: getImageUrl("20250512Freebie2.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "130931",
+                      src: getImageUrl("20250512Freebie3.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "145059",
+                      src: getImageUrl("20250512Freebie4.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "	30178",
+                      src: getImageUrl("20250512Freebie5.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "30179",
+                      src: getImageUrl("20250512Freebie6.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        ],
+      }),
+      new entities.Campaign({
         date: "2025.05.05",
         issueCardId: "359646",
         name: "Free towels",
