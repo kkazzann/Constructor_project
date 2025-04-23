@@ -113,7 +113,22 @@ export async function CategoriesGrid({
                 <td style="background-color: ${background};" class="newsletterContainer">
                   ${Intro({
                     type: "paragraph",
-                    paragraph: "Code: Frühling25",
+                    paragraph: "Code: Mai25",
+                    align: "center",
+                    color: "#000",
+                  })}
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  ${Space({ className: "newsletterBottom20px" })}
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: ${background};" class="newsletterContainer">
+                  ${Intro({
+                    type: "paragraph",
+                    paragraph: "Dieses Angebot ist zeitlich begrenzt. Gültig nur bis zum 31. Mai.",
                     align: "center",
                     color: "#000",
                   })}

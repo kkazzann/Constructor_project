@@ -112,6 +112,7 @@ export async function mondayRegularNslt({
   categories,
   freebies,
   background,
+  tit,
   offerPart,
   intro,
   inside,
@@ -202,8 +203,8 @@ export async function mondayRegularNslt({
                             href: links[0],
                             title1: queries.tit[0],
                             title2: queries.tit[1],
-                            color: "#000000",
-                            type: "standard",
+                            color: tit?.color || "#000",
+                            type: tit?.type || "up_to",
                           })}`
                         }
                       </td>
@@ -238,11 +239,7 @@ export async function mondayRegularNslt({
               </tr>`
               }
               <tr>
-                  <td class="newsletterContainer" style="background-color: ${
-                    freebies.options.background || background
-                    }; color: ${
-                    offerPart.color || "#000"
-                  };">
+                  <td class="newsletterContainer" style="background-color: ${ freebies.options.background || background }; color: ${ offerPart.color || "#000" };">
                       
                       ${
                         offerPart.type === "code"
@@ -322,9 +319,7 @@ export async function mondayRegularNslt({
               </tr>
 
               <tr>
-                  <td class="newsletterContainer" style="background-color: ${
-                    intro.background || background
-                  };">
+                  <td class="newsletterContainer" style="background-color: ${  intro.background || background };">
                       ${Intro({
                         data: queries.intro,
                         color: intro?.color,

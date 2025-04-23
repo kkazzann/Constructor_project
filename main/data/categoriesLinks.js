@@ -349,7 +349,10 @@ export default [
     "new-york-classic": "der-klassische-new-york-stil",
     "industrial-glam": "glamouroeser-industriestil",
     "loft-style": "loft-stil",
-    "outdoor-kitchen": "outdoorkuechen"
+    "outdoor-kitchen": "outdoorkuechen",
+    "office-desk-dividers": "trennwande-fur-den-schreibtisch",
+    "picnic-basket": "picknickkorbe",
+    "basins": "waschbecken"
   },
   {
     "slug": "befr",
@@ -701,7 +704,10 @@ export default [
     "new-york-classic": "le-style-nyc-par-magda",
     "industrial-glam": "le-style-glam-par-patrycja",
     "loft-style": "le-style-loft-par-michal",
-    "outdoor-kitchen": "cuisine-exterieure"
+    "outdoor-kitchen": "cuisine-exterieure",
+    "office-desk-dividers": "separateurs-pour-bureaux",
+    "picnic-basket": "paniers-de-pique-nique",
+    "basins": "lavabos"
   },
   {
     "slug": "benl",
@@ -1053,7 +1059,10 @@ export default [
     "new-york-classic": "new-york-klassieker",
     "industrial-glam": "industriele-glamour",
     "loft-style": "loft-stijl",
-    "outdoor-kitchen": "buitenkeuken"
+    "outdoor-kitchen": "buitenkeuken",
+    "office-desk-dividers": "bureauverdelers",
+    "picnic-basket": "picknickmand",
+    "basins": "wastafels"
   },
   {
     "slug": "chde",
@@ -1405,7 +1414,10 @@ export default [
     "new-york-classic": "der-klassische-new-york-stil",
     "industrial-glam": "glamouroeser-industriestil",
     "loft-style": "loft-stil",
-    "outdoor-kitchen": "outdoorkuechen"
+    "outdoor-kitchen": "outdoorkuechen",
+    "office-desk-dividers": "trennwande-fur-den-schreibtisch",
+    "picnic-basket": "picknickkorbe",
+    "basins": "waschbecken"
   },
   {
     "slug": "chfr",
@@ -1757,7 +1769,10 @@ export default [
     "new-york-classic": "le-style-nyc-par-magda",
     "industrial-glam": "le-style-glam-par-patrycja",
     "loft-style": "le-style-loft-par-michal",
-    "outdoor-kitchen": "cuisine-exterieure"
+    "outdoor-kitchen": "cuisine-exterieure",
+    "office-desk-dividers": "separateurs-pour-bureaux",
+    "picnic-basket": "paniers-de-pique-nique",
+    "basins": "lavabos"
   },
   {
     "slug": "chit",
@@ -2109,7 +2124,10 @@ export default [
     "new-york-classic": "new-york-classic-it",
     "industrial-glam": "industrial-glam-it",
     "loft-style": "lo-stile-loft-di-michal",
-    "outdoor-kitchen": "cucina-per-esterni"
+    "outdoor-kitchen": "cucina-per-esterni",
+    "office-desk-dividers": "divisori-per-scrivania",
+    "picnic-basket": "cestini-per-picnic",
+    "basins": "lavabi"
   },
   {
     "slug": "cz",
@@ -2461,7 +2479,10 @@ export default [
     "new-york-classic": "newyorska-klasika",
     "industrial-glam": "industrialni-glamour",
     "loft-style": "loft-podle-michala",
-    "outdoor-kitchen": "venkovni-kuchyne"
+    "outdoor-kitchen": "venkovni-kuchyne",
+    "office-desk-dividers": "rozdelovace-kancelarskych-stolu",
+    "picnic-basket": "piknikovy-kos",
+    "basins": "umyvadla"
   },
   {
     "slug": "de",
@@ -2813,7 +2834,10 @@ export default [
     "new-york-classic": "der-klassische-new-york-stil",
     "industrial-glam": "glamouroeser-industriestil",
     "loft-style": "loft-stil",
-    "outdoor-kitchen": "outdoorkuechen"
+    "outdoor-kitchen": "outdoorkuechen",
+    "office-desk-dividers": "trennwande-fur-den-schreibtisch",
+    "picnic-basket": "picknickkorbe",
+    "basins": "waschbecken"
   },
   {
     "slug": "dk",
@@ -3165,7 +3189,10 @@ export default [
     "new-york-classic": "new-york-klassikere",
     "industrial-glam": "industriel-glam",
     "loft-style": "loft-stil",
-    "outdoor-kitchen": "udendoers-koekken"
+    "outdoor-kitchen": "udendoers-koekken",
+    "office-desk-dividers": "kontor-skrivebords-opdelere",
+    "picnic-basket": "picnickurve",
+    "basins": "handvaske-til-badevaerelset"
   },
   {
     "slug": "es",
@@ -3517,7 +3544,10 @@ export default [
     "new-york-classic": "nueva-york-clasico-es",
     "industrial-glam": "industrial-glamuroso-es",
     "loft-style": "loft-es",
-    "outdoor-kitchen": "cocina-exterior"
+    "outdoor-kitchen": "cocina-exterior",
+    "office-desk-dividers": "separadores-de-oficina",
+    "picnic-basket": "cestas-picnic",
+    "basins": "lavabos"
   },
   {
     "slug": "fi",
@@ -3869,7 +3899,10 @@ export default [
     "new-york-classic": "new-yorkin-klassikko",
     "industrial-glam": "teollinen-glam",
     "loft-style": "loft-tyyli",
-    "outdoor-kitchen": "ulkokeittio"
+    "outdoor-kitchen": "ulkokeittio",
+    "office-desk-dividers": "toimiston-tyopoydan-jakajat",
+    "picnic-basket": "piknik-kori",
+    "basins": "pesualtaat"
   },
   {
     "slug": "fr",
@@ -4221,7 +4254,10 @@ export default [
     "new-york-classic": "le-style-nyc-par-magda",
     "industrial-glam": "le-style-glam-par-patrycja",
     "loft-style": "le-style-loft-par-michal",
-    "outdoor-kitchen": "cuisine-exterieure"
+    "outdoor-kitchen": "cuisine-exterieure",
+    "office-desk-dividers": "separateurs-pour-bureaux",
+    "picnic-basket": "paniers-de-pique-nique",
+    "basins": "lavabos"
   },
   {
     "slug": "hu",
@@ -4573,7 +4609,10 @@ export default [
     "new-york-classic": "new-york-klasszikus",
     "industrial-glam": "ipari-glam",
     "loft-style": "loft-stilus",
-    "outdoor-kitchen": "kulteri-konyha"
+    "outdoor-kitchen": "kulteri-konyha",
+    "office-desk-dividers": "irodai-iroasztal-elvalasztok",
+    "picnic-basket": "piknik-kosarak",
+    "basins": "mosdokagylok"
   },
   {
     "slug": "it",
@@ -4925,7 +4964,10 @@ export default [
     "new-york-classic": "new-york-classic-it",
     "industrial-glam": "industrial-glam-it",
     "loft-style": "lo-stile-loft-di-michal",
-    "outdoor-kitchen": "cucina-per-esterni"
+    "outdoor-kitchen": "cucina-per-esterni",
+    "office-desk-dividers": "divisori-per-scrivania",
+    "picnic-basket": "cestini-per-picnic",
+    "basins": "lavabi"
   },
   {
     "slug": "nl",
@@ -5277,7 +5319,10 @@ export default [
     "new-york-classic": "new-york-klassieker",
     "industrial-glam": "industriele-glamour",
     "loft-style": "loft-stijl",
-    "outdoor-kitchen": "buitenkeuken"
+    "outdoor-kitchen": "buitenkeuken",
+    "office-desk-dividers": "bureauverdelers",
+    "picnic-basket": "picknickmand",
+    "basins": "wastafels"
   },
   {
     "slug": "no",
@@ -5629,7 +5674,10 @@ export default [
     "new-york-classic": "new-york-klassiker",
     "industrial-glam": "industriell-glam",
     "loft-style": "loftstil",
-    "outdoor-kitchen": "utekjokken"
+    "outdoor-kitchen": "utekjokken",
+    "office-desk-dividers": "skillevegger-til-skrivebord",
+    "picnic-basket": "piknik-kurver",
+    "basins": "servanter"
   },
   {
     "slug": "pl",
@@ -5981,7 +6029,10 @@ export default [
     "new-york-classic": "nowojorska-klasyka",
     "industrial-glam": "industrialny-glam",
     "loft-style": "styl-loftowy",
-    "outdoor-kitchen": "kuchnia-ogrodowa"
+    "outdoor-kitchen": "kuchnia-ogrodowa",
+    "office-desk-dividers": "scianki-na-biurka",
+    "picnic-basket": "kosz-piknikowy",
+    "basins": "umywalki"
   },
   {
     "slug": "pt",
@@ -6333,7 +6384,10 @@ export default [
     "new-york-classic": "new-york-classic-pt",
     "industrial-glam": "industrial-glam-pt",
     "loft-style": "estilo-loft",
-    "outdoor-kitchen": "cozinha-exterior"
+    "outdoor-kitchen": "cozinha-exterior",
+    "office-desk-dividers": "divisorias-para-secretarias",
+    "picnic-basket": "cestos-de-picnic",
+    "basins": "lavatorios"
   },
   {
     "slug": "ro",
@@ -6483,7 +6537,7 @@ export default [
     "outdoor-storage-cabinets": "",
     "kids-desks": "pupitre-pentru-copii",
     "kids-desk-chairs": "scaune-de-birou-pentru-copii",
-    "kids-rugs": "covoare-copiilor",
+    "kids-rugs": "covoare-pentru-copii",
     "kids-decor": "decoratiuni",
     "office-furniture": "birou",
     "rattan-furniture": "mobilier-din-rattan",
@@ -6516,7 +6570,7 @@ export default [
     "massage-chairs": "aparate-de-masaj",
     "rocking-chairs": "scaune-balansoare",
     "leather-chair": "scaune-din-piele",
-    "office": "birou",
+    "office": "de-birou",
     "dining-tables": "masa-de-pranz",
     "coffee-tables": "mese-de-cafea",
     "side-tables": "mese-de-canapea",
@@ -6583,7 +6637,7 @@ export default [
     "decorative-lighting": "lumini-decorative",
     "modern-rugs": "covoare-moderne",
     "classic-rugs": "covoare-clasice",
-    "childrens-rugs": "covoare-copiilor",
+    "childrens-rugs": "covoare-pentru-copii",
     "shaggy-rugs": "",
     "outdoor-rugs": "covoare-pentru-exterior",
     "runner-rugs": "trecatorii",
@@ -6651,7 +6705,7 @@ export default [
     "scented-candles-and-diffusers__1": "",
     "makeup-mirrors": "oglinzi-de-machiaj",
     "reading-corner": "coltul-de-lectura",
-    "dining-chairs": "scaune-dinning",
+    "dining-chairs": "scaune-sufragerie",
     "christmas-tableware": "masa-de-craciun",
     "christmas-tree-collars": "acoperirile-de-baza-pentru-pomii-de-craciun",
     "christmas-tree-decorations": "decoratiuni-pentru-pomul-de-craciun",
@@ -6685,7 +6739,10 @@ export default [
     "new-york-classic": "stil-new-york",
     "industrial-glam": "stilul-glam",
     "loft-style": "meet-beliani-stil-loft",
-    "outdoor-kitchen": "bucatarie-in-aer-liber"
+    "outdoor-kitchen": "bucatarie-in-aer-liber",
+    "office-desk-dividers": "paravane-si-separatoare-de-camera",
+    "picnic-basket": "cos-de-picnic",
+    "basins": "lavoare"
   },
   {
     "slug": "se",
@@ -7037,7 +7094,10 @@ export default [
     "new-york-classic": "new-york-classic",
     "industrial-glam": "industriell-glam",
     "loft-style": "loftstil",
-    "outdoor-kitchen": "utekok"
+    "outdoor-kitchen": "utekok",
+    "office-desk-dividers": "avdelare-for-kontorsbord",
+    "picnic-basket": "picknickkorg",
+    "basins": "tvattstall"
   },
   {
     "slug": "sk",
@@ -7389,7 +7449,10 @@ export default [
     "new-york-classic": "newyorska-klasika-sk",
     "industrial-glam": "industrialny-glamour",
     "loft-style": "loft-styl-sk",
-    "outdoor-kitchen": "vonkajsia-kuchyna"
+    "outdoor-kitchen": "vonkajsia-kuchyna",
+    "office-desk-dividers": "rozdelovace-kancelarskych-stolov",
+    "picnic-basket": "piknikovy-kosik",
+    "basins": "umyvadla"
   },
   {
     "slug": "uk",
@@ -7741,6 +7804,9 @@ export default [
     "new-york-classic": "new-york-classic",
     "industrial-glam": "industrial-glam",
     "loft-style": "loft-style",
-    "outdoor-kitchen": "outdoor-kitchen"
+    "outdoor-kitchen": "outdoor-kitchen",
+    "office-desk-dividers": "office-desk-dividers",
+    "picnic-basket": "picnic-basket",
+    "basins": "basins"
   }
 ]

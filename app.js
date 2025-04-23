@@ -101,12 +101,12 @@ function getImageUrl(imageName, version) {
 try {
   initApp({
     campaigns: [
-
+      
       new entities.Campaign({
         date: "2025.05.05",
         issueCardId: "359646",
         name: "Free towels",
-        startId: "000100",
+        startId: "32868",
         figmaUrl: "https://www.figma.com/design/K7HaPqvuMU6GAiXJYE3HgR/Free-towels---2025.05.05--Copy-?node-id=6057-1156&t=RYCpsnfjoPgY0iKH-0",
         alarm: {
           isActive: false,
@@ -139,19 +139,19 @@ try {
                 href: "https://www.beliani.ch/bathroom-furniture/bathtubs-hot-tubs/",
                 products: [
                   {
-                    id: "522681", //origin.includes("HU") ? "306283" : "231605",
+                    id: "431804", //origin.includes("HU") ? "306283" : "231605",
                     src: getImageUrl("20250505Category11.png", true), //origin.includes("HU") ? getImageUrl("20250505Category11.png", true) : getImageUrl("20250505huCategory11.png", true),
                   },
                   {
-                    id: "596587",
+                    id: "193528",
                     src: getImageUrl("20250505Category12.png", true),
                   },
                   {
-                    id: "557385",
+                    id: "417089",
                     src: getImageUrl("20250505Category13.png", true),
                   },
                   {
-                    id: "294544",
+                    id: "310394",
                     src: getImageUrl("20250505Category14.png", true),
                   },
                 ],
@@ -164,19 +164,19 @@ try {
                 href: "https://www.beliani.ch/bathroom-furniture/basins/",
                 products: [
                   {
-                    id: "588436",
+                    id: "510877",
                     src: getImageUrl("20250505Category21.png", true),
                   },
                   {
-                    id: "525622",
+                    id: "509797",
                     src: getImageUrl("20250505Category22.png", true),
                   },
                   {
-                    id: "257696",
+                    id: "509870",
                     src: getImageUrl("20250505Category23.png", true),
                   },
                   {
-                    id: "569903",
+                    id: "510572",
                     src: getImageUrl("20250505Category24.png", true),
                   },
                 ],
@@ -189,19 +189,19 @@ try {
                 href: "https://www.beliani.ch/bathroom-furniture/storage/",
                 products: [
                   {
-                    id: "585606",
+                    id: "588752",
                     src: getImageUrl("20250505Category31.png", true),
                   },
                   {
-                    id: "523743",
+                    id: "572074",
                     src: getImageUrl("20250505Category32.png", true),
                   },
                   {
-                    id: "419180",
+                    id: "589152",
                     src: getImageUrl("20250505Category33.png", true),
                   },
                   {
-                    id: "294731",
+                    id: "427654",
                     src: getImageUrl("20250505Category34.png", true),
                   },
                 ],
@@ -214,19 +214,19 @@ try {
                 href: "https://www.beliani.ch/bathroom-furniture/mirrors/",
                 products: [
                   {
-                    id: "192221",
+                    id: "522740",
                     src: getImageUrl("20250505Category41.png", true),
                   },
                   {
-                    id: "140721",
+                    id: "360158",
                     src: getImageUrl("20250505Category42.png", true),
                   },
                   {
-                    id: "146646",
+                    id: "203165",
                     src: getImageUrl("20250505Category43.png", true),
                   },
                   {
-                    id: "71531",
+                    id: "580809",
                     src: getImageUrl("20250505Category44.png", true),
                   },
                 ],
@@ -385,17 +385,17 @@ try {
                   },
                   products: [
                     {
-                      id: "197902",
+                      id: "356111",
                       src: getImageUrl("20250505Freebie1.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
                     {
-                      id: "197914",
+                      id: "357862",
                       src: getImageUrl("20250505Freebie2.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
                     {
-                      id: "197884",
+                      id: "357898",
                       src: getImageUrl("20250505Freebie3.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
@@ -408,17 +408,17 @@ try {
                   },
                   products: [
                     {
-                      id: "197917",
+                      id: "357844",
                       src: getImageUrl("20250505Freebie4.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
                     {
-                      id: "197917",
+                      id: "357825",
                       src: getImageUrl("20250505Freebie5.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
                     {
-                      id: "197917",
+                      id: "357916",
                       src: getImageUrl("20250505Freebie6.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
@@ -431,8 +431,12 @@ try {
             name: "Landing",
             type: types.LANDINGPAGE,
             template: templates.mondayRegularNslt,
-            background: "#FFCCB7",
+            background: "#F6E7E6",
             css: types.CSS.LP,
+            tit: {
+              color: "#000",
+              type: "standard",
+            },
             offerPart: {
               type: "code",
               color: "#000000",
@@ -451,19 +455,19 @@ try {
                 href: "https://www.beliani.ch/bathroom-furniture/bathtubs-hot-tubs/",
                 products: [
                   {
-                    id: "522681", //origin.includes("HU") ? "306283" : "231605",
+                    id: "431804", //origin.includes("HU") ? "306283" : "231605",
                     src: getImageUrl("20250505Category11.png", true), //origin.includes("HU") ? getImageUrl("20250505Category11.png", true) : getImageUrl("20250505huCategory11.png", true),
                   },
                   {
-                    id: "596587",
+                    id: "193528",
                     src: getImageUrl("20250505Category12.png", true),
                   },
                   {
-                    id: "557385",
+                    id: "417089",
                     src: getImageUrl("20250505Category13.png", true),
                   },
                   {
-                    id: "294544",
+                    id: "310394",
                     src: getImageUrl("20250505Category14.png", true),
                   },
                 ],
@@ -476,19 +480,19 @@ try {
                 href: "https://www.beliani.ch/bathroom-furniture/basins/",
                 products: [
                   {
-                    id: "588436",
+                    id: "510877",
                     src: getImageUrl("20250505Category21.png", true),
                   },
                   {
-                    id: "525622",
+                    id: "509797",
                     src: getImageUrl("20250505Category22.png", true),
                   },
                   {
-                    id: "257696",
+                    id: "509870",
                     src: getImageUrl("20250505Category23.png", true),
                   },
                   {
-                    id: "569903",
+                    id: "510572",
                     src: getImageUrl("20250505Category24.png", true),
                   },
                 ],
@@ -501,19 +505,19 @@ try {
                 href: "https://www.beliani.ch/bathroom-furniture/storage/",
                 products: [
                   {
-                    id: "585606",
+                    id: "588752",
                     src: getImageUrl("20250505Category31.png", true),
                   },
                   {
-                    id: "523743",
+                    id: "572074",
                     src: getImageUrl("20250505Category32.png", true),
                   },
                   {
-                    id: "419180",
+                    id: "589152",
                     src: getImageUrl("20250505Category33.png", true),
                   },
                   {
-                    id: "294731",
+                    id: "427654",
                     src: getImageUrl("20250505Category34.png", true),
                   },
                 ],
@@ -526,19 +530,19 @@ try {
                 href: "https://www.beliani.ch/bathroom-furniture/mirrors/",
                 products: [
                   {
-                    id: "192221",
+                    id: "522740",
                     src: getImageUrl("20250505Category41.png", true),
                   },
                   {
-                    id: "140721",
+                    id: "360158",
                     src: getImageUrl("20250505Category42.png", true),
                   },
                   {
-                    id: "146646",
+                    id: "203165",
                     src: getImageUrl("20250505Category43.png", true),
                   },
                   {
-                    id: "71531",
+                    id: "580809",
                     src: getImageUrl("20250505Category44.png", true),
                   },
                 ],
@@ -703,17 +707,17 @@ try {
                   },
                   products: [
                     {
-                      id: "197902",
+                      id: "356111",
                       src: getImageUrl("20250505Freebie1.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
                     {
-                      id: "197914",
+                      id: "357862",
                       src: getImageUrl("20250505Freebie2.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
                     {
-                      id: "197884",
+                      id: "357898",
                       src: getImageUrl("20250505Freebie3.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
@@ -726,17 +730,17 @@ try {
                   },
                   products: [
                     {
-                      id: "197917",
+                      id: "357844",
                       src: getImageUrl("20250505Freebie4.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
                     {
-                      id: "197917",
+                      id: "357825",
                       src: getImageUrl("20250505Freebie5.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
                     {
-                      id: "197917",
+                      id: "357916",
                       src: getImageUrl("20250505Freebie6.png", true),
                       style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
                     },
@@ -756,7 +760,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         templates: [
           {
@@ -1453,6 +1457,10 @@ try {
             background: "#FFCCB7",
             wrapper: types.WRAPPER,
             css: types.CSS.NS,
+            tit: {
+              color: "#000",
+              type: "twoSameLines",
+            },
             offerPart: {
               type: "code",
               color: "#000000",
@@ -2080,7 +2088,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         templates: [
           {
