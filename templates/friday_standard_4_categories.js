@@ -2,159 +2,38 @@ import { OfferPart } from "../components/OfferPart.js";
 import { YouTube } from "../components/YouTube.js";
 import { Footer } from "../components/footer.js";
 import { Header } from "../components/header.js";
-import {
-  Line,
-  Category,
-  GetCode,
-  Intro,
-  Paragraph,
-  ImageWithLink,
-  Space,
-  Freebies,
-  Product,
-  ProductWithSize,
-  Title,
-  Timer,
-  TopImageTitle,
 
+import { Line, Category, GetCode, Intro, Paragraph, ImageWithLink, Space, Freebies, Product, ProductWithSize, Title, Timer, TopImageTitle } from "../components/index.js";
 
-} from "../components/index.js";
-
-export async function friday_standard_4_categories({
-  links,
-  getProductById,
-  getCategoryLink,
-  getCategoryTitle,
-  getPhrase,
-  getFooter,
-  getHeader,
-  queries,
-  id,
-  shop,
-  country,
-  type,
-  categories,
-  background,
-  name,
-  name1,
-  add_utm,
+export async function friday_standard_4_categories({ links, getProductById, getCategoryLink, getCategoryTitle, getPhrase, getFooter, getHeader, queries, id, shop, country, type, categories, background, name, name1, add_utm }) {
+  const gif_src = {
+    CHDE:['https://gen.sendtric.com/countdown/2dhd5v4wy6'],
+    CHFR:['https://gen.sendtric.com/countdown/9edvgkoysa'],
+    FR:['https://gen.sendtric.com/countdown/9edvgkoysa'],
+    UK:['https://gen.sendtric.com/countdown/p2fbvbq6ra'],
+    DE:['https://gen.sendtric.com/countdown/2dhd5v4wy6'],
+    AT:['https://gen.sendtric.com/countdown/2dhd5v4wy6'],
+    ES:['https://gen.sendtric.com/countdown/p1drnr1tne'],
+    PL:['https://gen.sendtric.com/countdown/t9aqh68g0r'],
+    NL:['https://gen.sendtric.com/countdown/f6a7zbbg3u'],
+    PT:['https://gen.sendtric.com/countdown/6adez9ehwx'],
+    IT:['https://gen.sendtric.com/countdown/m88n30bfgd'],
+    SE:['https://gen.sendtric.com/countdown/6iv27cmsd8'],
+    HU:['https://gen.sendtric.com/countdown/pqxc9q0boq'],
+    DK:['https://gen.sendtric.com/countdown/8mqqcodqg8'],
+    CZ:['https://gen.sendtric.com/countdown/ls7pjphqzk'],
+    FI:['https://gen.sendtric.com/countdown/azwhqvy4pu'],
+    NO:['https://gen.sendtric.com/countdown/w7o7g8cepw'],
+    SK:['https://gen.sendtric.com/countdown/v5mrivq7jy'],
+    BENL:['https://gen.sendtric.com/countdown/f6a7zbbg3u'],
+    BEFR:['https://gen.sendtric.com/countdown/9edvgkoysa'],
+    RO:['https://gen.sendtric.com/countdown/hnqolrhe9n'],
+  };
 
  
 
-}) {
-  const gif_src = {
-    CHDE:  ['https://gen.sendtric.com/countdown/mdxh5y9vox'],
-    CHFR:   ['https://gen.sendtric.com/countdown/vkwpmneaz7'],
-    FR:     ['https://gen.sendtric.com/countdown/vkwpmneaz7'],
-    UK:     ['https://gen.sendtric.com/countdown/2mu8pk0tjq'],
-    DE:     ['https://gen.sendtric.com/countdown/mdxh5y9vox'],
-    AT:     ['https://gen.sendtric.com/countdown/mdxh5y9vox'],
-    ES:     ['https://gen.sendtric.com/countdown/u13ppoipf4'],
-    PL:     ['https://gen.sendtric.com/countdown/jve6qh4yep'],
-    NL:     ['https://gen.sendtric.com/countdown/2h000k4xyi'],
-    PT:     ['https://gen.sendtric.com/countdown/52rxvaaed8'],
-    IT:     ['https://gen.sendtric.com/countdown/8jzg8zulm7'],
-    SE:     ['https://gen.sendtric.com/countdown/4tpjbeb7ij'],
-    HU:     ['https://gen.sendtric.com/countdown/9yohr7zkns'],
-    DK:     ['https://gen.sendtric.com/countdown/irkm68qxdq'],
-    CZ:     ['https://gen.sendtric.com/countdown/8eho4796w0'],
-    FI:     ['https://gen.sendtric.com/countdown/el7e4znwur'],
-    NO:     ['https://gen.sendtric.com/countdown/k10j4qzpdt'],
-    SK:     ['https://gen.sendtric.com/countdown/ua6l7kmdj6'],
-    BENL:   ['https://gen.sendtric.com/countdown/2h000k4xyi'],
-    BEFR:   ['https://gen.sendtric.com/countdown/vkwpmneaz7'],
-    RO:     ['https://gen.sendtric.com/countdown/0578kqv6hp'],
-  };
+  console.log(shop.slug);
 
-
-
-
-  const cat1 = {
-    CHDE:  ['https://www.beliani.ch/wohnzimmer-moebel/sofas/alle+produkte/?Merkmale=Stauraum&sort=default'],
-    CHFR:   ['https://www.beliani.ch/canapes/tous+les+produits/?Caracteristiques=Rangement'],
-    FR:     ['https://www.beliani.fr/canapes/tous+les+produits/?Caracteristiques=Rangement'],
-    UK:     ['https://www.beliani.co.uk/sofas/all+products/?Features=With_Storage&sort=default'],
-    DE:     ['https://www.beliani.de/wohnzimmer-moebel/sofas/alle+produkte/?Merkmale=Stauraum&sort=default'],
-    AT:     ['https://www.beliani.at/wohnzimmer-moebel/sofas/alle+produkte/?Merkmale=Stauraum&sort=default'],
-    ES:     ['https://www.beliani.es/sofas/todos+los+productos/?Caracteristicas=Almacenamiento&sort=default'],
-    PL:     ['https://www.beliani.pl/sofy/wszystkie+produkty/?Cechy=Ze_skrzynia&sort=default'],
-    NL:     ['https://www.beliani.nl/woonkamer/banken/alle+producten/?Eigenschappen=Opbergruimte&sort=default'],
-    PT:     ['https://www.beliani.pt/sofas/todos+os+produtos/looks/?Caracteristicas=Arrumacao&sort=default'],
-    IT:     ['0/lnieo06qkj'],
-    SE:     ['https://www.beliani.se/vardagsrumsmobler/soffor/alla+produkter/looks/?Egenskaper=Forvaring&sort=default'],
-    HU:     ['https://www.beliani.hu/kanapek/minden+term%C3%A9k/?Fobb_jellemzok=Tarolasi_funkcio&sort=default'],
-    DK:     ['https://www.beliani.dk/sofaer/alle+produkter/looks/?Funktioner=Opbevaring&sort=default '],
-    CZ:     ['https://www.beliani.cz/pohovky/vsechny+produkty/?Vlastnosti=Ulozny_prostor&sort=default'],
-    FI:     ['https://www.beliani.fi/sohvat/kaikki+tuotteet/?Ominaisuudet=Sailytystila'],
-    NO:     ['https://www.beliani.no/sofaer/alle+produkter/?Egenskaper=Med_oppbevaring&sort=defaul'],
-    SK:     ['https://www.beliani.sk/pohovky/zobrazit+vsetky+produkty/?Vlastnosti=Ulozny_priestor&sort=default'],
-    BENL:   ['https://www.beliani.be/woonkamer/banken/alle+producten/?Eigenschappen=Opbergruimte&sort=default'],
-    BEFR:   ['https://www.beliani.be/canapes/tous+les+produits/?Caracteristiques=Rangement'],
-    RO:     ['https://www.beliani.ro/camera-de-zi/canapele/toate+produsele/?Caracteristici=Cu_depozitare&sort=default'],
-
-  };
-
-
-
-
-  const cat2 = {
-    CHDE:  ['https://www.beliani.ch/schlafzimmer-moebel/betten/alle+produkte/?Merkmale=Stauraum&sort=default'],
-    CHFR:   ['https://www.beliani.ch/lits/tous+les+produits/?Caracteristiques=Rangement'],
-    FR:     ['https://www.beliani.fr/lits/tous+les+produits/?Caracteristiques=Rangement'],
-    UK:     ['https://www.beliani.co.uk/bedroom-furniture/beds/all+products/?Features=With_Storage'],
-    DE:     ['https://www.beliani.de/schlafzimmer-moebel/betten/alle+produkte/?Merkmale=Stauraum&sort=default'],
-    AT:     ['https://www.beliani.at/schlafzimmer-moebel/betten/alle+produkte/?Merkmale=Stauraum&sort=default'],
-    ES:     ['https://www.beliani.es/camas/todos+los+productos/?Caracteristicas=Almacenamiento&sort=default'],
-    PL:     ['https://www.beliani.pl/meble-do-sypialni/lozka/wszystkie+produkty/?Cechy=Z_pojemnikiem&sort=default'],
-    NL:     ['https://www.beliani.nl/slaapkamer/bedden/alle+producten/?Eigenschappen=Opbergruimte&sort=default'],
-    PT:     ['https://www.beliani.pt/camas/todos+os+produtos/?Caracteristicas=Arrumacao&sort=default'],
-    IT:     ['0/lnieo06qkj'],
-    SE:     ['https://www.beliani.se/sangar/sangar-med-forvaring/looks/'],
-    HU:     ['https://www.beliani.hu/agyak/minden+term%C3%A9k/?Fobb_jellemzok=Tarolasi_funkcio&sort=default'],
-    DK:     ['https://www.beliani.dk/senge/alle+produkter/?Funktioner=Opbevaring&sort=default '],
-    CZ:     ['https://www.beliani.cz/nabytek-do-loznice/postele/vsechny+produkty/?Vlastnosti=Ulozny_prostor&sort=default'],
-    FI:     ['https://www.beliani.fi/sangyt/kaikki+tuotteet/?Ominaisuudet=Sailytystila'],
-    NO:     ['https://www.beliani.no/senger/alle+produkter/?Egenskaper=Med_oppbevaring&sort=default'],
-    SK:     ['https://www.beliani.sk/postele/zobrazit+vsetky+produkty/?Vlastnosti=Ulozny_priestor&sort=default'],
-    BENL:   ['https://www.beliani.be/slaapkamer/bedden/alle+producten/?Eigenschappen=Opbergruimte&sort=default'],
-    BEFR:   ['https://www.beliani.be/lits/tous+les+produits/?Caracteristiques=Rangement'],
-    RO:     ['https://www.beliani.ro/dormitor/paturi/toate+produsele/?Caracteristici=Cu_depozitare&sort=default'],
-  };
-
-
-  const cat4 = {
-    CHDE:  ['https://www.beliani.ch/bueromoebel/buerotische/alle+produkte/?Merkmale=Schubladen,Mit_Fachern&sort=default'],
-    CHFR:   ['https://www.beliani.ch/bureaux/tous+les+produits/looks/?Caracteristiques=Tiroirs,Avec_etageres'],
-    FR:     ['https://www.beliani.fr/bureaux/tous+les+produits/looks/?Caracteristiques=Tiroirs,Avec_etageres'],
-    UK:     ['https://www.beliani.co.uk/office-furniture/desks-eng/all+products/?Features=With_Drawers,With_Shelves&sort=default'],
-    DE:     ['https://www.beliani.de/bueromoebel/buerotische/alle+produkte/?Merkmale=Schubladen,Mit_Fachern&sort=default'],
-    AT:     ['https://www.beliani.at/bueromoebel/buerotische/alle+produkte/?Merkmale=Schubladen,Mit_Fachern&sort=default'],
-    ES:     ['https://www.beliani.es/escritorios/todos+los+productos/?Caracteristicas=Con_cajones,Con_estantes&sort=default'],
-    PL:     ['https://www.beliani.pl/meble-biurowe/biurka/wszystkie+produkty/?Cechy=Z_szufladami,Z_polkami&sort=default'],
-    NL:     ['https://www.beliani.nl/werkkamer/bureaus/alle+producten/looks/?Eigenschappen=Met_lades,Met_planken&sort=default'],
-    PT:     ['https://www.beliani.pt/secretarias-pt/todos+os+produtos/looks/?Caracteristicas=Gavetas,Com_prateleiras&sort=default'],
-    IT:     ['0/lnieo06qkj'],
-    SE:     ['https://www.beliani.se/kontorsmobler/kontorsbord/alla+produkter/looks/?Egenskaper=Lador,Med_hyllor&sort=default'],
-    HU:     ['https://www.beliani.hu/iroasztalok-hu/iroasztalok/?Fobb_jellemzok=Fiokos_asztal,Asztal_polcokkal&sort=default'],
-    DK:     ['https://www.beliani.dk/alle-skriveborde/alle+produkter/?Funktioner=Med_skuffer,Med_hylder&sort=default '],
-    CZ:     ['https://www.beliani.cz/nabytek-do-kancelare/kancelarske-stoly/vsechny+produkty/looks/?Vlastnosti=Zasuvky,S_policemi&sort=default'],
-    FI:     ['https://www.beliani.fi/toimistokalusteet/tyopoydat/kaikki+tuotteet/?Ominaisuudet=Laatikot,Hyllyt'],
-    NO:     ['https://www.beliani.no/skrivebord/alle+produkter/?Egenskaper=Med_skuffer,Med_hyller&sort=default'],
-    SK:     ['https://www.beliani.sk/nabytok-do-kancelarie/pisacie-stoly-sk/zobrazit+vsetky+produkty/?Vlastnosti=So_zasuvkami,S_policami&sort=default'],
-    BENL:   ['https://www.beliani.be/werkkamer/bureaus/alle+producten/looks/?Eigenschappen=Met_lades,Met_planken&sort=default'],
-    BEFR:   ['https://www.beliani.be/bureaux/tous+les+produits/looks/?Caracteristiques=Tiroirs,Avec_etageres'],
-    RO:     ['https://www.beliani.ro/birou/birouri/toate+produsele/?Caracteristici=Cu_sertare,Cu_rafturi&sort=default'],
-  };
-
-
-
-
-
-  const a = categories[3].products.map((item) =>
-    getProductById(item.id, item.src)
-    )
-    console.log(getPhrase('See more'))
-    console.log(queries.category_paragraph[1])
   return `
   ${Header(
     {
@@ -189,13 +68,7 @@ export async function friday_standard_4_categories({
         },
       },
       assembly: {
-        src: ["AT", "PL", "FR", "UK"].includes(country)
-          ? ["#fd9000"].includes(background)
-            ? getHeader("Header delivery_cosy src")
-            : getHeader("Header delivery src")
-          : ["#FFCCB7"].includes(background)
-          ? getHeader("Header asembly src")
-          : getHeader("Header asembly_cosy src"),
+        src: ["AT", "PL", "FR", "UK"].includes(country) ? (["#fd9000"].includes(background) ? getHeader("Header delivery_cosy src") : getHeader("Header delivery src")) : ["#FFCCB7"].includes(background) ? getHeader("Header asembly src") : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
         exclude: true,
       },
@@ -203,12 +76,13 @@ export async function friday_standard_4_categories({
     { type }
   )}
 
-   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #FFAC99; color: #000;" id='newsletter'>
+   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #FFCCB7; color: #000;" id='newsletter'>
 
  <tbody>
 
-   ${type === "newsletter" ? 
-    `<tr>
+   ${
+     type === "newsletter"
+       ? `<tr>
           <td align="center">
             ${ImageWithLink({
               href: links[0],
@@ -217,27 +91,26 @@ export async function friday_standard_4_categories({
       
           </td>
       </tr>`
-    : 
-      `<tr>
+       : `<tr>
           <td align="center">
-            ${!queries.tit ?
-            `
+            ${
+              !queries.tit
+                ? `
               ${ImageWithLink({
                 href: links[0],
                 src: links[1],
-              })}` 
-            :
-            `${TopImageTitle({
-                href: links[0],
-                title1: queries.tit[0],
-                title2: queries.tit[1],
-                color: "#000000",
-                type: "up_to",
               })}`
+                : `${TopImageTitle({
+                    href: links[0],
+                    title1: queries.tit[0],
+                    title2: queries.tit[1],
+                    color: "#ffffff",
+                    type: "standard",
+                  })}`
             }
           </td>
       </tr>`
-  }
+   }
   <tr>
       <td align="center">
         ${ImageWithLink({
@@ -251,23 +124,35 @@ export async function friday_standard_4_categories({
 
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #000; " id='newsletter'>
            
-              <tr>
-                <td style="background-color: #FFAC99;" class="newsletterBottom35px"></td>
+             
+             
+               <tr>
+                <td align="center" style="background-color: #FFCCB7;" class="newsletterContainer">
+                  ${Intro({
+                    paragraph: queries.intro[0],
+                    color: "#000",
+                    align: "left",
+                    title: "no_title",
+                  })}
+                  </td>
+              </tr>
+               <tr>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
+              </tr>
+             
+               <tr>
+                <td style="background-color: #FD9000" class="newsletterBottom10px"></td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom20px"></td>
-              </tr>
-              <tr>
-                <td style="background-color: #FFCCB7">
+                <td style="background-color: #FD9000">
                 ${Timer({
-                  
                   title: queries.timer[0],
                   subtitle: queries.timer[1],
-                  
+
                   href: links[4],
                   imageSrc: gif_src[country],
                   style: {
-                    bgColor: "#FFCCB7",
+                    bgColor: "#FD9000",
                     textColor: "#000",
                     align: "center",
                   },
@@ -276,45 +161,33 @@ export async function friday_standard_4_categories({
                 </td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7;" class="newsletterBottom20px"></td>
+                <td style="background-color: #FD9000;" class="newsletterBottom20px"></td>
               </tr>
               <tr>
-                <td style="background-color: #FFCCB7">
+                <td style="background-color: #FD9000">
                       ${ImageWithLink({
                         href: links[4],
-                        src: 'https://upload.pictureserver.net/static/2025/uk250313.png',
+                        src: "https://upload.pictureserver.net/static/2025/250410_freebis.png",
                       })}
                 </td>
               </tr>
-              <tr>
-                <td align="center" style="background-color: #FFAC99";" class="newsletterContainer">
-                  ${Intro({
-                    paragraph: queries.intro[0], 
-                    color: "#000", 
-                    align:'left',
-                    title:'no_title'
-                  })}
-                  </td>
-              </tr>
+             
               
               <tr>
-                <td style="background-color: ${categories[0].background};" class="newsletterBottom80px"></td>
+                <td style="background-color: ${categories[0].background};" class="newsletterBottom60px"></td>
               </tr>
-              <tr>
+                      <tr>
                     <td style="background-color:  ${categories[0].background};">
                         ${Category({
-                          href: getCategoryLink(categories[0].href), 
+                          href:  getCategoryLink(categories[0].href),
                           name: queries.category_paragraph[0],
+                          name_p: queries.category_paragraph[1],
                           background_color: categories[0].background,
                           src: categories[0].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
                           color: categories[0].color,
-                          products: categories[0].products.map((item) =>
-                            getProductById(item.id, item.src)
-                          ),
-                        
-
+                          products: categories[0].products.map((item) => getProductById(item.id, item.src)),
                         })}
                     </td>
               </tr>
@@ -324,18 +197,15 @@ export async function friday_standard_4_categories({
               <tr>
                     <td style="background-color: ${categories[1].background};">
                         ${Category({
-                          href: getCategoryLink(categories[1].href), 
-                          name: queries.category_paragraph[1],
+                          href:  getCategoryLink(categories[1].href),
+                          name: queries.category_paragraph[2],
+                          name_p: queries.category_paragraph[3],
                           background_color: categories[1].background,
                           src: categories[1].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
                           color: categories[1].color,
-                          products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src)
-                          ),
-                        
-
+                          products: categories[1].products.map((item) => getProductById(item.id, item.src)),
                         })}
                     </td>
               </tr>
@@ -345,43 +215,39 @@ export async function friday_standard_4_categories({
               <tr>
                     <td style="background-color:  ${categories[2].background};">
                         ${Category({
-                          href: getCategoryLink(categories[2].href),
-                          name: queries.category_paragraph[2],
+                          href:  getCategoryLink(categories[2].href),
+                          name: queries.category_paragraph[4],
+                          name_p: queries.category_paragraph[5],
                           background_color: categories[2].background,
                           src: categories[2].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
                           color: categories[2].color,
-                          products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src)
-                          ),
+                          products: categories[2].products.map((item) => getProductById(item.id, item.src)),
                         })}
                     </td>
-              </tr>
-              <tr>
+              </tr> 
+               <tr>
                 <td style="background-color: ${categories[3].background};" class="newsletterBottom35px"></td>
               </tr>
               <tr>
-                    <td style="background-color:#FED399">
+                    <td style="background-color:  ${categories[3].background};">
                         ${Category({
-                          href: getCategoryLink(categories[3].href), 
-                          name: queries.category_paragraph[3],
+                          href:  getCategoryLink(categories[3].href),
+                          name: queries.category_paragraph[6],
+                          name_p: queries.category_paragraph[7],
                           background_color: categories[3].background,
                           src: categories[3].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
                           color: categories[3].color,
-                          products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src)
-                            
-                          ),
-                        
-
+                          products: categories[3].products.map((item) => getProductById(item.id, item.src)),
                         })}
                     </td>
-              </tr>
+              </tr>          
+             
               <tr>
-                  <td class="newsletterContainer">
+                  <td class="newsletterContainer" style="background-color: #FD9000">
                   ${Line()}
                   </td>
               </tr>
@@ -400,26 +266,20 @@ export async function friday_standard_4_categories({
                         </tr>
                           <tr>
                               <td align="left" class="newsletterBottom35px">
-                                  <span class="newsletterFooterTitle">${getPhrase(
-                                    "Shop limited-time deals"
-                                  )}</span>
+                                  <span class="newsletterFooterTitle">${getPhrase("Shop limited-time deals")}</span>
                               </td>
                           </tr>
                           <tr>
                               <td align="left" class="newsletterBottom20px">
                                   <a href=${links[5]}>
-                                      <img loading="lazy" src=${ 
-                                        links[6]
-                                      } style="display: block;" width="100%">
+                                      <img loading="lazy" src=${links[6]} style="display: block;" width="100%">
                                   </a>
                               </td>
                           </tr>
                           <tr>
                               <td align="left" class="newsletterBottom35px">
                                   <a href=${links[7]}>
-                                      <img loading="lazy" src=${
-                                        links[8]
-                                      } style="display: block;" width="100%">
+                                      <img loading="lazy" src=${links[8]} style="display: block;" width="100%">
                                   </a>
                               </td>
                           </tr>
@@ -434,9 +294,7 @@ export async function friday_standard_4_categories({
         {
           id,
           assembly: {
-            src: ["AT", "PL", "FR", "UK"].includes(country)
-              ? getFooter("Delivery src")
-              : getFooter("Asembly src"),
+            src: ["AT", "PL", "FR", "UK"].includes(country) ? getFooter("Delivery src") : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["CHIT"].includes(country),
           },
@@ -483,8 +341,8 @@ export async function friday_standard_4_categories({
           klarna: {
             src: getFooter("Klarna src"),
             href: getFooter("Klarna href"),
-            exclude: ["SK", "HU", "BEFR", "BENL"].includes(country),
-          },
+            exclude: ["HU"].includes(country),
+            },
           socials: {
             title: getFooter("Socials Title"),
             instagram: {

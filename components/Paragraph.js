@@ -1,10 +1,10 @@
-export const Paragraph = ({paragraph, mark, align = "left", style, type= "standard"}) => {
+export const Paragraph = ({paragraph, color,mark, align = "left", style, type= "standard"}) => {
     if (type === "standard") {
         return `
             <table cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tbody>
                     <tr>
-                        <td class="newsletterContainer" align="${align}" style="${style ?? ""}">
+                        <td class="newsletterContainer" align="${align}" style="color: ${color}">
                             <span class="newsletterParagraph">
                                 ${paragraph}
                             </span>
@@ -20,7 +20,7 @@ export const Paragraph = ({paragraph, mark, align = "left", style, type= "standa
             <table cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tbody>
                     <tr>
-                        <td class="newsletterContainer" align="${align}" style="${style ?? ""}">
+                        <td class="newsletterContainer" align="${align}" style="color: ${color}">
                             <p class="newsletterMarkTitle" >
                                &#10003; ${paragraph[0]}
                             </p>

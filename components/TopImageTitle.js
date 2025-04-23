@@ -3,85 +3,40 @@ import { Space } from "../components/Space.js";
 
 export const TopImageTitle = isAllowToRender(
   optimize(({ href, title1, title2, color, type }) => {
-    if (!type) {
-      return "Please specify type of TiT.";
-    }
+    if (!type) return "Please specify type of TiT.";
 
-    const titleClassH1 = title1.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
-    const titleClassH2 = title2.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2';
-    // const titleClassH1 = title1.includes('1') ? 'newsletterTitleH1' : 'newsletterTitleH2';
-    // const titleClassH2 = title2.includes('1') ? 'newsletterTitleH1' : 'newsletterTitleH2';
+    const templates = {
+      up_to: `
+        <h4 style="color:${color};" class="${title1.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2'}">${title1}</h4>
+        <h5 style="color:${color};" class="${title2?.includes('%') ? 'newsletterTitleH1' : 'newsletterTitleH2'}">${title2 ?? ''}</h5>
+      `,
+      standard: `
+        <h5 style="color:${color};" class="newsletterTitleH1">${title1}</h5>
+        <h4 style="color:${color};" class="newsletterTitleH2">${title2}</h4>
+      `,
+      twoSameLines: `
+        <h4 style="color:${color};" class="newsletterTitleH1">${title1}</h4>
+        <h4 style="color:${color};" class="newsletterTitleH1">${title2}</h4>
+      `,
+      singleLine: `
+        <h4 style="color:${color};" class="newsletterTitleH1">${title1}</h4>
+      `,
+    };
 
-    if (type === "up_to") {
-        return `
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
-              <tbody>
-                  <tr>
-                      <td>
-                          <a class="newsletterHrefTit" style="color:${color};" href="${href}">
-                              ${Space()}
-                              <h4 class="${titleClassH1}">${title1}</h4>
-                              <h5 class="${titleClassH2}">${title2}</h5>
-                              ${Space()}
-                          </a>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-        `
-    }
-    if (type === "standard") {
-        return `
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
-              <tbody>
-                  <tr>
-                      <td>
-                          <a class="newsletterHrefTit" style="color:${color};" href="${href}">
-                              ${Space()}
-                              <h5 class="newsletterTitleH1">${title1}</h5>
-                              <h4 class="newsletterTitleH2">${title2}</h4>
-                              ${Space()}
-                          </a>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-        `;
-    }
-    if (type === "singleLine") {
-        return `
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
-              <tbody>
-                  <tr>
-                      <td>
-                          <a class="newsletterHrefTit" style="color:${color};" href="${href}">
-                              ${Space()}
-                              <h4 class="newsletterTitleH1">${title1}</h4>
-                              ${Space()}
-                          </a>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-        `;
-    }
-    if (type === "two_line_h1") {
-        return `
-        <table border="0" cellspacing="0" cellpadding="0" width="100%">
-            <tbody>
-                <tr>
-                    <td>
-                        <a class="newsletterHrefTit" style="color:${color};" href="${href}">
-                            ${Space()}
-                            <h5 class="newsletterTitleH1">${title1}</h5>
-                            <h4 class="newsletterTitleH1">${title2}</h4>
-                            ${Space()}
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-      `;
-    }
+    return `
+      <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+          <tr>
+            <td>
+              <a class="newsletterHrefTit" href="${href}">
+                ${Space()}
+                ${templates[type] || "Invalid type"}
+                ${Space()}
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    `;
   })
 );
