@@ -129,9 +129,6 @@ export const Category = isAllowToRender(
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
       <tbody>
         <tr>
-          <td class="newsletterBottom35px"></td>
-        </tr>
-        <tr>
           <td align="${align}">
             ${Title({ title: name, align, color: color })}
           </td>
@@ -174,9 +171,6 @@ export const Category = isAllowToRender(
       return `
     <table border="0" cellspacing="0" cellpadding="0" width="100%">
       <tbody>
-        <tr>
-          <td class="newsletterBottom35px"></td>
-        </tr>
         <tr>
           <td>
             ${Title({ title: name, align: "left", color: color })}

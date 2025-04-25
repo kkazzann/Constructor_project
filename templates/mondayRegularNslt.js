@@ -65,7 +65,7 @@ function generateCategoriesSection(categories, queries, background, add_utm, get
         <td style="background-color: ${category?.background || background};">
           ${index === 0 && categoryType === "monday" 
             ? Space({ className: "newsletterBottom60px" })
-            : ''
+            : Space()
           }
         </td>
       </tr>
