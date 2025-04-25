@@ -9,6 +9,8 @@ export class Campaign {
   isArchive;
   products;
   figmaUrl;
+  single_image;
+  soon_banners;
   constructor({
     date,
     data,
@@ -21,6 +23,8 @@ export class Campaign {
     startId,
     templates,
     figmaUrl,
+    single_image,
+    soon_banners,
   }) {
     if (!Array.isArray(templates)) {
       throw new Error("templates property should be array");
@@ -58,5 +62,7 @@ export class Campaign {
     this.isArchive = isArchive || false;
     this.products = products || null;
     this.figmaUrl = figmaUrl || null;
+    this.single_image = single_image || false;
+    this.soon_banners = soon_banners || false;
   }
 }

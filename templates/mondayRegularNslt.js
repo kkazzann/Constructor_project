@@ -23,7 +23,7 @@ import { getCodes } from "../utils/getCodes.js";
 
 /**
  * Funkcja generująca sekcje kategorii dla newslettera/landing page
- * Zoptymalizowana logika przypisywania href z queries.filters
+ * Kolejność parametrów zgodna z wymaganiami
  */
 function generateCategoriesSection(categories, queries, background, add_utm, getCategoryTitle, getProductById, getPhrase, getCategoryLink) {
   let categoriesHTML = '';
@@ -39,28 +39,66 @@ function generateCategoriesSection(categories, queries, background, add_utm, get
   
   // Iteruj przez kategorie i generuj odpowiednie sekcje
   categories.forEach((category, index) => {
-    // Dodaj spacer dla każdej kategorii
+    // Określ typ kategorii na początku, bo będzie potrzebny też dla paddingu
+    let categoryType = category.type || "monday"; // Domyślny typ
+    
+    // Sprawdź czy kategoria jest typem "no_products" (ma nazwę, ale nie ma produktów lub ma flagę isCategoriesDB)
+    if ((category.name && (!category.products || category.products.length === 0)) || category.isCategoriesDB) {
+      categoryType = "no_products";
+    }
+    
+    // Sprawdź czy kategoria jest typem "image" (nie ma nazwy lub nazwa jest pusta)
+    if (!category.name || category.name === "") {
+      categoryType = "image";
+    }
+    
+    // Użyj określonego typu jeśli jest już ustawiony
+    if (category.type) {
+      categoryType = category.type;
+    }
+    
+    // Dodaj spacer dla każdej kategorii z odpowiednią klasą
+    // Dla pierwszego elementu typu "monday" (z produktami) użyj newsletterBottom60px
+    // Dla pozostałych pierwszy element bez klasy
     categoriesHTML += `
       <tr>
         <td style="background-color: ${category?.background || background};">
-          ${index === 0 
-            ? `${Space({ className: "newsletterBottom80px" })}`
-            : `${Space()}`
+          ${index === 0 && categoryType === "monday" 
+            ? Space({ className: "newsletterBottom60px" })
+            : ''
           }
         </td>
       </tr>
     `;
     
-    // Określ właściwy href na podstawie zmodyfikowanej walidacji
+    // Określ właściwy href na podstawie walidacji
     let categoryHref;
     
     // Sprawdź czy kategoria ma własny href
     if (category.href && category.href !== "") {
       // Jeśli kategoria ma już określony href, użyj go
-      categoryHref = getCategoryLink(category.href);
+      try {
+        if (typeof getCategoryLink === 'function') {
+          categoryHref = getCategoryLink(category.href);
+        } else {
+          categoryHref = category.href;
+        }
+      } catch (e) {
+        // Jeśli getCategoryLink nie działa, użyj oryginalnego href
+        categoryHref = category.href;
+      }
     } else if (categories.href) {
       // Użyj ogólnego href dla wszystkich kategorii jeśli jest dostępny
-      categoryHref = getCategoryLink(categories.href);
+      try {
+        if (typeof getCategoryLink === 'function') {
+          categoryHref = getCategoryLink(categories.href);
+        } else {
+          categoryHref = categories.href;
+        }
+      } catch (e) {
+        // Jeśli getCategoryLink nie działa, użyj oryginalnego href
+        categoryHref = categories.href;
+      }
     } else if (usedFiltersCount < filtersLength) {
       // Jeśli href jest pusty i mamy dostępne filtry, użyj kolejnego filtra
       categoryHref = add_utm(queries.filters[usedFiltersCount]);
@@ -70,22 +108,38 @@ function generateCategoriesSection(categories, queries, background, add_utm, get
       categoryHref = "";
     }
     
+    // Przygotuj bezpieczne wywołanie getPhrase
+    const safeGetPhrase = (text) => {
+      try {
+        if (typeof getPhrase === 'function') {
+          return getPhrase(text);
+        }
+        return text;
+      } catch (e) {
+        return text;
+      }
+    };
+    
     // Dodaj sekcję kategorii
     categoriesHTML += `
       <tr>
-        <td style="background-color: ${category?.background || background}; color: ${category?.color || "#000000"}">
+        <td ${!category.products ? 'class="newsletterContainer"' : ""} style="background-color: ${category?.background || background}; color: ${category?.color || "#000000"}">
           ${Category({
-            href: categoryHref, // Już przetworzone przez getCategoryLink wyżej w odpowiednich przypadkach
-            name: queries?.categories 
+            href: categoryHref,
+            name: queries?.categories && queries.categories[index]
               ? queries.categories[index]
-              : getCategoryTitle(category.name),
-            src: category.src,
-            cta: getPhrase("Shop now"),
+              : getCategoryTitle(category.name || ""),
+            src: typeof category.src === 'object' && category.src.value ? category.src.value : category.src,
+            cta: safeGetPhrase("Shop now"),
             color: category?.color,
-            type: category.type,
-            products: category.products.map((item) =>
+            type: categoryType,
+            products: category.products ? category.products.map((item) =>
               getProductById(item.id, item.src, item.name)
-            ),
+            ) : [],
+            // Dodaj dodatkowe parametry dla różnych typów
+            idx: index, 
+            len: categories.length - 1, // Ostatni element
+            align: "left", // Ustawione na "left" zamiast "center"
           })}
         </td>
       </tr>
@@ -118,8 +172,12 @@ export async function mondayRegularNslt({
   inside,
   date,
   add_utm,
+  single_image,
+  soon_banners,
+  startId,
 }) {
   const codes = getCodes(queries);
+
   const categoriesSectionHTML = generateCategoriesSection(
     categories, 
     queries, 
@@ -131,6 +189,8 @@ export async function mondayRegularNslt({
     getCategoryLink
   );
   console.log();
+  console.log('single_image:', single_image, typeof single_image);
+
   return `
   ${Header(
     {
@@ -180,48 +240,47 @@ export async function mondayRegularNslt({
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
         <tbody>
-              ${type === "newsletter" ? 
-                `<tr>
-                      <td align="center">
-                        ${ImageWithLink({
-                          href: links[0],
-                          src: links[1],
-                        })}
-                      </td>
-                  </tr>`
-                : 
-                  `<tr>
-                      <td align="center">
-                        ${!queries.tit ?
-                        `
-                          ${ImageWithLink({
-                            href: links[0],
-                            src: links[1],
-                          })}` 
-                        :
-                        `${TopImageTitle({
-                            href: links[0],
-                            title1: queries.tit[0],
-                            title2: queries.tit[1],
-                            color: tit?.color || "#000",
-                            type: tit?.type || "up_to",
-                          })}`
-                        }
-                      </td>
-                  </tr>`
-              }
+
               <tr>
-                  <td align="center">
-                    ${ImageWithLink({
-                      href: links[2],
-                      src: links[3],
-                    })}
-                  </td>
+                <td align="center">
+                  ${(type === "newsletter" || !queries.tit) 
+                    ? ImageWithLink({
+                        href: links[0],
+                        src: links[1],
+                      })
+                    : 
+                    (!single_image ?
+
+                      TopImageTitle({
+                        href: links[0],
+                        title1: queries.tit[0],
+                        title2: queries.tit[1],
+                        color: tit?.color || "#000",
+                        type: tit?.type || "up_to",
+                      })
+                    :
+                    ``)
+                  }
+                </td>
               </tr>
+              <!-- Sprawdź czy masz dodany parametr single_image w Campaign jeśli się nie wyświetla -->
+              ${!single_image ? 
+                `<tr>
+                    <td align="center">
+                      ${ImageWithLink({
+                        href: links[2],
+                        src: links[3],
+                      })}
+                    </td>
+                </tr>`
+              : 
+                ``
+              }
+
               ${!inside ?
               `
                 <tr>
-                  <td style="background-color: ${offerPart.background || background}; color: ${offerPart.color || "#000"};">
+                  <td style="background-color: ${background};">
                     ${Space()}
                   </td>
                 </tr>
@@ -238,7 +297,8 @@ export async function mondayRegularNslt({
                   </td>
               </tr>`
               }
-              <tr>
+              ${freebies ?
+              `<tr>
                   <td class="newsletterContainer" style="background-color: ${ freebies.options.background || background }; color: ${ offerPart.color || "#000" };">
                       
                       ${
@@ -297,7 +357,7 @@ export async function mondayRegularNslt({
                       ${Space()}
                   </td> 
               </tr>
-
+              
               <tr>
                 <td style="background-color: ${ freebies.options.background || background }; color: ${ freebies.options?.color || "#000" };">
                 ${FreebiesGenerator({
@@ -316,69 +376,75 @@ export async function mondayRegularNslt({
                   <td style="background-color: ${ intro.background || background };">
                     ${Space()}
                   </td>
-              </tr>
-
-              <tr>
-                  <td class="newsletterContainer" style="background-color: ${  intro.background || background };">
-                      ${Intro({
-                        data: queries.intro,
-                        color: intro?.color,
-                        title: {
-                          className: "newsletterIntroTitle",
-                        },
-                      })}
-                  </td>
-              </tr>
+              </tr>`
+              :
+              ''
+              }
+              ${intro ? 
+                `<tr>
+                    <td class="newsletterContainer" style="background-color: ${intro.background || background};">
+                        ${Intro({
+                          data: queries.intro,
+                          color: intro?.color,
+                          type: categories.some(cat => cat.products && cat.products.length > 0) ? undefined : "paragraph",
+                          align: categories.some(cat => cat.products && cat.products.length > 0) ? undefined : "center",
+                          title: {
+                            className: "newsletterIntroTitle",
+                          },
+                        })}
+                    </td>
+                </tr>` 
+                : ''
+              }
 
               <!-- Wstawienie wygenerowanych dynamicznie sekcji kategorii -->
               ${categoriesSectionHTML}
           <tbody>
       </table>
-
-  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
+      ${ (type === "landing" && !soon_banners) || type === "newsletter"
+        ?
+        `<table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
           <tbody>
-              <tr>
-                  <td align="left">
-                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tbody>
-                          <tr>
-                            <td>
-                              ${Line()}
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="newsletterBottom35px" >
-                            </td>
-                          </tr>
-                              <tr>
-                                  <td align="left" class="newsletterBottom35px">
-                                      <span class="newsletterFooterTitle">${getPhrase(
-                                        "Shop limited-time deals"
-                                      )}</span>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="left" class="newsletterBottom20px">
-                                    ${ImageWithLink({
-                                      href: links[4],
-                                      src: links[5],
-                                    })}
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td align="left" class="newsletterBottom35px">
-                                    ${ImageWithLink({
-                                      href: links[6],
-                                      src: links[7],
-                                    })}
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </td>
-              </tr>
+            <tr>
+              <td align="left">
+                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td>${Line()}</td>
+                    </tr>
+                    <tr>
+                      <td class="newsletterBottom35px"></td>
+                    </tr>
+                    <tr>
+                      <td align="left" class="newsletterBottom35px">
+                        <span class="newsletterFooterTitle">${getPhrase("Shop limited-time deals")}</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" class="newsletterBottom20px">
+                        ${ImageWithLink({
+                          href: links[links.length - 4], // Przedostatnia para linków (href)
+                          src: links[links.length - 3],  // Przedostatnia para linków (src)
+                        })}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" class="newsletterBottom35px">
+                        ${ImageWithLink({
+                          href: links[links.length - 2], // Ostatnia para linków (href)
+                          src: links[links.length - 1],  // Ostatnia para linków (src)
+                        })}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
           </tbody>
-      </table>
+        </table>`
+        :
+        ''
+      }
       ${Footer(
         {
           id,

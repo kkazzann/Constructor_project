@@ -126,8 +126,11 @@ export const Category = isAllowToRender(
     if (type === "no_products") {
       if (idx === len) {
         return `
-<table class="newsletterContainer" border="0" cellspacing="0" cellpadding="0" width="100%">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
       <tbody>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
         <tr>
           <td align="${align}">
             ${Title({ title: name, align, color: color })}

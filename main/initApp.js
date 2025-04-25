@@ -494,6 +494,8 @@ export function initApp({ campaigns, shops, config }) {
       setState("selectedTemplates", templates);
       setState("selectedCampaign", selectedCampaign);
       setState("optimizeImg", selectedCampaign.optimizeImg || false);
+      setState("single_image", selectedCampaign.single_image || false);
+      setState("soon_banners", selectedCampaign.soon_banners || false);
     });
 
     selectTemplates.addEventListener("change", (ev) => {

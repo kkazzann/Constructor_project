@@ -1055,6 +1055,8 @@ export default {
           #newsletter .newsletterHrefTit {
             text-decoration:none;
             text-align:center;
+            padding:0 25px;
+            display:block;
           }
 
           #newsletter .newsletterTitleH1 {
@@ -1190,6 +1192,10 @@ export default {
             #newsletter .newsletterFooterCategoryLEFT {
               padding-bottom: 10px !important;
               padding-right: 5px !important;
+            }
+
+            #newsletter .newsletterHrefTit {
+              padding:0 15px;
             }
           
             #newsletter .newsletterFooterCategoryRIGHT {
