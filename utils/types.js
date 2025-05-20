@@ -998,6 +998,8 @@ export default {
        font-weight: 400;
        margin:0;
      }
+
+
        
      #newsletter .newsletterTitleH2 {
        font-size: 30px;
@@ -1225,6 +1227,13 @@ export default {
     #newsletter .newsletterFooterCategoryLEFTBottom {
       padding-right: 5px !important;
     }
+
+      #newsletter .newsletterTitleH1 {
+       font-size: 30px;
+       line-height: 35px;
+       font-weight: 400;
+       margin:0;
+     }
   
     #newsletter .newsletterFooterCategoryRIGHTBottom {
       padding-left: 5px !important;

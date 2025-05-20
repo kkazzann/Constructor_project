@@ -122,14 +122,7 @@ export const Category = isAllowToRender(
       return `
   <table border="0" cellspacing="0" cellpadding="0" width="100%">
     <thead>
-      <tr>
-        <td style="padding-top: 0px; padding-bottom: 0px;" class="newsletterContainer">
-          ${Title({ title: name, align: "left", color: color })}
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterBottom35px"></td>
-      </tr>
+
 
       <tr>
         <td>
@@ -141,9 +134,20 @@ export const Category = isAllowToRender(
         <td class="newsletterBottom35px"></td>
       </tr>
 
+            <tr>
+        <td style="padding-top: 0px; padding-bottom: 0px;" class="newsletterContainer">
+          ${Title({ title: name, align: "center", color: color })}
+        </td>
+      </tr>
+
+      
+      <tr>
+        <td class="newsletterBottom35px"></td>
+      </tr>
+
       <tr>
           <td>
-            ${Paragraph({ paragraph: name1, align: "left", color: color })}
+            ${Paragraph({ paragraph: name1, align: "center", color: color })}
           </td>
         </tr>
 
