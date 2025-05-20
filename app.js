@@ -662,6 +662,1298 @@ try {
         ],
         }),
       new entities.Campaign({
+        date: "2025.05.26",
+        issueCardId: "364246",
+        name: "Free sun lounger",
+        startId: "33383",
+        figmaUrl: "https://www.figma.com/design/5hkoDgfABWaQIHwMg8keaU/2025.05.26---Newsletter---Free-sun-lounger--Copy-?node-id=8001-3604&p=f&t=xUy00hkcuPWm21Kf-0",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: false,
+        optimizeImg: false,
+        single_image: false,
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            template: templates.mondayRegularNslt,
+            background: "#FD9000",
+            wrapper: types.WRAPPER,
+            css: types.CSS.NS,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FFCCB7",
+            },
+            intro: {
+              background: "#FFCCB7",
+              color: "#000000",
+            },
+            categories: [
+              {
+                name: "Lounge sets",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250526Category1.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "584253", //origin.includes("HU") ? "306283" : "231605",
+                    src: getImageUrl("20250526Category11.png", true), //origin.includes("HU") ? getImageUrl("20250505Category11.png", true) : getImageUrl("20250505huCategory11.png", true),
+                  },
+                  {
+                    id: "581094",
+                    src: getImageUrl("20250526Category12.png", true),
+                  },
+                  {
+                    id: "207163",
+                    src: getImageUrl("20250526Category13.png", true),
+                  },
+                  {
+                    id: "338035",
+                    src: getImageUrl("20250526Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Dining sets",
+                background: "#FD9000",
+                color: "#000000",
+                src: getImageUrl("20250526Category2.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "523743",
+                    src: getImageUrl("20250526Category21.png", true),
+                  },
+                  {
+                    id: "517382",
+                    src: getImageUrl("20250526Category22.png", true),
+                  },
+                  {
+                    id: "508284",
+                    src: getImageUrl("20250526Category23.png", true),
+                  },
+                  {
+                    id: "76376",
+                    src: getImageUrl("20250526Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Benches",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250526Category3.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "587255",
+                    src: getImageUrl("20250526Category31.png", true),
+                  },
+                  {
+                    id: "76238",
+                    src: getImageUrl("20250526Category32.png", true),
+                  },
+                  {
+                    id: "365818",
+                    src: getImageUrl("20250526Category33.png", true),
+                  },
+                  {
+                    id: "31213",
+                    src: getImageUrl("20250526Category34.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Balcony furniture",
+                background: "#FD9000",
+                color: "#000000",
+                src: getImageUrl("20250526Category4.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "522681",
+                    src: getImageUrl("20250526Category41.png", true),
+                  },
+                  {
+                    id: "508211",
+                    src: getImageUrl("20250526Category42.png", true),
+                  },
+                  {
+                    id: "294064",
+                    src: getImageUrl("20250526Category43.png", true),
+                  },
+                  {
+                    id: "269842",
+                    src: getImageUrl("20250526Category44.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-26",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250526_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-26",
+                },
+              },
+              {
+                value: getImageUrl("20250526_gif.gif", true),
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-16",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250516b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-15",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250515b.png", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "22:26",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "31:32",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "41",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "28",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "26",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "33:36",
+                name: "filters",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "37:40",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "45:47",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FD9000",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "386767",
+                      src: getImageUrl("20250526Freebie1.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "386749",
+                      src: getImageUrl("20250526Freebie2.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "386818",
+                      src: getImageUrl("20250526Freebie3.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "71369",
+                      src: getImageUrl("20250526Freebie4.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.mondayRegularNslt,
+            background: "#FD9000",
+            css: types.CSS.LP,
+            tit: {
+              color: "#000",
+              type: "standard",
+            },
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FFCCB7",
+            },
+            intro: {
+              background: "#FFCCB7",
+              color: "#000000",
+            },
+            categories: [
+              {
+                name: "Lounge sets",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250526Category1.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "584253", //origin.includes("HU") ? "306283" : "231605",
+                    src: getImageUrl("20250526Category11.png", true), //origin.includes("HU") ? getImageUrl("20250505Category11.png", true) : getImageUrl("20250505huCategory11.png", true),
+                  },
+                  {
+                    id: "581094",
+                    src: getImageUrl("20250526Category12.png", true),
+                  },
+                  {
+                    id: "207163",
+                    src: getImageUrl("20250526Category13.png", true),
+                  },
+                  {
+                    id: "338035",
+                    src: getImageUrl("20250526Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Dining sets",
+                background: "#FD9000",
+                color: "#000000",
+                src: getImageUrl("20250526Category2.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "523743",
+                    src: getImageUrl("20250526Category21.png", true),
+                  },
+                  {
+                    id: "517382",
+                    src: getImageUrl("20250526Category22.png", true),
+                  },
+                  {
+                    id: "508284",
+                    src: getImageUrl("20250526Category23.png", true),
+                  },
+                  {
+                    id: "76376",
+                    src: getImageUrl("20250526Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Benches",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250526Category3.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "587255",
+                    src: getImageUrl("20250526Category31.png", true),
+                  },
+                  {
+                    id: "76238",
+                    src: getImageUrl("20250526Category32.png", true),
+                  },
+                  {
+                    id: "365818",
+                    src: getImageUrl("20250526Category33.png", true),
+                  },
+                  {
+                    id: "31213",
+                    src: getImageUrl("20250526Category34.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Balcony furniture",
+                background: "#FD9000",
+                color: "#000000",
+                src: getImageUrl("20250526Category4.png", true),
+                href: "",
+                products: [
+                  {
+                    id: "522681",
+                    src: getImageUrl("20250526Category41.png", true),
+                  },
+                  {
+                    id: "508211",
+                    src: getImageUrl("20250526Category42.png", true),
+                  },
+                  {
+                    id: "294064",
+                    src: getImageUrl("20250526Category43.png", true),
+                  },
+                  {
+                    id: "269842",
+                    src: getImageUrl("20250526Category44.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-26",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250526_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-26",
+                },
+              },
+              {
+                value: getImageUrl("20250526_gif.gif", true),
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-16",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250516b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-15",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250515b.png", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "19:20",
+                name: "tit",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "22:26",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "31:32",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "41",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "28",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "26",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "33:36",
+                name: "filters",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "37:40",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 26.05.25 - Free sun lounger!",
+                tableRange: "45:47",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FD9000",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "386767",
+                      src: getImageUrl("20250526Freebie1.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "386749",
+                      src: getImageUrl("20250526Freebie2.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 2,
+                  },
+                  products: [
+                    {
+                      id: "386818",
+                      src: getImageUrl("20250526Freebie3.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "71369",
+                      src: getImageUrl("20250526Freebie4.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        ],
+      }),
+      new entities.Campaign({
+        date: "2025.05.19",
+        issueCardId: "362680",
+        name: "Free Vases",
+        startId: "33255",
+        figmaUrl: "https://www.figma.com/design/OkcK6SQVW485r046NVuBLX/2025.05.19-Free-vase--Copy-?node-id=0-1&p=f&t=QK1WEZdD2eP6nnsS-0",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: true,
+        optimizeImg: false,
+        single_image: false,
+        templates: [
+          {
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            template: templates.mondayRegularNslt,
+            background: "#FFCCB7",
+            wrapper: types.WRAPPER,
+            css: types.CSS.NS,
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FFCCB7",
+            },
+            intro: {
+              background: "#750000",
+              color: "#FFFFFF",
+            },
+            categories: [
+              {
+                name: "Sofas",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250519Category1.png", true),
+                href: "https://www.beliani.ch/living-room-furniture/sofas/",
+                products: [
+                  {
+                    id: "592842", //origin.includes("HU") ? "306283" : "231605",
+                    src: getImageUrl("20250519Category11.png", true), //origin.includes("HU") ? getImageUrl("20250505Category11.png", true) : getImageUrl("20250505huCategory11.png", true),
+                  },
+                  {
+                    id: "588942",
+                    src: getImageUrl("20250519Category12.png", true),
+                  },
+                  {
+                    id: "604506",
+                    src: getImageUrl("20250519Category13.png", true),
+                  },
+                  {
+                    id: "231623",
+                    src: getImageUrl("20250519Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Coffee tables",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250519Category2.png", true),
+                href: "https://www.beliani.ch/tables/coffee-tables/",
+                products: [
+                  {
+                    id: "597212",
+                    src: getImageUrl("20250519Category21.png", true),
+                  },
+                  {
+                    id: "584688",
+                    src: getImageUrl("20250519Category22.png", true),
+                  },
+                  {
+                    id: "571047",
+                    src: getImageUrl("20250519Category23.png", true),
+                  },
+                  {
+                    id: "563549",
+                    src: getImageUrl("20250519Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Armchairs",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250519Category3.png", true),
+                href: "https://www.beliani.ch/armchairs/",
+                products: [
+                  {
+                    id: "603218",
+                    src: getImageUrl("20250519Category31.png", true),
+                  },
+                  {
+                    id: "598655",
+                    src: getImageUrl("20250519Category32.png", true),
+                  },
+                  {
+                    id: "598104",
+                    src: getImageUrl("20250519Category33.png", true),
+                  },
+                  {
+                    id: "596472",
+                    src: getImageUrl("20250519Category34.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Lighting",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250519Category4.png", true),
+                href: "https://www.beliani.ch/lighting/",
+                products: [
+                  {
+                    id: "574544",
+                    src: getImageUrl("20250519Category41.png", true),
+                  },
+                  {
+                    id: "583053",
+                    src: getImageUrl("20250519Category42.png", true),
+                  },
+                  {
+                    id: "581706",
+                    src: getImageUrl("20250519Category43.png", true),
+                  },
+                  {
+                    id: "519665",
+                    src: getImageUrl("20250519Category44.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-19",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250519_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-19",
+                },
+              },
+              {
+                value: getImageUrl("20250519_gif.gif", true),
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-08",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250508b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-07",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250507b.png", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "19:23",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "25:26",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "39",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "33",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "23",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "27:30",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "47:49",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FFCCB7",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "290044",
+                      src: getImageUrl("20250519Freebie1.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "289992",
+                      src: getImageUrl("20250519Freebie2.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "553238",
+                      src: getImageUrl("20250519Freebie3.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "290152",
+                      src: getImageUrl("20250519Freebie4.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "526774",
+                      src: getImageUrl("20250519Freebie5.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "527212",
+                      src: getImageUrl("20250519Freebie6.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            name: "Landing",
+            type: types.LANDINGPAGE,
+            template: templates.mondayRegularNslt,
+            background: "#FFCCB7",
+            css: types.CSS.LP,
+            tit: {
+              color: "#000",
+              type: "standard",
+            },
+            offerPart: {
+              type: "code",
+              color: "#000000",
+              background: "#FFCCB7",
+            },
+            intro: {
+              background: "#750000",
+              color: "#FFFFFF",
+            },
+            categories: [
+              {
+                name: "Sofas",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250519Category1.png", true),
+                href: "https://www.beliani.ch/living-room-furniture/sofas/",
+                products: [
+                  {
+                    id: "592842", //origin.includes("HU") ? "306283" : "231605",
+                    src: getImageUrl("20250519Category11.png", true), //origin.includes("HU") ? getImageUrl("20250505Category11.png", true) : getImageUrl("20250505huCategory11.png", true),
+                  },
+                  {
+                    id: "588942",
+                    src: getImageUrl("20250519Category12.png", true),
+                  },
+                  {
+                    id: "604506",
+                    src: getImageUrl("20250519Category13.png", true),
+                  },
+                  {
+                    id: "231623",
+                    src: getImageUrl("20250519Category14.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Coffee tables",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250519Category2.png", true),
+                href: "https://www.beliani.ch/tables/coffee-tables/",
+                products: [
+                  {
+                    id: "597212",
+                    src: getImageUrl("20250519Category21.png", true),
+                  },
+                  {
+                    id: "584688",
+                    src: getImageUrl("20250519Category22.png", true),
+                  },
+                  {
+                    id: "571047",
+                    src: getImageUrl("20250519Category23.png", true),
+                  },
+                  {
+                    id: "563549",
+                    src: getImageUrl("20250519Category24.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Armchairs",
+                background: "#750000",
+                color: "#FFFFFF",
+                src: getImageUrl("20250519Category3.png", true),
+                href: "https://www.beliani.ch/armchairs/",
+                products: [
+                  {
+                    id: "603218",
+                    src: getImageUrl("20250519Category31.png", true),
+                  },
+                  {
+                    id: "598655",
+                    src: getImageUrl("20250519Category32.png", true),
+                  },
+                  {
+                    id: "598104",
+                    src: getImageUrl("20250519Category33.png", true),
+                  },
+                  {
+                    id: "596472",
+                    src: getImageUrl("20250519Category34.png", true),
+                  },
+                ],
+              },
+              {
+                name: "Lighting",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: getImageUrl("20250519Category4.png", true),
+                href: "https://www.beliani.ch/lighting/",
+                products: [
+                  {
+                    id: "574544",
+                    src: getImageUrl("20250519Category41.png", true),
+                  },
+                  {
+                    id: "583053",
+                    src: getImageUrl("20250519Category42.png", true),
+                  },
+                  {
+                    id: "581706",
+                    src: getImageUrl("20250519Category43.png", true),
+                  },
+                  {
+                    id: "519665",
+                    src: getImageUrl("20250519Category44.png", true),
+                  },
+                ],
+              },
+            ],
+            links: [
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-19",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250519_01.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-19",
+                },
+              },
+              {
+                value: getImageUrl("20250519_gif.gif", true),
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-08",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250508b.png", true),
+                },
+              },
+              {
+                query: true,
+                href: {
+                  type: "relation",
+                  relyOn: "origin",
+                  placeholderPosition: "0",
+                  value: "content/lp25-05-07",
+                },
+              },
+              {
+                src: {
+                  type: "relation",
+                  relyOn: "slug",
+                  placeholderPosition: "38",
+                  value:
+                    getImageUrl("20250507b.png", true),
+                },
+              },
+            ],
+            tableQueries: [
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "19:23",
+                name: "offerPart",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "17:18",
+                name: "tit",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "25:26",
+                name: "intro",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "39",
+                name: "cta",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "33",
+                name: "code",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "23",
+                name: "codeCTA",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "27:30",
+                name: "categories",
+              },
+              {
+                tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+                tableName: "Voucher - 19.05.25 - Free Vases!",
+                tableRange: "47:49",
+                name: "condition",
+              },
+              {
+                tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesTitles",
+                tableColumns: false,
+              },
+              {
+                tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+                tableName: "Categories",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "categoriesLinks",
+                tableColumns: false,
+              },
+              {
+                tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
+                tableName: "Header",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "header",
+                tableColumns: false,
+              },
+              {
+                tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
+                tableName: "Footer",
+                tableRange: "?majorDimension=COLUMNS",
+                name: "footer",
+                tableColumns: false,
+              },
+            ],
+            freebies: {
+              options: {
+                color: "#000000",
+                background: "#FFCCB7",
+              },
+              items: [
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "290044",
+                      src: getImageUrl("20250519Freebie1.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "289992",
+                      src: getImageUrl("20250519Freebie2.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "553238",
+                      src: getImageUrl("20250519Freebie3.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+                {
+                  size: {
+                    row: 1,
+                    col: 3,
+                  },
+                  products: [
+                    {
+                      id: "290152",
+                      src: getImageUrl("20250519Freebie4.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "526774",
+                      src: getImageUrl("20250519Freebie5.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                    {
+                      id: "527212",
+                      src: getImageUrl("20250519Freebie6.png", true),
+                      style: "padding-right: 6px; padding-left: 6px; display:inline-flex;",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        ],
+      }),
+      new entities.Campaign({
         date: "2025.05.12",
         issueCardId: "360550",
         name: "Free parasol or swing",
@@ -670,7 +1962,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         single_image: false,
         templates: [
@@ -1320,7 +2612,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         single_image: false,
         templates: [
@@ -2657,7 +3949,7 @@ try {
         alarm: {
           isActive: false,
         },
-        isArchive: false,
+        isArchive: true,
         optimizeImg: false,
         single_image: false,
         templates: [

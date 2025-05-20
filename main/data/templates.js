@@ -415,7 +415,7 @@ export default [
     "Deal ends": "avslutas:",
     "Get code": "Hämta kod",
     "Get codes": "Hämta koder",
-    "FREE": "GRATIS",
+    "FREE": "PÅ KÖPET",
     "Choose from:": "Välj mellan:",
     "From": "Från",
     "from": "från",

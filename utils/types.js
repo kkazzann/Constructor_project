@@ -1055,7 +1055,7 @@ export default {
           #newsletter .newsletterHrefTit {
             text-decoration:none;
             text-align:center;
-            padding:0 25px;
+            padding:0 20px;
             display:block;
           }
 
@@ -1195,7 +1195,7 @@ export default {
             }
 
             #newsletter .newsletterHrefTit {
-              padding:0 15px;
+              padding:0 10px;
             }
           
             #newsletter .newsletterFooterCategoryRIGHT {
