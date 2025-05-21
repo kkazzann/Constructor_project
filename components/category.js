@@ -23,20 +23,23 @@ export const Category = isAllowToRender(
 
     if (type === "no_products") {
       if (idx === len) {
+        //         <tr>
+        //   <td class="newsletterBottom35px"></td>
+        // </tr>
+        //         <tr>
+        //   <td>
+        //     ${Title({ title: name, align: "center", color: color })}
+        //   </td>
+        // </tr>
+        //         <tr>
+        //   <td class="newsletterBottom35px"></td>
+        // </tr>
         return `
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
       <tbody>
-        <tr>
-          <td class="newsletterBottom35px"></td>
-        </tr>
-        <tr>
-          <td>
-            ${Title({ title: name, align: "left", color: color })}
-          </td>
-        </tr>
-        <tr>
-          <td class="newsletterBottom35px"></td>
-        </tr>
+
+
+        <!-- TEST -->
         <tr>
           <td>
             <a href="${href}">
@@ -62,6 +65,15 @@ export const Category = isAllowToRender(
             }
           </td>
         </tr>
+        <tr>
+          <td class="newsletterBottom20px"></td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom20px"></td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
       </tbody>
     </table>
         `;
@@ -74,7 +86,7 @@ export const Category = isAllowToRender(
         </tr>
         <tr>
           <td>
-            ${Title({ title: name, align: "left", color: color })}
+            ${Title({ title: name, align: "center", color: color })}
           </td>
         </tr>
         <tr>

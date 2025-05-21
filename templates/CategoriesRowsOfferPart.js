@@ -16,8 +16,6 @@ import {
   Title,
   Timer,
   TopImageTitle,
-
-
 } from "../components/index.js";
 
 export async function CategoriesRowsOfferPart({
@@ -37,127 +35,234 @@ export async function CategoriesRowsOfferPart({
   background,
   name,
   name1,
-
- 
-
 }) {
   const gif_src = {
-    CHDE:  ['https://gen.sendtric.com/countdown/w9l8f1omf8'],
-    CHFR:   ['https://gen.sendtric.com/countdown/3p17ck3pvw'],
-    FR:     ['https://gen.sendtric.com/countdown/3p17ck3pvw'],
-    UK:     ['https://gen.sendtric.com/countdown/fxtnsgo0fx'],
-    DE:     ['https://gen.sendtric.com/countdown/w9l8f1omf8'],
-    AT:     ['https://gen.sendtric.com/countdown/w9l8f1omf8'],
-    ES:     ['https://gen.sendtric.com/countdown/b3ru3vll6a'],
-    PL:     ['https://gen.sendtric.com/countdown/zb56v8dq04'],
-    NL:     ['https://gen.sendtric.com/countdown/bvp49p3e68'],
-    PT:     ['https://gen.sendtric.com/countdown/vjqr3oin25'],
-    IT:     ['https://gen.sendtric.com/countdown/6pkuvupu1r'],
-    SE:     ['https://gen.sendtric.com/countdown/0ok9zlukek'],
-    HU:     ['https://gen.sendtric.com/countdown/92yp440zij'],
-    DK:     ['https://gen.sendtric.com/countdown/4tq7ansa8h'],
-    CZ:     ['https://gen.sendtric.com/countdown/011t0t79wa'],
-    FI:     ['https://gen.sendtric.com/countdown/p2aj9qw5c0'],
-    NO:     ['https://gen.sendtric.com/countdown/yyydhgkju3'],
-    SK:     ['https://gen.sendtric.com/countdown/roqdny6pg9'],
-    BENL:   ['https://gen.sendtric.com/countdown/bvp49p3e68'],
-    BEFR:   ['https://gen.sendtric.com/countdown/3p17ck3pvw'],
-    RO:     ['https://gen.sendtric.com/countdown/i1p536cv68'],
+    CHDE: ["https://gen.sendtric.com/countdown/w9l8f1omf8"],
+    CHFR: ["https://gen.sendtric.com/countdown/3p17ck3pvw"],
+    FR: ["https://gen.sendtric.com/countdown/3p17ck3pvw"],
+    UK: ["https://gen.sendtric.com/countdown/fxtnsgo0fx"],
+    DE: ["https://gen.sendtric.com/countdown/w9l8f1omf8"],
+    AT: ["https://gen.sendtric.com/countdown/w9l8f1omf8"],
+    ES: ["https://gen.sendtric.com/countdown/b3ru3vll6a"],
+    PL: ["https://gen.sendtric.com/countdown/zb56v8dq04"],
+    NL: ["https://gen.sendtric.com/countdown/bvp49p3e68"],
+    PT: ["https://gen.sendtric.com/countdown/vjqr3oin25"],
+    IT: ["https://gen.sendtric.com/countdown/6pkuvupu1r"],
+    SE: ["https://gen.sendtric.com/countdown/0ok9zlukek"],
+    HU: ["https://gen.sendtric.com/countdown/92yp440zij"],
+    DK: ["https://gen.sendtric.com/countdown/4tq7ansa8h"],
+    CZ: ["https://gen.sendtric.com/countdown/011t0t79wa"],
+    FI: ["https://gen.sendtric.com/countdown/p2aj9qw5c0"],
+    NO: ["https://gen.sendtric.com/countdown/yyydhgkju3"],
+    SK: ["https://gen.sendtric.com/countdown/roqdny6pg9"],
+    BENL: ["https://gen.sendtric.com/countdown/bvp49p3e68"],
+    BEFR: ["https://gen.sendtric.com/countdown/3p17ck3pvw"],
+    RO: ["https://gen.sendtric.com/countdown/i1p536cv68"],
   };
-
-
-
 
   const cat1 = {
-    CHDE:  ['https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/?Farbe=Braun,Beige,Grun&sort=default'],
-    CHFR:   ['https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Couleur=Marron,Beige,Vert&sort=default'],
-    FR:     ['https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Couleur=Marron,Beige,Vert&sort=default'],
-    UK:    ['https://www.beliani.co.uk/living-room-furniture/all+products/?Colour=Brown,Beige,Green&sort=default'],
-    DE:    ['https://www.beliani.de/wohnzimmer-moebel/alle+produkte/?Farbe=Braun,Beige,Grun&sort=default'],
-    AT:     ['https://www.beliani.at/wohnzimmer-moebel/alle+produkte/?Farbe=Braun,Beige,Grun&sort=default'],
-    ES:     [''],
-    PL:     ['https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/?Kolor=Brazowy,Bezowy,Zielony&sort=default'],
-    NL:     ['https://www.beliani.nl/woonkamer/alle+producten/?Kleur=Bruin,Beige,Groen&sort=default'],
-    PT:     ['https://www.beliani.pt/sala/todos+os+produtos/?Cor=Castanho,Creme,Verde&sort=default'],
-    IT:     ['https://www.beliani.it/soggiorno/tutti+i+prodotti/?Colore=Marrone,Beige,Verde&sort=default'],
-    SE:     ['https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Farg=Brun,Beige,Gron&sort=default'],
-    HU:     ['https://www.beliani.hu/nappali-butorok/minden+termek/?Szin=Barna,Bezs,Zold&sort=default'],
-    DK:     ['https://www.beliani.dk/spisestuemobler/alle+produkter/?Farve=Brun,Beige,Gron&sort=default'],
-    CZ:     ['https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/looks/?Barva=Hneda,Bezova,Zelena&sort=default'],
-    FI:     ['https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/looks/?Vari=Ruskea,Beige,Vihrea&sort=default'],
-    NO:     ['https://www.beliani.no/stuemoebler/alle+produkter/?Farge=Brun,Beige,Gronn&sort=default'],
-    SK:     ['https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Farba=Hneda,Bezova,Zelena&sort=default'],
-    BENL:   ['https://www.beliani.be/woonkamer/alle+producten/?Kleur=Bruin,Beige,Groen&sort=default'],
-    BEFR:   ['https://www.beliani.be/meubles-de-salon/tous+les+produits/?Couleur=Marron,Beige,Vert&sort=default'],
-    RO:     ['https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Maro,Bej,Verde&sort=default'],
-
+    CHDE: [
+      "https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/?Farbe=Braun,Beige,Grun&sort=default",
+    ],
+    CHFR: [
+      "https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Couleur=Marron,Beige,Vert&sort=default",
+    ],
+    FR: [
+      "https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Couleur=Marron,Beige,Vert&sort=default",
+    ],
+    UK: [
+      "https://www.beliani.co.uk/living-room-furniture/all+products/?Colour=Brown,Beige,Green&sort=default",
+    ],
+    DE: [
+      "https://www.beliani.de/wohnzimmer-moebel/alle+produkte/?Farbe=Braun,Beige,Grun&sort=default",
+    ],
+    AT: [
+      "https://www.beliani.at/wohnzimmer-moebel/alle+produkte/?Farbe=Braun,Beige,Grun&sort=default",
+    ],
+    ES: [""],
+    PL: [
+      "https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/?Kolor=Brazowy,Bezowy,Zielony&sort=default",
+    ],
+    NL: [
+      "https://www.beliani.nl/woonkamer/alle+producten/?Kleur=Bruin,Beige,Groen&sort=default",
+    ],
+    PT: [
+      "https://www.beliani.pt/sala/todos+os+produtos/?Cor=Castanho,Creme,Verde&sort=default",
+    ],
+    IT: [
+      "https://www.beliani.it/soggiorno/tutti+i+prodotti/?Colore=Marrone,Beige,Verde&sort=default",
+    ],
+    SE: [
+      "https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Farg=Brun,Beige,Gron&sort=default",
+    ],
+    HU: [
+      "https://www.beliani.hu/nappali-butorok/minden+termek/?Szin=Barna,Bezs,Zold&sort=default",
+    ],
+    DK: [
+      "https://www.beliani.dk/spisestuemobler/alle+produkter/?Farve=Brun,Beige,Gron&sort=default",
+    ],
+    CZ: [
+      "https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/looks/?Barva=Hneda,Bezova,Zelena&sort=default",
+    ],
+    FI: [
+      "https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/looks/?Vari=Ruskea,Beige,Vihrea&sort=default",
+    ],
+    NO: [
+      "https://www.beliani.no/stuemoebler/alle+produkter/?Farge=Brun,Beige,Gronn&sort=default",
+    ],
+    SK: [
+      "https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Farba=Hneda,Bezova,Zelena&sort=default",
+    ],
+    BENL: [
+      "https://www.beliani.be/woonkamer/alle+producten/?Kleur=Bruin,Beige,Groen&sort=default",
+    ],
+    BEFR: [
+      "https://www.beliani.be/meubles-de-salon/tous+les+produits/?Couleur=Marron,Beige,Vert&sort=default",
+    ],
+    RO: [
+      "https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Maro,Bej,Verde&sort=default",
+    ],
   };
-
-
-
 
   const cat2 = {
-    CHDE:  ['https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/?Farbe=Braun&sort=default'],
-    CHFR:   ['https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Couleur=Marron&sort=default'],
-    FR:     ['https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Couleur=Marron&sort=default'],
-    UK:    ['https://www.beliani.co.uk/living-room-furniture/all+products/?Colour=Brown&sort=default'],
-    DE:    ['https://www.beliani.de/wohnzimmer-moebel/alle+produkte/?Farbe=Braun&sort=default'],
-    AT:     ['https://www.beliani.at/wohnzimmer-moebel/alle+produkte/?Farbe=Braun&sort=default'],
-    ES:     [''],
-    PL:     ['https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/?Kolor=Brazowy&sort=default'],
-    NL:     ['https://www.beliani.nl/woonkamer/alle+producten/?Kleur=Bruin&sort=default'],
-    PT:     ['https://www.beliani.pt/sala/todos+os+produtos/?Cor=Castanho&sort=default'],
-    IT:     ['https://www.beliani.it/soggiorno/tutti+i+prodotti/?Colore=Marrone&sort=default'],
-    SE:     ['https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Farg=Brun&sort=default'],
-    HU:     ['https://www.beliani.hu/nappali-butorok/minden+termek/?Szin=Barna&sort=default'],
-    DK:     ['https://www.beliani.dk/spisestuemobler/alle+produkter/?Farve=Brun&sort=default'],
-    CZ:     ['https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/looks/?Barva=Hneda&sort=default'],
-    FI:     ['https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/looks/?Vari=Ruskea&sort=default'],
-    NO:     ['https://www.beliani.no/stuemoebler/alle+produkter/?Farge=Brun&sort=default'],
-    SK:     ['https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Farba=Hneda&sort=default'],
-    BENL:   ['https://www.beliani.be/woonkamer/alle+producten/?Kleur=Bruin&sort=default'],
-    BEFR:   ['https://www.beliani.be/meubles-de-salon/tous+les+produits/?Couleur=Marron&sort=default'],
-    RO:     ['https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Maro&sort=default'],
+    CHDE: [
+      "https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/?Farbe=Braun&sort=default",
+    ],
+    CHFR: [
+      "https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Couleur=Marron&sort=default",
+    ],
+    FR: [
+      "https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Couleur=Marron&sort=default",
+    ],
+    UK: [
+      "https://www.beliani.co.uk/living-room-furniture/all+products/?Colour=Brown&sort=default",
+    ],
+    DE: [
+      "https://www.beliani.de/wohnzimmer-moebel/alle+produkte/?Farbe=Braun&sort=default",
+    ],
+    AT: [
+      "https://www.beliani.at/wohnzimmer-moebel/alle+produkte/?Farbe=Braun&sort=default",
+    ],
+    ES: [""],
+    PL: [
+      "https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/?Kolor=Brazowy&sort=default",
+    ],
+    NL: [
+      "https://www.beliani.nl/woonkamer/alle+producten/?Kleur=Bruin&sort=default",
+    ],
+    PT: [
+      "https://www.beliani.pt/sala/todos+os+produtos/?Cor=Castanho&sort=default",
+    ],
+    IT: [
+      "https://www.beliani.it/soggiorno/tutti+i+prodotti/?Colore=Marrone&sort=default",
+    ],
+    SE: [
+      "https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Farg=Brun&sort=default",
+    ],
+    HU: [
+      "https://www.beliani.hu/nappali-butorok/minden+termek/?Szin=Barna&sort=default",
+    ],
+    DK: [
+      "https://www.beliani.dk/spisestuemobler/alle+produkter/?Farve=Brun&sort=default",
+    ],
+    CZ: [
+      "https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/looks/?Barva=Hneda&sort=default",
+    ],
+    FI: [
+      "https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/looks/?Vari=Ruskea&sort=default",
+    ],
+    NO: [
+      "https://www.beliani.no/stuemoebler/alle+produkter/?Farge=Brun&sort=default",
+    ],
+    SK: [
+      "https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Farba=Hneda&sort=default",
+    ],
+    BENL: [
+      "https://www.beliani.be/woonkamer/alle+producten/?Kleur=Bruin&sort=default",
+    ],
+    BEFR: [
+      "https://www.beliani.be/meubles-de-salon/tous+les+produits/?Couleur=Marron&sort=default",
+    ],
+    RO: [
+      "https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Maro&sort=default",
+    ],
   };
-
 
   const cat3 = {
-    CHDE:  ['https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/?Farbe=Blau&sort=default'],
-    CHFR:   ['https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Couleur=Bleu&sort=default'],
-    FR:     ['https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Couleur=Bleu&sort=default'],
-    UK:    ['https://www.beliani.co.uk/living-room-furniture/all+products/?Colour=Blue&sort=default'],
-    DE:    ['https://www.beliani.de/wohnzimmer-moebel/alle+produkte/?Farbe=Blau&sort=default'],
-    AT:     ['https://www.beliani.at/wohnzimmer-moebel/alle+produkte/?Farbe=Blau&sort=default'],
-    ES:     [''],
-    PL:     ['https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/?Kolor=Niebieski&sort=default'],
-    NL:     ['https://www.beliani.nl/woonkamer/alle+producten/?Kleur=Blauw&sort=default'],
-    PT:     ['https://www.beliani.pt/sala/todos+os+produtos/?Cor=Azul&sort=default'],
-    IT:     ['https://www.beliani.it/soggiorno/tutti+i+prodotti/?Colore=Blu&sort=default'],
-    SE:     ['https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Farg=Bla&sort=default'],
-    HU:     ['https://www.beliani.hu/nappali-butorok/minden+termek/?Szin=Kek&sort=default'],
-    DK:     ['https://www.beliani.dk/spisestuemobler/alle+produkter/?Farve=Bla&sort=default'],
-    CZ:     ['https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/looks/?Barva=Modra&sort=default'],
-    FI:     ['https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/looks/?Vari=Sininen&sort=default'],
-    NO:     ['https://www.beliani.no/stuemoebler/alle+produkter/?Farge=Bla&sort=default'],
-    SK:     ['https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Farba=Modra'],
-    BENL:   ['https://www.beliani.be/woonkamer/alle+producten/?Kleur=Blauw&sort=default'],
-    BEFR:   ['https://www.beliani.be/meubles-de-salon/tous+les+produits/?Couleur=Bleu&sort=default'],
-    RO:     ['https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Albastru&sort=default'],
+    CHDE: [
+      "https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/?Farbe=Blau&sort=default",
+    ],
+    CHFR: [
+      "https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Couleur=Bleu&sort=default",
+    ],
+    FR: [
+      "https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Couleur=Bleu&sort=default",
+    ],
+    UK: [
+      "https://www.beliani.co.uk/living-room-furniture/all+products/?Colour=Blue&sort=default",
+    ],
+    DE: [
+      "https://www.beliani.de/wohnzimmer-moebel/alle+produkte/?Farbe=Blau&sort=default",
+    ],
+    AT: [
+      "https://www.beliani.at/wohnzimmer-moebel/alle+produkte/?Farbe=Blau&sort=default",
+    ],
+    ES: [""],
+    PL: [
+      "https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/?Kolor=Niebieski&sort=default",
+    ],
+    NL: [
+      "https://www.beliani.nl/woonkamer/alle+producten/?Kleur=Blauw&sort=default",
+    ],
+    PT: [
+      "https://www.beliani.pt/sala/todos+os+produtos/?Cor=Azul&sort=default",
+    ],
+    IT: [
+      "https://www.beliani.it/soggiorno/tutti+i+prodotti/?Colore=Blu&sort=default",
+    ],
+    SE: [
+      "https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Farg=Bla&sort=default",
+    ],
+    HU: [
+      "https://www.beliani.hu/nappali-butorok/minden+termek/?Szin=Kek&sort=default",
+    ],
+    DK: [
+      "https://www.beliani.dk/spisestuemobler/alle+produkter/?Farve=Bla&sort=default",
+    ],
+    CZ: [
+      "https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/looks/?Barva=Modra&sort=default",
+    ],
+    FI: [
+      "https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/looks/?Vari=Sininen&sort=default",
+    ],
+    NO: [
+      "https://www.beliani.no/stuemoebler/alle+produkter/?Farge=Bla&sort=default",
+    ],
+    SK: [
+      "https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Farba=Modra",
+    ],
+    BENL: [
+      "https://www.beliani.be/woonkamer/alle+producten/?Kleur=Blauw&sort=default",
+    ],
+    BEFR: [
+      "https://www.beliani.be/meubles-de-salon/tous+les+produits/?Couleur=Bleu&sort=default",
+    ],
+    RO: [
+      "https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Albastru&sort=default",
+    ],
   };
 
-  function add_utm(link){
-    let link_with_utm = link + '?utm_source=newsletter&utm_medium=email&utm_campaign=' + id
-    return link_with_utm
-}
-
-
-
+  function add_utm(link) {
+    let link_with_utm =
+      link + "?utm_source=newsletter&utm_medium=email&utm_campaign=" + id;
+    return link_with_utm;
+  }
 
   const a = categories[3].products.map((item) =>
     getProductById(item.id, item.src)
-    )
-    console.log(a)
-    console.log(queries.category_paragraph[1])
+  );
+  console.log(a);
+  console.log(queries.category_paragraph[1]);
   return `
   ${Header(
     {
@@ -211,8 +316,9 @@ export async function CategoriesRowsOfferPart({
 
    
 
-   ${type === "newsletter" ? 
-    `<tr>
+   ${
+     type === "newsletter"
+       ? `<tr>
           <td align="center">
             ${ImageWithLink({
               href: links[0],
@@ -221,27 +327,26 @@ export async function CategoriesRowsOfferPart({
       
           </td>
       </tr>`
-    : 
-      `<tr>
+       : `<tr>
           <td align="center">
-            ${!queries.tit ?
-            `
+            ${
+              !queries.tit
+                ? `
               ${ImageWithLink({
                 href: links[0],
                 src: links[1],
-              })}` 
-            :
-            `${TopImageTitle({
-                href: links[0],
-                title1: queries.tit[0],
-                title2: queries.tit[0],
-                color: "#000000",
-                type: "singleLine",
               })}`
+                : `${TopImageTitle({
+                    href: links[0],
+                    title1: queries.tit[0],
+                    title2: queries.tit[0],
+                    color: "#000000",
+                    type: "singleLine",
+                  })}`
             }
           </td>
       </tr>`
-  }
+   }
   <tr>
       <td align="center">
         ${ImageWithLink({
@@ -251,34 +356,29 @@ export async function CategoriesRowsOfferPart({
       </td>
   </tr>
   </table>
-  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #FBF4F3;" id='newsletter'>
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; color: #FFCCB7;" id='newsletter'>
               <tr>
-                <td align="center" style="background-color: #FBF4F3;" class="newsletterContainer">
+                <td align="center" style="background-color: #FFCCB7;" class="newsletterContainer">
                   ${Intro({
-                    paragraph: queries.intro[0], 
-                    color: "#000", 
-                    align:'center',
-                    title:'no_title'
+                    paragraph: queries.intro[0],
+                    color: "#000",
+                    align: "center",
+                    title: "no_title",
                   })}
                   </td>
               </tr>
               <tr>
-                <td style="background-color: #FBF4F3;" class="newsletterBottom35px"></td>
+                <td style="background-color: #FFCCB7;" class="newsletterBottom35px"></td>
               </tr>
-
-
-
-
                         <tr>
                 <td style="background-color: #FD9000;" class="newsletterBottom20px"></td>
               </tr>
            <tr>
                 <td style="background-color: #FD9000">
                 ${Timer({
-                  
                   title: queries.timer[0],
                   subtitle: queries.timer[1],
-                  
+
                   href: links[4],
                   imageSrc: gif_src[country],
                   style: {
@@ -298,38 +398,32 @@ export async function CategoriesRowsOfferPart({
                 <td style="background-color: #FFCCB7">
                       ${ImageWithLink({
                         href: links[4],
-                        src: 'https://upload.pictureserver.net/static/2025/250530_freebis.png',
+                        src: "https://upload.pictureserver.net/static/2025/250530_freebis.png",
                       })}
                 </td>
               </tr>
-        
-
-
-          
-              <tr>
-                <td style="background-color: #FBF4F3;" class="newsletterBottom80px"></td>
+                   <tr>
+                <td style="background-color: #FFCCB7;padding-bottom:35px;"></td>
               </tr>
               <tr>
-                    <td style="background-color:  #FBF4F3;">
+                    <td style="background-color:  #FECCB7;">
                         ${Category({
                           href: getCategoryLink(categories[0].href),
                           name: queries.category_paragraph[0],
                           name1: queries.category_paragraph[1],
                           src: categories[0].src,
                           cta: getPhrase("Shop now"),
-                          type: "monday",
+                          type: "no_products",
                           color: categories[0].color,
                           products: categories[0].products.map((item) =>
                             getProductById(item.id, item.src)
                           ),
-                        
-
                         })}
                     </td>
               </tr>
         
               <tr>
-                    <td style="background-color: #FBF4F3;">
+                    <td style="background-color: #FECCB7;">
                         ${Category({
                           href: cat2[country],
                           href: getCategoryLink(categories[1].href),
@@ -337,26 +431,24 @@ export async function CategoriesRowsOfferPart({
                           name1: queries.category_paragraph[3],
                           src: categories[1].src,
                           cta: getPhrase("Shop now"),
-                          type: "monday",
+                          type: "no_products",
                           color: categories[1].color,
                           products: categories[1].products.map((item) =>
                             getProductById(item.id, item.src)
                           ),
-                        
-
                         })}
                     </td>
               </tr>
     
               <tr>
-                    <td style="background-color:  #FBF4F3;">
+                    <td style="background-color:  #FECCB7;">
                         ${Category({
                           href: getCategoryLink(categories[2].href),
                           name: queries.category_paragraph[4],
                           name1: queries.category_paragraph[5],
                           src: categories[2].src,
                           cta: getPhrase("Shop now"),
-                          type: "monday",
+                          type: "no_products",
                           color: categories[2].color,
                           products: categories[2].products.map((item) =>
                             getProductById(item.id, item.src)
@@ -366,21 +458,18 @@ export async function CategoriesRowsOfferPart({
               </tr>
         
               <tr>
-                    <td style="background-color: #FBF4F3;">
+                    <td style="background-color: #FECCB7;">
                         ${Category({
                           href: getCategoryLink(categories[3].href),
                           name: queries.category_paragraph[6],
                           name1: queries.category_paragraph[7],
                           src: categories[3].src,
                           cta: getPhrase("Shop now"),
-                          type: "monday",
+                          type: "no_products",
                           color: categories[3].color,
                           products: categories[3].products.map((item) =>
                             getProductById(item.id, item.src)
-                            
                           ),
-                        
-
                         })}
                     </td>
               </tr>
@@ -412,7 +501,7 @@ export async function CategoriesRowsOfferPart({
                           <tr>
                               <td align="left" class="newsletterBottom20px">
                                   <a href=${links[5]}>
-                                      <img loading="lazy" src=${ 
+                                      <img loading="lazy" src=${
                                         links[6]
                                       } style="display: block;" width="100%">
                                   </a>
