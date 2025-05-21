@@ -81,13 +81,13 @@ export async function mondayOfferFreeebiesLines({
             ? getHeader("Header delivery_cosy src")
             : getHeader("Header delivery src")
           : ["#750000"].includes(background)
-          ? getHeader("Header asembly src")
-          : getHeader("Header asembly_cosy src"),
+            ? getHeader("Header asembly src")
+            : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
         exclude: true,
       },
     },
-    { type }
+    { type },
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
         <tbody>
@@ -175,8 +175,8 @@ export async function mondayOfferFreeebiesLines({
 
               <tr>
                 <td style="background-color: ${background}; color: ${
-    freebies.options?.color || "#000"
-  };">
+                  freebies.options?.color || "#000"
+                };">
                   ${FreebiesGenerator({
                     background,
                     freebies: freebies.items,
@@ -227,15 +227,15 @@ export async function mondayOfferFreeebiesLines({
                           typeof categories[0].href === "object"
                             ? categories[0].href[country]
                             : getCategoryLink(categories[0].href),
-                        name: queries?.categories ?
-                              queries.categories[0] :
-                              getCategoryTitle(categories[0].name),
+                        name: queries?.categories
+                          ? queries.categories[0]
+                          : getCategoryTitle(categories[0].name),
                         src: categories[0].src,
                         cta: getPhrase("Shop now"),
                         color: categories[0]?.color,
                         type: "monday",
                         products: categories[0].products.map((item) =>
-                          getProductById(item.id, item.src)
+                          getProductById(item.id, item.src),
                         ),
                       })}
                     </td>
@@ -264,15 +264,15 @@ export async function mondayOfferFreeebiesLines({
                             typeof categories[0].href === "object"
                               ? categories[1].href[country]
                               : getCategoryLink(categories[1].href),
-                          name: queries?.categories ?
-                              queries.categories[1] :
-                              getCategoryTitle(categories[1].name),
+                          name: queries?.categories
+                            ? queries.categories[1]
+                            : getCategoryTitle(categories[1].name),
                           src: categories[1].src,
                           cta: getPhrase("Shop now"),
                           color: categories[1]?.color,
                           type: "monday",
                           products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -301,15 +301,15 @@ export async function mondayOfferFreeebiesLines({
                             typeof categories[0].href === "object"
                               ? categories[2].href[country]
                               : getCategoryLink(categories[2].href),
-                          name: queries?.categories ?
-                              queries.categories[2] :
-                              getCategoryTitle(categories[2].name),
+                          name: queries?.categories
+                            ? queries.categories[2]
+                            : getCategoryTitle(categories[2].name),
                           src: categories[2].src,
                           cta: getPhrase("Shop now"),
                           color: categories[2]?.color,
                           type: "monday",
                           products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -339,15 +339,15 @@ export async function mondayOfferFreeebiesLines({
                             typeof categories[3].href === "object"
                               ? categories[3].href[country]
                               : getCategoryLink(categories[3].href),
-                          name: queries?.categories ?
-                              queries.categories[3] :
-                              getCategoryTitle(categories[3].name),
+                          name: queries?.categories
+                            ? queries.categories[3]
+                            : getCategoryTitle(categories[3].name),
                           src: categories[3].src,
                           cta: getPhrase("Shop now"),
                           color: categories[3]?.color,
                           type: "monday",
                           products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -372,7 +372,7 @@ ${
                               <tr>
                                   <td align="left" class="newsletterBottom35px">
                                       <span class="newsletterFooterTitle">${getPhrase(
-                                        "Shop limited-time deals"
+                                        "Shop limited-time deals",
                                       )}</span>
                                   </td>
                               </tr>
@@ -411,7 +411,7 @@ ${
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country
+              country,
             ),
           },
           workBanner: {
@@ -519,7 +519,7 @@ ${
             vat: getFooter("VAT"),
           },
         },
-        { type }
+        { type },
       )}
     `;
 }

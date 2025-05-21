@@ -15,5 +15,5 @@ export const ImageWithLink = isAllowToRender(
         </tbody>
     </table>
   `;
-  })
+  }),
 );

@@ -28,7 +28,7 @@ function figmaCardHandler(url) {
 
 function selectCampaignHandler(ev, campaigns) {
   const selectedCampaign = campaigns.find(
-    (campaign) => campaign.startId === ev.target.value
+    (campaign) => campaign.startId === ev.target.value,
   );
 
   if (!selectedCampaign) {
@@ -61,5 +61,5 @@ export {
   openCampaignHandler,
   handleShopChange,
   openIssueHandler,
-  figmaCardHandler
+  figmaCardHandler,
 };

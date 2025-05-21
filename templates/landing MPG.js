@@ -36,7 +36,7 @@ export async function landing_MPG({
         value: "https://upload.pictureserver.net/static/2024/20240520_04.jpg",
       },
       href: getCategoryLink(
-        "https://www.beliani.ch/garden-furniture/outdoor-furniture/lounge-sets/"
+        "https://www.beliani.ch/garden-furniture/outdoor-furniture/lounge-sets/",
       ),
     },
     {
@@ -47,7 +47,7 @@ export async function landing_MPG({
         value: "https://upload.pictureserver.net/static/2024/20240520_05.jpg",
       },
       href: getCategoryLink(
-        "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/"
+        "https://www.beliani.ch/outdoor-furniture/garden-dining-sets/",
       ),
     },
     {
@@ -58,7 +58,7 @@ export async function landing_MPG({
         value: "https://upload.pictureserver.net/static/2024/20240520_06.jpg",
       },
       href: getCategoryLink(
-        "https://www.beliani.ch/outdoor-furniture/sun-loungers/"
+        "https://www.beliani.ch/outdoor-furniture/sun-loungers/",
       ),
     },
     {
@@ -69,7 +69,7 @@ export async function landing_MPG({
         value: "https://upload.pictureserver.net/static/2024/20240520_07.jpg",
       },
       href: getCategoryLink(
-        "https://www.beliani.ch/outdoor-furniture/storage-boxes/"
+        "https://www.beliani.ch/outdoor-furniture/storage-boxes/",
       ),
     },
     {
@@ -80,7 +80,7 @@ export async function landing_MPG({
         value: "https://upload.pictureserver.net/static/2024/20240520_08.jpg",
       },
       href: getCategoryLink(
-        "https://www.beliani.ch/outdoor-furniture/balcony-furniture/"
+        "https://www.beliani.ch/outdoor-furniture/balcony-furniture/",
       ),
     },
     {
@@ -91,7 +91,7 @@ export async function landing_MPG({
         value: "https://upload.pictureserver.net/static/2024/20240520_09.jpg",
       },
       href: getCategoryLink(
-        "https://www.beliani.ch/garden-furniture/garden-accessories/pots-and-planters/"
+        "https://www.beliani.ch/garden-furniture/garden-accessories/pots-and-planters/",
       ),
     },
     {
@@ -102,7 +102,7 @@ export async function landing_MPG({
         value: "https://upload.pictureserver.net/static/2024/20240520_10.jpg",
       },
       href: getCategoryLink(
-        "https://www.beliani.ch/garden-furniture/garden-accessories/fire-pits/"
+        "https://www.beliani.ch/garden-furniture/garden-accessories/fire-pits/",
       ),
     },
     {
@@ -112,7 +112,9 @@ export async function landing_MPG({
         placeholderPosition: "45",
         value: "https://upload.pictureserver.net/static/2024/20240520_11.jpg",
       },
-      href: getCategoryLink("https://www.beliani.ch/garden-furniture/parasols/"),
+      href: getCategoryLink(
+        "https://www.beliani.ch/garden-furniture/parasols/",
+      ),
     },
     {
       src: {
@@ -122,7 +124,7 @@ export async function landing_MPG({
         value: "https://upload.pictureserver.net/static/2024/20240520_12.jpg",
       },
       href: getCategoryLink(
-        "https://www.beliani.ch/garden-furniture/outdoor-textiles/"
+        "https://www.beliani.ch/garden-furniture/outdoor-textiles/",
       ),
     },
   ];
@@ -236,7 +238,7 @@ export async function landing_MPG({
                               <tr>
                                   <td align="left" class="newsletterBottom35px">
                                       <span class="newsletterFooterTitle">${getPhrase(
-                                        "Shop limited-time deals"
+                                        "Shop limited-time deals",
                                       )}</span>
                                   </td>
                               </tr>
@@ -273,7 +275,7 @@ export async function landing_MPG({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country
+              country,
             ),
           },
           workBanner: {
@@ -381,7 +383,7 @@ export async function landing_MPG({
             vat: getFooter("VAT"),
           },
         },
-        { type }
+        { type },
       )}
     `;
 }

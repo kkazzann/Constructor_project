@@ -7,7 +7,7 @@ export const fetchTranslations = async ({ tableQueries }) => {
   const name = getState("name");
   const shop = getState("shop");
   const tableColumn = shop.languages.find(
-    (item) => item.language.name === name
+    (item) => item.language.name === name,
   );
 
   if (!tableColumn.tableColumn) {
@@ -22,15 +22,15 @@ export const fetchTranslations = async ({ tableQueries }) => {
   for (const query of tableQueries) {
     const queryWithAdjustedRange = adjustTableRangeToCountry(
       query,
-      tableColumn.tableColumn
+      tableColumn.tableColumn,
     );
     promises.push(queryWithAdjustedRange);
   }
 
   const promisesResult = await Promise.allSettled(
     promises.map((queryWithAdjustedRange) =>
-      getTranslations(queryWithAdjustedRange)
-    )
+      getTranslations(queryWithAdjustedRange),
+    ),
   );
 
   const computedPromise = [];
@@ -50,7 +50,7 @@ export const fetchTranslations = async ({ tableQueries }) => {
     if (value.error && value.error.code === 503) {
       throw new Error("Service currently unavailable");
     }
-    
+
     if ("values" in value && value.values.length > 0) {
       computedPromise.push({
         data:
@@ -88,7 +88,7 @@ export async function getTranslations({
           "Content-Type": "application/json",
           Authorization: "Bearer " + token,
         },
-      }
+      },
     );
     const data = await response.json();
     return { ...data, name, fallback };

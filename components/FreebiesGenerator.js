@@ -3,7 +3,6 @@ import { Space } from "./Space.js";
 import { Freebies } from "./freebies.js";
 
 const FreebiesGenerator = ({ freebies, getProductById }) => {
-  
   return freebies
     .map((freebie, idx) => {
       if (idx === freebies.length - 1) {

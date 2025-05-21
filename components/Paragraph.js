@@ -1,5 +1,5 @@
-export const Paragraph = ({paragraph, color, align = "left"}) => {
-    return `
+export const Paragraph = ({ paragraph, color, align = "left" }) => {
+  return `
     <table cellspacing="0" cellpadding="0" border="0" width="100%">
         <tbody>
             <tr>
@@ -12,5 +12,4 @@ export const Paragraph = ({paragraph, color, align = "left"}) => {
         </tbody>
     </table>
     `;
-  };
-  
+};

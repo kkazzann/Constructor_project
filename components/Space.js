@@ -10,7 +10,7 @@ export const Space = isAllowToRender((props) => {
   }
 
   if (props?.className === null) {
-    return ""
+    return "";
   }
 
   return `
@@ -23,4 +23,4 @@ export const Space = isAllowToRender((props) => {
     </tbody>
   </table>
   `;
-})
+});

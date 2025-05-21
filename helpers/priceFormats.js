@@ -10,7 +10,7 @@ const currencies = {
   czechKrona: "Kč",
   norwegianKrone: ",-",
   polandZloty: ",-",
-  romanianLeu: "lei"
+  romanianLeu: "lei",
 };
 const relativePriceFormat = {
   DE: {
@@ -131,7 +131,4 @@ const priceFormats = {
   },
 };
 
-
-export {
-    priceFormats,
-}
+export { priceFormats };

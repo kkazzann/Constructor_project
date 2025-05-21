@@ -1,19 +1,13 @@
-export function YouTube({
-    type,
-    queries,
-    src,
-    getField
-}) {
-    const path = new URL(getField(queries.youtubeHref, "Href")).pathname.replace(
-        "/",
-        ""
-      );
+export function YouTube({ type, queries, src, getField }) {
+  const path = new URL(getField(queries.youtubeHref, "Href")).pathname.replace(
+    "/",
+    "",
+  );
 
-
-    return `
-    ${type === "newsletter" 
-                ?
-                `
+  return `
+    ${
+      type === "newsletter"
+        ? `
                 <tr>
                 <td align="center">
                   <a href="${getField(queries.youtubeHref, "Href")}">
@@ -30,7 +24,7 @@ export function YouTube({
                 <td align="center">
                   <a href="${getField(
                     queries.youtubeHref,
-                    "Href"
+                    "Href",
                   )}" style="color:#ffffff; text-decoration: underline;">
                     <span class="newsletterCta">${queries.watchNow}</span>
                   </a>
@@ -41,8 +35,7 @@ export function YouTube({
                 </td>
               </tr>
                 `
-                :
-                `
+        : `
                 <tr>
               <td align="center" style="background-color: #ff2f00;" class="newsletterContainer">
                   <iframe id="newsletterIFrame" style="display: block;" src="https://www.youtube.com/embed/${path}?enablejsapi=1&amp;mute=1&amp;playlist=${path}&amp;loop=1" width="610" height="400" frameborder="0" allow="autoplay" allowfullscreen=""></iframe>
@@ -58,7 +51,7 @@ export function YouTube({
               <td align="center">
                 <a href="${getField(
                   queries.youtubeHref,
-                  "Href"
+                  "Href",
                 )}" style="color:#ffffff; text-decoration: underline;">
                   <span class="newsletterCta">${queries.watchNow}</span>
                 </a>
@@ -118,6 +111,6 @@ export function YouTube({
 
             </script>
                 `
-              }
-    `
+    }
+    `;
 }

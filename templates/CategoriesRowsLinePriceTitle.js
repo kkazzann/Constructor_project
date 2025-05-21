@@ -71,13 +71,13 @@ export async function CategoriesRowsLinePriceTitle({
             ? getHeader("Header delivery_cosy src")
             : getHeader("Header delivery src")
           : ["#750000"].includes(background)
-          ? getHeader("Header asembly src")
-          : getHeader("Header asembly_cosy src"),
+            ? getHeader("Header asembly src")
+            : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
         exclude: true,
       },
     },
-    { type }
+    { type },
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
@@ -122,13 +122,22 @@ export async function CategoriesRowsLinePriceTitle({
                       <td class="newsletterContainer" style="background-color: ${background}; color: #000;">
                         ${Category({
                           type: "no_products",
-                          name: country === "HU" ? getCategoryTitle(item.name) + " " + item.price[country] : getCategoryTitle(item.name) + " " + getPhrase("from") + " " + item.price[country],
+                          name:
+                            country === "HU"
+                              ? getCategoryTitle(item.name) +
+                                " " +
+                                item.price[country]
+                              : getCategoryTitle(item.name) +
+                                " " +
+                                getPhrase("from") +
+                                " " +
+                                item.price[country],
                           href: getCategoryLink(item.href),
                           src: item.src,
                           color: item.color,
                           cta: getPhrase("Shop now"),
                         })}
-                        ${Space({className: "newsletterBottom60px"})}
+                        ${Space({ className: "newsletterBottom60px" })}
                         ${Line()}
                       </td>
                     </tr>
@@ -140,17 +149,26 @@ export async function CategoriesRowsLinePriceTitle({
                         <td class="newsletterContainer" style="background-color: ${background}; color: #000;">
                           ${Category({
                             type: "no_products",
-                            name: country === "HU" ? getCategoryTitle(item.name) + " " + item.price[country] : getCategoryTitle(item.name) + " " + getPhrase("from") + " " + item.price[country],
+                            name:
+                              country === "HU"
+                                ? getCategoryTitle(item.name) +
+                                  " " +
+                                  item.price[country]
+                                : getCategoryTitle(item.name) +
+                                  " " +
+                                  getPhrase("from") +
+                                  " " +
+                                  item.price[country],
                             href: getCategoryLink(item.href),
                             src: item.src,
                             color: item.color,
                             cta: getPhrase("Shop now"),
                           })}
-                          ${Space({className: "newsletterBottom60px"})}
+                          ${Space({ className: "newsletterBottom60px" })}
                         </td>
                       </tr>
                     `;
-                  },
+                },
               })}
             <tr>
               <td class="newsletterContainer">
@@ -173,7 +191,7 @@ export async function CategoriesRowsLinePriceTitle({
                           <tr>
                               <td align="left" class="newsletterBottom35px">
                                   <span class="newsletterFooterTitle">${getPhrase(
-                                    "Shop limited-time deals"
+                                    "Shop limited-time deals",
                                   )}</span>
                               </td>
                           </tr>
@@ -210,7 +228,7 @@ export async function CategoriesRowsLinePriceTitle({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country
+              country,
             ),
           },
           workBanner: {
@@ -318,7 +336,7 @@ export async function CategoriesRowsLinePriceTitle({
             vat: getFooter("VAT"),
           },
         },
-        { type }
+        { type },
       )}
     `;
 }

@@ -37,15 +37,15 @@ export class TemplateHandlers {
     const country = getState("country");
     const shop = getState("shop");
     const languageHREF = shop.languages.find(
-      (item) => item.language.slug === country
+      (item) => item.language.slug === country,
     );
 
     let country_products = this.products?.filter(
-      (product) => product.country === shop.slug.toLowerCase()
+      (product) => product.country === shop.slug.toLowerCase(),
     );
 
     const product = country_products?.find(
-      (product) => Number(product.main_id) === Number(productId)
+      (product) => Number(product.main_id) === Number(productId),
     );
 
     if (!product) {
@@ -63,7 +63,7 @@ export class TemplateHandlers {
       ".html";
     return handleProduct(
       src ? { ...product, href, src } : { ...product, href },
-      options
+      options,
     );
   };
 
@@ -74,7 +74,7 @@ export class TemplateHandlers {
       ? this.#toCSV(this.categoriesTitles)
       : _categoriesTitles;
     let country_categories = CSV_CATEGORIES.find(
-      (category) => category.slug === country.toLowerCase()
+      (category) => category.slug === country.toLowerCase(),
     );
 
     if (country_categories) {
@@ -98,7 +98,7 @@ export class TemplateHandlers {
       ? this.#toCSV(this.categoriesLinks)
       : _categoriesLinks;
     let country_categories = CSV_CATEGORIES.find(
-      (category) => category.slug === country.toLowerCase()
+      (category) => category.slug === country.toLowerCase(),
     );
 
     const pathnames = category_url.pathname
@@ -130,7 +130,7 @@ export class TemplateHandlers {
     const country = getState("country");
     const CSV_FOOTER = this.footer ? this.#toCSV(this.footer) : _footer;
     let country_footer = CSV_FOOTER.find(
-      (category) => category.slug === country.toLowerCase()
+      (category) => category.slug === country.toLowerCase(),
     );
     if (country_footer) {
       return country_footer[column];
@@ -144,7 +144,7 @@ export class TemplateHandlers {
       ? this.#toCSV(this.templates)
       : _templates;
     let country_phrase = CSV_FOOTER.find(
-      (category) => category.slug === country.toLowerCase()
+      (category) => category.slug === country.toLowerCase(),
     );
     if (country_phrase) {
       return country_phrase[column];
@@ -157,7 +157,7 @@ export class TemplateHandlers {
 
     const CSV_FOOTER = this.header ? this.#toCSV(this.header) : _header;
     let country_header = CSV_FOOTER.find(
-      (category) => category.slug === country.toLowerCase()
+      (category) => category.slug === country.toLowerCase(),
     );
     if (country_header) {
       return country_header[column];

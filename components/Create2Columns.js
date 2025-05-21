@@ -1,4 +1,3 @@
-
 export function Create2Columns({ iter, left, right, shuffle }) {
   return `
     ${iter

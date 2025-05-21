@@ -12,7 +12,7 @@ export function optimize(component) {
           ? src
           : swapImage({ format: ".webp", src: src });
     }
-    
+
     return component({ src: newSrc, ...other });
   };
 }

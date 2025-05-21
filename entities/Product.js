@@ -91,6 +91,6 @@ export class Product {
       hrefs: product.hrefs,
     };
     this.lowPrice = product.saved_params.ShopPrice;
-    this.highPrice = product.saved_params.ShopHPrice; 
+    this.highPrice = product.saved_params.ShopHPrice;
   }
 }

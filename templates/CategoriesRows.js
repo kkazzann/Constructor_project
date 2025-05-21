@@ -71,13 +71,13 @@ export async function CategoriesRows({
             ? getHeader("Header delivery_cosy src")
             : getHeader("Header delivery src")
           : ["#750000"].includes(background)
-          ? getHeader("Header asembly src")
-          : getHeader("Header asembly_cosy src"),
+            ? getHeader("Header asembly src")
+            : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
         exclude: true,
       },
     },
-    { type }
+    { type },
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
@@ -149,7 +149,7 @@ export async function CategoriesRows({
                     shop.origin
                   }" style="color:#000; text-decoration: underline;">
                     <span class="newsletterCta">${getPhrase(
-                      "Shop All Categories"
+                      "Shop All Categories",
                     )}</span>
                   </a>
                 </td>
@@ -185,7 +185,7 @@ export async function CategoriesRows({
                           <tr>
                               <td align="left" class="newsletterBottom35px">
                                   <span class="newsletterFooterTitle">${getPhrase(
-                                    "Shop limited-time deals"
+                                    "Shop limited-time deals",
                                   )}</span>
                               </td>
                           </tr>
@@ -226,7 +226,7 @@ export async function CategoriesRows({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country
+              country,
             ),
           },
           workBanner: {
@@ -334,7 +334,7 @@ export async function CategoriesRows({
             vat: getFooter("VAT"),
           },
         },
-        { type }
+        { type },
       )}
     `;
 }

@@ -2,121 +2,121 @@ export default {
   CHDE: {
     slug: "CHDE",
     title: "german",
-    name: "German"
+    name: "German",
   },
   CHIT: {
     slug: "CHIT",
     title: "italian",
-    name: "Italian"
+    name: "Italian",
   },
   CHFR: {
     slug: "CHFR",
     title: "french",
-    name: "French"
+    name: "French",
   },
   CHFR_Mattress: {
     slug: "CHFR",
     title: "french",
-    name: "French Mattress"
+    name: "French Mattress",
   },
   CHDE_Mattress: {
     slug: "CHDE",
     title: "german",
-    name: "German Mattress"
+    name: "German Mattress",
   },
   DE: {
     slug: "DE",
     title: "germanDE",
-    name: "German De"
+    name: "German De",
   },
   FR: {
     slug: "FR",
     title: "french",
-    name: "French"
+    name: "French",
   },
   IT: {
     slug: "IT",
     title: "italian",
-    name: "Italian"
+    name: "Italian",
   },
   UK: {
     slug: "UK",
     title: "english",
-    name: "English"
+    name: "English",
   },
   PL: {
     slug: "PL",
     title: "polish",
-    name: "Polish"
+    name: "Polish",
   },
   SK: {
-    slug: "SK", 
+    slug: "SK",
     title: "slovak",
-    name: "Slovak"
+    name: "Slovak",
   },
   SE: {
     slug: "SE",
     title: "swedish",
-    name: "Swedish"
+    name: "Swedish",
   },
   ES: {
     slug: "ES",
     title: "spanish",
-    name: "Spanish"
+    name: "Spanish",
   },
   NL: {
     slug: "NL",
     title: "dutch",
-    name: "Dutch"
+    name: "Dutch",
   },
   PT: {
     slug: "PT",
     title: "portugal",
-    name: "Portugal"
+    name: "Portugal",
   },
   HU: {
     slug: "HU",
     title: "Hungarian",
-    name: "Hugarian"
+    name: "Hugarian",
   },
   DK: {
     slug: "DK",
     title: "danish",
-    name: "Danish"
+    name: "Danish",
   },
   CZ: {
     slug: "CZ",
     title: "czech",
-    name: "Czech"
+    name: "Czech",
   },
   FI: {
     slug: "FI",
     title: "finnish",
-    name: "Finnish"
+    name: "Finnish",
   },
   NO: {
     slug: "NO",
     title: "norsk",
-    name: "Norsk"
+    name: "Norsk",
   },
   RO: {
     slug: "RO",
     title: "romanian",
-    name: "Romanian"
+    name: "Romanian",
   },
   BEFR: {
     slug: "BEFR",
     title: "french",
-    name: "French"
+    name: "French",
   },
   BENL: {
     slug: "BENL",
     title: "dutch",
-    name: "Dutch"
+    name: "Dutch",
   },
   AT: {
     slug: "AT",
     title: "germanDE",
-    name: "German De"
+    name: "German De",
   },
 };

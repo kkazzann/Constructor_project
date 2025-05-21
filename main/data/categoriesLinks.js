@@ -309,9 +309,12 @@ export default [
     copenhagen: "kopenhagen",
     "paris-en": "paris",
     "last-pieces": "letzte-stuecke",
-    "fabric-corner-sofa-light-grey-dolva": "3-sitzer-ecksofa-hellgrau-linksseitig-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "esstisch-dunkler-holzfarbton-schwarz-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "dekokissen-felloptik-rosa-45-x-45-cm-2er-set-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "3-sitzer-ecksofa-hellgrau-linksseitig-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "esstisch-dunkler-holzfarbton-schwarz-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "dekokissen-felloptik-rosa-45-x-45-cm-2er-set-daisy",
     "scented-candles-and-diffusers__1": "duftkerzen-und-diffusoren",
     "makeup-mirrors": "schminkspiegel",
     "reading-corner": "leseecke",
@@ -670,9 +673,12 @@ export default [
     copenhagen: "copenhague",
     "paris-en": "paris-fr",
     "last-pieces": "dernieres-pieces",
-    "fabric-corner-sofa-light-grey-dolva": "canape-angle-a-gauche-en-tissu-gris-clair-3-places-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "table-marron-et-noire-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "lot-de-2-coussins-45-x-45-cm-en-fausse-fourrure-rose-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "canape-angle-a-gauche-en-tissu-gris-clair-3-places-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "table-marron-et-noire-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "lot-de-2-coussins-45-x-45-cm-en-fausse-fourrure-rose-daisy",
     "scented-candles-and-diffusers__1": "bougies-parfumees-et-diffuseurs",
     "makeup-mirrors": "miroirs-de-maquillage",
     "reading-corner": "coin-lecture",
@@ -1032,8 +1038,10 @@ export default [
     "paris-en": "parijs-nl",
     "last-pieces": "laatste-items",
     "fabric-corner-sofa-light-grey-dolva": "hoekbank-stof-lichtgrijs-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "eettafel-donkerbruin-zwart-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "sierkussen-set-van-2-roze-daisy",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "eettafel-donkerbruin-zwart-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "sierkussen-set-van-2-roze-daisy",
     "scented-candles-and-diffusers__1": "geurkaarsen-en-verstuivers",
     "makeup-mirrors": "makeup-spiegels",
     "reading-corner": "leeshoek",
@@ -1392,9 +1400,12 @@ export default [
     copenhagen: "kopenhagen",
     "paris-en": "paris",
     "last-pieces": "letzte-stuecke",
-    "fabric-corner-sofa-light-grey-dolva": "3-sitzer-ecksofa-hellgrau-linksseitig-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "esstisch-dunkler-holzfarbton-schwarz-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "dekokissen-felloptik-rosa-45-x-45-cm-2er-set-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "3-sitzer-ecksofa-hellgrau-linksseitig-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "esstisch-dunkler-holzfarbton-schwarz-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "dekokissen-felloptik-rosa-45-x-45-cm-2er-set-daisy",
     "scented-candles-and-diffusers__1": "duftkerzen-und-diffusoren",
     "makeup-mirrors": "schminkspiegel",
     "reading-corner": "leseecke",
@@ -1753,9 +1764,12 @@ export default [
     copenhagen: "copenhague",
     "paris-en": "paris-fr",
     "last-pieces": "dernieres-pieces",
-    "fabric-corner-sofa-light-grey-dolva": "canape-angle-a-gauche-en-tissu-gris-clair-3-places-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "table-marron-et-noire-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "lot-de-2-coussins-45-x-45-cm-en-fausse-fourrure-rose-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "canape-angle-a-gauche-en-tissu-gris-clair-3-places-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "table-marron-et-noire-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "lot-de-2-coussins-45-x-45-cm-en-fausse-fourrure-rose-daisy",
     "scented-candles-and-diffusers__1": "bougies-parfumees-et-diffuseurs",
     "makeup-mirrors": "miroirs-de-maquillage",
     "reading-corner": "coin-lecture",
@@ -2114,9 +2128,12 @@ export default [
     copenhagen: "copenhagen",
     "paris-en": "parigi",
     "last-pieces": "ultime-unita",
-    "fabric-corner-sofa-light-grey-dolva": "divano-angolare-3-posti-tessuto-grigio-chiaro-sinistro-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "tavolo-da-pranzo-legno-marrone-scuro-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "set-di-2-cuscini-decorativi-45x45cm-rosa-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "divano-angolare-3-posti-tessuto-grigio-chiaro-sinistro-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "tavolo-da-pranzo-legno-marrone-scuro-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "set-di-2-cuscini-decorativi-45x45cm-rosa-daisy",
     "scented-candles-and-diffusers__1": "candele-profumate-e-diffusori",
     "makeup-mirrors": "sminkespeil",
     "reading-corner": "angolo-lettura",
@@ -2475,9 +2492,12 @@ export default [
     copenhagen: "kodan-cz",
     "paris-en": "pariz-cz",
     "last-pieces": "sista-exemplaren",
-    "fabric-corner-sofa-light-grey-dolva": "rohova-pohovka-calounena-svetle-seda-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "jidelni-stul-v-tmavem-odstinu-dreva-a-cerne-barve-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "sada-2-polstaru-45-x-45-cm-ruzova-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "rohova-pohovka-calounena-svetle-seda-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "jidelni-stul-v-tmavem-odstinu-dreva-a-cerne-barve-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "sada-2-polstaru-45-x-45-cm-ruzova-daisy",
     "scented-candles-and-diffusers__1": "vonne-svicky-a-difuzery",
     "makeup-mirrors": "kosmeticka-zrcatka",
     "reading-corner": "cteci-koutek",
@@ -2836,9 +2856,12 @@ export default [
     copenhagen: "kopenhagen",
     "paris-en": "paris",
     "last-pieces": "letzte-stuecke",
-    "fabric-corner-sofa-light-grey-dolva": "3-sitzer-ecksofa-hellgrau-linksseitig-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "esstisch-dunkler-holzfarbton-schwarz-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "dekokissen-felloptik-rosa-45-x-45-cm-2er-set-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "3-sitzer-ecksofa-hellgrau-linksseitig-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "esstisch-dunkler-holzfarbton-schwarz-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "dekokissen-felloptik-rosa-45-x-45-cm-2er-set-daisy",
     "scented-candles-and-diffusers__1": "duftkerzen-und-diffusoren",
     "makeup-mirrors": "schminkspiegel",
     "reading-corner": "leseecke",
@@ -3198,8 +3221,10 @@ export default [
     "paris-en": "paris",
     "last-pieces": "sidste-stykker",
     "fabric-corner-sofa-light-grey-dolva": "sofa-lysegra-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "spisebord-sort-brun-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "pyntepudesat-2-stk-45x45-cm-lyserod-daisy",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "spisebord-sort-brun-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "pyntepudesat-2-stk-45x45-cm-lyserod-daisy",
     "scented-candles-and-diffusers__1": "duftlys",
     "makeup-mirrors": "makeup-spejle",
     "reading-corner": "laese-hjoerne",
@@ -3558,9 +3583,12 @@ export default [
     copenhagen: "copenhague-es",
     "paris-en": "paris-es",
     "last-pieces": "ultimas-unidades",
-    "fabric-corner-sofa-light-grey-dolva": "sofa-esquinero-3-plazas-de-poliester-gris-claro-negro-izquierdo-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "mesa-de-comedor-en-madera-oscura-negro-200x100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "conjunto-de-2-cojines-decorativos-rosa-45x45-cm-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "sofa-esquinero-3-plazas-de-poliester-gris-claro-negro-izquierdo-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "mesa-de-comedor-en-madera-oscura-negro-200x100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "conjunto-de-2-cojines-decorativos-rosa-45x45-cm-daisy",
     "scented-candles-and-diffusers__1": "velas-aromaticas-y-difusores",
     "makeup-mirrors": "espejos-de-maquillaje",
     "reading-corner": "rincon-de-lectura",
@@ -3919,9 +3947,12 @@ export default [
     copenhagen: "koopenhamina",
     "paris-en": "pariisi",
     "last-pieces": "viimeiset-kappaleet",
-    "fabric-corner-sofa-light-grey-dolva": "3-istuttava-kulmasohva-kangas-vasenk-vaaleanharmaa-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "ruokapoyta-tumma-puu-musta-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "koristetyyny-keinoturkis-vaaleanpunainen-45-x-45-cm-2-kpl-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "3-istuttava-kulmasohva-kangas-vasenk-vaaleanharmaa-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "ruokapoyta-tumma-puu-musta-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "koristetyyny-keinoturkis-vaaleanpunainen-45-x-45-cm-2-kpl-daisy",
     "scented-candles-and-diffusers__1": "tuoksukynttilat-ja-huonetuoksut",
     "makeup-mirrors": "meikkipeilit",
     "reading-corner": "lukunurkkaus",
@@ -4280,9 +4311,12 @@ export default [
     copenhagen: "copenhague",
     "paris-en": "paris-fr",
     "last-pieces": "dernieres-pieces",
-    "fabric-corner-sofa-light-grey-dolva": "canape-angle-a-gauche-en-tissu-gris-clair-3-places-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "table-marron-et-noire-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "lot-de-2-coussins-45-x-45-cm-en-fausse-fourrure-rose-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "canape-angle-a-gauche-en-tissu-gris-clair-3-places-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "table-marron-et-noire-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "lot-de-2-coussins-45-x-45-cm-en-fausse-fourrure-rose-daisy",
     "scented-candles-and-diffusers__1": "bougies-parfumees-et-diffuseurs",
     "makeup-mirrors": "miroirs-de-maquillage",
     "reading-corner": "coin-lecture",
@@ -4641,9 +4675,12 @@ export default [
     copenhagen: "koppenhaga",
     "paris-en": "parizs",
     "last-pieces": "utolso-darabok",
-    "fabric-corner-sofa-light-grey-dolva": "bal-oldali-vilagosszurke-karpitozott-sarokkanape-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "design-fekete-es-sotet-fa-etkezoasztal-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "divatos-rozsaszin-muszorme-diszparna-2-db-szett-45-x-45-cm-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "bal-oldali-vilagosszurke-karpitozott-sarokkanape-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "design-fekete-es-sotet-fa-etkezoasztal-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "divatos-rozsaszin-muszorme-diszparna-2-db-szett-45-x-45-cm-daisy",
     "scented-candles-and-diffusers__1": "illatgyertyak-es-diffuzorok",
     "makeup-mirrors": "smink-tukrok",
     "reading-corner": "olvasosarok",
@@ -5002,9 +5039,12 @@ export default [
     copenhagen: "copenhagen",
     "paris-en": "parigi",
     "last-pieces": "ultime-unita",
-    "fabric-corner-sofa-light-grey-dolva": "divano-angolare-3-posti-tessuto-grigio-chiaro-sinistro-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "tavolo-da-pranzo-legno-marrone-scuro-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "set-di-2-cuscini-decorativi-45x45cm-rosa-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "divano-angolare-3-posti-tessuto-grigio-chiaro-sinistro-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "tavolo-da-pranzo-legno-marrone-scuro-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "set-di-2-cuscini-decorativi-45x45cm-rosa-daisy",
     "scented-candles-and-diffusers__1": "candele-profumate-e-diffusori",
     "makeup-mirrors": "specchi-trucco",
     "reading-corner": "angolo-lettura",
@@ -5364,8 +5404,10 @@ export default [
     "paris-en": "parijs-nl",
     "last-pieces": "laatste-items",
     "fabric-corner-sofa-light-grey-dolva": "hoekbank-stof-lichtgrijs-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "eettafel-donkerbruin-zwart-200-x-100-cm-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "sierkussen-set-van-2-roze-daisy",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "eettafel-donkerbruin-zwart-200-x-100-cm-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "sierkussen-set-van-2-roze-daisy",
     "scented-candles-and-diffusers__1": "geurkaarsen-en-verstuivers",
     "makeup-mirrors": "makeup-spiegels",
     "reading-corner": "leeshoek",
@@ -5725,8 +5767,10 @@ export default [
     "paris-en": "paris-no",
     "last-pieces": "sidste-stykker",
     "fabric-corner-sofa-light-grey-dolva": "hjornesofa-lys-gra-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "spisebord-200-x-100-cm-morkt-tre-svart-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "sett-med-2-pynteputer-i-fuskepels-45-x-45-cm-rosa-daisy",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "spisebord-200-x-100-cm-morkt-tre-svart-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "sett-med-2-pynteputer-i-fuskepels-45-x-45-cm-rosa-daisy",
     "scented-candles-and-diffusers__1": "duftlys-og-duftpinner",
     "makeup-mirrors": "sminkespeil",
     "reading-corner": "lesehjorne",
@@ -6085,9 +6129,12 @@ export default [
     copenhagen: "kopenhaga",
     "paris-en": "paryz",
     "last-pieces": "ostatnie-sztuki",
-    "fabric-corner-sofa-light-grey-dolva": "sofa-narozna-tapicerowana-jasnoszara-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "stol-do-jadalni-200-x-100-cm-ciemne-drewno-z-czarnym-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "2-poduszki-dekoracyjne-wlochacze-45-x-45-cm-rozowe-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "sofa-narozna-tapicerowana-jasnoszara-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "stol-do-jadalni-200-x-100-cm-ciemne-drewno-z-czarnym-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "2-poduszki-dekoracyjne-wlochacze-45-x-45-cm-rozowe-daisy",
     "scented-candles-and-diffusers__1": "swiece-i-dyfuzory-zapachowe",
     "makeup-mirrors": "lusterka-kosmetyczne",
     "reading-corner": "kacik-do-czytania",
@@ -6446,9 +6493,12 @@ export default [
     copenhagen: "copenhagen-pt",
     "paris-en": "paris-pt",
     "last-pieces": "ultimas-unidades",
-    "fabric-corner-sofa-light-grey-dolva": "sofa-de-canto-em-tecido-cinzento-claro-versao-a-esquerda-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "mesa-de-jantar-200-x-100-cm-castanho-escuro-e-preto-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "conjunto-de-2-almofadas-decorativas-em-pele-sintetica-rosa-45-x-45-cm-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "sofa-de-canto-em-tecido-cinzento-claro-versao-a-esquerda-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "mesa-de-jantar-200-x-100-cm-castanho-escuro-e-preto-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "conjunto-de-2-almofadas-decorativas-em-pele-sintetica-rosa-45-x-45-cm-daisy",
     "scented-candles-and-diffusers__1": "velas-perfumadas-e-difusores",
     "makeup-mirrors": "espelhos-de-maquilhagem",
     "reading-corner": "canto-de-leitura",
@@ -7169,8 +7219,10 @@ export default [
     "paris-en": "paris-sv",
     "last-pieces": "sista-exemplaren",
     "fabric-corner-sofa-light-grey-dolva": "hornsoffa-ljusgra-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "matbord-200-x-100-cm-morkbrun-svart-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "dekorativ-kudde-2-st-45-x-45-cm-fuskpals-rosa-daisy",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "matbord-200-x-100-cm-morkbrun-svart-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "dekorativ-kudde-2-st-45-x-45-cm-fuskpals-rosa-daisy",
     "scented-candles-and-diffusers__1": "doftljus",
     "makeup-mirrors": "sminkspeglar",
     "reading-corner": "lashorna",
@@ -7529,9 +7581,12 @@ export default [
     copenhagen: "kodan-sk",
     "paris-en": "pariz-sk",
     "last-pieces": "posledni-kusyz",
-    "fabric-corner-sofa-light-grey-dolva": "calunena-rohova-pohovka-lavostranna-svetlosiva-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "jedalensky-stol-200-x-100-cm-tmave-drevo-cierna-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "sada-2-vankusov-z-umelej-kozusiny-45-x-45-cm-ruzove-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "calunena-rohova-pohovka-lavostranna-svetlosiva-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "jedalensky-stol-200-x-100-cm-tmave-drevo-cierna-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "sada-2-vankusov-z-umelej-kozusiny-45-x-45-cm-ruzove-daisy",
     "scented-candles-and-diffusers__1": "vonne-sviecky-a-difuzery",
     "makeup-mirrors": "kozmeticke-zrkadla",
     "reading-corner": "citatelsky-kutik",
@@ -7890,9 +7945,12 @@ export default [
     copenhagen: "copenhagen",
     "paris-en": "paris-en",
     "last-pieces": "last-pieces",
-    "fabric-corner-sofa-light-grey-dolva": "fabric-corner-sofa-light-grey-dolva",
-    "dining-table-200-x-100-cm-dark-wood-with-black-sintra": "dining-table-200-x-100-cm-dark-wood-with-black-sintra",
-    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy": "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy",
+    "fabric-corner-sofa-light-grey-dolva":
+      "fabric-corner-sofa-light-grey-dolva",
+    "dining-table-200-x-100-cm-dark-wood-with-black-sintra":
+      "dining-table-200-x-100-cm-dark-wood-with-black-sintra",
+    "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy":
+      "set-of-2-faux-fur-cushions-45-x-45-cm-pink-daisy",
     "scented-candles-and-diffusers__1": "scented-candles-and-diffusers",
     "makeup-mirrors": "makeup-mirrors",
     "reading-corner": "reading-corner",

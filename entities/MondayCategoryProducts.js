@@ -16,12 +16,9 @@ export class MondayCategoryProducts {
       if (productObject instanceof ProductInstance) {
         continue;
       } else {
-        console.log(
-            productObject,
-          " Is not instance of ProductInstance"
-        );
+        console.log(productObject, " Is not instance of ProductInstance");
         throw new Error(
-          "Please, use ProductInstance to define product in app.js. More details in console."
+          "Please, use ProductInstance to define product in app.js. More details in console.",
         );
       }
     }

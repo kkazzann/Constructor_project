@@ -3,83 +3,83 @@ import { Footer } from "../components/footer.js";
 import { Header } from "../components/header.js";
 
 export function AdventCalendar({
-    links,
-    getProductById,
-    getCategoryLink,
-    getCategoryTitle,
-    getPhrase,
-    getFooter,
-    getHeader,
-    queries,
-    id,
-    shop,
-    country,
-    type,
-    categories,
-    background,
+  links,
+  getProductById,
+  getCategoryLink,
+  getCategoryTitle,
+  getPhrase,
+  getFooter,
+  getHeader,
+  queries,
+  id,
+  shop,
+  country,
+  type,
+  categories,
+  background,
 }) {
-    return `
+  return `
     ${Header(
-        {
-          id,
-          advantages: {
-            freeDelivery: getHeader("Free Delivery"),
-            daysReturn: getHeader("365-Day Return"),
+      {
+        id,
+        advantages: {
+          freeDelivery: getHeader("Free Delivery"),
+          daysReturn: getHeader("365-Day Return"),
+        },
+        paragraph: {
+          troubleViewing: getHeader("Trouble viewing"),
+          troubleViewingHrefText: getHeader("Trouble viewing href text"),
+          addBeliani: getHeader("Add Beliani to your"),
+          whiteList: getHeader("Whitelist"),
+          whitelistHref: getHeader("Whitelist href"),
+        },
+        topImage: {
+          src: getHeader("Top image src"),
+          href: getHeader("Top image href"),
+        },
+        categories: {
+          firstCategory: {
+            src: getHeader("Header Category 1 src"),
+            href: getHeader("Header Category 1 href"),
           },
-          paragraph: {
-            troubleViewing: getHeader("Trouble viewing"),
-            troubleViewingHrefText: getHeader("Trouble viewing href text"),
-            addBeliani: getHeader("Add Beliani to your"),
-            whiteList: getHeader("Whitelist"),
-            whitelistHref: getHeader("Whitelist href"),
+          secondCategory: {
+            src: getHeader("Header Category 2 src"),
+            href: getHeader("Header Category 2 href"),
           },
-          topImage: {
-            src: getHeader("Top image src"),
-            href: getHeader("Top image href"),
-          },
-          categories: {
-            firstCategory: {
-              src: getHeader("Header Category 1 src"),
-              href: getHeader("Header Category 1 href"),
-            },
-            secondCategory: {
-              src: getHeader("Header Category 2 src"),
-              href: getHeader("Header Category 2 href"),
-            },
-            thirdCategory: {
-              src: getHeader("Header Category 3 src"),
-              href: getHeader("Header Category 3 href"),
-            },
-          },
-          assembly: {
-            src: ["AT", "PL", "FR", "UK"].includes(country)
-              ? ["#fd9000"].includes(background)
-                ? getHeader("Header delivery_cosy src")
-                : getHeader("Header delivery src")
-              : ["#750000"].includes(background)
-              ? getHeader("Header asembly src")
-              : getHeader("Header asembly_cosy src"),
-            href: getHeader("Header asembly href"),
-            exclude: true,
+          thirdCategory: {
+            src: getHeader("Header Category 3 src"),
+            href: getHeader("Header Category 3 href"),
           },
         },
-        { type }
-      )}
+        assembly: {
+          src: ["AT", "PL", "FR", "UK"].includes(country)
+            ? ["#fd9000"].includes(background)
+              ? getHeader("Header delivery_cosy src")
+              : getHeader("Header delivery src")
+            : ["#750000"].includes(background)
+              ? getHeader("Header asembly src")
+              : getHeader("Header asembly_cosy src"),
+          href: getHeader("Header asembly href"),
+          exclude: true,
+        },
+      },
+      { type },
+    )}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
               <tr>
                 <td align="center">
                     ${ImageWithLink({
-                        href: links[0],
-                        src: links[1],
+                      href: links[0],
+                      src: links[1],
                     })}
                 </td>
               </tr>
               <tr>
                 <td align="center">
                     ${ImageWithLink({
-                        href: links[2],
-                        src: links[3],
+                      href: links[2],
+                      src: links[3],
                     })}
                 </td>
               </tr>
@@ -132,7 +132,7 @@ export function AdventCalendar({
             <tr>
                 <td align="left" class="newsletterBottom35px">
                     <span class="newsletterFooterTitle">${getPhrase(
-                        "Shop limited-time deals"
+                      "Shop limited-time deals",
                     )}</span>
                 </td>
             </tr>
@@ -140,7 +140,7 @@ export function AdventCalendar({
                 <td align="left" class="newsletterBottom20px">
                     <a href=${links[4]}>
                         <img loading="lazy" src=${
-                            links[5]
+                          links[5]
                         } style="display: block;" width="100%">
                     </a>
                 </td>
@@ -149,7 +149,7 @@ export function AdventCalendar({
                 <td align="left" class="newsletterBottom35px">
                     <a href=${links[6]}>
                         <img loading="lazy" src=${
-                            links[7]
+                          links[7]
                         } style="display: block;" width="100%">
                     </a>
                 </td>
@@ -164,9 +164,7 @@ export function AdventCalendar({
               ? getFooter("Delivery src")
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
-            exclude: ["CHIT"].includes(
-              country
-            ),
+            exclude: ["CHIT"].includes(country),
           },
           workBanner: {
             src: getFooter("Job src"),
@@ -273,7 +271,7 @@ export function AdventCalendar({
             vat: getFooter("VAT"),
           },
         },
-        { type }
+        { type },
       )}
-    `
+    `;
 }

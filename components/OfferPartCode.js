@@ -2,7 +2,16 @@ import { Paragraph } from "./Paragraph.js";
 import { Space } from "./Space.js";
 import { GetCode } from "./getCode.js";
 
-export function OfferPartCode({ color, paragraph1, paragraph2, paragraph3, paragraph4, href, code, type }) {
+export function OfferPartCode({
+  color,
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  paragraph4,
+  href,
+  code,
+  type,
+}) {
   const newsletter = `
     <tr>
       <td >

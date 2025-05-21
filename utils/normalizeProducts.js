@@ -26,15 +26,15 @@ export function normalizeProducts(products) {
   const master_products = {};
 
   for (const element of products) {
-    if (!("saved_params" in element)) continue
+    if (!("saved_params" in element)) continue;
     if (element.saved_params.username === "Beliani") {
       master_products[element.id] = element;
     }
   }
 
   for (const element of products) {
-    if (!("saved_params" in element)) continue
-    
+    if (!("saved_params" in element)) continue;
+
     if (element.saved_params.username === "Beliani") {
       normalized.push(new Product({ ...element, hrefs: element.ShopSAAlias }));
     }
@@ -46,7 +46,7 @@ export function normalizeProducts(products) {
         new Product({
           ...element,
           hrefs: master_products[element.saved_params.master_sa]["ShopSAAlias"],
-        })
+        }),
       );
     }
   }

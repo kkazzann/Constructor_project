@@ -13,14 +13,14 @@ export function Freebies({ products, size = { row: 2, col: 2 } }) {
           col: size.col,
           row: size.row,
           html: products.map((product) =>
-          FreebieProduct(
+            FreebieProduct(
               {
                 ...product,
               },
               product.align,
               product.style,
-              product.containerAlign
-            )
+              product.containerAlign,
+            ),
           ),
         })}
       </table>

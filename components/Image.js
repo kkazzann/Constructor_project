@@ -1,8 +1,8 @@
 import { isAllowToRender, optimize } from "../helpers/optimizeImage.js";
 
-export const Image = isAllowToRender(optimize(({src, alt = "", style}) => {
-
-  return `
+export const Image = isAllowToRender(
+  optimize(({ src, alt = "", style }) => {
+    return `
   <table align="center" cellspacing="0" cellpadding="0" style="${style || ""}">
     <tbody>
         <tr>
@@ -13,4 +13,5 @@ export const Image = isAllowToRender(optimize(({src, alt = "", style}) => {
     </tbody>
   </table>
   `;
-}))
+  }),
+);

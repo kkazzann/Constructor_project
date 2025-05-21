@@ -9,15 +9,19 @@ export class TemplateLinks {
       throw new Error("Links should be array property type.");
     }
     for (const linkObject of links) {
-      if (linkObject instanceof Image || linkObject instanceof OriginHref || linkObject instanceof SlugImage) {
+      if (
+        linkObject instanceof Image ||
+        linkObject instanceof OriginHref ||
+        linkObject instanceof SlugImage
+      ) {
         continue;
       } else {
         console.log(
           linkObject,
-          " Is not instance of OriginHref SlugImage Image"
+          " Is not instance of OriginHref SlugImage Image",
         );
         throw new Error(
-          "Please, use OriginHref, SlugImage, Image to define link in app.js. More details in console."
+          "Please, use OriginHref, SlugImage, Image to define link in app.js. More details in console.",
         );
       }
     }

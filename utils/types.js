@@ -990,7 +990,7 @@ export default {
     }
   }
   `,
-  LP: `
+    LP: `
 
   #newsletter .newsletterTitleH1 {
        font-size: 45px;

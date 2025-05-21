@@ -3,33 +3,35 @@ import { ImageWithLink } from "./ImageWithLink.js";
 import { Space } from "./Space.js";
 
 export function SundayCategory(props) {
-    props.isCta = props?.isCta === false ? props.isCta : true
-    const country = getState("country")
+  props.isCta = props?.isCta === false ? props.isCta : true;
+  const country = getState("country");
 
-    for (const item of props?.renderOn || []) {
-        if (country in item) {
-            props[item.field] = item[country]
-        }
+  for (const item of props?.renderOn || []) {
+    if (country in item) {
+      props[item.field] = item[country];
     }
+  }
 
-    const {href, src, cta} = props
+  const { href, src, cta } = props;
 
-    if (props.href === null || props.src === null) {
-        return ""
-    }
-    return `
+  if (props.href === null || props.src === null) {
+    return "";
+  }
+  return `
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
 
             <tr>
                 <td align="center">
                     ${ImageWithLink({
-                    href,
-                    src,
+                      href,
+                      src,
                     })}
                 </td>
             </tr>
 
-            ${props.isCta ? `
+            ${
+              props.isCta
+                ? `
             <tr>
                 <td>
                     ${Space()}
@@ -43,7 +45,9 @@ export function SundayCategory(props) {
                     </a>
                 </td>
             </tr>
-            ` : ""}
+            `
+                : ""
+            }
         </table>
     `;
 }

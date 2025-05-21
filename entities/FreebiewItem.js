@@ -13,7 +13,7 @@ export class FreebieItem {
       if (!("src" in freeebieProduct) || !("id" in freeebieProduct)) {
         console.log(freeebieProduct, " src is not defined in freeebieProduct");
         throw new Error(
-          "Please, add src and id to FreebieItem in app.js. More details in console."
+          "Please, add src and id to FreebieItem in app.js. More details in console.",
         );
       }
     }

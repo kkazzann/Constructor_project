@@ -71,13 +71,13 @@ export async function mondayCategories({
             ? getHeader("Header delivery_cosy src")
             : getHeader("Header delivery src")
           : ["#750000"].includes(background)
-          ? getHeader("Header asembly src")
-          : getHeader("Header asembly_cosy src"),
+            ? getHeader("Header asembly src")
+            : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
         exclude: true,
       },
     },
-    { type }
+    { type },
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
         <tbody>
@@ -184,7 +184,7 @@ export async function mondayCategories({
                         cta: getPhrase("Shop now"),
                         type: "monday",
                         products: categories[0].products.map((item) =>
-                          getProductById(item.id, item.src)
+                          getProductById(item.id, item.src),
                         ),
                       })}
                   </td>
@@ -213,7 +213,7 @@ export async function mondayCategories({
                           cta: getPhrase("Shop now"),
                           type: "monday",
                           products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -242,7 +242,7 @@ export async function mondayCategories({
                           cta: getPhrase("Shop now"),
                           type: "monday",
                           products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -272,7 +272,7 @@ export async function mondayCategories({
                           cta: getPhrase("Shop now"),
                           type: "monday",
                           products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -294,7 +294,7 @@ export async function mondayCategories({
                               <tr>
                                   <td align="left" class="newsletterBottom35px">
                                       <span class="newsletterFooterTitle">${getPhrase(
-                                        "Shop limited-time deals"
+                                        "Shop limited-time deals",
                                       )}</span>
                                   </td>
                               </tr>
@@ -331,7 +331,7 @@ export async function mondayCategories({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country
+              country,
             ),
           },
           workBanner: {
@@ -439,7 +439,7 @@ export async function mondayCategories({
             vat: getFooter("VAT"),
           },
         },
-        { type }
+        { type },
       )}
     `;
 }

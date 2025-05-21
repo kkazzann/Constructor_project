@@ -72,8 +72,8 @@ export function OfferPartCodes({ offerParts, type }) {
               item?.class
                 ? `class='${item.class}'`
                 : offerParts.length - 1 === i
-                ? ""
-                : 'class="newsletterBottom20px"'
+                  ? ""
+                  : 'class="newsletterBottom20px"'
             }>
                 <span class="newsletterParagraph">
                     ${item.paragraph}

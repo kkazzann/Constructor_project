@@ -20,21 +20,20 @@ function handleRelation(relation) {
   const country = getState("country");
   const { value, placeholderPosition, relyOn } = relation;
 
-  
   let relyOnValue = "";
   if (relyOn === "slug") {
-    relyOnValue = country
+    relyOnValue = country;
   }
 
   if (relyOn === "origin") {
-    relyOnValue = shop.origin
+    relyOnValue = shop.origin;
   }
 
   const arrayValue = value.split("");
   const splitted = arrayValue.toSpliced(
     placeholderPosition,
     0,
-    relyOnValue.toLowerCase()
+    relyOnValue.toLowerCase(),
   );
   const newValue = splitted.join("");
 

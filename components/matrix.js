@@ -10,7 +10,7 @@ export function Matrix({ row, col, html }) {
   const matrix = Array(Number(row)).fill(Array(Number(col)).fill(""));
   const itemsAmount = html.length;
   let index = 0;
-  let width = 100 / (itemsAmount / row)
+  let width = 100 / (itemsAmount / row);
   return matrix
     .map((col) => {
       return rowFn(
@@ -21,7 +21,7 @@ export function Matrix({ row, col, html }) {
             }
             return colFn(html[index++], width);
           })
-          .join("")
+          .join(""),
       );
     })
     .join("");

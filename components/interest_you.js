@@ -1,19 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-export function ThisMayInterestYou({title, categories}) {
-
-
-
-
-
+export function ThisMayInterestYou({ title, categories }) {
   return `
   <tr>
       <td align="center">

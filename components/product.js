@@ -7,8 +7,8 @@ export function Product(product, align = "left", style) {
       <tr>
         <td>
           ${
-            "src" in product && product.src !== null ?
-            `<table cellspacing="0" cellpadding="0" style="width: 100%; ">
+            "src" in product && product.src !== null
+              ? `<table cellspacing="0" cellpadding="0" style="width: 100%; ">
             <tbody>
               <tr>
                 <td align="${align}" class="newsletterBottom20px">
@@ -21,8 +21,7 @@ export function Product(product, align = "left", style) {
               </tr>
             </tbody>
           </table>`
-            :
-            ""
+              : ""
           }
           <table cellspacing="0" cellpadding="0" style="width: 100%; ">
             <tbody>

@@ -86,6 +86,6 @@ const observerMobile = new IntersectionObserver(handleIntersectingMobile);
 window.onload = () => {
   mountIntersectionMobile();
   selectorss.forEach((frame) =>
-    observerMobile.observe(document.querySelector("#" + frame))
+    observerMobile.observe(document.querySelector("#" + frame)),
   );
 };

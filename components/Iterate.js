@@ -5,7 +5,7 @@ export function Iterate({ items, lastItemFn, itemFn }) {
 
   if (!itemFn) {
     throw new Error(
-      "itemFn properrty should be defined in template -> (element, index) => { return '' }"
+      "itemFn properrty should be defined in template -> (element, index) => { return '' }",
     );
   }
 

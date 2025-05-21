@@ -48,7 +48,7 @@ export function OfferPart({ offers, offerDate, href, code, type, color }) {
           code: code,
           link: href,
           type,
-          color
+          color,
         })}
       </td>
     </tr>

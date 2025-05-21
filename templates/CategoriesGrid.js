@@ -71,13 +71,13 @@ export async function CategoriesGrid({
             ? getHeader("Header delivery_cosy src")
             : getHeader("Header delivery src")
           : ["#750000"].includes(background)
-          ? getHeader("Header asembly src")
-          : getHeader("Header asembly_cosy src"),
+            ? getHeader("Header asembly src")
+            : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
         exclude: true,
       },
     },
-    { type }
+    { type },
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
@@ -100,41 +100,46 @@ export async function CategoriesGrid({
 
               <tr>
                 <td align="center" style="background-color: ${background};" class="newsletterContainer">
-                    ${Space({className: "newsletterBottom35px"})}
+                    ${Space({ className: "newsletterBottom35px" })}
                     ${Intro({
                       title: {
                         value: queries.offerPart[0],
-                        className: "newsletterTitleOfferPart"
+                        className: "newsletterTitleOfferPart",
                       },
                       paragraph: queries.offerPart[1],
                       align: "center",
                       spaceClassName: null,
                     })}
-                    ${Space({className: "newsletterBottom20px"})}
+                    ${Space({ className: "newsletterBottom20px" })}
                     ${Intro({
                       title: {
                         value: queries.offerPart[2],
-                        className: "newsletterTitleOfferPart"
+                        className: "newsletterTitleOfferPart",
                       },
                       paragraph: queries.offerPart[3],
                       align: "center",
                       spaceClassName: null,
                     })}
-                    ${Space({className: "newsletterBottom60px"})}
+                    ${Space({ className: "newsletterBottom60px" })}
                     ${GetCode({
                       type,
                       link: links[0],
-                      code: type === "newsletter" ? getPhrase("Get code") : queries.code
+                      code:
+                        type === "newsletter"
+                          ? getPhrase("Get code")
+                          : queries.code,
                     })}
-                    ${Space({className: "newsletterBottom60px"})}
-                    ${Paragraph(queries.offerDate, 'center')}
-                    ${Space({className: "newsletterBottom20px"})}
+                    ${Space({ className: "newsletterBottom60px" })}
+                    ${Paragraph(queries.offerDate, "center")}
+                    ${Space({ className: "newsletterBottom20px" })}
                     ${GetCode({
                       type: "newsletter",
-                      link: getCategoryLink("https://www.beliani.ch/bedroom-furniture/mattresses/"),
-                      code: queries.shopAllMattrasses
+                      link: getCategoryLink(
+                        "https://www.beliani.ch/bedroom-furniture/mattresses/",
+                      ),
+                      code: queries.shopAllMattrasses,
                     })}
-                    ${Space({className: "newsletterBottom80px"})}
+                    ${Space({ className: "newsletterBottom80px" })}
                 </td>
               </tr>
 
@@ -144,7 +149,7 @@ export async function CategoriesGrid({
                     ${Space()}
                     ${Intro({
                       data: queries.intro,
-                      align: "center"
+                      align: "center",
                     })}
                     ${Space()}
                 </td>
@@ -172,8 +177,8 @@ export async function CategoriesGrid({
                           <br>
                           <br>
                           <a href="${getCategoryLink(computed.href)}" style="color:${
-                              computed.color || "#000"
-                            }; text-decoration: underline;">
+                            computed.color || "#000"
+                          }; text-decoration: underline;">
                             <span class="newsletterCta" >${getPhrase("Shop now")}</span>
                           </a>
                         </td>
@@ -209,7 +214,7 @@ export async function CategoriesGrid({
                             <tr>
                                 <td align="left" class="newsletterBottom35px">
                                     <span class="newsletterFooterTitle">${getPhrase(
-                                      "Shop limited-time deals"
+                                      "Shop limited-time deals",
                                     )}</span>
                                 </td>
                             </tr>
@@ -246,7 +251,7 @@ export async function CategoriesGrid({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country
+              country,
             ),
           },
           workBanner: {
@@ -354,7 +359,7 @@ export async function CategoriesGrid({
             vat: getFooter("VAT"),
           },
         },
-        { type }
+        { type },
       )}
     `;
 }

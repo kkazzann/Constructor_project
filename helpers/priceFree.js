@@ -1,4 +1,4 @@
-import {getState} from "../main/initApp.js"
+import { getState } from "../main/initApp.js";
 
 const free = {
   UK: "FREE",
@@ -23,9 +23,9 @@ const free = {
   SK: "GRÁTIS",
   HU: "AJÁNDÉK",
   RO: "CADOU",
-}
+};
 
 export function priceFree(product) {
-  const country = getState("country")
-  return {...product, lowPrice: free[country], highPrice: product.lowPrice}
+  const country = getState("country");
+  return { ...product, lowPrice: free[country], highPrice: product.lowPrice };
 }

@@ -104,14 +104,14 @@ export function getQueryLink(item) {
       const collectFilters = [];
       allFilters.forEach((filterTitle) => {
         const filterItem = filterValues.find(
-          (filter) => filter.title === filterTitle
+          (filter) => filter.title === filterTitle,
         );
         const filterValue = filterItem.data[relativeLanguageToCountry[country]];
         collectFilters.push(handleSpace(handleSpecialCharacters(filterValue)));
       });
       queryLink.searchParams.append(
         handleSpace(handleSpecialCharacters(filterName)),
-        collectFilters.join(",")
+        collectFilters.join(","),
       );
     }
   }

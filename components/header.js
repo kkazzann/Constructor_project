@@ -32,7 +32,7 @@ export function Header(sections, options) {
     topImage: {
       [types.NEWSLETTER]: {
         value: (
-          topImage
+          topImage,
         ) => `<table align="center" cellspacing="0" cellpadding="0" border="0"
                     style="margin: 0 auto; background-color:#ffffff; padding-top: 0em; padding-bottom: 0em; ">
                     <tbody>
@@ -83,7 +83,7 @@ export function Header(sections, options) {
     assembly: {
       [types.NEWSLETTER]: {
         value: (
-          assembly
+          assembly,
         ) => `<table align="center" cellspacing="0" cellpadding="0" border="0"  style="margin: 0 auto; background-color:#ffffff; padding-top: 0em; padding-bottom: 0em; ">
                     <tbody>
                         <tr>
@@ -98,7 +98,7 @@ export function Header(sections, options) {
       },
       [types.LANDINGPAGE]: {
         value: (
-          assembly
+          assembly,
         ) => `<table align="center" cellspacing="0" cellpadding="0" border="0"  style="margin: 0 auto; background-color:#ffffff; padding-top: 0em; padding-bottom: 0em; ">
                     <tbody>
                         <tr>
@@ -126,7 +126,7 @@ export function Header(sections, options) {
         for (const key in elem) {
           let element = elem[key];
           if (element === undefined) {
-            element = ""
+            element = "";
           }
 
           if (typeof elem !== "object") {
@@ -147,7 +147,7 @@ export function Header(sections, options) {
         for (const key in elem) {
           let element = elem[key];
           if (element === undefined) {
-            element = ""
+            element = "";
           }
           if (typeof elem !== "object") {
             conditionalSections[key] = element;
@@ -162,7 +162,7 @@ export function Header(sections, options) {
       }
     } else {
       throw new Error(
-        "Dodaj sekcje: " + section + ". Do json_header in Header.js"
+        "Dodaj sekcje: " + section + ". Do json_header in Header.js",
       );
     }
   }

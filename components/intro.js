@@ -1,15 +1,15 @@
 import { isAllowToRender } from "../helpers/optimizeImage.js";
 import { Space } from "./Space.js";
 
-export const Intro = isAllowToRender(({ title, paragraph, data, spaceClassName, color, align = "left" }) => {
-  
-  if (title === 'no_title'){
-    return `
+export const Intro = isAllowToRender(
+  ({ title, paragraph, data, spaceClassName, color, align = "left" }) => {
+    if (title === "no_title") {
+      return `
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
     <tbody>
       <tr>
         <td>
-          ${Space({className: spaceClassName})}
+          ${Space({ className: spaceClassName })}
         </td>
       </tr>
       <tr>
@@ -30,8 +30,8 @@ export const Intro = isAllowToRender(({ title, paragraph, data, spaceClassName, 
     </tbody>
   </table>
     `;
-  }
-  return `
+    }
+    return `
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
     <tbody>
       <tr>
@@ -40,7 +40,7 @@ export const Intro = isAllowToRender(({ title, paragraph, data, spaceClassName, 
             <tbody>
               <tr>
                 <td align="${align}">
-                  <span class="${title?.className  || "newsletterTitle"}" style="color: ${color || "#000000"}">
+                  <span class="${title?.className || "newsletterTitle"}" style="color: ${color || "#000000"}">
                     ${data ? data[0] : title?.value}
                   </span>
                 </td>
@@ -51,7 +51,7 @@ export const Intro = isAllowToRender(({ title, paragraph, data, spaceClassName, 
       </tr>
       <tr>
         <td>
-          ${Space({className: spaceClassName})}
+          ${Space({ className: spaceClassName })}
         </td>
       </tr>
       <tr>
@@ -72,4 +72,5 @@ export const Intro = isAllowToRender(({ title, paragraph, data, spaceClassName, 
     </tbody>
   </table>
     `;
-})
+  },
+);

@@ -33,7 +33,7 @@ export class MondayFreebieLanding extends LandingTemplate {
       freebies,
       categories,
       background,
-      insideBanner
+      insideBanner,
     } = {
       offerPart: { color, type },
       intro: { background, color },
@@ -43,7 +43,7 @@ export class MondayFreebieLanding extends LandingTemplate {
         },
         items: [],
       },
-    }
+    },
   ) {
     let codeTableQuery = false;
     if (!Array.isArray(tableQueries)) {
@@ -56,7 +56,7 @@ export class MondayFreebieLanding extends LandingTemplate {
     }
     if (!codeTableQuery) {
       throw new Error(
-        'At least 1 TableQuery instance should be defined with name: "code" in tableQueries for MondayFreebieLanding template'
+        'At least 1 TableQuery instance should be defined with name: "code" in tableQueries for MondayFreebieLanding template',
       );
     }
     if (insideBanner) {
@@ -72,7 +72,7 @@ export class MondayFreebieLanding extends LandingTemplate {
     }
     if (!freebies) {
       throw new Error(
-        "freebies property should be defined in MondayFreebieLanding template"
+        "freebies property should be defined in MondayFreebieLanding template",
       );
     }
     if (!("items" in freebies)) {
@@ -80,7 +80,7 @@ export class MondayFreebieLanding extends LandingTemplate {
     }
     if (!categories) {
       throw new Error(
-        "categories should defined in MondayFreebieLanding template"
+        "categories should defined in MondayFreebieLanding template",
       );
     }
     if (!Array.isArray(categories)) {
@@ -93,7 +93,7 @@ export class MondayFreebieLanding extends LandingTemplate {
       } else {
         console.log(freebie, " Is not instance of FreebieItem");
         throw new Error(
-          "Please, use FreebieItem to define freebie item in app.js. More details in console."
+          "Please, use FreebieItem to define freebie item in app.js. More details in console.",
         );
       }
     }

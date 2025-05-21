@@ -12,7 +12,8 @@ export function parsePrice(product, options) {
         ? priceFormats[shop.slug](
             product.country === "pl"
               ? Math.ceil(product.highPrice).toString()
-              : product.highPrice, options
+              : product.highPrice,
+            options,
           )
         : "",
   };

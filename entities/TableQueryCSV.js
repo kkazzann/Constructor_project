@@ -33,7 +33,7 @@ export class TableQueryCSV {
       return;
     }
     throw new Error(
-      "name property for TableQueryCSV can be: templates, header, footer, categoriesLinks, categoriesTitles"
+      "name property for TableQueryCSV can be: templates, header, footer, categoriesLinks, categoriesTitles",
     );
   }
 }

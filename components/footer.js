@@ -695,16 +695,16 @@ export function Footer(sections, options) {
                 <tr>
                     <td class="newsletterTopBottomContainer" align="left">
                         <span class="newsletterConditions" style="color: #000000;">${conditionsTitle} ${
-            conditionsText.length === 2
-              ? conditionsText[0] + " " + conditionsText[1]
-              : conditionsText.length === 3
-              ? conditionsText[0] +
-                " " +
-                conditionsText[1] +
-                " " +
-                conditionsText[2]
-              : conditionsText
-          }</span>
+                          conditionsText.length === 2
+                            ? conditionsText[0] + " " + conditionsText[1]
+                            : conditionsText.length === 3
+                              ? conditionsText[0] +
+                                " " +
+                                conditionsText[1] +
+                                " " +
+                                conditionsText[2]
+                              : conditionsText
+                        }</span>
                     </td>
                 </tr>
             </tbody>
@@ -724,12 +724,12 @@ export function Footer(sections, options) {
                 <tr>
                     <td class="newsletterTopBottomContainer" align="left">
                         <span class="newsletterConditions" style="color: #000000;">${conditionsTitle} ${
-          conditionsText.length === 3
-            ? conditionsText[0] + " " + conditionsText[1]
-            : conditionsText.length === 2
-            ? conditionsText[0]
-            : conditionsText[0]
-        }</span>
+                          conditionsText.length === 3
+                            ? conditionsText[0] + " " + conditionsText[1]
+                            : conditionsText.length === 2
+                              ? conditionsText[0]
+                              : conditionsText[0]
+                        }</span>
                     </td>
                 </tr>
             </tbody>
@@ -829,7 +829,7 @@ export function Footer(sections, options) {
       }
     } else {
       throw new Error(
-        "Dodaj sekcje: " + section + ". Do json_footer in Footer.js"
+        "Dodaj sekcje: " + section + ". Do json_footer in Footer.js",
       );
     }
   }

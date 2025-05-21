@@ -48,7 +48,7 @@ export class MondayFreebieNewsletter extends NewsletterTemplate {
         href: "",
         src_config: {},
       },
-    }
+    },
   ) {
     if (!Array.isArray(tableQueries)) {
       throw new Error("tableQueries should be array property type.");
@@ -66,7 +66,7 @@ export class MondayFreebieNewsletter extends NewsletterTemplate {
     }
     if (!freebies) {
       throw new Error(
-        "freebies property should be defined in MondayFreebieNewsletter template"
+        "freebies property should be defined in MondayFreebieNewsletter template",
       );
     }
     if (!("items" in freebies)) {
@@ -74,7 +74,7 @@ export class MondayFreebieNewsletter extends NewsletterTemplate {
     }
     if (!categories) {
       throw new Error(
-        "categories should defined in MondayFreebieNewsletter template"
+        "categories should defined in MondayFreebieNewsletter template",
       );
     }
     if (!Array.isArray(categories)) {
@@ -87,7 +87,7 @@ export class MondayFreebieNewsletter extends NewsletterTemplate {
       } else {
         console.log(freebie, " Is not instance of FreebieItem");
         throw new Error(
-          "Please, use FreebieItem to define freebie item in app.js. More details in console."
+          "Please, use FreebieItem to define freebie item in app.js. More details in console.",
         );
       }
     }
