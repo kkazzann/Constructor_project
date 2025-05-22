@@ -1,3 +1,4 @@
+import { Campaign } from "../entities/Campaign.js";
 import { incrementId } from "../helpers/incrementId.js";
 import { getState, setState } from "./initApp.js";
 
@@ -28,7 +29,7 @@ function figmaCardHandler(url) {
 
 function selectCampaignHandler(ev, campaigns) {
   const selectedCampaign = campaigns.find(
-    (campaign) => campaign.startId === ev.target.value,
+    (campaign) => campaign.startId === Number(ev.target.value)
   );
 
   if (!selectedCampaign) {
