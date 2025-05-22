@@ -259,7 +259,7 @@ export async function CategoriesRowsOfferPart({
   }
 
   const a = categories[3].products.map((item) =>
-    getProductById(item.id, item.src)
+    getProductById(item.id, item.src),
   );
   return `
   ${Header(
@@ -300,13 +300,13 @@ export async function CategoriesRowsOfferPart({
             ? getHeader("Header delivery_cosy src")
             : getHeader("Header delivery src")
           : ["#FBF4F3"].includes(background)
-          ? getHeader("Header asembly src")
-          : getHeader("Header asembly_cosy src"),
+            ? getHeader("Header asembly src")
+            : getHeader("Header asembly_cosy src"),
         href: getHeader("Header asembly href"),
         exclude: true,
       },
     },
-    { type }
+    { type },
   )}
 
    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #FBF4F3; color: #000;" id='newsletter'>   
@@ -410,7 +410,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[0].color,
                           products: categories[0].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -428,7 +428,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[1].color,
                           products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -445,7 +445,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[2].color,
                           products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -462,7 +462,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[3].color,
                           products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src)
+                            getProductById(item.id, item.src),
                           ),
                         })}
                     </td>
@@ -488,7 +488,7 @@ export async function CategoriesRowsOfferPart({
                           <tr>
                               <td align="left" class="newsletterBottom35px">
                                   <span class="newsletterFooterTitle">${getPhrase(
-                                    "Shop limited-time deals"
+                                    "Shop limited-time deals",
                                   )}</span>
                               </td>
                           </tr>
@@ -632,7 +632,7 @@ export async function CategoriesRowsOfferPart({
             vat: getFooter("VAT"),
           },
         },
-        { type }
+        { type },
       )}
     `;
 }

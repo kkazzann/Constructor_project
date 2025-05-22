@@ -53,8 +53,8 @@ export const Category = isAllowToRender(
                 ? ctaComponent(href, cta)
                 : `
                 <a href="${href}" style="color:${
-                    color || "#000"
-                  }; text-decoration: underline;">
+                  color || "#000"
+                }; text-decoration: underline;">
                   <span class="newsletterCta">${cta}</span>
                 </a>
               `
@@ -105,8 +105,8 @@ export const Category = isAllowToRender(
                 ? ctaComponent(href, cta)
                 : `
                 <a href="${href}" style="color:${
-                    color || "#000"
-                  }; text-decoration: underline;">
+                  color || "#000"
+                }; text-decoration: underline;">
                   <span class="newsletterCta">${cta}</span>
                 </a>
               `
@@ -179,7 +179,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[0],
                         "left",
-                        `color: ${color || "#000000"}`
+                        `color: ${color || "#000000"}`,
                       )}
                     </td>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
@@ -187,7 +187,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[1],
                         "left",
-                        `color: ${color || "#000000"}`
+                        `color: ${color || "#000000"}`,
                       )}
                     </td>
                   </tr>
@@ -204,7 +204,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[2],
                         "left",
-                        `color: ${color || "#000000"}`
+                        `color: ${color || "#000000"}`,
                       )}
                     </td>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
@@ -212,7 +212,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[3],
                         "left",
-                        `color: ${color || "#000000"}`
+                        `color: ${color || "#000000"}`,
                       )}
                     </td>
                   </tr>
@@ -237,8 +237,8 @@ export const Category = isAllowToRender(
                       ? ctaComponent(href, cta)
                       : `
                       <a href="${href}" style="color:${
-                          color || "#000"
-                        }; text-decoration: underline;">
+                        color || "#000"
+                      }; text-decoration: underline;">
                         <span class="newsletterCta">${cta}</span>
                       </a>
                     `
@@ -295,5 +295,5 @@ export const Category = isAllowToRender(
       </table>
       `;
     }
-  }
+  },
 );

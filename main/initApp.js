@@ -158,12 +158,12 @@ export function initApp({ campaigns, shops, config }) {
     const parsedProducts = localProducts
       ? normalizeProducts(localProducts)
       : LSProducts
-      ? JSON.parse(LSProducts)
-      : [];
+        ? JSON.parse(LSProducts)
+        : [];
     const campaignProducts = localProducts
       ? parsedProducts
       : parsedProducts.find(
-          (item) => item.campaign_id === getState("selectedCampaign").startId
+          (item) => item.campaign_id === getState("selectedCampaign").startId,
         );
 
     // We can read data from table.
@@ -187,7 +187,7 @@ export function initApp({ campaigns, shops, config }) {
         categories: templateToRender.categories?.map((item) =>
           Array.isArray(item)
             ? item.map((item) => computeValue({ ...item }))
-            : computeValue({ ...item })
+            : computeValue({ ...item }),
         ),
         type: templateToRender.type,
         getProductById: handlers.getProductById,
@@ -270,7 +270,7 @@ export function initApp({ campaigns, shops, config }) {
       try {
         const prevProducts = prev ? JSON.parse(prev) : [];
         const isProductsSetted = prevProducts.find(
-          (item) => item.campaign_id === selectedCampaign.startId
+          (item) => item.campaign_id === selectedCampaign.startId,
         );
 
         const normalizedProducts = normalizeProducts(newProducts);
@@ -298,7 +298,7 @@ export function initApp({ campaigns, shops, config }) {
               const ids = prevProducts.map((item) => item.campaign_id);
               const deleteCampaignId = prompt(
                 "Memory exceeded, please enter startId to delete: " +
-                  ids.join(",")
+                  ids.join(","),
               );
               if (!deleteCampaignId) {
                 return;
@@ -312,7 +312,7 @@ export function initApp({ campaigns, shops, config }) {
                 return;
               }
               const prevCampaigns = prevProducts.filter(
-                (item) => item.campaign_id !== deleteCampaignId
+                (item) => item.campaign_id !== deleteCampaignId,
               );
               localStorage.setItem(
                 "products",
@@ -322,7 +322,7 @@ export function initApp({ campaigns, shops, config }) {
                     campaign_id: selectedCampaign.startId,
                     products: normalizedProducts,
                   },
-                ])
+                ]),
               );
               Toastify({
                 text: "Products successfully saved.",
@@ -343,7 +343,7 @@ export function initApp({ campaigns, shops, config }) {
                   campaign_id: selectedCampaign.startId,
                   products: normalizedProducts,
                 },
-              ])
+              ]),
             );
           } catch (error) {
             const quotaExceededError = isQuotaExceededError(error);
@@ -351,7 +351,7 @@ export function initApp({ campaigns, shops, config }) {
               const ids = prevProducts.map((item) => item.campaign_id);
               const deleteCampaignId = prompt(
                 "Memory exceeded, please enter startId to delete: " +
-                  ids.join(",")
+                  ids.join(","),
               );
               if (!deleteCampaignId) {
                 return;
@@ -365,7 +365,7 @@ export function initApp({ campaigns, shops, config }) {
                 return;
               }
               const prevCampaigns = prevProducts.filter(
-                (item) => item.campaign_id !== deleteCampaignId
+                (item) => item.campaign_id !== deleteCampaignId,
               );
               localStorage.setItem(
                 "products",
@@ -375,7 +375,7 @@ export function initApp({ campaigns, shops, config }) {
                     campaign_id: selectedCampaign.startId,
                     products: normalizedProducts,
                   },
-                ])
+                ]),
               );
               Toastify({
                 text: "Products successfully saved.",
@@ -395,7 +395,7 @@ export function initApp({ campaigns, shops, config }) {
       }
     });
     openCampaign?.addEventListener("click", (e) =>
-      openCampaignHandler(state.ids[state.country])
+      openCampaignHandler(state.ids[state.country]),
     );
     openIssue?.addEventListener("click", (e) => {
       if (!state.selectedCampaign.issueCardId) {
@@ -500,7 +500,7 @@ export function initApp({ campaigns, shops, config }) {
 
       const { selectedCampaign, templates } = selectCampaignHandler(
         ev,
-        campaigns
+        campaigns,
       );
 
       root.innerHTML = "";
@@ -526,7 +526,7 @@ export function initApp({ campaigns, shops, config }) {
   function setSelectedTemplate(ev) {
     const selectedTemplates = getState("selectedTemplates");
     const selectedTemplate = selectedTemplates.find(
-      (template) => template.type + "_" + template.name === ev.target.value
+      (template) => template.type + "_" + template.name === ev.target.value,
     );
     if (!selectedTemplate) {
       Toastify({
