@@ -392,7 +392,7 @@ export async function CategoriesRowsOfferPart({
                 <td style="background-color: #FFCCB7">
                       ${ImageWithLink({
                         href: links[4],
-                        src: "https://upload.pictureserver.net/static/2025/250605_freebis.png",
+                        src: "https://upload.pictureserver.net/static/2025/250605Freebies_01.png",
                       })}
                 </td>
               </tr>

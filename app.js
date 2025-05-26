@@ -1,11 +1,11 @@
-import { templates } from "./templates/index.js";
-import { entities } from "./entities/index.js";
-import types from "./utils/types.js";
-import SHOPS from "./config/shops.js";
-import { initApp } from "./main/initApp.js";
+import { templates } from "./src/templates/index.js";
+import { entities } from "./src/entities/index.js";
+import types from "./src/utils/types.js";
+import SHOPS from "./src/config/shops.js";
+import { initApp } from "./src/main/initApp.js";
 
-import campaign_359290 from "./campaigns/359290.js";
-import campaign_365041 from "./campaigns/365041.js";
+import campaign_359290 from "./src/campaigns/359290.js";
+import campaign_365041 from "./src/campaigns/365041.js";
 
 try {
   initApp({

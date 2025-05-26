@@ -2,6 +2,7 @@ import { getState } from "../main/initApp.js";
 import { adjustTableRangeToCountry } from "../utils/fixRange.js";
 import { normalizeTranslations } from "../utils/normalizeTranslations.js";
 import { GoogleAuth } from "../services/GoogleAuth.js";
+import Toastify from "toastify-js";
 
 export const fetchTranslations = async ({ tableQueries }) => {
   const name = getState("name");
