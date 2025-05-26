@@ -1,0 +1,24 @@
+{
+  "name": "constructor",
+  "version": "1.0.0",
+  "description": "building localized newsletters & landing-pages made easily ",
+  "homepage": "https://github.com/kkazzann/Constructor_project#readme",
+  "bugs": {
+    "url": "https://github.com/kkazzann/Constructor_project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkazzann/Constructor_project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "app.js",
+  "scripts": {
+    "lint": "npx prettier --write .",
+    "start": "npx vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "vite": "^6.3.5"
+  }
+}

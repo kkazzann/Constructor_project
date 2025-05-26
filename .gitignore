@@ -1,1 +1,3 @@
-./utils/config.js
+utils/config.js
+node_modules/
+package-lock.json
