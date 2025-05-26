@@ -5,7 +5,7 @@ import getImageUrl from "../utils/getImageUrl.js";
 
 export default new entities.Campaign({
   date: "2025.05.29",
-  name: "aktualna",
+  name: "Man's Cave",
   issueCardId: 365041,
   startId: 33575,
   figmaUrl:

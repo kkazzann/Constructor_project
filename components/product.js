@@ -1,13 +1,14 @@
 import { ImageWithLink } from "./ImageWithLink.js";
 
 export function Product(product, align = "left", style) {
+  console.log(`Produkt: ${product}`);
   return `
   <table cellspacing="0" cellpadding="0" style="width: 100%; ${style ?? ""}">
     <tbody>
       <tr>
         <td>
           ${
-            "src" in product && product.src !== null
+            product.src !== null
               ? `<table cellspacing="0" cellpadding="0" style="width: 100%; ">
             <tbody>
               <tr>

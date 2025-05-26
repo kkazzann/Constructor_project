@@ -41,40 +41,69 @@ export default new entities.Campaign({
           name: "sofas",
           background: "#FFEBE2",
           color: "#000",
-          src: getImageUrl("250605_cat1.png", true),
-          href: "https://www.beliani.ch/beds/",
+          src: {
+            type: "relation",
+            relyOn: "slug",
+            placeholderPosition: "38",
+            value: getImageUrl("250605_cat1.png", true),
+          },
+          href: "https://www.beliani.ch/living-room-furniture/sofas/",
           products: [],
         },
         {
           name: "armchairs",
           background: "#FFDEB3",
           color: "#000",
-          src: getImageUrl("250605_cat2.png", true),
-          href: "https://www.beliani.ch/bedroom-furniture/armchairs/",
+
+          src: {
+            type: "relation",
+            relyOn: "slug",
+            placeholderPosition: "38",
+            value: getImageUrl("250605_cat2.png", true),
+          },
+          href: "https://www.beliani.ch/living-room-furniture/armchairs/",
           products: [],
         },
         {
           name: "storage",
           background: "#FFEBE2",
           color: "#000",
-          src: getImageUrl("250605_cat3.png", true),
-          href: "https://www.beliani.ch/storage/",
+
+          src: {
+            type: "relation",
+            relyOn: "slug",
+            placeholderPosition: "38",
+            value: getImageUrl("250605_cat3.png", true),
+          },
+          href: "https://www.beliani.ch/living-room-furniture/storage/",
           products: [],
         },
         {
           name: "coffee-tables",
           background: "#FFDEB3",
           color: "#000",
-          src: getImageUrl("250605_cat4.png", true),
-          href: "https://www.beliani.ch/home-accessories/",
+
+          src: {
+            type: "relation",
+            relyOn: "slug",
+            placeholderPosition: "38",
+            value: getImageUrl("250605_cat4.png", true),
+          },
+          href: "https://www.beliani.ch/tables/coffee-tables/",
           products: [],
         },
         {
           name: "lightning",
           background: "#FFDEB3",
           color: "#000",
-          src: getImageUrl("250605_cat5.png", true),
-          href: "https://www.beliani.ch/home-accessories/",
+
+          src: {
+            type: "relation",
+            relyOn: "slug",
+            placeholderPosition: "38",
+            value: getImageUrl("250605_cat5.png", true),
+          },
+          href: "https://www.beliani.ch/living-room-furniture/lighting/",
           products: [],
         },
       ],
@@ -124,7 +153,7 @@ export default new entities.Campaign({
             type: "relation",
             relyOn: "origin",
             placeholderPosition: "0",
-            value: "content/lp25-05-22",
+            value: "content/lp25-05-16",
           },
         },
         {
@@ -132,7 +161,7 @@ export default new entities.Campaign({
             type: "relation",
             relyOn: "slug",
             placeholderPosition: "38",
-            value: getImageUrl("20250522b.png", true), // probably needs to be changed
+            value: getImageUrl("20250516b.png", true), // probably needs to be changed
           },
         },
         {
@@ -141,7 +170,7 @@ export default new entities.Campaign({
             type: "relation",
             relyOn: "origin",
             placeholderPosition: "0",
-            value: "content/lp25-05-21",
+            value: "content/lp25-05-15",
           },
         },
         {
@@ -149,7 +178,7 @@ export default new entities.Campaign({
             type: "relation",
             relyOn: "slug",
             placeholderPosition: "38",
-            value: getImageUrl("20250521b.png", true), // probably needs to be changed
+            value: getImageUrl("20250515b.png", true), // probably needs to be changed
           },
         },
 
