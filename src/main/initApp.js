@@ -470,6 +470,7 @@ export function initApp({ campaigns, shops, config }) {
         return;
       }
       handleSlugChange(ev);
+      console.log("RENDEROWANIE HATEEMJEL");
       render();
     });
 
