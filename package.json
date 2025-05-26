@@ -14,8 +14,8 @@
   "author": "",
   "main": "app.js",
   "scripts": {
-    "lint": "npx prettier --write .",
-    "start": "npx vite",
+    "lint": "prettier --write .",
+    "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

@@ -253,21 +253,21 @@ export default new entities.Campaign({
       tableQueries: [
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "29.05.25 - Man's cave!",
+          tableName: "29.05.25 - Man's cave",
           tableRange: "13",
           name: "intro",
           fallback: ["Extra 5% off everything"],
         },
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "Voucher - 26.05.25 - Free sun lounger!",
+          tableName: "Voucher - 26.05.25 - Free sun lounger",
           tableRange: "12:13",
           name: "timer",
           fallback: ["Extra 5% off everything"],
         },
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "29.05.25 - Man's cave!",
+          tableName: "29.05.25 - Man's cave",
           tableRange: "14:21",
           name: "category_paragraph",
           fallback: ["Extra 5% off everything"],
@@ -275,7 +275,7 @@ export default new entities.Campaign({
 
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "29.05.25 - Man's cave!",
+          tableName: "29.05.25 - Man's cave",
           tableRange: "36:37",
           name: "condition",
           fallback: [
@@ -521,27 +521,27 @@ export default new entities.Campaign({
       tableQueries: [
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "29.05.25 - Man's cave!",
+          tableName: "29.05.25 - Man's cave",
           tableRange: "11",
           name: "tit",
         },
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "29.05.25 - Man's cave!",
+          tableName: "29.05.25 - Man's cave",
           tableRange: "13",
           name: "intro",
           fallback: ["Extra 5% off everything"],
         },
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "Voucher - 26.05.25 - Free sun lounger!",
+          tableName: "Voucher - 26.05.25 - Free sun lounger",
           tableRange: "12:13",
           name: "timer",
           fallback: ["Extra 5% off everything"],
         },
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "29.05.25 - Man's cave!",
+          tableName: "29.05.25 - Man's cave",
           tableRange: "14:21",
           name: "category_paragraph",
           fallback: ["Extra 5% off everything"],
@@ -549,7 +549,7 @@ export default new entities.Campaign({
 
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "29.05.25 - Man's cave!",
+          tableName: "29.05.25 - Man's cave",
           tableRange: "36:37",
           name: "condition",
           fallback: [

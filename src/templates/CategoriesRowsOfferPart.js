@@ -37,27 +37,27 @@ export async function CategoriesRowsOfferPart({
   name1,
 }) {
   const gif_src = {
-    CHDE: ["https://gen.sendtric.com/countdown/w9l8f1omf8"],
-    CHFR: ["https://gen.sendtric.com/countdown/3p17ck3pvw"],
-    FR: ["https://gen.sendtric.com/countdown/3p17ck3pvw"],
-    UK: ["https://gen.sendtric.com/countdown/fxtnsgo0fx"],
-    DE: ["https://gen.sendtric.com/countdown/w9l8f1omf8"],
-    AT: ["https://gen.sendtric.com/countdown/w9l8f1omf8"],
-    ES: ["https://gen.sendtric.com/countdown/b3ru3vll6a"],
-    PL: ["https://gen.sendtric.com/countdown/zb56v8dq04"],
-    NL: ["https://gen.sendtric.com/countdown/bvp49p3e68"],
-    PT: ["https://gen.sendtric.com/countdown/vjqr3oin25"],
-    IT: ["https://gen.sendtric.com/countdown/6pkuvupu1r"],
-    SE: ["https://gen.sendtric.com/countdown/0ok9zlukek"],
-    HU: ["https://gen.sendtric.com/countdown/92yp440zij"],
-    DK: ["https://gen.sendtric.com/countdown/4tq7ansa8h"],
-    CZ: ["https://gen.sendtric.com/countdown/011t0t79wa"],
-    FI: ["https://gen.sendtric.com/countdown/p2aj9qw5c0"],
-    NO: ["https://gen.sendtric.com/countdown/yyydhgkju3"],
-    SK: ["https://gen.sendtric.com/countdown/roqdny6pg9"],
-    BENL: ["https://gen.sendtric.com/countdown/bvp49p3e68"],
-    BEFR: ["https://gen.sendtric.com/countdown/3p17ck3pvw"],
-    RO: ["https://gen.sendtric.com/countdown/i1p536cv68"],
+    CHDE: ["https://gen.sendtric.com/countdown/w30r2cmm3j"],
+    CHFR: ["https://gen.sendtric.com/countdown/a5u9ck30lx"],
+    FR: ["https://gen.sendtric.com/countdown/u2363z3rcw"],
+    UK: ["https://gen.sendtric.com/countdown/57dk0mkh1m"],
+    DE: ["https://gen.sendtric.com/countdown/uyzf2mcw1v"],
+    AT: ["https://gen.sendtric.com/countdown/nirbl7e0za"],
+    ES: ["https://gen.sendtric.com/countdown/f7jwyupwdu"],
+    PL: ["https://gen.sendtric.com/countdown/rle9oxezay"],
+    NL: ["https://gen.sendtric.com/countdown/xbkc565xdr"],
+    PT: ["https://gen.sendtric.com/countdown/g9h89yh1t8"],
+    IT: ["https://gen.sendtric.com/countdown/y11ogr5i3i"],
+    SE: ["https://gen.sendtric.com/countdown/ggcr0gqfdz"],
+    HU: ["https://gen.sendtric.com/countdown/jrg2yqig47"],
+    DK: ["https://gen.sendtric.com/countdown/gweb3xmw29"],
+    CZ: ["https://gen.sendtric.com/countdown/1fbby37ywj"],
+    FI: ["https://gen.sendtric.com/countdown/yiwlwjn0bm"],
+    NO: ["https://gen.sendtric.com/countdown/9yibyrevjb"],
+    SK: ["https://gen.sendtric.com/countdown/gfmfyzj2ue"],
+    BENL: ["https://gen.sendtric.com/countdown/v12a5j2r8m"],
+    BEFR: ["https://gen.sendtric.com/countdown/fosym16z33"],
+    RO: ["https://gen.sendtric.com/countdown/0s3j61x0hy"],
   };
 
   const cat1 = {
@@ -419,10 +419,9 @@ export async function CategoriesRowsOfferPart({
               <tr>
                     <td style="background-color: #FECCB7;">
                         ${Category({
-                          href: cat2[country],
                           href: getCategoryLink(categories[1].href),
-                          name: queries.category_paragraph[2],
-                          name1: queries.category_paragraph[3],
+                          name: queries.category_paragraph[1],
+                          name1: queries.category_paragraph[2],
                           src: categories[1].src,
                           cta: getPhrase("Shop now"),
                           type: "no_products",
@@ -438,8 +437,8 @@ export async function CategoriesRowsOfferPart({
                     <td style="background-color:  #FECCB7;">
                         ${Category({
                           href: getCategoryLink(categories[2].href),
-                          name: queries.category_paragraph[4],
-                          name1: queries.category_paragraph[5],
+                          name: queries.category_paragraph[2],
+                          name1: queries.category_paragraph[3],
                           src: categories[2].src,
                           cta: getPhrase("Shop now"),
                           type: "no_products",
@@ -455,13 +454,30 @@ export async function CategoriesRowsOfferPart({
                     <td style="background-color: #FECCB7;">
                         ${Category({
                           href: getCategoryLink(categories[3].href),
-                          name: queries.category_paragraph[6],
-                          name1: queries.category_paragraph[7],
+                          name: queries.category_paragraph[3],
+                          name1: queries.category_paragraph[4],
                           src: categories[3].src,
                           cta: getPhrase("Shop now"),
                           type: "no_products",
                           color: categories[3].color,
                           products: categories[3].products.map((item) =>
+                            getProductById(item.id, item.src),
+                          ),
+                        })}
+                    </td>
+              </tr>
+        
+              <tr>
+                    <td style="background-color: #FECCB7;">
+                        ${Category({
+                          href: getCategoryLink(categories[4].href),
+                          name: queries.category_paragraph[4],
+                          name1: queries.category_paragraph[5],
+                          src: categories[4].src,
+                          cta: getPhrase("Shop now"),
+                          type: "no_products",
+                          color: categories[4].color,
+                          products: categories[4].products.map((item) =>
                             getProductById(item.id, item.src),
                           ),
                         })}

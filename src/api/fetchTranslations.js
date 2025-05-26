@@ -80,18 +80,20 @@ export async function getTranslations({
 }) {
   const token = localStorage.getItem("token");
   // includeGridData
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${tableId}/values/${tableName}!${tableRange}`;
+
+  console.log(`Sprawdzam '${name}' dla ${url}`);
+
   try {
-    const response = await fetch(
-      `https://sheets.googleapis.com/v4/spreadsheets/${tableId}/values/${tableName}${tableRange}`,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + token,
-        },
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
       },
-    );
+    });
     const data = await response.json();
+    console.log(`Sprawdzone '${name}' dla ${url}:\n${JSON.stringify(data)}`);
     return { ...data, name, fallback };
   } catch (error) {
     console.log(error);
