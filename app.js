@@ -10,8 +10,8 @@ import "@styles/toast.css"
 import "@styles/spin.css"
 
 // import campaigns data from /@campaigns directive (vite.config.js)
-import campaign_359290 from "@campaigns/359290.js"
-import campaign_365041 from "@campaigns/365041.js"
+import campaign_365041 from "@campaigns/20250529-Man-s-cave.js"
+import campaign_359290 from "@campaigns/20250605-Living-Room.js"
 
 try {
   initApp({

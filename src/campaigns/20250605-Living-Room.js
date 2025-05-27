@@ -166,7 +166,7 @@ export default new entities.Campaign({
             type: "relation",
             relyOn: "origin",
             placeholderPosition: "0",
-            value: "content/lp25-05-16", // link href
+            value: "content/lp25-05-22", // link href
           },
         },
         {
@@ -174,7 +174,7 @@ export default new entities.Campaign({
             type: "relation",
             relyOn: "slug",
             placeholderPosition: "38",
-            value: getImageUrl("20250516b.png", true), // img src
+            value: getImageUrl("20250522b.png", true), // img src
           },
         },
 

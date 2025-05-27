@@ -1,4 +1,10 @@
 {
   "liveServer.settings.port": 5500,
-  "cSpell.words": ["cellspacing", "Toastify"]
+  "cSpell.words": ["cellspacing", "Toastify"],
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "prettier.useEditorConfig": false,
+  "prettier.useTabs": false,
+  "prettier.requireConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
