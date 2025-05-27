@@ -3,18 +3,18 @@ import { YouTube } from "../components/YouTube.js"
 import { Footer } from "../components/footer.js"
 import { Header } from "../components/header.js"
 import {
-  Line,
   Category,
-  GetCode,
-  Intro,
-  Paragraph,
-  ImageWithLink,
-  Space,
   Freebies,
+  GetCode,
+  ImageWithLink,
+  Intro,
+  Line,
+  Paragraph,
   Product,
   ProductWithSize,
-  Title,
+  Space,
   Timer,
+  Title,
   TopImageTitle,
 } from "../components/index.js"
 

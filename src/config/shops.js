@@ -1,5 +1,6 @@
 import { Shop } from "../entities/Shop.js"
 import LANGUAGES from "./languages.js"
+
 export default [
   new Shop({
     origin: "https://www.beliani.ch/",

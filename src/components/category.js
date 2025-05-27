@@ -2,10 +2,10 @@ import { isAllowToRender } from "../helpers/optimizeImage.js"
 import {
   ImageWithLink,
   Line,
+  Paragraph,
   Product,
   Space,
   Title,
-  Paragraph,
 } from "./index.js"
 
 export const Category = isAllowToRender(

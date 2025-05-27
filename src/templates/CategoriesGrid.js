@@ -2,17 +2,17 @@ import { Create2Columns } from "../components/Create2Columns.js"
 import { Footer } from "../components/footer.js"
 import { Header } from "../components/header.js"
 import {
-  Line,
   Category,
-  GetCode,
-  Intro,
-  Paragraph,
-  ImageWithLink,
-  Space,
   Freebies,
+  GetCode,
+  Image,
+  ImageWithLink,
+  Intro,
+  Line,
+  Paragraph,
   Product,
   ProductWithSize,
-  Image,
+  Space,
   Title,
 } from "../components/index.js"
 

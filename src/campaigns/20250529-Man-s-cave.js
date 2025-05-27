@@ -1,7 +1,7 @@
-import { templates } from "../templates/index.js"
 import { entities } from "../entities/index.js"
-import types from "../utils/types.js"
+import { templates } from "../templates/index.js"
 import getImageUrl from "../utils/getImageUrl.js"
+import types from "../utils/types.js"
 
 export default new entities.Campaign({
   date: "2025.05.29",

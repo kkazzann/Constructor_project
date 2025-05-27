@@ -1,11 +1,12 @@
-import { handleProduct } from "./index.js"
 import { getQueryLink } from "../../helpers/getQueryLink.js"
-import { getState } from "../initApp.js"
-import _templates from "../data/templates.js"
+import ShowToast from "../../utils/notifications.js"
 import _categoriesLinks from "../data/categoriesLinks.js"
 import _categoriesTitles from "../data/categoriesTitles.js"
-import _header from "../data/header.js"
 import _footer from "../data/footer.js"
+import _header from "../data/header.js"
+import _templates from "../data/templates.js"
+import { getState } from "../initApp.js"
+import { handleProduct } from "./index.js"
 
 export class TemplateHandlers {
   isCalled = false
@@ -28,11 +29,7 @@ export class TemplateHandlers {
   getProductById = (productId, src, options) => {
     if (!this.isCalled && !this.products) {
       this.isCalled = true
-      Toastify({
-        text: "Set products for campaign.",
-        escapeMarkup: false,
-        duration: 3000,
-      }).showToast()
+      ShowToast("Set products for campaign.")
     }
     const country = getState("country")
     const shop = getState("shop")
@@ -110,11 +107,9 @@ export class TemplateHandlers {
       if (categoryCandidate) {
         parsed_country_categories.push(categoryCandidate)
       } else {
-        Toastify({
-          text: `Category <a target="_blank" style="weight: semibold; color: white;" href="https://www.prologistics.info/shop_cats.php?shop_id=1">${category}</a> not found in <a href="https://docs.google.com/spreadsheets/d/1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8/edit#gid=0" target="_blank" style="weight: semibold; color: white;">data/categories/data.js</a>`,
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
+        ShowToast(
+          `Category <a target="_blank" style="weight: semibold; color: white;" href="https://www.prologistics.info/shop_cats.php?shop_id=1">${category}</a> not found in <a href="https://docs.google.com/spreadsheets/d/1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8/edit#gid=0" target="_blank" style="weight: semibold; color: white;">data/categories/data.js</a>`
+        )
       }
     }
     new_link.pathname += parsed_country_categories.join("/")

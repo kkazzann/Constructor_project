@@ -1,16 +1,12 @@
 import { Campaign } from "../entities/Campaign.js"
 import { incrementId } from "../helpers/incrementId.js"
+import ShowToast from "../utils/notifications.js"
 import { getState, setState } from "./initApp.js"
 
 function openCampaignHandler(id) {
   const config = getState("config")
   if (!id) {
-    Toastify({
-      text: `Select campaign.`,
-      escapeMarkup: false,
-      duration: 3000,
-    }).showToast()
-    return
+    return ShowToast("Select campaign.")
   }
   window.open(config.campaign_url + id, "_blank")
 }
@@ -33,12 +29,7 @@ function selectCampaignHandler(ev, campaigns) {
   )
 
   if (!selectedCampaign) {
-    Toastify({
-      text: `Campaign startId ${ev.target.value} not found.`,
-      escapeMarkup: false,
-      duration: 3000,
-    }).showToast()
-    return
+    return ShowToast(`Campaign startId ${ev.target.value} not found.`)
   }
   const { startId, name, templates } = selectedCampaign
   setState("ids", incrementId(startId))

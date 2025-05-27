@@ -1,8 +1,10 @@
+import Toastify from "toastify-js"
+
 import { getState } from "../main/initApp.js"
+import { GoogleAuth } from "../services/GoogleAuth.js"
 import { adjustTableRangeToCountry } from "../utils/fixRange.js"
 import { normalizeTranslations } from "../utils/normalizeTranslations.js"
-import { GoogleAuth } from "../services/GoogleAuth.js"
-import Toastify from "toastify-js"
+import ShowToast from "../utils/notifications.js"
 
 export const fetchTranslations = async ({ tableQueries }) => {
   const name = getState("name")
@@ -10,12 +12,7 @@ export const fetchTranslations = async ({ tableQueries }) => {
   const tableColumn = shop.languages.find((item) => item.language.name === name)
 
   if (!tableColumn.tableColumn) {
-    Toastify({
-      text: `Table column is empty`,
-      escapeMarkup: false,
-      duration: 3000,
-    }).showToast()
-    return
+    return ShowToast("Table column is empty")
   }
   const promises = []
   for (const query of tableQueries) {

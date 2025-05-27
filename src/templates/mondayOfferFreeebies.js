@@ -1,21 +1,21 @@
-import { Footer } from "../components/footer.js"
 import FreebiesGenerator from "../components/FreebiesGenerator.js"
-import { Header } from "../components/header.js"
-import {
-  Line,
-  Category,
-  GetCode,
-  Intro,
-  Paragraph,
-  ImageWithLink,
-  Space,
-  Freebies,
-  Product,
-  ProductWithSize,
-  OfferPartCodes,
-} from "../components/index.js"
 import { OfferPart } from "../components/OfferPart.js"
 import { OfferPartCode } from "../components/OfferPartCode.js"
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
+import {
+  Category,
+  Freebies,
+  GetCode,
+  ImageWithLink,
+  Intro,
+  Line,
+  OfferPartCodes,
+  Paragraph,
+  Product,
+  ProductWithSize,
+  Space,
+} from "../components/index.js"
 import { priceFree } from "../helpers/priceFree.js"
 import { getCodes } from "../utils/getCodes.js"
 

@@ -1,7 +1,7 @@
-import { templates } from "../templates/index.js"
 import { entities } from "../entities/index.js"
-import types from "../utils/types.js"
+import { templates } from "../templates/index.js"
 import getImageUrl from "../utils/getImageUrl.js"
+import types from "../utils/types.js"
 
 export default new entities.Campaign({
   date: "2025.06.05",
@@ -209,7 +209,7 @@ export default new entities.Campaign({
         },
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "Voucher - 26.05.25 - Free sun lounger",
+          tableName: "Voucher - 03.06.25 - Free desk",
           tableRange: "12:13",
           name: "timer",
           fallback: ["Extra 5% off everything"],
@@ -434,7 +434,7 @@ export default new entities.Campaign({
         },
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
-          tableName: "Voucher - 26.05.25 - Free sun lounger",
+          tableName: "Voucher - 03.06.25 - Free desk",
           tableRange: "12:13",
           name: "timer",
           fallback: ["Extra 5% off everything"],

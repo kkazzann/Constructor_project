@@ -1,16 +1,16 @@
 import { Footer } from "../components/footer.js"
 import { Header } from "../components/header.js"
 import {
-  Line,
   Category,
-  GetCode,
-  Intro,
-  Paragraph,
-  ImageWithLink,
-  Space,
   Freebies,
+  GetCode,
+  ImageWithLink,
+  Intro,
+  Line,
+  Paragraph,
   Product,
   ProductWithSize,
+  Space,
 } from "../components/index.js"
 
 export async function landing_FGG({

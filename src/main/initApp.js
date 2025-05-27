@@ -1,20 +1,25 @@
-import {
-  selectCampaignHandler,
-  openCampaignHandler,
-  handleSlugChange,
-  openIssueHandler,
-  handleShopChange,
-  figmaCardHandler,
-} from "./events.js"
-import { SpinnerInit } from "../helpers/spinner/spinerOptions.js"
-import { addParams } from "../helpers/getQueryLink.js"
-import { TemplateHandlers } from "./handlers/handlers.js"
-import { wrapTemplate } from "../helpers/wrapTemplate.js"
+import JSConfetti from "js-confetti"
+
 import { fetchTranslations } from "../api/fetchTranslations.js"
-import { normalizeProducts } from "../utils/normalizeProducts.js"
-import { isQuotaExceededError } from "../helpers/isQuotaExceededError.js"
 import { computeValue } from "../helpers/computeValue.js"
+import { addParams } from "../helpers/getQueryLink.js"
+import { isQuotaExceededError } from "../helpers/isQuotaExceededError.js"
+import { SpinnerInit } from "../helpers/spinner/spinerOptions.js"
+import { wrapTemplate } from "../helpers/wrapTemplate.js"
 import { getTrackingUrl } from "../utils/geTrackingUrl.js"
+import { normalizeProducts } from "../utils/normalizeProducts.js"
+import ShowToast from "../utils/notifications.js"
+import {
+  figmaCardHandler,
+  handleShopChange,
+  handleSlugChange,
+  openCampaignHandler,
+  openIssueHandler,
+  selectCampaignHandler,
+} from "./events.js"
+import { TemplateHandlers } from "./handlers/handlers.js"
+
+const jsConfetti = new JSConfetti()
 
 const state = {
   queries: {},
@@ -27,6 +32,57 @@ const state = {
   shop: null,
 }
 const root = document.querySelector("#app")
+
+function renderAvailableTemplates(templates) {
+  return templates.map((template) => {
+    const option = document.createElement("option")
+    option.value = template.type + "_" + template.name
+    option.textContent = template.name
+      ? template.name
+      : template.type === "newsletter"
+        ? "Newsletter"
+        : "Landing"
+    return option
+  })
+}
+
+function initCampaigns(campaigns, config) {
+  const now = new Date()
+  const campaigns_nodes = []
+  const campaigns_to_alarm = []
+
+  for (const campaign of campaigns) {
+    // Handle campaign archive
+    if (campaign.isArchive) {
+      continue
+    }
+
+    // Handle campaign to alarm
+    if ("date" in campaign) {
+      const date = new Date(campaign.date)
+      const difference = date - now
+      if (difference > 0) {
+        const diffDays = Math.floor(difference / (1000 * 60 * 60 * 24))
+        if (diffDays <= (config?.alarm_days || 7) && campaign.alarm.isActive) {
+          campaigns_to_alarm.push(campaign)
+        }
+      }
+    }
+
+    const option = document.createElement("option")
+    option.value = campaign.startId
+    option.textContent = campaign.name + " - " + campaign.date
+    campaigns_nodes.push(option)
+  }
+
+  for (const campaign of campaigns_to_alarm) {
+    alert(
+      campaign.alarm.description + " " + campaign.name + " " + campaign.date
+    )
+  }
+
+  return campaigns_nodes
+}
 
 export function setState(key, value) {
   state[key] = value
@@ -50,8 +106,6 @@ export function getState(key) {
 }
 
 export function initApp({ campaigns, shops, config }) {
-  const jsConfetti = new JSConfetti()
-
   const shops_select = document.querySelector("#shops")
   const languages_select = document.querySelector("#languages")
   const new_products = document.querySelector("#new_products")
@@ -74,21 +128,11 @@ export function initApp({ campaigns, shops, config }) {
     const selectedCampaign = getState("selectedCampaign")
 
     if (!selectedCampaign) {
-      Toastify({
-        text: "Select campaign.",
-        escapeMarkup: false,
-        duration: 3000,
-      }).showToast()
-      return
+      return ShowToast("Select campaign.")
     }
 
     if (!templateToRender) {
-      Toastify({
-        text: "Select template.",
-        escapeMarkup: false,
-        duration: 3000,
-      }).showToast()
-      return
+      return ShowToast("Select template.")
     }
 
     // IF data property is NOT provided for CAMPAIGN in app.js
@@ -109,12 +153,7 @@ export function initApp({ campaigns, shops, config }) {
         setState("loading", false)
         console.log(error)
 
-        Toastify({
-          text: error,
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
-        return
+        return ShowToast(error)
       }
     }
 
@@ -129,21 +168,13 @@ export function initApp({ campaigns, shops, config }) {
     }
 
     let slugData = {}
-    if (!!selectedCampaign.data) {
+    if (selectedCampaign.data) {
       if (country in selectedCampaign.data) {
         slugData = selectedCampaign.data[country] || {}
       } else {
-        Toastify({
-          text:
-            "Country " +
-            country +
-            " not found in campaign data. For " +
-            selectedCampaign.name +
-            ".",
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
-        return
+        return ShowToast(
+          `Country ${country} not found in campaign data. For ${selectedCampaign.name}.`
+        )
       }
     }
 
@@ -224,22 +255,14 @@ export function initApp({ campaigns, shops, config }) {
         if (confirm("Do you want to render template with undefined value?")) {
           return (root.innerHTML = withStylesOrNo)
         } else {
-          Toastify({
-            text: "Error rendering. HTML code has undefined value.",
-            escapeMarkup: false,
-            duration: 3000,
-          }).showToast()
+          ShowToast("Error rendering. HTML code has undefined value.")
         }
       } else {
         root.innerHTML = withStylesOrNo
       }
     } catch (error) {
       console.log(error)
-      Toastify({
-        text: "Please check console. " + error.message,
-        escapeMarkup: false,
-        duration: 3000,
-      }).showToast()
+      ShowToast(`Please check console. ${error.message}`)
     }
   }
 
@@ -247,22 +270,14 @@ export function initApp({ campaigns, shops, config }) {
     new_products?.addEventListener("click", () => {
       const products = prompt("Provide products")
       if (!products) {
-        return Toastify({
-          text: "Input incorrect",
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
+        return ShowToast("Input incorrect")
       }
       let newProducts
       try {
         newProducts = JSON.parse(products)
       } catch (error) {
         console.log(error)
-        Toastify({
-          text: "Products parse error: " + error.message,
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
+        ShowToast(`Products parse error: ${error.message}`)
       }
 
       const selectedCampaign = getState("selectedCampaign")
@@ -287,11 +302,7 @@ export function initApp({ campaigns, shops, config }) {
           })
           try {
             localStorage.setItem("products", JSON.stringify(updatedProducts))
-            Toastify({
-              text: "Products successfully saved.",
-              escapeMarkup: false,
-              duration: 3000,
-            }).showToast()
+            ShowToast("Products successfully saved.")
           } catch (error) {
             const quotaExceededError = isQuotaExceededError(error)
             if (quotaExceededError) {
@@ -304,12 +315,8 @@ export function initApp({ campaigns, shops, config }) {
                 return
               }
               if (!ids.includes(deleteCampaignId)) {
-                Toastify({
-                  text: "Co robisz?!?",
-                  escapeMarkup: false,
-                  duration: 3000,
-                }).showToast()
-                return
+                //  ??????
+                return ShowToast("Co robisz?!?")
               }
               const prevCampaigns = prevProducts.filter(
                 (item) => item.campaign_id !== deleteCampaignId
@@ -324,12 +331,7 @@ export function initApp({ campaigns, shops, config }) {
                   },
                 ])
               )
-              Toastify({
-                text: "Products successfully saved.",
-                escapeMarkup: false,
-                duration: 3000,
-              }).showToast()
-              return
+              return ShowToast("Products successfully saved.")
             }
           }
           return
@@ -357,12 +359,8 @@ export function initApp({ campaigns, shops, config }) {
                 return
               }
               if (!ids.includes(deleteCampaignId)) {
-                Toastify({
-                  text: "Co robisz?!?",
-                  escapeMarkup: false,
-                  duration: 3000,
-                }).showToast()
-                return
+                // ???? 2
+                return ShowToast("Co robisz?!?")
               }
               const prevCampaigns = prevProducts.filter(
                 (item) => item.campaign_id !== deleteCampaignId
@@ -377,21 +375,12 @@ export function initApp({ campaigns, shops, config }) {
                   },
                 ])
               )
-              Toastify({
-                text: "Products successfully saved.",
-                escapeMarkup: false,
-                duration: 3000,
-              }).showToast()
-              return
+              return ShowToast("Products successfully saved.")
             }
           }
         }
       } catch (error) {
-        Toastify({
-          text: "Products error: " + error.message,
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
+        ShowToast(`Products error: ${error.message}`)
       }
     })
     openCampaign?.addEventListener("click", (e) =>
@@ -399,23 +388,13 @@ export function initApp({ campaigns, shops, config }) {
     )
     openIssue?.addEventListener("click", (e) => {
       if (!state.selectedCampaign.issueCardId) {
-        Toastify({
-          text: `Select campaign.`,
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
-        return
+        return ShowToast(`Select campaign.`)
       }
       openIssueHandler(state.selectedCampaign.issueCardId)
     })
     figmaCard?.addEventListener("click", (e) => {
       if (!state.selectedCampaign.figmaUrl) {
-        Toastify({
-          text: `Figma url not found.`,
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
-        return
+        return ShowToast(`Figma url not found.`)
       }
       figmaCardHandler(state.selectedCampaign.figmaUrl)
     })
@@ -477,12 +456,7 @@ export function initApp({ campaigns, shops, config }) {
     copyTemplate?.addEventListener("click", () => {
       const html = getState("html")
       if (!html) {
-        Toastify({
-          text: `Render HTML.`,
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast()
-        return
+        return ShowToast(`Render HTML.`)
       }
       if (state.config?.confetti) {
         jsConfetti.addConfetti({
@@ -530,11 +504,7 @@ export function initApp({ campaigns, shops, config }) {
       (template) => template.type + "_" + template.name === ev.target.value
     )
     if (!selectedTemplate) {
-      Toastify({
-        text: `Template ${ev.target.value} not found.`,
-        escapeMarkup: false,
-        duration: 3000,
-      }).showToast()
+      ShowToast(`Template ${ev.target.value} not found.`)
     }
     new_products.style.display = "block"
     if (selectedTemplate.type === "banner") {

@@ -1,5 +1,5 @@
-import { isAllowToRender, optimize } from "../helpers/optimizeImage.js"
 import { Space } from "../components/Space.js"
+import { isAllowToRender, optimize } from "../helpers/optimizeImage.js"
 
 export const TopImageTitle = isAllowToRender(
   optimize(({ href, title1, title2, color, type }) => {
