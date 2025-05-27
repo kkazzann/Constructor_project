@@ -1,18 +1,18 @@
 export class SlugImage {
-  query = true;
+  query = true
   href = {
     type: "",
     relyOn: "",
     placeholderPosition: "",
     value: "",
-  };
+  }
   constructor({ value }) {
-    this.query = true;
+    this.query = true
     this.href = {
       placeholderPosition: 45,
       relyOn: "slug",
       type: "relation",
       value,
-    };
+    }
   }
 }

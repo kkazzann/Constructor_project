@@ -1,21 +1,21 @@
-import { getState } from "../main/initApp.js";
-import { ImageWithLink } from "./ImageWithLink.js";
-import { Space } from "./Space.js";
+import { getState } from "../main/initApp.js"
+import { ImageWithLink } from "./ImageWithLink.js"
+import { Space } from "./Space.js"
 
 export function SundayCategory(props) {
-  props.isCta = props?.isCta === false ? props.isCta : true;
-  const country = getState("country");
+  props.isCta = props?.isCta === false ? props.isCta : true
+  const country = getState("country")
 
   for (const item of props?.renderOn || []) {
     if (country in item) {
-      props[item.field] = item[country];
+      props[item.field] = item[country]
     }
   }
 
-  const { href, src, cta } = props;
+  const { href, src, cta } = props
 
   if (props.href === null || props.src === null) {
-    return "";
+    return ""
   }
   return `
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
@@ -49,5 +49,5 @@ export function SundayCategory(props) {
                 : ""
             }
         </table>
-    `;
+    `
 }

@@ -1,6 +1,6 @@
-import { Footer } from "../components/footer.js";
-import FreebiesGenerator from "../components/FreebiesGenerator.js";
-import { Header } from "../components/header.js";
+import { Footer } from "../components/footer.js"
+import FreebiesGenerator from "../components/FreebiesGenerator.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -13,11 +13,11 @@ import {
   Product,
   ProductWithSize,
   OfferPartCodes,
-} from "../components/index.js";
-import { OfferPart } from "../components/OfferPart.js";
-import { OfferPartCode } from "../components/OfferPartCode.js";
-import { priceFree } from "../helpers/priceFree.js";
-import { getCodes } from "../utils/getCodes.js";
+} from "../components/index.js"
+import { OfferPart } from "../components/OfferPart.js"
+import { OfferPartCode } from "../components/OfferPartCode.js"
+import { priceFree } from "../helpers/priceFree.js"
+import { getCodes } from "../utils/getCodes.js"
 
 export async function mondayOfferFreeebiesLines({
   links,
@@ -39,8 +39,8 @@ export async function mondayOfferFreeebiesLines({
   offerPart,
   intro,
 }) {
-  const codes = getCodes(queries);
-  console.log(codes);
+  const codes = getCodes(queries)
+  console.log(codes)
 
   return `
   ${Header(
@@ -87,7 +87,7 @@ export async function mondayOfferFreeebiesLines({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
         <tbody>
@@ -235,7 +235,7 @@ export async function mondayOfferFreeebiesLines({
                         color: categories[0]?.color,
                         type: "monday",
                         products: categories[0].products.map((item) =>
-                          getProductById(item.id, item.src),
+                          getProductById(item.id, item.src)
                         ),
                       })}
                     </td>
@@ -272,7 +272,7 @@ export async function mondayOfferFreeebiesLines({
                           color: categories[1]?.color,
                           type: "monday",
                           products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -309,7 +309,7 @@ export async function mondayOfferFreeebiesLines({
                           color: categories[2]?.color,
                           type: "monday",
                           products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -347,7 +347,7 @@ export async function mondayOfferFreeebiesLines({
                           color: categories[3]?.color,
                           type: "monday",
                           products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -372,7 +372,7 @@ ${
                               <tr>
                                   <td align="left" class="newsletterBottom35px">
                                       <span class="newsletterFooterTitle">${getPhrase(
-                                        "Shop limited-time deals",
+                                        "Shop limited-time deals"
                                       )}</span>
                                   </td>
                               </tr>
@@ -411,7 +411,7 @@ ${
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country,
+              country
             ),
           },
           workBanner: {
@@ -519,7 +519,7 @@ ${
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

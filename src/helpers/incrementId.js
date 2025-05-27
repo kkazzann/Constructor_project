@@ -20,14 +20,14 @@ export function incrementId(id, countriesOrdering) {
         "SK",
         "ES",
         "UK",
-      ];
+      ]
 
-  const relativeIdToCountires = {};
+  const relativeIdToCountires = {}
 
   countries.forEach((country) => {
-    relativeIdToCountires[country] = Number(id);
-    id++;
-  });
+    relativeIdToCountires[country] = Number(id)
+    id++
+  })
 
-  return relativeIdToCountires;
+  return relativeIdToCountires
 }

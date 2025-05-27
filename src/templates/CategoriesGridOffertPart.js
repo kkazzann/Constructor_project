@@ -1,6 +1,6 @@
-import { OfferPart } from "../components/OfferPart.js";
-import { Footer } from "../components/footer.js";
-import { Header } from "../components/header.js";
+import { OfferPart } from "../components/OfferPart.js"
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -12,7 +12,7 @@ import {
   Freebies,
   Product,
   ProductWithSize,
-} from "../components/index.js";
+} from "../components/index.js"
 
 export async function CategoriesGridOffertPart({
   links,
@@ -30,7 +30,7 @@ export async function CategoriesGridOffertPart({
   categories,
   background,
 }) {
-  const codes = queries.getCode.join("").split("<br />");
+  const codes = queries.getCode.join("").split("<br />")
   return `
   ${Header(
     {
@@ -76,7 +76,7 @@ export async function CategoriesGridOffertPart({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ececec; color: #000;" id="newsletter">
           <tbody>
@@ -137,7 +137,7 @@ export async function CategoriesGridOffertPart({
                       <tbody>
                           ${categories
                             .map((item) => {
-                              const columns = [];
+                              const columns = []
                               for (const category of item) {
                                 const html = `
                                   <td align="center">
@@ -147,14 +147,14 @@ export async function CategoriesGridOffertPart({
                                       }" style="vertical-align: middle; max-width: 100%;" loading="lazy">
                                     </a>
                                   </td>
-                                  `;
-                                columns.push(html);
+                                  `
+                                columns.push(html)
                               }
                               return `
                                 <tr>
                                   ${columns.join("")}
                                 </tr>
-                              `;
+                              `
                             })
                             .join("")}
                       </tbody>
@@ -174,7 +174,7 @@ export async function CategoriesGridOffertPart({
                     shop.origin
                   }" style="color:#750000; text-decoration: underline;">
                     <span class="newsletterCta">${getPhrase(
-                      "Shop All Categories",
+                      "Shop All Categories"
                     )}</span>
                   </a>
                 </td>
@@ -207,7 +207,7 @@ export async function CategoriesGridOffertPart({
                             <tr>
                                 <td align="left" class="newsletterBottom35px">
                                     <span class="newsletterFooterTitle">${getPhrase(
-                                      "Shop limited-time deals",
+                                      "Shop limited-time deals"
                                     )}</span>
                                 </td>
                             </tr>
@@ -244,7 +244,7 @@ export async function CategoriesGridOffertPart({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country,
+              country
             ),
           },
           workBanner: {
@@ -352,7 +352,7 @@ export async function CategoriesGridOffertPart({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

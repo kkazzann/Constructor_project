@@ -9,5 +9,5 @@ export function Line(img = "https://beliani.info/newsletter/2022/line.jpg") {
             </tr>
         </tbody>
     </table>
-    `;
+    `
 }

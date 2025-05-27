@@ -1759,4 +1759,4 @@ export default [
     "Scented Candles": "Scented Candles",
     "Pouffes & Stools": "Pouffes & Stools",
   },
-];
+]

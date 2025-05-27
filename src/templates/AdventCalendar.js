@@ -1,6 +1,6 @@
-import { ImageWithLink, Space, Paragraph, Line } from "../components/index.js";
-import { Footer } from "../components/footer.js";
-import { Header } from "../components/header.js";
+import { ImageWithLink, Space, Paragraph, Line } from "../components/index.js"
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
 
 export function AdventCalendar({
   links,
@@ -63,7 +63,7 @@ export function AdventCalendar({
           exclude: true,
         },
       },
-      { type },
+      { type }
     )}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
@@ -132,7 +132,7 @@ export function AdventCalendar({
             <tr>
                 <td align="left" class="newsletterBottom35px">
                     <span class="newsletterFooterTitle">${getPhrase(
-                      "Shop limited-time deals",
+                      "Shop limited-time deals"
                     )}</span>
                 </td>
             </tr>
@@ -271,7 +271,7 @@ export function AdventCalendar({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

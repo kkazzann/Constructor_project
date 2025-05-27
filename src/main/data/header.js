@@ -640,4 +640,4 @@ export default [
       "https://upload.pictureserver.net/static/2024/ro_header_03.png",
     "Header Category 3 href": "https://www.beliani.ro/mobila-de-gradina/",
   },
-];
+]

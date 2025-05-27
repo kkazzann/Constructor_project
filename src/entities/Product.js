@@ -15,7 +15,7 @@ const languageToSlug = {
   english: "uk",
   norsk: "no",
   dutch: "nl",
-};
+}
 
 const slugToLanguage = {
   pl: "polish",
@@ -34,7 +34,7 @@ const slugToLanguage = {
   uk: "english",
   no: "norsk",
   nl: "dutch",
-};
+}
 
 const sellerToslug = {
   Beliani: "chde",
@@ -56,7 +56,7 @@ const sellerToslug = {
   "Beliani SK": "sk",
   "Beliani BE": "be",
   "Beliani RO": "ro",
-};
+}
 
 const sellerToOrigin = {
   Beliani: "https://www.beliani.ch/",
@@ -78,19 +78,19 @@ const sellerToOrigin = {
   "Beliani SK": "https://www.beliani.sk/",
   "Beliani BE": "https://www.beliani.be/",
   "Beliani RO": "https://www.beliani.ro/",
-};
+}
 
 export class Product {
   constructor(product) {
-    this.src = null;
-    this.name = product.article_name;
-    this.main_id = product.saved_params.master_sa || product.id;
-    this.country = sellerToslug[product.saved_params.username];
+    this.src = null
+    this.name = product.article_name
+    this.main_id = product.saved_params.master_sa || product.id
+    this.country = sellerToslug[product.saved_params.username]
     this.href = {
       origin: sellerToOrigin[product.saved_params.username],
       hrefs: product.hrefs,
-    };
-    this.lowPrice = product.saved_params.ShopPrice;
-    this.highPrice = product.saved_params.ShopHPrice;
+    }
+    this.lowPrice = product.saved_params.ShopPrice
+    this.highPrice = product.saved_params.ShopHPrice
   }
 }

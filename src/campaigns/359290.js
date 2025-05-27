@@ -1,7 +1,7 @@
-import { templates } from "../templates/index.js";
-import { entities } from "../entities/index.js";
-import types from "../utils/types.js";
-import getImageUrl from "../utils/getImageUrl.js";
+import { templates } from "../templates/index.js"
+import { entities } from "../entities/index.js"
+import types from "../utils/types.js"
+import getImageUrl from "../utils/getImageUrl.js"
 
 export default new entities.Campaign({
   date: "2025.06.05",
@@ -108,6 +108,9 @@ export default new entities.Campaign({
         },
       ],
       links: [
+        // TOP IMAGE TITLE
+        // TOP IMAGE TITLE
+        // TOP IMAGE TITLE
         {
           query: true,
           href: {
@@ -125,6 +128,9 @@ export default new entities.Campaign({
             value: getImageUrl("20250605_01.png", true),
           },
         },
+        // TOP IMAGE TITLE GIF
+        // TOP IMAGE TITLE GIF
+        // TOP IMAGE TITLE GIF
         {
           query: true,
           href: {
@@ -138,6 +144,9 @@ export default new entities.Campaign({
           value: getImageUrl("250605gif_top.gif", true),
         },
 
+        // TIMER
+        // TIMER
+        // TIMER
         {
           query: true,
           href: {
@@ -147,13 +156,17 @@ export default new entities.Campaign({
             value: "content/lp25-06-03",
           },
         },
+
+        // BANNER 1
+        // BANNER 1
+        // BANNER 1
         {
           query: true,
           href: {
             type: "relation",
             relyOn: "origin",
             placeholderPosition: "0",
-            value: "content/lp25-05-16",
+            value: "content/lp25-05-16", // link href
           },
         },
         {
@@ -161,16 +174,20 @@ export default new entities.Campaign({
             type: "relation",
             relyOn: "slug",
             placeholderPosition: "38",
-            value: getImageUrl("20250516b.png", true), // probably needs to be changed
+            value: getImageUrl("20250516b.png", true), // img src
           },
         },
+
+        // BANNER 2
+        // BANNER 2
+        // BANNER 2
         {
           query: true,
           href: {
             type: "relation",
             relyOn: "origin",
             placeholderPosition: "0",
-            value: "content/lp25-05-15",
+            value: "content/lp25-05-15", // link href
           },
         },
         {
@@ -178,44 +195,7 @@ export default new entities.Campaign({
             type: "relation",
             relyOn: "slug",
             placeholderPosition: "38",
-            value: getImageUrl("20250515b.png", true), // probably needs to be changed
-          },
-        },
-
-        {
-          query: true,
-          href: {
-            type: "relation",
-            relyOn: "origin",
-            placeholderPosition: "0",
-            value: "content/lp25-02-17",
-          },
-        },
-        {
-          src: {
-            type: "relation",
-            relyOn: "slug",
-            placeholderPosition: "45",
-            value:
-              "https://upload.pictureserver.net/static/2025/250403_03free.png", // hugo wi
-          },
-        },
-
-        {
-          query: true,
-          href: {
-            type: "relation",
-            relyOn: "origin",
-            placeholderPosition: "0",
-            value: "content/lp25-03-03",
-          },
-        },
-        {
-          src: {
-            type: "relation",
-            relyOn: "slug",
-            placeholderPosition: "45",
-            value: "https://upload.pictureserver.net/static/2025/_20250307.png", // hugo wi
+            value: getImageUrl("20250515b.png", true), // img src
           },
         },
       ],
@@ -447,6 +427,13 @@ export default new entities.Campaign({
         },
         {
           tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
+          tableName: "05.06.25 - Beliani Birthday Living Room",
+          tableRange: "12:13",
+          name: "tit",
+          fallback: ["Extra 5% off everything"],
+        },
+        {
+          tableId: "1djnjfhsFX4-Fghv5cQU_UNYaEhVL9Ban4VUqIfHsWdc",
           tableName: "Voucher - 26.05.25 - Free sun lounger",
           tableRange: "12:13",
           name: "timer",
@@ -473,4 +460,4 @@ export default new entities.Campaign({
       ],
     },
   ],
-});
+})

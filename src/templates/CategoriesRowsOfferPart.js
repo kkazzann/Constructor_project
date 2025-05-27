@@ -1,7 +1,7 @@
-import { OfferPart } from "../components/OfferPart.js";
-import { YouTube } from "../components/YouTube.js";
-import { Footer } from "../components/footer.js";
-import { Header } from "../components/header.js";
+import { OfferPart } from "../components/OfferPart.js"
+import { YouTube } from "../components/YouTube.js"
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -16,7 +16,7 @@ import {
   Title,
   Timer,
   TopImageTitle,
-} from "../components/index.js";
+} from "../components/index.js"
 
 export async function CategoriesRowsOfferPart({
   links,
@@ -58,7 +58,7 @@ export async function CategoriesRowsOfferPart({
     BENL: ["https://gen.sendtric.com/countdown/v12a5j2r8m"],
     BEFR: ["https://gen.sendtric.com/countdown/fosym16z33"],
     RO: ["https://gen.sendtric.com/countdown/0s3j61x0hy"],
-  };
+  }
 
   const cat1 = {
     CHDE: [
@@ -122,7 +122,7 @@ export async function CategoriesRowsOfferPart({
     RO: [
       "https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Maro,Bej,Verde&sort=default",
     ],
-  };
+  }
 
   const cat2 = {
     CHDE: [
@@ -186,7 +186,7 @@ export async function CategoriesRowsOfferPart({
     RO: [
       "https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Maro&sort=default",
     ],
-  };
+  }
 
   const cat3 = {
     CHDE: [
@@ -250,17 +250,17 @@ export async function CategoriesRowsOfferPart({
     RO: [
       "https://www.beliani.ro/camera-de-zi/toate+produsele/?Culoare=Albastru&sort=default",
     ],
-  };
+  }
 
   function add_utm(link) {
     let link_with_utm =
-      link + "?utm_source=newsletter&utm_medium=email&utm_campaign=" + id;
-    return link_with_utm;
+      link + "?utm_source=newsletter&utm_medium=email&utm_campaign=" + id
+    return link_with_utm
   }
 
   const a = categories[3].products.map((item) =>
-    getProductById(item.id, item.src),
-  );
+    getProductById(item.id, item.src)
+  )
   return `
   ${Header(
     {
@@ -306,7 +306,7 @@ export async function CategoriesRowsOfferPart({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
 
    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #FBF4F3; color: #000;" id='newsletter'>   
@@ -335,7 +335,7 @@ export async function CategoriesRowsOfferPart({
                     title1: queries.tit[0],
                     title2: queries.tit[1],
                     color: "#750000",
-                    type: "up_to",
+                    type: "up_to_bigger",
                   })}`
             }
           </td>
@@ -410,7 +410,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[0].color,
                           products: categories[0].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -427,7 +427,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[1].color,
                           products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -444,7 +444,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[2].color,
                           products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -461,7 +461,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[3].color,
                           products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -478,7 +478,7 @@ export async function CategoriesRowsOfferPart({
                           type: "no_products",
                           color: categories[4].color,
                           products: categories[4].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -504,7 +504,7 @@ export async function CategoriesRowsOfferPart({
                           <tr>
                               <td align="left" class="newsletterBottom35px">
                                   <span class="newsletterFooterTitle">${getPhrase(
-                                    "Shop limited-time deals",
+                                    "Shop limited-time deals"
                                   )}</span>
                               </td>
                           </tr>
@@ -648,7 +648,7 @@ export async function CategoriesRowsOfferPart({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

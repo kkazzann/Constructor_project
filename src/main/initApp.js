@@ -5,16 +5,16 @@ import {
   openIssueHandler,
   handleShopChange,
   figmaCardHandler,
-} from "./events.js";
-import { SpinnerInit } from "../helpers/spinner/spinerOptions.js";
-import { addParams } from "../helpers/getQueryLink.js";
-import { TemplateHandlers } from "./handlers/handlers.js";
-import { wrapTemplate } from "../helpers/wrapTemplate.js";
-import { fetchTranslations } from "../api/fetchTranslations.js";
-import { normalizeProducts } from "../utils/normalizeProducts.js";
-import { isQuotaExceededError } from "../helpers/isQuotaExceededError.js";
-import { computeValue } from "../helpers/computeValue.js";
-import { getTrackingUrl } from "../utils/geTrackingUrl.js";
+} from "./events.js"
+import { SpinnerInit } from "../helpers/spinner/spinerOptions.js"
+import { addParams } from "../helpers/getQueryLink.js"
+import { TemplateHandlers } from "./handlers/handlers.js"
+import { wrapTemplate } from "../helpers/wrapTemplate.js"
+import { fetchTranslations } from "../api/fetchTranslations.js"
+import { normalizeProducts } from "../utils/normalizeProducts.js"
+import { isQuotaExceededError } from "../helpers/isQuotaExceededError.js"
+import { computeValue } from "../helpers/computeValue.js"
+import { getTrackingUrl } from "../utils/geTrackingUrl.js"
 
 const state = {
   queries: {},
@@ -25,61 +25,61 @@ const state = {
   selectedCampaign: {},
   selectedTemplates: [],
   shop: null,
-};
-const root = document.querySelector("#app");
+}
+const root = document.querySelector("#app")
 
 export function setState(key, value) {
-  state[key] = value;
+  state[key] = value
 
   if (key === "loading" && value === true) {
-    root.innerHTML = "";
-    SpinnerInit.spin(root);
+    root.innerHTML = ""
+    SpinnerInit.spin(root)
   }
 
   if (key === "loading" && value === false) {
-    SpinnerInit.stop(root);
+    SpinnerInit.stop(root)
   }
 }
 
 export function getState(key) {
   if (key in state) {
-    return state[key];
+    return state[key]
   } else {
-    return undefined;
+    return undefined
   }
 }
 
 export function initApp({ campaigns, shops, config }) {
-  const jsConfetti = new JSConfetti();
+  const jsConfetti = new JSConfetti()
 
-  const shops_select = document.querySelector("#shops");
-  const languages_select = document.querySelector("#languages");
-  const new_products = document.querySelector("#new_products");
-  const selectCampaigns = document.querySelector("#campaigns");
-  const selectTemplates = document.querySelector("#templates");
-  const copyTemplate = document.querySelector(".copyTemplate");
-  const openCampaign = document.querySelector(".openCampaign");
-  const openIssue = document.querySelector(".openIssue");
-  const figmaCard = document.querySelector(".figmaCard");
-  const clearStorage = document.querySelector(".clearStorage");
+  const shops_select = document.querySelector("#shops")
+  const languages_select = document.querySelector("#languages")
+  const new_products = document.querySelector("#new_products")
+  const selectCampaigns = document.querySelector("#campaigns")
+  const selectTemplates = document.querySelector("#templates")
+  const copyTemplate = document.querySelector(".copyTemplate")
+  const openCampaign = document.querySelector(".openCampaign")
+  const openIssue = document.querySelector(".openIssue")
+  const figmaCard = document.querySelector(".figmaCard")
+  const clearStorage = document.querySelector(".clearStorage")
 
-  setState("config", config);
-  selectCampaigns.append(...initCampaigns(campaigns, config));
-  setEvents();
+  setState("config", config)
+  selectCampaigns.append(...initCampaigns(campaigns, config))
+  setEvents()
 
   async function render() {
-    if (!getState("country")) return;
-    const country = getState("country");
-    const templateToRender = getState("template");
-    const selectedCampaign = getState("selectedCampaign");
+    if (!getState("country")) return
+    const country = getState("country")
+    const templateToRender = getState("template")
+    const selectedCampaign = getState("selectedCampaign")
 
     if (!selectedCampaign) {
       Toastify({
         text: "Select campaign.",
         escapeMarkup: false,
         duration: 3000,
-      }).showToast();
-      return;
+      }).showToast()
+      return
     }
 
     if (!templateToRender) {
@@ -87,51 +87,51 @@ export function initApp({ campaigns, shops, config }) {
         text: "Select template.",
         escapeMarkup: false,
         duration: 3000,
-      }).showToast();
-      return;
+      }).showToast()
+      return
     }
 
     // IF data property is NOT provided for CAMPAIGN in app.js
     // and tableQueries array provided EXECUTE function to fetch translations.
     if (!selectedCampaign.data && templateToRender.tableQueries.length > 0) {
       try {
-        setState("loading", true);
+        setState("loading", true)
         const translationsResult = await fetchTranslations({
           tableQueries: templateToRender.tableQueries,
-        });
-        const queries = {};
+        })
+        const queries = {}
         for (const translation of translationsResult) {
-          queries[translation.name] = translation.data;
+          queries[translation.name] = translation.data
         }
-        setState("loading", false);
-        setState("queries", queries);
+        setState("loading", false)
+        setState("queries", queries)
       } catch (error) {
-        setState("loading", false);
-        console.log(error);
+        setState("loading", false)
+        console.log(error)
 
         Toastify({
           text: error,
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
-        return;
+        }).showToast()
+        return
       }
     }
 
     // IF data property PROVIDED for CAMPAIGN in app.js
     // and tableQueries array provided ADD FALLBACKS to queries.[name]
     if (selectedCampaign.data && templateToRender.tableQueries.length > 0) {
-      const queries = {};
+      const queries = {}
       for (const translation of templateToRender.tableQueries) {
-        queries[translation.name] = translation.fallback;
+        queries[translation.name] = translation.fallback
       }
-      setState("queries", queries);
+      setState("queries", queries)
     }
 
-    let slugData = {};
+    let slugData = {}
     if (!!selectedCampaign.data) {
       if (country in selectedCampaign.data) {
-        slugData = selectedCampaign.data[country] || {};
+        slugData = selectedCampaign.data[country] || {}
       } else {
         Toastify({
           text:
@@ -142,29 +142,29 @@ export function initApp({ campaigns, shops, config }) {
             ".",
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
-        return;
+        }).showToast()
+        return
       }
     }
 
     // addParams check the link on "query" key and execute with origin.
     const links = addParams({
       links: templateToRender.links,
-    });
+    })
 
-    const ids = getState("ids");
-    const localProducts = getState("selectedCampaign").products;
-    const LSProducts = localProducts || localStorage.getItem("products");
+    const ids = getState("ids")
+    const localProducts = getState("selectedCampaign").products
+    const LSProducts = localProducts || localStorage.getItem("products")
     const parsedProducts = localProducts
       ? normalizeProducts(localProducts)
       : LSProducts
         ? JSON.parse(LSProducts)
-        : [];
+        : []
     const campaignProducts = localProducts
       ? parsedProducts
       : parsedProducts.find(
-          (item) => item.campaign_id === getState("selectedCampaign").startId,
-        );
+          (item) => item.campaign_id === getState("selectedCampaign").startId
+        )
 
     // We can read data from table.
     // Create fetch request in tableQueries property inside app.js file.
@@ -175,7 +175,7 @@ export function initApp({ campaigns, shops, config }) {
       categoriesLinks: getState("queries").categoriesLinks,
       categoriesTitles: getState("queries").categoriesTitles,
       products: localProducts ? parsedProducts : campaignProducts?.products,
-    });
+    })
 
     try {
       const html = await templateToRender.template({
@@ -187,7 +187,7 @@ export function initApp({ campaigns, shops, config }) {
         categories: templateToRender.categories?.map((item) =>
           Array.isArray(item)
             ? item.map((item) => computeValue({ ...item }))
-            : computeValue({ ...item }),
+            : computeValue({ ...item })
         ),
         type: templateToRender.type,
         getProductById: handlers.getProductById,
@@ -198,82 +198,82 @@ export function initApp({ campaigns, shops, config }) {
         getPhrase: handlers.getPhrase,
         getCampaignData: (key) => {
           if (key in slugData) {
-            return slugData[key];
+            return slugData[key]
           } else {
-            return undefined;
+            return undefined
           }
         },
         links: links,
         utm: getTrackingUrl({ type: templateToRender.type, id: ids[country] }),
-      });
+      })
 
       const withStylesOrNo =
         "css" in templateToRender
           ? `<style>${templateToRender.css}</style>` + html
-          : html;
+          : html
 
       const wrappedHtml = templateToRender.wrapper
         ? wrapTemplate(templateToRender.wrapper, {
             style: templateToRender.css ?? "",
             html: html,
           })
-        : withStylesOrNo;
-      setState("html", wrappedHtml);
+        : withStylesOrNo
+      setState("html", wrappedHtml)
 
       if (withStylesOrNo.includes("undefined")) {
         if (confirm("Do you want to render template with undefined value?")) {
-          return (root.innerHTML = withStylesOrNo);
+          return (root.innerHTML = withStylesOrNo)
         } else {
           Toastify({
             text: "Error rendering. HTML code has undefined value.",
             escapeMarkup: false,
             duration: 3000,
-          }).showToast();
+          }).showToast()
         }
       } else {
-        root.innerHTML = withStylesOrNo;
+        root.innerHTML = withStylesOrNo
       }
     } catch (error) {
-      console.log(error);
+      console.log(error)
       Toastify({
         text: "Please check console. " + error.message,
         escapeMarkup: false,
         duration: 3000,
-      }).showToast();
+      }).showToast()
     }
   }
 
   function setEvents() {
     new_products?.addEventListener("click", () => {
-      const products = prompt("Provide products");
+      const products = prompt("Provide products")
       if (!products) {
         return Toastify({
           text: "Input incorrect",
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
+        }).showToast()
       }
-      let newProducts;
+      let newProducts
       try {
-        newProducts = JSON.parse(products);
+        newProducts = JSON.parse(products)
       } catch (error) {
-        console.log(error);
+        console.log(error)
         Toastify({
           text: "Products parse error: " + error.message,
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
+        }).showToast()
       }
 
-      const selectedCampaign = getState("selectedCampaign");
-      const prev = localStorage.getItem("products");
+      const selectedCampaign = getState("selectedCampaign")
+      const prev = localStorage.getItem("products")
       try {
-        const prevProducts = prev ? JSON.parse(prev) : [];
+        const prevProducts = prev ? JSON.parse(prev) : []
         const isProductsSetted = prevProducts.find(
-          (item) => item.campaign_id === selectedCampaign.startId,
-        );
+          (item) => item.campaign_id === selectedCampaign.startId
+        )
 
-        const normalizedProducts = normalizeProducts(newProducts);
+        const normalizedProducts = normalizeProducts(newProducts)
         // If products already exists for selected campaign
         if (isProductsSetted) {
           const updatedProducts = prevProducts.map((item) => {
@@ -281,39 +281,39 @@ export function initApp({ campaigns, shops, config }) {
               return {
                 ...item,
                 products: normalizedProducts,
-              };
+              }
             }
-            return item;
-          });
+            return item
+          })
           try {
-            localStorage.setItem("products", JSON.stringify(updatedProducts));
+            localStorage.setItem("products", JSON.stringify(updatedProducts))
             Toastify({
               text: "Products successfully saved.",
               escapeMarkup: false,
               duration: 3000,
-            }).showToast();
+            }).showToast()
           } catch (error) {
-            const quotaExceededError = isQuotaExceededError(error);
+            const quotaExceededError = isQuotaExceededError(error)
             if (quotaExceededError) {
-              const ids = prevProducts.map((item) => item.campaign_id);
+              const ids = prevProducts.map((item) => item.campaign_id)
               const deleteCampaignId = prompt(
                 "Memory exceeded, please enter startId to delete: " +
-                  ids.join(","),
-              );
+                  ids.join(",")
+              )
               if (!deleteCampaignId) {
-                return;
+                return
               }
               if (!ids.includes(deleteCampaignId)) {
                 Toastify({
                   text: "Co robisz?!?",
                   escapeMarkup: false,
                   duration: 3000,
-                }).showToast();
-                return;
+                }).showToast()
+                return
               }
               const prevCampaigns = prevProducts.filter(
-                (item) => item.campaign_id !== deleteCampaignId,
-              );
+                (item) => item.campaign_id !== deleteCampaignId
+              )
               localStorage.setItem(
                 "products",
                 JSON.stringify([
@@ -322,17 +322,17 @@ export function initApp({ campaigns, shops, config }) {
                     campaign_id: selectedCampaign.startId,
                     products: normalizedProducts,
                   },
-                ]),
-              );
+                ])
+              )
               Toastify({
                 text: "Products successfully saved.",
                 escapeMarkup: false,
                 duration: 3000,
-              }).showToast();
-              return;
+              }).showToast()
+              return
             }
           }
-          return;
+          return
         } else {
           try {
             localStorage.setItem(
@@ -343,30 +343,30 @@ export function initApp({ campaigns, shops, config }) {
                   campaign_id: selectedCampaign.startId,
                   products: normalizedProducts,
                 },
-              ]),
-            );
+              ])
+            )
           } catch (error) {
-            const quotaExceededError = isQuotaExceededError(error);
+            const quotaExceededError = isQuotaExceededError(error)
             if (quotaExceededError) {
-              const ids = prevProducts.map((item) => item.campaign_id);
+              const ids = prevProducts.map((item) => item.campaign_id)
               const deleteCampaignId = prompt(
                 "Memory exceeded, please enter startId to delete: " +
-                  ids.join(","),
-              );
+                  ids.join(",")
+              )
               if (!deleteCampaignId) {
-                return;
+                return
               }
               if (!ids.includes(deleteCampaignId)) {
                 Toastify({
                   text: "Co robisz?!?",
                   escapeMarkup: false,
                   duration: 3000,
-                }).showToast();
-                return;
+                }).showToast()
+                return
               }
               const prevCampaigns = prevProducts.filter(
-                (item) => item.campaign_id !== deleteCampaignId,
-              );
+                (item) => item.campaign_id !== deleteCampaignId
+              )
               localStorage.setItem(
                 "products",
                 JSON.stringify([
@@ -375,14 +375,14 @@ export function initApp({ campaigns, shops, config }) {
                     campaign_id: selectedCampaign.startId,
                     products: normalizedProducts,
                   },
-                ]),
-              );
+                ])
+              )
               Toastify({
                 text: "Products successfully saved.",
                 escapeMarkup: false,
                 duration: 3000,
-              }).showToast();
-              return;
+              }).showToast()
+              return
             }
           }
         }
@@ -391,157 +391,157 @@ export function initApp({ campaigns, shops, config }) {
           text: "Products error: " + error.message,
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
+        }).showToast()
       }
-    });
+    })
     openCampaign?.addEventListener("click", (e) =>
-      openCampaignHandler(state.ids[state.country]),
-    );
+      openCampaignHandler(state.ids[state.country])
+    )
     openIssue?.addEventListener("click", (e) => {
       if (!state.selectedCampaign.issueCardId) {
         Toastify({
           text: `Select campaign.`,
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
-        return;
+        }).showToast()
+        return
       }
-      openIssueHandler(state.selectedCampaign.issueCardId);
-    });
+      openIssueHandler(state.selectedCampaign.issueCardId)
+    })
     figmaCard?.addEventListener("click", (e) => {
       if (!state.selectedCampaign.figmaUrl) {
         Toastify({
           text: `Figma url not found.`,
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
-        return;
+        }).showToast()
+        return
       }
-      figmaCardHandler(state.selectedCampaign.figmaUrl);
-    });
+      figmaCardHandler(state.selectedCampaign.figmaUrl)
+    })
     clearStorage?.addEventListener("click", (e) => {
       if (
         confirm("All data will be removed from localstorage! Are you sure?")
       ) {
-        localStorage.clear();
+        localStorage.clear()
       }
-    });
+    })
 
-    const options = [];
+    const options = []
     for (const shop of shops) {
-      const option = document.createElement("option");
-      option.value = shop.shopId;
-      option.textContent = shop.seller;
-      options.push(option);
+      const option = document.createElement("option")
+      option.value = shop.shopId
+      option.textContent = shop.seller
+      options.push(option)
     }
-    const option = document.createElement("option");
-    option.value = "default";
-    option.textContent = "Select shop";
-    option.defaultSelected = true;
-    options.push(option);
-    shops_select.append(...options);
+    const option = document.createElement("option")
+    option.value = "default"
+    option.textContent = "Select shop"
+    option.defaultSelected = true
+    options.push(option)
+    shops_select.append(...options)
 
     shops_select.addEventListener("change", (ev) => {
       if (ev.target.value === "default") {
-        return;
+        return
       }
-      handleShopChange(ev, shops);
-      const shop = getState("shop");
-      languages_select.innerHTML = "";
-      const lang_options = [];
+      handleShopChange(ev, shops)
+      const shop = getState("shop")
+      languages_select.innerHTML = ""
+      const lang_options = []
       for (const { language } of shop.languages) {
-        const option = document.createElement("option");
-        option.value = language.slug + "-" + language.name;
-        option.textContent = language.name;
-        option.style.textTransform = "capitalize";
-        lang_options.push(option);
+        const option = document.createElement("option")
+        option.value = language.slug + "-" + language.name
+        option.textContent = language.name
+        option.style.textTransform = "capitalize"
+        lang_options.push(option)
       }
-      const option = document.createElement("option");
-      option.value = "default";
-      option.textContent = "Select language";
-      option.defaultSelected = true;
-      lang_options.push(option);
-      languages_select.append(...lang_options);
-      languages_select.style.display = "block";
-    });
+      const option = document.createElement("option")
+      option.value = "default"
+      option.textContent = "Select language"
+      option.defaultSelected = true
+      lang_options.push(option)
+      languages_select.append(...lang_options)
+      languages_select.style.display = "block"
+    })
 
     languages_select.addEventListener("change", (ev) => {
       if (ev.target.value === "default") {
-        return;
+        return
       }
-      handleSlugChange(ev);
-      console.log("RENDEROWANIE HATEEMJEL");
-      render();
-    });
+      handleSlugChange(ev)
+      console.log("RENDEROWANIE HATEEMJEL")
+      render()
+    })
 
     copyTemplate?.addEventListener("click", () => {
-      const html = getState("html");
+      const html = getState("html")
       if (!html) {
         Toastify({
           text: `Render HTML.`,
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
-        return;
+        }).showToast()
+        return
       }
       if (state.config?.confetti) {
         jsConfetti.addConfetti({
           emojiSize: 20,
           confettiNumber: 80,
-        });
+        })
       }
 
-      navigator.clipboard.writeText(html);
-    });
+      navigator.clipboard.writeText(html)
+    })
 
     selectCampaigns.addEventListener("change", (ev) => {
       if (ev.target.value === "default") {
-        return;
+        return
       }
 
       const { selectedCampaign, templates } = selectCampaignHandler(
         ev,
-        campaigns,
-      );
+        campaigns
+      )
 
-      root.innerHTML = "";
+      root.innerHTML = ""
       selectTemplates.innerHTML =
-        '<option value="default">Select template</option>';
-      selectTemplates.append(...renderAvailableTemplates(templates));
+        '<option value="default">Select template</option>'
+      selectTemplates.append(...renderAvailableTemplates(templates))
 
-      setState("selectedTemplates", templates);
-      setState("selectedCampaign", selectedCampaign);
-      setState("optimizeImg", selectedCampaign.optimizeImg || false);
-    });
+      setState("selectedTemplates", templates)
+      setState("selectedCampaign", selectedCampaign)
+      setState("optimizeImg", selectedCampaign.optimizeImg || false)
+    })
 
     selectTemplates.addEventListener("change", (ev) => {
       if (ev.target.value === "default") {
-        return;
+        return
       }
 
-      setSelectedTemplate(ev);
-      render();
-    });
+      setSelectedTemplate(ev)
+      render()
+    })
   }
 
   function setSelectedTemplate(ev) {
-    const selectedTemplates = getState("selectedTemplates");
+    const selectedTemplates = getState("selectedTemplates")
     const selectedTemplate = selectedTemplates.find(
-      (template) => template.type + "_" + template.name === ev.target.value,
-    );
+      (template) => template.type + "_" + template.name === ev.target.value
+    )
     if (!selectedTemplate) {
       Toastify({
         text: `Template ${ev.target.value} not found.`,
         escapeMarkup: false,
         duration: 3000,
-      }).showToast();
+      }).showToast()
     }
-    new_products.style.display = "block";
+    new_products.style.display = "block"
     if (selectedTemplate.type === "banner") {
-      openCampaign.style.display = "none";
+      openCampaign.style.display = "none"
     } else {
-      openCampaign.style.display = "block";
+      openCampaign.style.display = "block"
     }
-    setState("template", selectedTemplate);
+    setState("template", selectedTemplate)
   }
 }

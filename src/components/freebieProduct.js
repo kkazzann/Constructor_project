@@ -1,10 +1,10 @@
-import { ImageWithLink } from "./ImageWithLink.js";
+import { ImageWithLink } from "./ImageWithLink.js"
 
 export function FreebieProduct(
   product,
   align = "center",
   style,
-  containerAlign = "center",
+  containerAlign = "center"
 ) {
   return `
   <table cellspacing="0" cellpadding="0" align=${containerAlign}>
@@ -64,5 +64,5 @@ export function FreebieProduct(
       </tr>
     </tbody>
   </table>
-    `;
+    `
 }

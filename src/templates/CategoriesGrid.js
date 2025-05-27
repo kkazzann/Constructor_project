@@ -1,6 +1,6 @@
-import { Create2Columns } from "../components/Create2Columns.js";
-import { Footer } from "../components/footer.js";
-import { Header } from "../components/header.js";
+import { Create2Columns } from "../components/Create2Columns.js"
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -14,7 +14,7 @@ import {
   ProductWithSize,
   Image,
   Title,
-} from "../components/index.js";
+} from "../components/index.js"
 
 export async function CategoriesGrid({
   links,
@@ -77,7 +77,7 @@ export async function CategoriesGrid({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
@@ -135,7 +135,7 @@ export async function CategoriesGrid({
                     ${GetCode({
                       type: "newsletter",
                       link: getCategoryLink(
-                        "https://www.beliani.ch/bedroom-furniture/mattresses/",
+                        "https://www.beliani.ch/bedroom-furniture/mattresses/"
                       ),
                       code: queries.shopAllMattrasses,
                     })}
@@ -214,7 +214,7 @@ export async function CategoriesGrid({
                             <tr>
                                 <td align="left" class="newsletterBottom35px">
                                     <span class="newsletterFooterTitle">${getPhrase(
-                                      "Shop limited-time deals",
+                                      "Shop limited-time deals"
                                     )}</span>
                                 </td>
                             </tr>
@@ -251,7 +251,7 @@ export async function CategoriesGrid({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country,
+              country
             ),
           },
           workBanner: {
@@ -359,7 +359,7 @@ export async function CategoriesGrid({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

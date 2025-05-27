@@ -1,7 +1,7 @@
-import { ImageWithLink } from "./ImageWithLink.js";
+import { ImageWithLink } from "./ImageWithLink.js"
 
 export function Product(product, align = "left", style) {
-  console.log(`Produkt: ${product}`);
+  console.log(`Produkt: ${product}`)
   return `
   <table cellspacing="0" cellpadding="0" style="width: 100%; ${style ?? ""}">
     <tbody>
@@ -47,5 +47,5 @@ export function Product(product, align = "left", style) {
       </tr>
     </tbody>
   </table>
-    `;
+    `
 }

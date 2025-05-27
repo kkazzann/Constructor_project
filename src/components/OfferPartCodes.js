@@ -1,4 +1,4 @@
-import { GetCode } from "./getCode.js";
+import { GetCode } from "./getCode.js"
 
 export function OfferPartCodes({ offerParts, type }) {
   function newsletterIntro(item, i) {
@@ -46,7 +46,7 @@ export function OfferPartCodes({ offerParts, type }) {
         `
         : ""
     }
-    `;
+    `
   }
 
   function landingIntro(item, i) {
@@ -98,7 +98,7 @@ export function OfferPartCodes({ offerParts, type }) {
         `
         : ""
     }
-    `;
+    `
   }
 
   return `
@@ -107,15 +107,15 @@ export function OfferPartCodes({ offerParts, type }) {
           ${offerParts
             .map((item, i) => {
               if (type === "newsletter") {
-                return newsletterIntro(item, i);
+                return newsletterIntro(item, i)
               }
 
               if (type === "landing") {
-                return landingIntro(item, i);
+                return landingIntro(item, i)
               }
             })
             .join("")}
         </tbody>
     </table>
-    `;
+    `
 }

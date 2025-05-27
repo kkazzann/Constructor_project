@@ -1,5 +1,5 @@
-import { Footer } from "../components/footer.js";
-import { Header } from "../components/header.js";
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -11,8 +11,8 @@ import {
   Freebies,
   Product,
   ProductWithSize,
-} from "../components/index.js";
-import { priceFree } from "../helpers/priceFree.js";
+} from "../components/index.js"
+import { priceFree } from "../helpers/priceFree.js"
 
 export async function TimerGIF({
   links,
@@ -75,7 +75,7 @@ export async function TimerGIF({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7; color: #000;" id="newsletter">
         <tbody>
@@ -110,7 +110,7 @@ export async function TimerGIF({
                   <td style="background-color: #ffccb7;">
                       ${Category({
                         href: getCategoryLink(
-                          "https://www.beliani.ch/office-furniture/desks-eng/",
+                          "https://www.beliani.ch/office-furniture/desks-eng/"
                         ),
                         name: queries.categories[0],
                         src: "https://upload.pictureserver.net/static/2024/20240603Category1.png",
@@ -119,19 +119,19 @@ export async function TimerGIF({
                         products: [
                           getProductById(
                             "238646",
-                            "https://upload.pictureserver.net/static/2024/20240603Category11.png",
+                            "https://upload.pictureserver.net/static/2024/20240603Category11.png"
                           ),
                           getProductById(
                             "319065",
-                            "https://upload.pictureserver.net/static/2024/20240603Category12.png",
+                            "https://upload.pictureserver.net/static/2024/20240603Category12.png"
                           ),
                           getProductById(
                             "319062",
-                            "https://upload.pictureserver.net/static/2024/20240603Category13.png",
+                            "https://upload.pictureserver.net/static/2024/20240603Category13.png"
                           ),
                           getProductById(
                             "310523",
-                            "https://upload.pictureserver.net/static/2024/20240603Category14.png",
+                            "https://upload.pictureserver.net/static/2024/20240603Category14.png"
                           ),
                         ],
                       })}
@@ -171,7 +171,7 @@ export async function TimerGIF({
                         color: categories[0]?.color,
                         type: "monday",
                         products: categories[0].products.map((item) =>
-                          getProductById(item.id, item.src),
+                          getProductById(item.id, item.src)
                         ),
                       })}
                     </td>
@@ -210,7 +210,7 @@ export async function TimerGIF({
                           color: categories[1]?.color,
                           type: "monday",
                           products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -249,7 +249,7 @@ export async function TimerGIF({
                           color: categories[2]?.color,
                           type: "monday",
                           products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -271,7 +271,7 @@ export async function TimerGIF({
                               <tr>
                                   <td align="left" class="newsletterBottom35px">
                                       <span class="newsletterFooterTitle">${getPhrase(
-                                        "Shop limited-time deals",
+                                        "Shop limited-time deals"
                                       )}</span>
                                   </td>
                               </tr>
@@ -308,7 +308,7 @@ export async function TimerGIF({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country,
+              country
             ),
           },
           workBanner: {
@@ -416,7 +416,7 @@ export async function TimerGIF({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

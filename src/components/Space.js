@@ -1,16 +1,16 @@
-import { isAllowToRender } from "../helpers/optimizeImage.js";
-import { getState } from "../main/initApp.js";
+import { isAllowToRender } from "../helpers/optimizeImage.js"
+import { getState } from "../main/initApp.js"
 
 export const Space = isAllowToRender((props) => {
-  const country = getState("country");
+  const country = getState("country")
   for (const item of props?.renderOn || []) {
     if (country in item) {
-      props[item.field] = item[country];
+      props[item.field] = item[country]
     }
   }
 
   if (props?.className === null) {
-    return "";
+    return ""
   }
 
   return `
@@ -22,5 +22,5 @@ export const Space = isAllowToRender((props) => {
         </tr>
     </tbody>
   </table>
-  `;
-});
+  `
+})

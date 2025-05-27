@@ -1,6 +1,6 @@
-import { Footer } from "../components/footer.js";
-import FreebiesGenerator from "../components/FreebiesGenerator.js";
-import { Header } from "../components/header.js";
+import { Footer } from "../components/footer.js"
+import FreebiesGenerator from "../components/FreebiesGenerator.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -13,11 +13,11 @@ import {
   Product,
   ProductWithSize,
   OfferPartCodes,
-} from "../components/index.js";
-import { OfferPart } from "../components/OfferPart.js";
-import { OfferPartCode } from "../components/OfferPartCode.js";
-import { priceFree } from "../helpers/priceFree.js";
-import { getCodes } from "../utils/getCodes.js";
+} from "../components/index.js"
+import { OfferPart } from "../components/OfferPart.js"
+import { OfferPartCode } from "../components/OfferPartCode.js"
+import { priceFree } from "../helpers/priceFree.js"
+import { getCodes } from "../utils/getCodes.js"
 
 export async function mondayOfferFreeebies({
   links,
@@ -39,7 +39,7 @@ export async function mondayOfferFreeebies({
   offerPart,
   intro,
 }) {
-  const codes = getCodes(queries);
+  const codes = getCodes(queries)
 
   return `
   ${Header(
@@ -86,7 +86,7 @@ export async function mondayOfferFreeebies({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
         <tbody>
@@ -231,7 +231,7 @@ export async function mondayOfferFreeebies({
                         color: categories[0]?.color,
                         type: categories[0].type,
                         products: categories[0].products.map((item) =>
-                          getProductById(item.id, item.src),
+                          getProductById(item.id, item.src)
                         ),
                       })}
                     </td>
@@ -262,7 +262,7 @@ export async function mondayOfferFreeebies({
                           color: categories[1]?.color,
                           type: categories[1].type,
                           products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -293,7 +293,7 @@ export async function mondayOfferFreeebies({
                           color: categories[2]?.color,
                           type: categories[2].type,
                           products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -324,7 +324,7 @@ export async function mondayOfferFreeebies({
                           color: categories[3]?.color,
                           type: categories[3].type,
                           products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -350,7 +350,7 @@ export async function mondayOfferFreeebies({
                               <tr>
                                   <td align="left" class="newsletterBottom35px">
                                       <span class="newsletterFooterTitle">${getPhrase(
-                                        "Shop limited-time deals",
+                                        "Shop limited-time deals"
                                       )}</span>
                                   </td>
                               </tr>
@@ -491,7 +491,7 @@ export async function mondayOfferFreeebies({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

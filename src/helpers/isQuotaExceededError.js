@@ -6,5 +6,5 @@ export function isQuotaExceededError(err) {
       // test name field too, because code might not be present
       // everything except Firefox
       err.name === "QuotaExceededError")
-  );
+  )
 }

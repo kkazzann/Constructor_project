@@ -1,6 +1,6 @@
 export class Image {
-  value = "";
+  value = ""
   constructor({ value }) {
-    this.value = value;
+    this.value = value
   }
 }

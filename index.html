@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/assets/main.css" />
-    <link rel="stylesheet" href="./src/assets/toast.css" />
-    <link rel="stylesheet" href="./src/assets/spin.css" />
     <title>Constructor</title>
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
   </head>
@@ -83,20 +80,20 @@
       defer
     ></script>
     <script defer type="module">
-      import { GoogleAuth } from "./src/services/GoogleAuth.js";
+      import { GoogleAuth } from "./src/services/GoogleAuth.js"
 
-      const btn = document.querySelector("#login");
-      btn.addEventListener("click", GoogleAuth.login);
+      const btn = document.querySelector("#login")
+      btn.addEventListener("click", GoogleAuth.login)
 
-      const access = location.hash.split("&")[0].split("=")[1];
+      const access = location.hash.split("&")[0].split("=")[1]
       if (access) {
-        localStorage.setItem("token", access);
-        window.location.href = window.location.origin;
+        localStorage.setItem("token", access)
+        window.location.href = window.location.origin
         Toastify({
           text: "Token successfully setted.",
           escapeMarkup: false,
           duration: 3000,
-        }).showToast();
+        }).showToast()
       }
     </script>
     <script type="module" src="app.js"></script>

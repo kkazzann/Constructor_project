@@ -4,9 +4,9 @@
  * @returns {Object} - Zaktualizowany obiekt konfiguracyjny
  */
 function updateConfigWithCurrentYear(config) {
-  const currentYear = new Date().getFullYear();
-  config.server_url = config.server_url.replace(/\d{4}/, currentYear);
-  return config;
+  const currentYear = new Date().getFullYear()
+  config.server_url = config.server_url.replace(/\d{4}/, currentYear)
+  return config
 }
 
 /**
@@ -16,34 +16,34 @@ function updateConfigWithCurrentYear(config) {
  */
 function getImageVersion(imageName) {
   // Klucz do przechowywania wersji w localStorage
-  const storageKey = "image_versions";
+  const storageKey = "image_versions"
 
   // Pobierz zapisane wersje z localStorage
-  let versionsMap = {};
+  let versionsMap = {}
   try {
-    const storedVersions = localStorage.getItem(storageKey);
+    const storedVersions = localStorage.getItem(storageKey)
     if (storedVersions) {
-      versionsMap = JSON.parse(storedVersions);
+      versionsMap = JSON.parse(storedVersions)
     }
   } catch (error) {
-    console.warn("Błąd podczas odczytu wersji obrazów:", error);
+    console.warn("Błąd podczas odczytu wersji obrazów:", error)
   }
 
   // Sprawdź aktualną wersję obrazu lub ustaw domyślną wartość 1
-  const currentVersion = versionsMap[imageName] || 1;
+  const currentVersion = versionsMap[imageName] || 1
 
   // Inkrementuj wersję
-  const newVersion = currentVersion + 1;
+  const newVersion = currentVersion + 1
 
   // Zapisz zaktualizowaną wersję
-  versionsMap[imageName] = newVersion;
+  versionsMap[imageName] = newVersion
   try {
-    localStorage.setItem(storageKey, JSON.stringify(versionsMap));
+    localStorage.setItem(storageKey, JSON.stringify(versionsMap))
   } catch (error) {
-    console.warn("Błąd podczas zapisu wersji obrazów:", error);
+    console.warn("Błąd podczas zapisu wersji obrazów:", error)
   }
 
-  return newVersion;
+  return newVersion
 }
 
 const config = {
@@ -57,7 +57,7 @@ const config = {
     `<span style='font-size: 20px; background: #ff0000;'>${
       message || "Cell is empty"
     }</span>`,
-};
+}
 
 /**
  * Generuje URL obrazu z automatyczną inkrementacją numeru wersji
@@ -70,24 +70,24 @@ const config = {
  */
 export default function getImageUrl(imageName, version) {
   // Aktualizacja roku w konfiguracji
-  const updatedConfig = updateConfigWithCurrentYear(config);
+  const updatedConfig = updateConfigWithCurrentYear(config)
 
   // Obsługa różnych przypadków wersji
-  let versionParam;
+  let versionParam
 
   // Jeśli wersja jest stringiem lub liczbą, użyj jej bezpośrednio
   if (typeof version === "string" || typeof version === "number") {
-    versionParam = version;
+    versionParam = version
   }
   // Jeśli wersja jest false, użyj stałej wartości 1
   else if (version === false) {
-    versionParam = 1;
+    versionParam = 1
   }
   // W przeciwnym razie (wersja jest undefined, true lub inną wartością) użyj automatycznego wersjonowania
   else {
-    versionParam = getImageVersion(imageName);
+    versionParam = getImageVersion(imageName)
   }
 
   // Zwróć pełny URL z parametrem wersji
-  return updatedConfig.server_url + imageName + "?ver=" + versionParam;
+  return updatedConfig.server_url + imageName + "?ver=" + versionParam
 }

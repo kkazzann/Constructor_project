@@ -16,5 +16,5 @@ export const Title = ({
           </tr>
       </tbody>
   </table>
-  `;
-};
+  `
+}

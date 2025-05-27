@@ -1692,4 +1692,4 @@ export default [
       "Nr. de înregistrare la registrul comerțului: CHE-433.124.131",
     VAT: "VAT ID: DE369393001",
   },
-];
+]

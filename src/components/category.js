@@ -1,4 +1,4 @@
-import { isAllowToRender } from "../helpers/optimizeImage.js";
+import { isAllowToRender } from "../helpers/optimizeImage.js"
 import {
   ImageWithLink,
   Line,
@@ -6,7 +6,7 @@ import {
   Space,
   Title,
   Paragraph,
-} from "./index.js";
+} from "./index.js"
 
 export const Category = isAllowToRender(
   ({
@@ -25,15 +25,15 @@ export const Category = isAllowToRender(
     type = "monday",
   }) => {
     if (!type) {
-      return "Please specify type category.";
+      return "Please specify type category."
     }
 
     if (type === "no_products") {
       return `
-    <table border="0" cellspacing="0" cellpadding="0" width="100%" style="text-align: center;">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
       <tbody>
         <tr>
-          <td>
+          <td class="newsletterContainer">
             <a href="${href}">
               <img alt="${name}" src="${src}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
             </a>
@@ -62,7 +62,7 @@ export const Category = isAllowToRender(
         </tr>
       </tbody>
     </table>
-    `;
+    `
     }
 
     if (type === "monday") {
@@ -118,7 +118,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[0],
                         "left",
-                        `color: ${color || "#000000"}`,
+                        `color: ${color || "#000000"}`
                       )}
                     </td>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
@@ -126,7 +126,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[1],
                         "left",
-                        `color: ${color || "#000000"}`,
+                        `color: ${color || "#000000"}`
                       )}
                     </td>
                   </tr>
@@ -143,7 +143,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[2],
                         "left",
-                        `color: ${color || "#000000"}`,
+                        `color: ${color || "#000000"}`
                       )}
                     </td>
                     <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
@@ -151,7 +151,7 @@ export const Category = isAllowToRender(
                       ${Product(
                         products[3],
                         "left",
-                        `color: ${color || "#000000"}`,
+                        `color: ${color || "#000000"}`
                       )}
                     </td>
                   </tr>
@@ -190,7 +190,7 @@ export const Category = isAllowToRender(
       </tr>
     </tbody>
   </table>
-  `;
+  `
     }
 
     if (type === "image") {
@@ -209,7 +209,7 @@ export const Category = isAllowToRender(
             </tr>
         </thead>
       </table>
-      `;
+      `
     }
-  },
-);
+  }
+)

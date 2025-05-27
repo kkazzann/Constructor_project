@@ -1,8 +1,8 @@
-import { Iterate } from "../components/Iterate.js";
-import { OfferPart } from "../components/OfferPart.js";
-import { YouTube } from "../components/YouTube.js";
-import { Footer } from "../components/footer.js";
-import { Header } from "../components/header.js";
+import { Iterate } from "../components/Iterate.js"
+import { OfferPart } from "../components/OfferPart.js"
+import { YouTube } from "../components/YouTube.js"
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -14,7 +14,7 @@ import {
   Freebies,
   Product,
   ProductWithSize,
-} from "../components/index.js";
+} from "../components/index.js"
 
 export async function CategoriesRowsLine({
   links,
@@ -78,7 +78,7 @@ export async function CategoriesRowsLine({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
@@ -133,7 +133,7 @@ export async function CategoriesRowsLine({
                     ${Line()}
                   </td>
                 </tr>
-                `;
+                `
               },
               lastItemFn: (item, index) => {
                 return `
@@ -150,7 +150,7 @@ export async function CategoriesRowsLine({
                         ${Space({ className: "newsletterBottom80px" })}
                       </td>
                     </tr>
-                      `;
+                      `
               },
             })}
             <tr>
@@ -174,7 +174,7 @@ export async function CategoriesRowsLine({
                           <tr>
                               <td align="left" class="newsletterBottom35px">
                                   <span class="newsletterFooterTitle">${getPhrase(
-                                    "Shop limited-time deals",
+                                    "Shop limited-time deals"
                                   )}</span>
                               </td>
                           </tr>
@@ -318,7 +318,7 @@ export async function CategoriesRowsLine({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

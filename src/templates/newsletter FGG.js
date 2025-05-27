@@ -1,5 +1,5 @@
-import { Footer } from "../components/footer.js";
-import { Header } from "../components/header.js";
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -11,7 +11,7 @@ import {
   Freebies,
   Product,
   ProductWithSize,
-} from "../components/index.js";
+} from "../components/index.js"
 
 export async function newsletter_FGG({
   links,
@@ -73,7 +73,7 @@ export async function newsletter_FGG({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffffff;" id="newsletter">
   <tbody>
@@ -169,7 +169,7 @@ export async function newsletter_FGG({
             <tr>
               <td width="50%">
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/outdoor-furniture/",
+                  "https://www.beliani.ch/outdoor-furniture/"
                 )}">
                   <img src="https://beliani.info/newsletter/2022/240223Category1.png" alt="" style="display: block; max-width: 100%;">
                 </a>
@@ -189,7 +189,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/outdoor-furniture/",
+                  "https://www.beliani.ch/outdoor-furniture/"
                 )}" style="color: #000000; text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -233,7 +233,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/sofas/",
+                  "https://www.beliani.ch/sofas/"
                 )}" style="color: #000000;  text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -286,7 +286,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/beds/",
+                  "https://www.beliani.ch/beds/"
                 )}" style="color: #000000; text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -330,7 +330,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/armchairs/",
+                  "https://www.beliani.ch/armchairs/"
                 )}" style="color: #000000;  text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -383,7 +383,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/chairs/",
+                  "https://www.beliani.ch/chairs/"
                 )}" style="color: #000000; text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -427,7 +427,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/tables/",
+                  "https://www.beliani.ch/tables/"
                 )}" style="color: #000000;  text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -480,7 +480,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/storage/",
+                  "https://www.beliani.ch/storage/"
                 )}" style="color: #000000; text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -524,7 +524,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/lighting/",
+                  "https://www.beliani.ch/lighting/"
                 )}" style="color: #000000;  text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -559,7 +559,7 @@ export async function newsletter_FGG({
             <tr>
               <td width="50%">
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/bathtubs-hot-tubs/",
+                  "https://www.beliani.ch/bathtubs-hot-tubs/"
                 )}">
                   <img src="https://beliani.info/newsletter/2022/240223Category9.png" alt="" style="display: block; max-width: 100%;">
                 </a>
@@ -579,7 +579,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/bathtubs-hot-tubs/",
+                  "https://www.beliani.ch/bathtubs-hot-tubs/"
                 )}" style="color: #000000; text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -623,7 +623,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/office-furniture/desks-eng/",
+                  "https://www.beliani.ch/office-furniture/desks-eng/"
                 )}" style="color: #000000;  text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -632,7 +632,7 @@ export async function newsletter_FGG({
               </td>
               <td width="50%">
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/office-furniture/desks-eng/",
+                  "https://www.beliani.ch/office-furniture/desks-eng/"
                 )}">
                   <img src="https://beliani.info/newsletter/2022/240223Category10.png" alt="" style="display: block; max-width: 100%;">
                 </a>
@@ -678,7 +678,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/rugs/",
+                  "https://www.beliani.ch/rugs/"
                 )}" style="color: #000000; text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -722,7 +722,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/home-accessories/",
+                  "https://www.beliani.ch/home-accessories/"
                 )}" style="color: #000000;  text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -731,7 +731,7 @@ export async function newsletter_FGG({
               </td>
               <td width="50%">
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/home-accessories/",
+                  "https://www.beliani.ch/home-accessories/"
                 )}">
                   <img src="https://beliani.info/newsletter/2022/240223Category12.png" alt="" style="display: block; max-width: 100%;">
                 </a>
@@ -777,7 +777,7 @@ export async function newsletter_FGG({
   </table>
   
                 <a href="${getCategoryLink(
-                  "https://www.beliani.ch/textiles/",
+                  "https://www.beliani.ch/textiles/"
                 )}" style="color: #000000; text-decoration: underline;">
                   <span style="color: #000000; " class="newsletterCta">${
                     queries.shopNow
@@ -911,7 +911,7 @@ export async function newsletter_FGG({
         <tr>
           <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px; text-align: center;">
             <a href="${getCategoryLink(
-              "https://www.beliani.ch/gift-cards/",
+              "https://www.beliani.ch/gift-cards/"
             )}" style="color:#000; text-decoration: underline;">
               <span class="newsletterCta">${queries.shopNow}</span>
             </a>
@@ -936,7 +936,7 @@ export async function newsletter_FGG({
                                   <tr>
                                       <td align="left" class="newsletterBottom35px">
                                           <span class="newsletterFooterTitle">${getPhrase(
-                                            "Shop limited-time deals",
+                                            "Shop limited-time deals"
                                           )}</span>
                                       </td>
                                   </tr>
@@ -973,7 +973,7 @@ export async function newsletter_FGG({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country,
+              country
             ),
           },
           workBanner: {
@@ -1081,7 +1081,7 @@ export async function newsletter_FGG({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

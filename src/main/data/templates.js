@@ -615,4 +615,4 @@ export default [
     "You may be also interested in": "Guarda Anche",
     "Deal ends in:": "Termina in:",
   },
-];
+]

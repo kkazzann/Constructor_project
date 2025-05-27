@@ -1,6 +1,6 @@
-import { Footer } from "../components/footer.js";
-import FreebiesGenerator from "../components/FreebiesGenerator.js";
-import { Header } from "../components/header.js";
+import { Footer } from "../components/footer.js"
+import FreebiesGenerator from "../components/FreebiesGenerator.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -13,11 +13,11 @@ import {
   Product,
   ProductWithSize,
   OfferPartCodes,
-} from "../components/index.js";
-import { OfferPart } from "../components/OfferPart.js";
-import { OfferPartCode } from "../components/OfferPartCode.js";
-import { priceFree } from "../helpers/priceFree.js";
-import { getCodes } from "../utils/getCodes.js";
+} from "../components/index.js"
+import { OfferPart } from "../components/OfferPart.js"
+import { OfferPartCode } from "../components/OfferPartCode.js"
+import { priceFree } from "../helpers/priceFree.js"
+import { getCodes } from "../utils/getCodes.js"
 
 export async function mondayOfferFreebiesInsideBanner({
   links,
@@ -41,10 +41,10 @@ export async function mondayOfferFreebiesInsideBanner({
   insideBanner,
   config,
 }) {
-  const codes = getCodes(queries);
+  const codes = getCodes(queries)
   if ("src_config" in insideBanner) {
     insideBanner["src"] =
-      config.server_url + country.toLowerCase() + insideBanner.src_config.name;
+      config.server_url + country.toLowerCase() + insideBanner.src_config.name
   }
 
   return `
@@ -92,7 +92,7 @@ export async function mondayOfferFreebiesInsideBanner({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
         <tbody>
@@ -252,7 +252,7 @@ export async function mondayOfferFreebiesInsideBanner({
                         color: categories[0]?.color,
                         type: categories[0].type,
                         products: categories[0].products.map((item) =>
-                          getProductById(item.id, item.src),
+                          getProductById(item.id, item.src)
                         ),
                       })}
                     </td>
@@ -283,7 +283,7 @@ export async function mondayOfferFreebiesInsideBanner({
                           color: categories[1]?.color,
                           type: categories[1].type,
                           products: categories[1].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -314,7 +314,7 @@ export async function mondayOfferFreebiesInsideBanner({
                           color: categories[2]?.color,
                           type: categories[2].type,
                           products: categories[2].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -345,7 +345,7 @@ export async function mondayOfferFreebiesInsideBanner({
                           color: categories[3]?.color,
                           type: categories[3].type,
                           products: categories[3].products.map((item) =>
-                            getProductById(item.id, item.src),
+                            getProductById(item.id, item.src)
                           ),
                         })}
                     </td>
@@ -371,7 +371,7 @@ export async function mondayOfferFreebiesInsideBanner({
                               <tr>
                                   <td align="left" class="newsletterBottom35px">
                                       <span class="newsletterFooterTitle">${getPhrase(
-                                        "Shop limited-time deals",
+                                        "Shop limited-time deals"
                                       )}</span>
                                   </td>
                               </tr>
@@ -512,7 +512,7 @@ export async function mondayOfferFreebiesInsideBanner({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

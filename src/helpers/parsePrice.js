@@ -1,8 +1,8 @@
-import { getState } from "../main/initApp.js";
-import { priceFormats } from "./priceFormats.js";
+import { getState } from "../main/initApp.js"
+import { priceFormats } from "./priceFormats.js"
 
 export function parsePrice(product, options) {
-  const shop = getState("shop");
+  const shop = getState("shop")
 
   return {
     ...product,
@@ -13,8 +13,8 @@ export function parsePrice(product, options) {
             product.country === "pl"
               ? Math.ceil(product.highPrice).toString()
               : product.highPrice,
-            options,
+            options
           )
         : "",
-  };
+  }
 }

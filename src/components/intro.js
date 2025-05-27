@@ -1,5 +1,5 @@
-import { isAllowToRender } from "../helpers/optimizeImage.js";
-import { Space } from "./Space.js";
+import { isAllowToRender } from "../helpers/optimizeImage.js"
+import { Space } from "./Space.js"
 
 export const Intro = isAllowToRender(
   ({ title, paragraph, data, spaceClassName, color, align = "left" }) => {
@@ -29,7 +29,7 @@ export const Intro = isAllowToRender(
       </tr>
     </tbody>
   </table>
-    `;
+    `
     }
     return `
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
@@ -71,6 +71,6 @@ export const Intro = isAllowToRender(
       </tr>
     </tbody>
   </table>
-    `;
-  },
-);
+    `
+  }
+)

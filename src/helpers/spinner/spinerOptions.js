@@ -1,4 +1,4 @@
-import { Spinner } from "./Spin.js";
+import { Spinner } from "./Spin.js"
 
 const options = {
   lines: 13, // The number of lines to draw
@@ -19,6 +19,6 @@ const options = {
   zIndex: 2000000000, // The z-index (defaults to 2e9)
   className: "spinner", // The CSS class to assign to the spinner
   position: "absolute", // Element positioning
-};
+}
 
-export const SpinnerInit = new Spinner(options);
+export const SpinnerInit = new Spinner(options)

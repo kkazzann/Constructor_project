@@ -40,5 +40,5 @@ export function ProductWithSize(product, align = "left") {
       </tr>
     </tbody>
   </table>
-    `;
+    `
 }

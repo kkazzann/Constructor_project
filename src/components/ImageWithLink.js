@@ -1,4 +1,4 @@
-import { isAllowToRender, optimize } from "../helpers/optimizeImage.js";
+import { isAllowToRender, optimize } from "../helpers/optimizeImage.js"
 
 export const ImageWithLink = isAllowToRender(
   optimize(({ href, src, alt = "", attrs }) => {
@@ -14,6 +14,6 @@ export const ImageWithLink = isAllowToRender(
             </tr>
         </tbody>
     </table>
-  `;
-  }),
-);
+  `
+  })
+)

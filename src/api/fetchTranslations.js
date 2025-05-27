@@ -1,55 +1,53 @@
-import { getState } from "../main/initApp.js";
-import { adjustTableRangeToCountry } from "../utils/fixRange.js";
-import { normalizeTranslations } from "../utils/normalizeTranslations.js";
-import { GoogleAuth } from "../services/GoogleAuth.js";
-import Toastify from "toastify-js";
+import { getState } from "../main/initApp.js"
+import { adjustTableRangeToCountry } from "../utils/fixRange.js"
+import { normalizeTranslations } from "../utils/normalizeTranslations.js"
+import { GoogleAuth } from "../services/GoogleAuth.js"
+import Toastify from "toastify-js"
 
 export const fetchTranslations = async ({ tableQueries }) => {
-  const name = getState("name");
-  const shop = getState("shop");
-  const tableColumn = shop.languages.find(
-    (item) => item.language.name === name,
-  );
+  const name = getState("name")
+  const shop = getState("shop")
+  const tableColumn = shop.languages.find((item) => item.language.name === name)
 
   if (!tableColumn.tableColumn) {
     Toastify({
       text: `Table column is empty`,
       escapeMarkup: false,
       duration: 3000,
-    }).showToast();
-    return;
+    }).showToast()
+    return
   }
-  const promises = [];
+  const promises = []
   for (const query of tableQueries) {
     const queryWithAdjustedRange = adjustTableRangeToCountry(
       query,
-      tableColumn.tableColumn,
-    );
-    promises.push(queryWithAdjustedRange);
+      tableColumn.tableColumn
+    )
+    promises.push(queryWithAdjustedRange)
   }
 
   const promisesResult = await Promise.allSettled(
     promises.map((queryWithAdjustedRange) =>
-      getTranslations(queryWithAdjustedRange),
-    ),
-  );
+      getTranslations(queryWithAdjustedRange)
+    )
+  )
 
-  const computedPromise = [];
+  const computedPromise = []
   for (const { value } of promisesResult) {
     if (value.error && value.error.code === 400) {
-      throw new Error(value.error.message);
+      throw new Error(value.error.message)
     }
     if (value.error && value.error.code === 401) {
       setTimeout(() => {
-        GoogleAuth.login();
-      }, 3000);
-      throw new Error("Token will be updated in 3 seconds.");
+        GoogleAuth.login()
+      }, 3000)
+      throw new Error("Token will be updated in 3 seconds.")
     }
     if (value.error && value.error.code === 429) {
-      throw new Error("Too many request. Please, try again later.");
+      throw new Error("Too many request. Please, try again later.")
     }
     if (value.error && value.error.code === 503) {
-      throw new Error("Service currently unavailable");
+      throw new Error("Service currently unavailable")
     }
 
     if ("values" in value && value.values.length > 0) {
@@ -59,17 +57,17 @@ export const fetchTranslations = async ({ tableQueries }) => {
             ? value.values
             : normalizeTranslations(value.values, value.fallback, value.range),
         name: value.name,
-      });
+      })
     } else {
       computedPromise.push({
         data: value.fallback || undefined,
         name: value.name,
-      });
+      })
     }
   }
 
-  return computedPromise;
-};
+  return computedPromise
+}
 
 export async function getTranslations({
   tableId,
@@ -78,11 +76,11 @@ export async function getTranslations({
   fallback,
   name,
 }) {
-  const token = localStorage.getItem("token");
+  const token = localStorage.getItem("token")
   // includeGridData
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${tableId}/values/${tableName}!${tableRange}`;
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${tableId}/values/${tableName}!${tableRange}`
 
-  console.debug(`Sprawdzam '${name}' dla ${url}`);
+  console.debug(`Sprawdzam '${name}' dla ${url}`)
 
   try {
     const response = await fetch(url, {
@@ -91,11 +89,11 @@ export async function getTranslations({
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
       },
-    });
-    const data = await response.json();
-    console.debug(`Sprawdzone '${name}' dla ${url}:\n${JSON.stringify(data)}`);
-    return { ...data, name, fallback };
+    })
+    const data = await response.json()
+    console.debug(`Sprawdzone '${name}' dla ${url}:\n${JSON.stringify(data)}`)
+    return { ...data, name, fallback }
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }
 }

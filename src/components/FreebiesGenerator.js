@@ -1,6 +1,6 @@
-import { priceFree } from "../helpers/priceFree.js";
-import { Space } from "./Space.js";
-import { Freebies } from "./freebies.js";
+import { priceFree } from "../helpers/priceFree.js"
+import { Space } from "./Space.js"
+import { Freebies } from "./freebies.js"
 
 const FreebiesGenerator = ({ freebies, getProductById }) => {
   return freebies
@@ -15,7 +15,7 @@ const FreebiesGenerator = ({ freebies, getProductById }) => {
           size: freebie.size,
         })}
         ${Space({ className: "newsletterBottom80px" })}
-        `;
+        `
       }
 
       return `
@@ -27,9 +27,9 @@ const FreebiesGenerator = ({ freebies, getProductById }) => {
           size: freebie.size,
         })}
         ${Space({ className: "newsletterBottom20px" })}
-        `;
+        `
     })
-    .join("");
-};
+    .join("")
+}
 
-export default FreebiesGenerator;
+export default FreebiesGenerator

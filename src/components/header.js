@@ -1,4 +1,4 @@
-import types from "../utils/types.js";
+import types from "../utils/types.js"
 
 export function Header(sections, options) {
   const json_header = {
@@ -32,7 +32,7 @@ export function Header(sections, options) {
     topImage: {
       [types.NEWSLETTER]: {
         value: (
-          topImage,
+          topImage
         ) => `<table align="center" cellspacing="0" cellpadding="0" border="0"
                     style="margin: 0 auto; background-color:#ffffff; padding-top: 0em; padding-bottom: 0em; ">
                     <tbody>
@@ -83,7 +83,7 @@ export function Header(sections, options) {
     assembly: {
       [types.NEWSLETTER]: {
         value: (
-          assembly,
+          assembly
         ) => `<table align="center" cellspacing="0" cellpadding="0" border="0"  style="margin: 0 auto; background-color:#ffffff; padding-top: 0em; padding-bottom: 0em; ">
                     <tbody>
                         <tr>
@@ -98,7 +98,7 @@ export function Header(sections, options) {
       },
       [types.LANDINGPAGE]: {
         value: (
-          assembly,
+          assembly
         ) => `<table align="center" cellspacing="0" cellpadding="0" border="0"  style="margin: 0 auto; background-color:#ffffff; padding-top: 0em; padding-bottom: 0em; ">
                     <tbody>
                         <tr>
@@ -112,59 +112,59 @@ export function Header(sections, options) {
                 </table>`,
       },
     },
-  };
+  }
 
-  let html = "";
+  let html = ""
   for (const section in sections) {
-    const elem = sections[section];
-    if (typeof elem !== "object") continue;
+    const elem = sections[section]
+    if (typeof elem !== "object") continue
 
     if (section in json_header) {
       if (!("exclude" in elem)) {
-        const conditionalSections = {};
+        const conditionalSections = {}
 
         for (const key in elem) {
-          let element = elem[key];
+          let element = elem[key]
           if (element === undefined) {
-            element = "";
+            element = ""
           }
 
           if (typeof elem !== "object") {
-            conditionalSections[key] = element;
-            continue;
+            conditionalSections[key] = element
+            continue
           }
 
           if (!element.exclude) {
-            conditionalSections[key] = element;
+            conditionalSections[key] = element
           }
         }
-        html += json_header[section][options.type].value(conditionalSections);
-        continue;
+        html += json_header[section][options.type].value(conditionalSections)
+        continue
       }
       if (!elem.exclude) {
-        const conditionalSections = {};
+        const conditionalSections = {}
 
         for (const key in elem) {
-          let element = elem[key];
+          let element = elem[key]
           if (element === undefined) {
-            element = "";
+            element = ""
           }
           if (typeof elem !== "object") {
-            conditionalSections[key] = element;
-            continue;
+            conditionalSections[key] = element
+            continue
           }
 
           if (!element.exclude) {
-            conditionalSections[key] = element;
+            conditionalSections[key] = element
           }
         }
-        html += json_header[section][options.type].value(conditionalSections);
+        html += json_header[section][options.type].value(conditionalSections)
       }
     } else {
       throw new Error(
-        "Dodaj sekcje: " + section + ". Do json_header in Header.js",
-      );
+        "Dodaj sekcje: " + section + ". Do json_header in Header.js"
+      )
     }
   }
-  return html;
+  return html
 }

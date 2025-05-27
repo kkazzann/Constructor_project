@@ -95,5 +95,5 @@ export function ThisMayInterestYou({ title, categories }) {
           </table>
       </td>
   </tr>
-  `;
+  `
 }

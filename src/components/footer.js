@@ -1,8 +1,8 @@
-import types from "../utils/types.js";
-import { Line } from "./Line.js";
+import types from "../utils/types.js"
+import { Line } from "./Line.js"
 
 export function Footer(sections, options) {
-  const id = sections.id;
+  const id = sections.id
   const json_footer = {
     assembly: {
       [types.NEWSLETTER]: {
@@ -28,7 +28,7 @@ export function Footer(sections, options) {
                 </tr>
             </tbody>
         </table>
-        `;
+        `
         },
       },
       [types.LANDINGPAGE]: {
@@ -59,7 +59,7 @@ export function Footer(sections, options) {
     workBanner: {
       [types.NEWSLETTER]: {
         value: ({ href, src }) => {
-          return ``;
+          return ``
         },
       },
       [types.LANDINGPAGE]: {
@@ -85,7 +85,7 @@ export function Footer(sections, options) {
                         </tr>
                     </tbody>
                 </table>
-            `;
+            `
         },
       },
     },
@@ -191,7 +191,7 @@ export function Footer(sections, options) {
                 </tr>
                             </tbody>
         </table>
-                `;
+                `
         },
       },
       [types.LANDINGPAGE]: {
@@ -317,7 +317,7 @@ export function Footer(sections, options) {
                     </tr>
             </tbody>
         </table>
-        `;
+        `
         },
       },
       [types.LANDINGPAGE]: {
@@ -471,7 +471,7 @@ export function Footer(sections, options) {
                 </tr>
                             </tbody>
         </table>
-                `;
+                `
         },
       },
       [types.LANDINGPAGE]: {
@@ -669,7 +669,7 @@ export function Footer(sections, options) {
                 </tr>
                             </tbody>
         </table>
-                `;
+                `
         },
       },
       [types.LANDINGPAGE]: {
@@ -709,7 +709,7 @@ export function Footer(sections, options) {
                 </tr>
             </tbody>
         </table>
-        `;
+        `
         },
       },
       [types.LANDINGPAGE]: {
@@ -764,7 +764,7 @@ export function Footer(sections, options) {
                 </tr>
             </tbody>
         </table>
-                `;
+                `
         },
       },
       [types.LANDINGPAGE]: {
@@ -780,58 +780,58 @@ export function Footer(sections, options) {
         }) => "",
       },
     },
-  };
+  }
 
-  let html = "";
+  let html = ""
   for (const section in sections) {
-    const elem = sections[section];
-    if (typeof elem !== "object") continue;
+    const elem = sections[section]
+    if (typeof elem !== "object") continue
 
     if (section in json_footer) {
       if (!("exclude" in elem)) {
-        const conditionalSections = {};
+        const conditionalSections = {}
 
         for (const key in elem) {
-          const element = elem[key] || "";
+          const element = elem[key] || ""
           if (elem[key] === undefined) {
-            console.log("Value for " + key + " not found.");
+            console.log("Value for " + key + " not found.")
           }
           if (typeof elem !== "object") {
-            conditionalSections[key] = element;
-            continue;
+            conditionalSections[key] = element
+            continue
           }
 
           if (!element.exclude) {
-            conditionalSections[key] = element;
+            conditionalSections[key] = element
           }
         }
-        html += json_footer[section][options.type].value(conditionalSections);
-        continue;
+        html += json_footer[section][options.type].value(conditionalSections)
+        continue
       }
       if (!elem.exclude) {
-        const conditionalSections = {};
+        const conditionalSections = {}
 
         for (const key in elem) {
-          const element = elem[key] || "";
+          const element = elem[key] || ""
           if (elem[key] === undefined) {
-            console.log("Value for " + key + " not found.");
+            console.log("Value for " + key + " not found.")
           }
           if (typeof elem !== "object") {
-            conditionalSections[key] = element;
-            continue;
+            conditionalSections[key] = element
+            continue
           }
 
           if (!element.exclude) {
-            conditionalSections[key] = element;
+            conditionalSections[key] = element
           }
         }
-        html += json_footer[section][options.type].value(conditionalSections);
+        html += json_footer[section][options.type].value(conditionalSections)
       }
     } else {
       throw new Error(
-        "Dodaj sekcje: " + section + ". Do json_footer in Footer.js",
-      );
+        "Dodaj sekcje: " + section + ". Do json_footer in Footer.js"
+      )
     }
   }
-  return html;
+  return html
 }

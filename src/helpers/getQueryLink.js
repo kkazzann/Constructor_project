@@ -1,59 +1,59 @@
-import { getState } from "../main/initApp.js";
-import { computeValue } from "./computeValue.js";
+import { getState } from "../main/initApp.js"
+import { computeValue } from "./computeValue.js"
 
 export function addParams({ links }) {
-  const country = getState("country");
-  const template = getState("template");
-  const ids = getState("ids");
+  const country = getState("country")
+  const template = getState("template")
+  const ids = getState("ids")
 
   return links.map((link) => {
     if ("value" in link) {
-      return link.value;
+      return link.value
     }
 
-    let newValue = "";
-    let value = "src" in link ? link.src : link.href;
+    let newValue = ""
+    let value = "src" in link ? link.src : link.href
     if ("type" in value) {
-      newValue = computeValue({ ...link });
+      newValue = computeValue({ ...link })
     }
 
     if ("query" in newValue) {
-      const url = new URL(newValue.href);
+      const url = new URL(newValue.href)
       if (template.type === "newsletter") {
-        url.searchParams.set("utm_source", "newsletter");
-        url.searchParams.set("utm_medium", "email");
-        url.searchParams.set("utm_campaign", ids[country]);
+        url.searchParams.set("utm_source", "newsletter")
+        url.searchParams.set("utm_medium", "email")
+        url.searchParams.set("utm_campaign", ids[country])
       }
-      newValue = url;
+      newValue = url
     }
 
-    return "src" in newValue ? newValue.src : newValue.href;
-  });
+    return "src" in newValue ? newValue.src : newValue.href
+  })
 }
 
 export function addParamsProduct(product) {
-  const template = getState("template");
-  const country = getState("country");
-  const ids = getState("ids");
+  const template = getState("template")
+  const country = getState("country")
+  const ids = getState("ids")
 
   try {
-    const url = new URL(product.href);
+    const url = new URL(product.href)
     if (template.type === "newsletter") {
-      url.searchParams.set("utm_source", "newsletter");
-      url.searchParams.set("utm_medium", "email");
-      url.searchParams.set("utm_campaign", ids[country]);
+      url.searchParams.set("utm_source", "newsletter")
+      url.searchParams.set("utm_medium", "email")
+      url.searchParams.set("utm_campaign", ids[country])
     }
     return {
       ...product,
       href: url.href,
-    };
+    }
   } catch (error) {
     Toastify({
       text: "Product url parse error.",
       escapeMarkup: false,
       duration: 3000,
-    }).showToast();
-    return;
+    }).showToast()
+    return
   }
 }
 
@@ -76,62 +76,62 @@ const relativeLanguageToCountry = {
   UK: "english",
   NO: "norsk",
   NL: "dutch",
-};
+}
 
 export function getQueryLink(item) {
-  const template = getState("template");
-  const country = getState("country");
-  const ids = getState("ids");
+  const template = getState("template")
+  const country = getState("country")
+  const ids = getState("ids")
 
-  if (item.href === undefined) return undefined;
-  if (item.href === null) return undefined;
+  if (item.href === undefined) return undefined
+  if (item.href === null) return undefined
 
-  const queryLink = new URL(item.href);
+  const queryLink = new URL(item.href)
 
   // Category query doesn't work properly.
   if (false) {
     for (const [key, value] of item.searchParams.entries()) {
       // Get filter name
-      const filterItem = filterNames.find((filter) => filter.title === key);
+      const filterItem = filterNames.find((filter) => filter.title === key)
       if (!filterItem) {
-        throw new Error(`Filter ${key} not found.`);
+        throw new Error(`Filter ${key} not found.`)
       }
-      const filterName = filterItem.data[relativeLanguageToCountry[country]];
+      const filterName = filterItem.data[relativeLanguageToCountry[country]]
 
-      const allFilters = item.searchParams.get(key).split(",");
+      const allFilters = item.searchParams.get(key).split(",")
 
-      queryLink.searchParams.delete(key, value);
-      const collectFilters = [];
+      queryLink.searchParams.delete(key, value)
+      const collectFilters = []
       allFilters.forEach((filterTitle) => {
         const filterItem = filterValues.find(
-          (filter) => filter.title === filterTitle,
-        );
-        const filterValue = filterItem.data[relativeLanguageToCountry[country]];
-        collectFilters.push(handleSpace(handleSpecialCharacters(filterValue)));
-      });
+          (filter) => filter.title === filterTitle
+        )
+        const filterValue = filterItem.data[relativeLanguageToCountry[country]]
+        collectFilters.push(handleSpace(handleSpecialCharacters(filterValue)))
+      })
       queryLink.searchParams.append(
         handleSpace(handleSpecialCharacters(filterName)),
-        collectFilters.join(","),
-      );
+        collectFilters.join(",")
+      )
     }
   }
   if (template.type === "newsletter") {
-    queryLink.searchParams.set("utm_source", "newsletter");
-    queryLink.searchParams.set("utm_medium", "email");
-    queryLink.searchParams.set("utm_campaign", ids[country]);
+    queryLink.searchParams.set("utm_source", "newsletter")
+    queryLink.searchParams.set("utm_medium", "email")
+    queryLink.searchParams.set("utm_campaign", ids[country])
   }
 
-  return queryLink.href;
+  return queryLink.href
 }
 
 function handleSpace(string) {
-  let new_string = "";
+  let new_string = ""
 
   if (string.includes(" ")) {
-    new_string = string.replaceAll(" ", "_");
-    return new_string;
+    new_string = string.replaceAll(" ", "_")
+    return new_string
   } else {
-    return string;
+    return string
   }
 }
 
@@ -174,19 +174,19 @@ function handleSpecialCharacters(filterValue) {
     ű: "u",
     ř: "r",
     í: "i",
-  };
+  }
 
-  let string = "";
-  const value = filterValue.value.split("");
+  let string = ""
+  const value = filterValue.value.split("")
   for (const item of value) {
     if (item in list_of_special_chars) {
-      string += list_of_special_chars[item];
+      string += list_of_special_chars[item]
     } else {
-      string += item;
+      string += item
     }
   }
 
-  return string;
+  return string
 }
 
 const filterNames = [
@@ -905,7 +905,7 @@ const filterNames = [
       },
     },
   },
-];
+]
 
 // https://www.prologistics.info/react/autodescription/sa_contents/content/4/
 // https://www.prologistics.info/react/autodescription/sa_contents/content/354/
@@ -2578,4 +2578,4 @@ const filterValues = [
       },
     },
   },
-];
+]

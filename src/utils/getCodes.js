@@ -4,10 +4,10 @@ export function getCodes(queries) {
       .join("<br />")
       .split("<br />")
       .reduce((acc, item, idx) => {
-        acc["code" + (idx + 1)] = item;
-        return acc;
-      }, {});
-    return codes;
+        acc["code" + (idx + 1)] = item
+        return acc
+      }, {})
+    return codes
   }
-  return null;
+  return null
 }

@@ -1,7 +1,7 @@
-import { getState } from "../main/initApp.js";
+import { getState } from "../main/initApp.js"
 
 export const normalizeTranslations = (translations, fallbacks, range) => {
-  const config = getState("config");
+  const config = getState("config")
   if (config && typeof config === "object") {
     return translations
       .map((item, idx) =>
@@ -11,10 +11,10 @@ export const normalizeTranslations = (translations, fallbacks, range) => {
               config.emptyCell("Cell is empty for " + range) ||
               "undefined"
             : config.emptyCell("Cell is empty for " + range) || "undefined"
-          : item,
+          : item
       )
       .flat()
-      .map((t) => (config.replaceToBrs ? t.replaceAll("\n", "<br />") : t));
+      .map((t) => (config.replaceToBrs ? t.replaceAll("\n", "<br />") : t))
   } else {
     return translations
       .map((item, idx) =>
@@ -22,9 +22,9 @@ export const normalizeTranslations = (translations, fallbacks, range) => {
           ? fallbacks
             ? fallbacks[idx] || "undefined"
             : "undefined"
-          : item,
+          : item
       )
       .flat()
-      .map((t) => t.replaceAll("\n", "<br />"));
+      .map((t) => t.replaceAll("\n", "<br />"))
   }
-};
+}

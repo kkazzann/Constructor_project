@@ -1,8 +1,8 @@
-import { Iterate } from "../components/Iterate.js";
-import { OfferPart } from "../components/OfferPart.js";
-import { YouTube } from "../components/YouTube.js";
-import { Footer } from "../components/footer.js";
-import { Header } from "../components/header.js";
+import { Iterate } from "../components/Iterate.js"
+import { OfferPart } from "../components/OfferPart.js"
+import { YouTube } from "../components/YouTube.js"
+import { Footer } from "../components/footer.js"
+import { Header } from "../components/header.js"
 import {
   Line,
   Category,
@@ -14,7 +14,7 @@ import {
   Freebies,
   Product,
   ProductWithSize,
-} from "../components/index.js";
+} from "../components/index.js"
 
 export async function CategoriesRows({
   links,
@@ -77,7 +77,7 @@ export async function CategoriesRows({
         exclude: true,
       },
     },
-    { type },
+    { type }
   )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
           <tbody>
@@ -135,7 +135,7 @@ export async function CategoriesRows({
                                   })}
                                   </td>
                                 </tr>
-                              `;
+                              `
                               },
                             })}
                       </tbody>
@@ -149,7 +149,7 @@ export async function CategoriesRows({
                     shop.origin
                   }" style="color:#000; text-decoration: underline;">
                     <span class="newsletterCta">${getPhrase(
-                      "Shop All Categories",
+                      "Shop All Categories"
                     )}</span>
                   </a>
                 </td>
@@ -185,7 +185,7 @@ export async function CategoriesRows({
                           <tr>
                               <td align="left" class="newsletterBottom35px">
                                   <span class="newsletterFooterTitle">${getPhrase(
-                                    "Shop limited-time deals",
+                                    "Shop limited-time deals"
                                   )}</span>
                               </td>
                           </tr>
@@ -226,7 +226,7 @@ export async function CategoriesRows({
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
             exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
-              country,
+              country
             ),
           },
           workBanner: {
@@ -334,7 +334,7 @@ export async function CategoriesRows({
             vat: getFooter("VAT"),
           },
         },
-        { type },
+        { type }
       )}
-    `;
+    `
 }

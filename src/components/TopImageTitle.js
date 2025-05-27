@@ -1,9 +1,9 @@
-import { isAllowToRender, optimize } from "../helpers/optimizeImage.js";
-import { Space } from "./Space.js";
+import { isAllowToRender, optimize } from "../helpers/optimizeImage.js"
+import { Space } from "../components/Space.js"
 
 export const TopImageTitle = isAllowToRender(
   optimize(({ href, title1, title2, color, type }) => {
-    if (!type) return "Please specify type of TiT.";
+    if (!type) return "Please specify type of TiT."
 
     const templates = {
       up_to: `
@@ -13,6 +13,10 @@ export const TopImageTitle = isAllowToRender(
         <h5 style="color:${color};" class="${
           title2?.includes("%") ? "newsletterTitleH1" : "newsletterTitleH2"
         }">${title2 ?? ""}</h5>
+      `,
+      up_to_bigger: `
+        <h4 style="color:${color};" class="${title1.includes("%") ? "newsletterTitleH2" : "newsletterTitleH1"}">${title1}</h4>
+        <h5 style="color:${color};" class="${title2?.includes("%") ? "newsletterTitleH2" : "newsletterTitleH1"}">${title2 ?? ""}</h5>
       `,
       standard: `
         <h5 style="color:${color};" class="newsletterTitleH1">${title1}</h5>
@@ -25,7 +29,7 @@ export const TopImageTitle = isAllowToRender(
       singleLine: `
         <h4 style="color:${color};" class="newsletterTitleH1">${title1}</h4>
       `,
-    };
+    }
 
     return `
       <table border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -41,6 +45,6 @@ export const TopImageTitle = isAllowToRender(
           </tr>
         </tbody>
       </table>
-    `;
-  }),
-);
+    `
+  })
+)

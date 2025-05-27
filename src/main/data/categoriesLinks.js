@@ -7999,4 +7999,4 @@ export default [
     trends: "trends",
     "dreamy-pastels": "dreamy-pastels",
   },
-];
+]

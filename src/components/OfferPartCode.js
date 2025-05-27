@@ -1,6 +1,6 @@
-import { Paragraph } from "./Paragraph.js";
-import { Space } from "./Space.js";
-import { GetCode } from "./getCode.js";
+import { Paragraph } from "./Paragraph.js"
+import { Space } from "./Space.js"
+import { GetCode } from "./getCode.js"
 
 export function OfferPartCode({
   color,
@@ -69,7 +69,7 @@ export function OfferPartCode({
         ${Paragraph(paragraph4, "center")}
       </td>
     </tr>
-  `;
+  `
   const landing = `
     <tr>
       <td >
@@ -115,10 +115,10 @@ export function OfferPartCode({
         ${Paragraph(paragraph3, "center")}
       </td>
     </tr>
-  `;
+  `
   return `
   <table cellspacing="0" cellpadding="0" border="0" width="100%">
     ${type === "newsletter" ? newsletter : landing}
   </table>
-  `;
+  `
 }

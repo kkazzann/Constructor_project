@@ -1,4 +1,4 @@
-import { normalize } from "./normalizePrice.js";
+import { normalize } from "./normalizePrice.js"
 
 const currencies = {
   euro: "€",
@@ -11,7 +11,7 @@ const currencies = {
   norwegianKrone: ",-",
   polandZloty: ",-",
   romanianLeu: "lei",
-};
+}
 const relativePriceFormat = {
   DE: {
     currency: currencies.euro,
@@ -70,65 +70,65 @@ const relativePriceFormat = {
   RO: {
     currency: currencies.romanianLeu,
   },
-};
+}
 const priceFormats = {
   DE: (price) => {
-    return normalize(price, "DE") + " " + relativePriceFormat.DE.currency;
+    return normalize(price, "DE") + " " + relativePriceFormat.DE.currency
   },
   CHDE: (price) => {
-    return normalize(price, "CHDE") + " " + relativePriceFormat.CH.currency;
+    return normalize(price, "CHDE") + " " + relativePriceFormat.CH.currency
   },
   AT: (price) => {
-    return normalize(price, "AT") + " " + relativePriceFormat.AT.currency;
+    return normalize(price, "AT") + " " + relativePriceFormat.AT.currency
   },
   FR: (price) => {
-    return normalize(price, "FR") + " " + relativePriceFormat.FR.currency;
+    return normalize(price, "FR") + " " + relativePriceFormat.FR.currency
   },
   BE: (price) => {
-    return normalize(price, "BE") + " " + relativePriceFormat.BE.currency;
+    return normalize(price, "BE") + " " + relativePriceFormat.BE.currency
   },
   IT: (price) => {
-    return normalize(price, "IT") + " " + relativePriceFormat.IT.currency;
+    return normalize(price, "IT") + " " + relativePriceFormat.IT.currency
   },
   UK: (price) => {
-    return relativePriceFormat.UK.currency + normalize(price, "UK");
+    return relativePriceFormat.UK.currency + normalize(price, "UK")
   },
   ES: (price) => {
-    return normalize(price, "ES") + " " + relativePriceFormat.ES.currency;
+    return normalize(price, "ES") + " " + relativePriceFormat.ES.currency
   },
   PT: (price) => {
-    return normalize(price, "PT") + " " + relativePriceFormat.PT.currency;
+    return normalize(price, "PT") + " " + relativePriceFormat.PT.currency
   },
   PL: (price) => {
-    return normalize(price, "PL") + relativePriceFormat.PL.currency;
+    return normalize(price, "PL") + relativePriceFormat.PL.currency
   },
   HU: (price) => {
-    return normalize(price, "HU") + " " + relativePriceFormat.HU.currency;
+    return normalize(price, "HU") + " " + relativePriceFormat.HU.currency
   },
   NL: (price) => {
-    return relativePriceFormat.NL.currency + " " + normalize(price, "NL");
+    return relativePriceFormat.NL.currency + " " + normalize(price, "NL")
   },
   SE: (price) => {
-    return normalize(price, "SE") + relativePriceFormat.SE.currency;
+    return normalize(price, "SE") + relativePriceFormat.SE.currency
   },
   DK: (price) => {
-    return normalize(price, "DK") + " " + relativePriceFormat.DK.currency;
+    return normalize(price, "DK") + " " + relativePriceFormat.DK.currency
   },
   CZ: (price) => {
-    return normalize(price, "CZ") + " " + relativePriceFormat.CZ.currency;
+    return normalize(price, "CZ") + " " + relativePriceFormat.CZ.currency
   },
   FI: (price) => {
-    return normalize(price, "FI") + " " + relativePriceFormat.FI.currency;
+    return normalize(price, "FI") + " " + relativePriceFormat.FI.currency
   },
   NO: (price) => {
-    return normalize(price, "NO") + relativePriceFormat.NO.currency;
+    return normalize(price, "NO") + relativePriceFormat.NO.currency
   },
   SK: (price) => {
-    return normalize(price, "SK") + " " + relativePriceFormat.SK.currency;
+    return normalize(price, "SK") + " " + relativePriceFormat.SK.currency
   },
   RO: (price) => {
-    return normalize(price, "RO") + " " + relativePriceFormat.RO.currency;
+    return normalize(price, "RO") + " " + relativePriceFormat.RO.currency
   },
-};
+}
 
-export { priceFormats };
+export { priceFormats }

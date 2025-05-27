@@ -45,7 +45,7 @@
 }
 
 // Id of iframe in selectors
-const selectorss = ["newsletterIFrame"];
+const selectorss = ["newsletterIFrame"]
 
 function onYouTubeIframeAPIReady() {
   selectorss.forEach((selector) => {
@@ -53,39 +53,39 @@ function onYouTubeIframeAPIReady() {
       events: {
         onReady: saveEvent,
       },
-    });
-  });
+    })
+  })
 }
 
-let eventOnReady = {};
+let eventOnReady = {}
 function saveEvent(event) {
-  console.log(event);
-  eventOnReady[event.target.g.id] = event.target;
+  console.log(event)
+  eventOnReady[event.target.g.id] = event.target
 }
 
 function mountIntersectionMobile() {
-  var tag = document.createElement("script");
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName("script")[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var tag = document.createElement("script")
+  tag.src = "https://www.youtube.com/iframe_api"
+  var firstScriptTag = document.getElementsByTagName("script")[0]
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
 }
 
 function play(id) {
-  eventOnReady[id].playVideo();
+  eventOnReady[id].playVideo()
 }
 
 function handleIntersectingMobile(elements, observer) {
   elements.forEach((item) => {
     if (item.isIntersecting) {
-      play(item.target.id);
+      play(item.target.id)
     }
-  });
+  })
 }
 
-const observerMobile = new IntersectionObserver(handleIntersectingMobile);
+const observerMobile = new IntersectionObserver(handleIntersectingMobile)
 window.onload = () => {
-  mountIntersectionMobile();
+  mountIntersectionMobile()
   selectorss.forEach((frame) =>
-    observerMobile.observe(document.querySelector("#" + frame)),
-  );
-};
+    observerMobile.observe(document.querySelector("#" + frame))
+  )
+}

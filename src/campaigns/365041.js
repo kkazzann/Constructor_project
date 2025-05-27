@@ -1,7 +1,7 @@
-import { templates } from "../templates/index.js";
-import { entities } from "../entities/index.js";
-import types from "../utils/types.js";
-import getImageUrl from "../utils/getImageUrl.js";
+import { templates } from "../templates/index.js"
+import { entities } from "../entities/index.js"
+import types from "../utils/types.js"
+import getImageUrl from "../utils/getImageUrl.js"
 
 export default new entities.Campaign({
   date: "2025.05.29",
@@ -614,4 +614,4 @@ export default new entities.Campaign({
       },
     },
   ],
-});
+})

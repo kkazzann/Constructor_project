@@ -1,4 +1,4 @@
-import { Space } from "./Space.js";
+import { Space } from "./Space.js"
 
 export const Timer = ({
   title,
@@ -37,7 +37,7 @@ export const Timer = ({
                     </td>
                 </tr>
             </table>
-        `;
+        `
   }
   if (type === "3_subtitle") {
     return `
@@ -88,7 +88,7 @@ export const Timer = ({
                 </td>
             </tr>
         </table>
-  `;
+  `
   }
   return `
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
@@ -131,5 +131,5 @@ export const Timer = ({
                 </td>
             </tr>
         </table>
-  `;
-};
+  `
+}

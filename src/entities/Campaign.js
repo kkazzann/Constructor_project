@@ -1,14 +1,14 @@
 export class Campaign {
-  startId;
-  name;
-  date;
-  alarm;
-  issueCardId;
-  templates;
-  optimizeImg;
-  isArchive;
-  products;
-  figmaUrl;
+  startId
+  name
+  date
+  alarm
+  issueCardId
+  templates
+  optimizeImg
+  isArchive
+  products
+  figmaUrl
   constructor({
     date,
     data,
@@ -23,16 +23,16 @@ export class Campaign {
     figmaUrl,
   }) {
     if (!Array.isArray(templates)) {
-      throw new Error("templates property should be array");
+      throw new Error("templates property should be array")
     }
     if (!name) {
-      throw new Error("name property should be defined for campaign");
+      throw new Error("name property should be defined for campaign")
     }
     if (!date) {
-      throw new Error("date property should be defined for campaign");
+      throw new Error("date property should be defined for campaign")
     }
     if (!startId) {
-      throw new Error("startId property should be defined for campaign");
+      throw new Error("startId property should be defined for campaign")
     }
     // for (const template of templates) {
     //   if (template instanceof NewsletterTemplate) {
@@ -44,19 +44,19 @@ export class Campaign {
     //     );
     //   }
     // }
-    this.date = date;
-    this.issueCardId = issueCardId || null;
-    this.name = name;
-    this.startId = startId;
-    this.templates = templates;
+    this.date = date
+    this.issueCardId = issueCardId || null
+    this.name = name
+    this.startId = startId
+    this.templates = templates
     this.alarm = {
       isActive: alarm?.isActive || false,
       description: alarm?.description || "Remember about: ",
-    };
-    this.data = data || null;
-    this.optimizeImg = optimizeImg || false;
-    this.isArchive = isArchive || false;
-    this.products = products || null;
-    this.figmaUrl = figmaUrl || null;
+    }
+    this.data = data || null
+    this.optimizeImg = optimizeImg || false
+    this.isArchive = isArchive || false
+    this.products = products || null
+    this.figmaUrl = figmaUrl || null
   }
 }

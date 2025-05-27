@@ -1,7 +1,7 @@
-import { Paragraph } from "./Paragraph.js";
-import { Space } from "./Space.js";
-import { GetCode } from "./getCode.js";
-import { Intro } from "./intro.js";
+import { Paragraph } from "./Paragraph.js"
+import { Space } from "./Space.js"
+import { GetCode } from "./getCode.js"
+import { Intro } from "./intro.js"
 
 export function OfferPart({ offers, offerDate, href, code, type, color }) {
   const newsletter = `
@@ -36,9 +36,9 @@ export function OfferPart({ offers, offerDate, href, code, type, color }) {
       </tr>
       `
     }
-    `;
+    `
 
-      return newsletter;
+      return newsletter
     })
     .join("")}
 
@@ -64,7 +64,7 @@ export function OfferPart({ offers, offerDate, href, code, type, color }) {
         ${Paragraph(offerDate, "center")}
       </td>
     </tr>
-  `;
+  `
   const landing = `
         ${offers
           .map((item, idx) => {
@@ -97,8 +97,8 @@ export function OfferPart({ offers, offerDate, href, code, type, color }) {
                 ${Space()}
             </td>
           </tr>
-          `;
-            return landing;
+          `
+            return landing
           })
           .join("")}
 
@@ -107,10 +107,10 @@ export function OfferPart({ offers, offerDate, href, code, type, color }) {
               ${Paragraph(offerDate, "center")}
             </td>
           </tr>
-  `;
+  `
   return `
   <table cellspacing="0" cellpadding="0" border="0" width="100%">
     ${type === "newsletter" ? newsletter : landing}
   </table>
-  `;
+  `
 }

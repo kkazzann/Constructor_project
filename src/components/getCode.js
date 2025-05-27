@@ -31,5 +31,5 @@ export function GetCode({ type, code, link, color }) {
         </table>
         `
   }
-  `;
+  `
 }

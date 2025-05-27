@@ -79,9 +79,9 @@ Example:
 ```html
 <script>
   // variable
-  const name = "Me";
+  const name = "Me"
   // function
-  const myFn = () => {};
+  const myFn = () => {}
 </script>
 <script type="module" src="app.js"></script>
 ```
@@ -98,11 +98,11 @@ Example:
 categories
   .map((item, idx) => {
     if (idx === categories.length - 1) {
-      return ``;
+      return ``
     }
-    return ``;
+    return ``
   })
-  .join("");
+  .join("")
 ```
 
 Or use Iterate component which has 3 properties:\
@@ -131,7 +131,7 @@ Iterate({
         ${Line()}
       </td>
     </tr>
-    `;
+    `
   },
   lastItemFn: (item, index) => {
     return `
@@ -148,9 +148,9 @@ Iterate({
             ${Space({ className: "newsletterBottom80px" })}
           </td>
         </tr>
-      `;
+      `
   },
-});
+})
 ```
 
 ## Template rendering happens inside main/initApp.js
@@ -241,7 +241,7 @@ export async function MondayTemplate({
   background,
   config,
 }) {
-  return `<p>MondayTemplate</p>`;
+  return `<p>MondayTemplate</p>`
 }
 ```
 
@@ -519,7 +519,7 @@ new entities.MondayFreebieNewsletter({
       }),
     ],
   },
-});
+})
 ```
 
 #### MondayCategoryProducts -> to initialize category products list for template in app.js
@@ -549,7 +549,7 @@ new entities.MondayCategoryProducts({
       src: "https://upload.pictureserver.net/static/2024/20241209Category14.png",
     }),
   ],
-});
+})
 ```
 
 #### ProductInstance -> to initialize in **products: []** in app.js for **template**
@@ -558,7 +558,7 @@ new entities.MondayCategoryProducts({
 new entities.ProductInstance({
   id: "564062",
   src: "https://upload.pictureserver.net/static/2024/20241209Category11.png",
-});
+})
 ```
 
 #### FreebieItem -> to initialize in **freebies: { items: [] }** for **template**
@@ -579,13 +579,13 @@ new entities.FreebieItem({
       style: "padding-right: 60px; padding-left: 10px;",
     },
   ],
-});
+})
 ```
 
 #### OriginHref -> to initialize href that is based on origin
 
 ```js
-new entities.OriginHref({ value: "content/lp24-12-09" });
+new entities.OriginHref({ value: "content/lp24-12-09" })
 ```
 
 #### SlugImage -> to initialize image that is based on slug
@@ -593,7 +593,7 @@ new entities.OriginHref({ value: "content/lp24-12-09" });
 ```js
 new entities.SlugImage({
   value: "https://upload.pictureserver.net/static/2024/20241209_01.png",
-});
+})
 ```
 
 #### TableQuery -> to initialize table query for tableQueries in app.js for template
@@ -612,37 +612,37 @@ new entities.TableQuery({
     "To claim your FREE candle set, use the code at the checkout when you spend a minimum of XX",
     "The offer is valid until the 22th of December.",
   ],
-});
+})
 ```
 
 #### TableQueryHeader -> to initialize table query for Header spreadsheet
 
 ```js
-tableQueries: [new TableQueryHeader()];
+tableQueries: [new TableQueryHeader()]
 ```
 
 #### TableQueryFooter -> to initialize table query for Header spreadsheet
 
 ```js
-tableQueries: [new TableQueryFooter()];
+tableQueries: [new TableQueryFooter()]
 ```
 
 #### TableQueryTranslationTemplates -> to initialize table query for Header spreadsheet
 
 ```js
-tableQueries: [new TableQueryTranslationTemplates()];
+tableQueries: [new TableQueryTranslationTemplates()]
 ```
 
 #### TableQueryCategoryLinks -> to initialize table query for Header spreadsheet
 
 ```js
-tableQueries: [new TableQueryCategoryLinks()];
+tableQueries: [new TableQueryCategoryLinks()]
 ```
 
 #### TableQueryCategoryTitles -> to initialize table query for Header spreadsheet
 
 ```js
-tableQueries: [new TableQueryCategoryTitles()];
+tableQueries: [new TableQueryCategoryTitles()]
 ```
 
 #### TemplateLinks -> to initialize Template Links in app.js for template
@@ -665,7 +665,7 @@ new entities.TemplateLinks([
   new entities.SlugImage({
     value: "https://upload.pictureserver.net/static/2024/20241204b.png",
   }),
-]);
+])
 ```
 
 #### Image -> to initialize image that is not based on nothing inside \*\*links: []""
@@ -673,7 +673,7 @@ new entities.TemplateLinks([
 ```js
 new entities.Image({
   value: "https://upload.pictureserver.net/static/2024/20241209gif.gif",
-});
+})
 ```
 
 ## To use internally
@@ -711,7 +711,7 @@ tableQueries: [
     tableRange: "37:39",
     name: "condition",
   }),
-];
+]
 ```
 
 ## Example: object manually
@@ -724,7 +724,7 @@ tableQueries: [
     tableRange: "37:39",
     name: "condition",
   },
-];
+]
 ```
 
 ## Example: Footer, Header, Translation templates, Category Links, Category Titles
@@ -736,7 +736,7 @@ tableQueries: [
   new TableQueryTranslationTemplates(),
   new TableQueryCategoryLinks(),
   new TableQueryCategoryTitles(),
-];
+]
 ```
 
 If Footer, Header, Translation templates, Category Links, Category Titles fetched dynamically
@@ -1281,7 +1281,7 @@ new entities.Campaign({
     }),
   ],
   products: [],
-});
+})
 ```
 
 ## Use campaign data in template
